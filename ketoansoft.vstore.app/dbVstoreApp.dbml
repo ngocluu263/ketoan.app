@@ -1,0 +1,1973 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="db_ketoan" Class="dbVstoreAppDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=ADMIN12\SQLEXPRESS;Initial Catalog=db_ketoan;Integrated Security=True" SettingsObjectName="ketoansoft.app.Properties.Settings" SettingsPropertyName="dbConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.CFG" Member="CFGs">
+    <Type Name="CFG">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IDV" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TEN" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="GIA_TRI" Type="System.String" DbType="NVarChar(4000)" CanBeNull="true" />
+      <Column Name="GHI_CHU" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="FIELD1" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="FIELD2" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="TRANG_THAI" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DANH_DAU" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CFG_Khac" Member="CFG_Khacs">
+    <Type Name="CFG_Khac">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IDV" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TEN" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="GIA_TRI" Type="System.String" DbType="NVarChar(4000)" CanBeNull="true" />
+      <Column Name="GHI_CHU" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="FIELD1" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="TRANG_THAI" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DANH_DAU" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.DS_ThongTinDN" Member="DS_ThongTinDNs">
+    <Type Name="DS_ThongTinDN">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="STT" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CHI_TIEU" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="GIA_TRI" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="TRANG_THAI" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DANH_DAU" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.KT_CNChungTu" Member="KT_CNChungTus">
+    <Type Name="KT_CNChungTu">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="SO_CTU" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="MA_TK" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="MA_DTPN" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="TEN_DTPN" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="NGAY_CT" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="DUNO_VND" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="DUCO_VND" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="PSNO_VND" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="PSCO_VND" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="CKNO_VND" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="CKCO_VND" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="DUNO_USD" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="DUCO_USD" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="PSNO_USD" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="PSCO_USD" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="CKNO_USD" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="CKCO_USD" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="CNEE" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="INVOICE" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="MA_CT" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="SHIPPER" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="SO_HD" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="SO_VD" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="DANH_DAU" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TRANG_THAI" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.KT_CNCT" Member="KT_CNCTs">
+    <Type Name="KT_CNCT">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="MA_TK" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="MA_DTPN" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="MA_CT" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="TEN_DTPN" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="TEN_CT" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="DUNO_VND" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="DUCO_VND" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="PSNO_VND" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="PSCO_VND" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="CKNO_VND" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="CKCO_VND" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="DUNO_USD" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="DUCO_USD" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="PSNO_USD" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="PSCO_USD" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="CKNO_USD" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="CKCO_USD" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="MA_CT1" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="MA_CT2" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TEN_CT1" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="TEN_CT2" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="NGAY_DH" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="NGAY_HD" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="NGAY_HH" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="SO_HD" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TUOI_NO" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="DU_TOAN" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="KE_HOACH" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="PSNO_LK" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="PSCO_LK" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="MA_NHOMCT" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TEN_NHOMCT" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="DANH_DAU" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TRANG_THAI" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.KT_CNCT_TT" Member="KT_CNCT_TTs">
+    <Type Name="KT_CNCT_TT">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="MA_TK" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="MA_DTPN" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="MA_CT" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="TEN_CT" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="TEN_DTPN" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="SO_HD" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="NGAY_HD" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="NGAY_TT" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="TT_VND" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="TT_USD" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="DUNO_VND" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="DUCO_VND" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="PSNO_VND" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="PSCO_VND" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="CKNO_VND" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="CKCO_VND" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="DUNO_USD" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="DUCO_USD" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="PSNO_USD" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="PSCO_USD" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="CKNO_USD" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="CKCO_USD" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="DANH_DAU" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TRANG_THAI" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.KT_CNDT" Member="KT_CNDTs">
+    <Type Name="KT_CNDT">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="MA_TK" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="MA_DTPN" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="TEN_DTPN" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="DUNO_VND" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="DUCO_VND" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="PSNO_VND" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="PSCO_VND" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="CKNO_VND" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="CKCO_VND" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="DUNO_USD" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="DUCO_USD" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="PSNO_USD" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="PSCO_USD" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="CKNO_USD" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="CKCO_USD" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="NO_MAX" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="DIA_CHI" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DIEN_TICH" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="DON_GIA" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="GT_HD" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="MA_NHOM1" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="MA_NHOM2" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="MA_NHOM3" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TEN_NHOM1" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="TEN_NHOM2" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="TEN_NHOM3" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="MA_TT" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TEN_TT" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="NGAY_HD" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="NGAY_TL" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="SO_HD" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DANH_DAU" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TRANG_THAI" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.KT_CNHangHoa" Member="KT_CNHangHoas">
+    <Type Name="KT_CNHangHoa">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="SO_HD" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="MA_TK" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="MA_DTPN" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="MA_DM" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="TEN_DM" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="TEN_DTPN" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="NGAY_HD" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="NGAY_DH" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="NOI_DUNG" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="GIA_TRI" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="SL_DK" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="SL_NO" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="SL_CO" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="SL_CK" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="DUNO_VND" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="DUCO_VND" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="PSNO_VND" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="PSCO_VND" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="CKNO_VND" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="CKCO_VND" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="DUNO_USD" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="DUCO_USD" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="PSNO_USD" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="PSCO_USD" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="CKNO_USD" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="CKCO_USD" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="DANH_DAU" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TRANG_THAI" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.KT_CNHoaDon" Member="KT_CNHoaDons">
+    <Type Name="KT_CNHoaDon">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="MA_TK" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="MA_DTPN" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="TEN_DTPN" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="SO_HOADON" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="NGAY_HOADON" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="SR_HOADON" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DUNO_VND" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="DUCO_VND" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="PSNO_VND" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="PSCO_VND" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="CKNO_VND" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="CKCO_VND" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="DUNO_USD" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="DUCO_USD" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="PSNO_USD" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="PSCO_USD" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="CKNO_USD" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="CKCO_USD" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="TUOI_NO" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="NO_30_VND" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="NO_3060_VND" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="NO_6090_VND" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="NO_90_VND" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="NO_30_USD" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="NO_3060_USD" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="NO_6090_USD" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="NO_90_USD" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="NGAY_DH" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="TY_GIA" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="GIA_TRI" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="HAN_MUC" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="LAI_SUAT" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="SO_HD" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TY_GIA_CO" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="TY_GIA_NO" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="NGAY_CT" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="DANH_DAU" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TRANG_THAI" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.KT_CNHopDong" Member="KT_CNHopDongs">
+    <Type Name="KT_CNHopDong">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="SO_HD" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="MA_TK" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="MA_DTPN" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="TEN_DTPN" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="NGAY_HD" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="NGAY_DH" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="NOI_DUNG" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="DUNO_VND" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="DUCO_VND" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="PSNO_VND" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="PSCO_VND" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="CKNO_VND" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="CKCO_VND" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="DUNO_USD" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="DUCO_USD" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="PSNO_USD" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="PSCO_USD" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="CKNO_USD" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="CKCO_USD" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="GIA_TRI" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="HAN_MUC" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="TL_LAI_VAY" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="DANH_DAU" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TRANG_THAI" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.KT_CNKU" Member="KT_CNKUs">
+    <Type Name="KT_CNKU">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="SO_KU" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="SO_HD" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="MA_TK" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="MA_DTPN" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="TEN_DTPN" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="NOI_DUNG" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="GT_KU_VND" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="GT_KU_USD" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="NGAY_KU" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="NGAY_HD" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="NGAY_DH" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="HANMUC_VND" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="HANMUC_USD" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="LAI_SUAT_VAY" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="TK_CP_VAY" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="GT_HD_VND" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="GT_HD_USD" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="LTH_DK" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="LTH_TK" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="LTH_CK" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="LQH_DK" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="LQH_TK" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="LQH_CK" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="TONG_LAI" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="NGAY_TONG" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="NGAY_TH" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="NGAY_QH" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="DUNO_VND" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="DUCO_VND" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="PSNO_VND" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="PSCO_VND" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="CKNO_VND" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="CKCO_VND" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="DUNO_USD" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="DUCO_USD" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="PSNO_USD" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="PSCO_USD" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="CKNO_USD" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="CKCO_USD" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="TUOI_NO" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="NO_30_VND" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="NO_3060_VND" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="NO_6090_VND" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="NO_90_VND" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="NO_30_USD" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="NO_3060_USD" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="NO_6090_USD" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="NO_90_USD" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="TY_GIA_CO" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="TY_GIA_NO" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="GHI_CHU" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="DANH_DAU" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TRANG_THAI" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.KT_CNLTVTheoCT" Member="KT_CNLTVTheoCTs">
+    <Type Name="KT_CNLTVTheoCT">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="THANG" Type="System.String" DbType="NVarChar(2)" CanBeNull="true" />
+      <Column Name="MA_NV" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TEN_NV" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="MA_CT" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TEN_CT" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="CONG_VIEC" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="LUONG_CB" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="NGAY_CONG" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="LUONG_TN" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="KY_NHAN" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="NGAY_VAO" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="NGAY_RA" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="DANH_DAU" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TRANG_THAI" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.KT_CNLuongTV" Member="KT_CNLuongTVs">
+    <Type Name="KT_CNLuongTV">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="MA_NV" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TEN_NV" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="CMND" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="NGAY_CAP" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="NOI_CAP" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="NAM_SINH" Type="System.String" DbType="NVarChar(4)" CanBeNull="true" />
+      <Column Name="THANG_SINH" Type="System.String" DbType="NVarChar(2)" CanBeNull="true" />
+      <Column Name="NGAY_SINH" Type="System.String" DbType="NVarChar(2)" CanBeNull="true" />
+      <Column Name="NGUYEN_QUAN" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="THUONG_TRU" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="NGHE_NGHIEP" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="CHUC_DANH" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="CHUC_VU" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="CONG_VIEC" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="TIEN_LUONG" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="TU_NGAY" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="DEN_NGAY" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="TEN_CT" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="DANH_DAU" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TRANG_THAI" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.KT_CP" Member="KT_CPs">
+    <Type Name="KT_CP">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="MA_YTCP" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="MA_TK" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="MA_DTPN" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="TEN_TK" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="TEN_DTPN" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="TEN_YTCP_V" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="TEN_YTCP_E" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="DUNO_VND" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="DUCO_VND" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="PSNO_VND" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="PSCO_VND" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="CKNO_VND" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="CKCO_VND" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="DUNO_USD" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="DUCO_USD" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="PSNO_USD" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="PSCO_USD" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="CKNO_USD" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="CKCO_USD" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="PSNO_LK_VND" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="PSCO_LK_VND" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="PSNO_LK_USD" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="PSCO_LK_USD" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="DANH_DAU" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TRANG_THAI" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.KT_CPCT" Member="KT_CPCTs">
+    <Type Name="KT_CPCT">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="MA_YTCP" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="MA_TK" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="MA_CT" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="MA_DM" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="TEN_TK" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="TEN_CT" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="TEN_DM" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="TEN_YTCP_V" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="TEN_YTCP_E" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="DON_VI" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="SL" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="DUNO_VND" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="DUCO_VND" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="PSNO_VND" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="PSCO_VND" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="CKNO_VND" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="CKCO_VND" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="DUNO_USD" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="DUCO_USD" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="PSNO_USD" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="PSCO_USD" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="PSNO_LK_VND" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="PSCO_LK_VND" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="PSNO_LK_USD" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="PSCO_LK_USD" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="MA_CT1" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="MA_CT2" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DANH_DAU" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TRANG_THAI" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.KT_CTLenhSX" Member="KT_CTLenhSXes">
+    <Type Name="KT_CTLenhSX">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="MA_LENH_SX" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="MA_TK" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="MA_DTPN" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="MA_DM" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="TEN_DM" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="TEN_LENH" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="NGAY_LENH" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="ND_HD" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="DON_VI" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TON_DK_SL" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="TON_CK_SL" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="NHAP_SL" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="XUAT_SL" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="TEN_DTPN" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DANH_DAU" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TRANG_THAI" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.KT_CTPBCP" Member="KT_CTPBCPs">
+    <Type Name="KT_CTPBCP">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="THANG" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MA_CT" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TEN_CT" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="SO_HD" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="NOI_DUNG" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="LCTG" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="SR_HOADON" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="SO_HOADON" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="NGAY_HOADON" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="SO_CT" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="NGAY_CT" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="DIEN_GIAI" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="TK_NO" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DTPN_NO" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="YTCP_NO" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="MA_DM_NO" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="LO_NHAP" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="LO_XUAT" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TK_CO" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DTPN_CO" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="YTCP_CO" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="MA_HH_XUAT" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TEN_DM" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="DON_VI" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="SL" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="DON_GIA" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="THANH_TIEN_VND" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="THANH_TIEN_USD" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="TIEN_THUE_VND" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="TIEN_THUE_USD" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="THUE_NK_VND" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="THUE_NK_USD" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="TY_GIA" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="MA_KH" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TEN_KH" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="DANH_DAU" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TRANG_THAI" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.KT_CTTP" Member="KT_CTTPs">
+    <Type Name="KT_CTTP">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="MA_CT" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="MA_TP" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="TEN_TP" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="TEN_CT" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="NGAY_HD" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="SO_HD" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DON_VI" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="SL_DH" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="DG_DH" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="TT_DH" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="MA_KH" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TEN_KH" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="DANH_DAU" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TRANG_THAI" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.KT_CTTyLePB" Member="KT_CTTyLePBs">
+    <Type Name="KT_CTTyLePB">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="THANG" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="MA_CT" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="TEN_CT" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="TY_LE" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="DANH_DAU" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TRANG_THAI" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.KT_CTuGoc" Member="KT_CTuGocs">
+    <Type Name="KT_CTuGoc">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="MA_CTU" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="HD_SR" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="HD_SO" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="HD_NGAY" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="SO_CTU" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="NGAY_CTU" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="SO_PC" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="DIEN_GIAI" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="DIEN_GIAI2" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="TK_NO" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TK_CO" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="MA_DTPN_NO" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="MA_YTCP_NO" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="MA_DTPN_CO" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="MA_YTCP_CO" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="MA_DM_NHAP" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="LO_NHAP" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="MA_DM_XUAT" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="LO_XUAT" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="MA_CTRINH" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TEN_CTRINH" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="MA_TP" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TEN_DM" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="DONVI_CTU" Type="System.String" DbType="NVarChar(60)" CanBeNull="true" />
+      <Column Name="DVT" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="LUONG_CTU" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="SO_LUONG" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="DON_GIA_VND" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="DON_GIA_USD" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="PT_CK" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="CHIET_KHAU_VND" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="CHIET_KHAU_USD" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="LOAI_THUE" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TK_THUE" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TS_GTGT" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="THANH_TIEN_VND" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="TIEN_THUE_VND" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="TONG_TIEN_VND" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="THANH_TIEN_USD" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="TIEN_THUE_USD" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="TONG_TIEN_USD" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="MAT_HANG" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="MA_KH" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TEN_KH" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="MASO_THUE" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DIA_CHI" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="DIA_CHI_NGD" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="TEN_KH_GD" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="MA_NV_BAN" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TEN_NV_BAN" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="DG_VON" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="GIA_VON" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="LAI_GOP" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="TY_GIA" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="SO_CTGS" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="NGAY_CTGS" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="DT_NHAN" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DT_XUAT" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="THANG" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="SO_HOPDONG" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="MA_USER" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="MA_TTTU" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="NGAY_DH" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="MA_DV_TRA_TIEN" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="TEN_DV_TRA_TIEN" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="SO_TK_NH_NO" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="TEN_TK_NH_NO" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="SO_TK_NH_CO" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="TEN_TK_NH_CO" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="MA_DV_NT" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="TEN_DV_NT" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="KHU_VUC" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="KY_HIEU" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="TIEN_HANG" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="TEN_HH_IN" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="HINH_THUC_TT" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="INVOI" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="MA_SP" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DON_TRONG" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="SOCTU_U" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="COL_11" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="COL_12" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="COL_13" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="MA_NGD" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DON_GIA_GC" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="DON_GIA_VC" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="HSD" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="ID_CTU" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="KY_HIEU_MAU_HD" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="KXLDG" Type="System.String" DbType="NVarChar(5)" CanBeNull="true" />
+      <Column Name="LENH_SX" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="MA_HD" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="MA_HH_GC" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="MA_TIEP_THI" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="MA_TT" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="MA_VUNG" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="MA_NHOM" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="MA_NHOM1" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="MA_NHOM2" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="MODEL" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="MS_TM" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="NGAY_HOP_DONG" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="NGAY_TT" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="NGAY_LO" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="NHA_CUNG_CAP" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="NHA_SX" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="NHOM_KH" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ND_HOP_DONG" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="SO_LUONG_GC" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="SO_PT" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="SO_KU" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="DOT_TIEP_THI" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="TEN_TIEP_THI" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="TEN_YTCP_NO" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="THANG_N" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="TK_CHIET_KHAU" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TK_XUAT_KHO" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="THUE_NK_VND" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="THUE_NK_USD" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="TS_NK" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="TIEN_GC" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="TIEN_VC" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="DON_VI1" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DON_VI2" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="LUONG1" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="LUONG2" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="HSQD_DVT" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="MA_BPSX" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TEN_THANH_PHAM" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="IMEI" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="GHI_CHU" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="DANH_DAU" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TRANG_THAI" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.KT_DGB_Ngay" Member="KT_DGB_Ngays">
+    <Type Name="KT_DGB_Ngay">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="NGAY_AD" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="MA_DM" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TEN_DM" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="DON_VI" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DGBAN1" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="DGBAN2" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="DGBAN3" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="DGBAN4" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="DGBAN5" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="DANH_DAU" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TRANG_THAI" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.KT_DGBTheoNhomDT" Member="KT_DGBTheoNhomDTs">
+    <Type Name="KT_DGBTheoNhomDT">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="NGAY_AD" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="MA_DM" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="MA_TK" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TEN_DM" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="DON_VI" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="MA_NHOM" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TEN_NHOM" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="DGBAN1" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="DGBAN2" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="DGBAN3" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="DGBAN4" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="DGBAN5" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="HTTT" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DANH_DAU" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TRANG_THAI" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.KT_DGBTheoVung" Member="KT_DGBTheoVungs">
+    <Type Name="KT_DGBTheoVung">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="STT" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="MA_NHOM" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="TEN_NHOM" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="TU_NGAY" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="DEN_NGAY" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="MA_DM" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TEN_DM" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="DON_VI" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="CONG_THEM" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="DON_GIA" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="DANH_DAU" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TRANG_THAI" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.KT_DIENGIAI" Member="KT_DIENGIAIs">
+    <Type Name="KT_DIENGIAI">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="DIEN_GIAI1" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="DIEN_GIAI2" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="TRANG_THAI" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.KT_DMCauThanhSP" Member="KT_DMCauThanhSPs">
+    <Type Name="KT_DMCauThanhSP">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="MADM_ME" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="MADM_CON" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="TENDM_ME" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="TENDM_CON" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="SL" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TK_DU" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DANH_DAU" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TRANG_THAI" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.KT_DMCongTrinh" Member="KT_DMCongTrinhs">
+    <Type Name="KT_DMCongTrinh">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="SO_HD" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="MA_CT" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TEN_CT" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="HOAN_THANH" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="NGAY_HD" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="NOI_DUNG" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="GT_VND" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="GT_USD" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="GT_NT_VND" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="GT_NT_USD" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="SO_NGAY_LAM" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="NGAY_NT" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="NGAY_KC" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="CP_DK_621" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="CP_DK_622" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="CP_DK_623" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="CP_DK_627" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="DO_DANG_DK" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="DOANH_THU_DK" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="DOANH_THU_TK" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="DOANH_THU_LK" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="DOANH_THU_CK" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="THUE_VAT_DK" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="THUE_VAT_TK" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="THUE_VAT_CK" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="DS_HD_DK" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="DS_HD_TK" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="PS_621" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="PS_622" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="PS_623" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="PS_627" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="PS_TONG" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="PSLK_621" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="PSLK_622" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="PSLK_623" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="PSLK_627" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="TONG_CP" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="CP_CK_621" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="CP_CK_622" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="CP_CK_623" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="CP_CK_627" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="DO_DANG_CK" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="LAI_GOP" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="TY_LE_LAI" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="TY_LE_PB" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="GIA_VON_DK" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="GIA_VON_TK" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="GIA_VON_CK" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="GIA_VON_LK" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="TK_DO_DANG" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="TK_GIA_VON" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="PSNO_154" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="PSCO_154" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="LK_CPDK_621" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="LK_CPDK_622" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="LK_CPDK_623" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="LK_CPDK_627" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="LK_CPDK_TONG" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="LK_THUE_GTGT" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="MA_NHOM_CT" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TEN_NHOM_CT" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="NGAY_DH" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="NGAY_GH" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="PSCO_154_MTC" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="PSCO_154_NC" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="PSCO_154_NVL" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="PSCO_154_SXC" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="DANH_DAU" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TRANG_THAI" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.KT_DMHH" Member="KT_DMHHs">
+    <Type Name="KT_DMHH">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="MA_TK" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="MA_DM" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="TEN_DM" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="MA_NHOM" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TEN_NHOM" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="KY_HIEU" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="LO" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="NGAY_LO" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="HSD" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="NHA_CC" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="NHA_SX" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="PT_CK" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="THUE_SUAT" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="DG_XUAT" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="TON_DK_SL" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="TON_DK_GT_VND" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="TON_DK_GT_USD" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="TON_CK_SL" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="TON_CK_GT_VND" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="TON_CK_GT_USD" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="NHAP_SL" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="NHAP_GT_VND" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="NHAP_GT_USD" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="XUAT_SL" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="XUAT_GT_VND" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="XUAT_GT_USD" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="DG_BAN" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="DG_BAN1" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="DG_BAN2" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="DG_BAN3" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="DG_BAN4" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="DG_USD" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="DG_NHAP" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="DG_NHAP1" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="DG_NHAP2" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="DG_NHAP3" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="DG_NHAP4" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="DG_NHAP5" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="DG_CHUYENKHO" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="DG_CKTM" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="DG_VANCHUYEN" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="DON_VI" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DON_VI1" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DON_VI2" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DON_VI3" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="HESO1" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="HESO2" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="HESO3" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="DM_CKTM" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="GH_TON" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="MADM_ME" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="MA_NHOM1" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="MA_NHOM2" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="MA_NHOM_TP" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TENDM_ME" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="TEN_NHOM1" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="TEN_NHOM2" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="TEN_NHOM_TP" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="MODEL" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="SO_DH" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TEN_DH" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="TG_CKTM" Type="System.String" DbType="NVarChar(2)" CanBeNull="true" />
+      <Column Name="TK_CK" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TK_DT" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TK_GV" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TK_TRALAI" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="NHAP_SL_DV1" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="NHAP_SL_DV2" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="TON_DK_SL_DV1" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="TON_DK_SL_DV2" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="TON_CK_SL_DV1" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="TON_CK_SL_DV2" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="XUAT_SL_DV1" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="XUAT_SL_DV2" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="DANH_DAU" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TRANG_THAI" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.KT_DMHH_Kho" Member="KT_DMHH_Khos">
+    <Type Name="KT_DMHH_Kho">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="MA_TK" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="MA_DTPN" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="MA_DM" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="TEN_DTPN" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="TEN_DM" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="KY_HIEU" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="DON_VI" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TON_DK_SL" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="TON_DK_GT_VND" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="TON_DK_GT_USD" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="TON_CK_SL" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="TON_CK_GT_VND" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="TON_CK_GT_USD" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="NHAP_SL" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="NHAP_GT_VND" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="XUAT_SL" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="XUAT_GT_USD" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="DG_XUAT" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="DG_NHAP" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="DON_VI1" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DON_VI2" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="NHAP_SL_DV1" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="NHAP_SL_DV2" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="XUAT_SL_DV1" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="XUAT_SL_DV2" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="TON_DK_SL_DV1" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="TON_DK_SL_DV2" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="TON_CK_SL_DV1" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="TON_CK_SL_DV2" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="DANH_DAU" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TRANG_THAI" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.KT_DMHH_Lo" Member="KT_DMHH_Los">
+    <Type Name="KT_DMHH_Lo">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="MA_TK" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="MA_DTPN" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="MA_DM" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="MA_LO" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="NGAY_LO" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="TEN_DTPN" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="TEN_DM" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="KY_HIEU" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="DON_VI" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TON_DK_SL" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="TON_DK_GT_VND" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="TON_DK_GT_USD" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="TON_CK_SL" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="TON_CK_GT_VND" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="TON_CK_GT_USD" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="NHAP_SL" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="NHAP_GT_VND" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="XUAT_SL" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="XUAT_GT_USD" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="HSD" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="NSX" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="NCC" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="THANH_TIEN" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="DG_XUAT" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="DG_NHAP" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="DON_VI1" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DON_VI2" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="NHAP_SL_DV1" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="NHAP_SL_DV2" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="XUAT_SL_DV1" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="XUAT_SL_DV2" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="TON_DK_SL_DV1" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="TON_DK_SL_DV2" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="TON_CK_SL_DV1" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="TON_CK_SL_DV2" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="DANH_DAU" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TRANG_THAI" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.KT_DMHoaDon" Member="KT_DMHoaDons">
+    <Type Name="KT_DMHoaDon">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="MATK" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="MADTPN" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TENDTPN" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="SO_HD" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="NGAY_HD" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="SR_HD" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="NGAY_DH" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="DANH_DAU" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TRANG_THAI" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.KT_DMKU" Member="KT_DMKUs">
+    <Type Name="KT_DMKU">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="SO_KU" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="SO_HD" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="MA_TK" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="MA_DTPN" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="TEN_DTPN" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="NOI_DUNG" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="GT_KU_VND" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="GT_KU_USD" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="NGAY_KU" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="NGAY_HD" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="NGAY_DH" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="HANMUC_VND" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="HANMUC_USD" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="LAI_SUAT_VAY" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="GT_HD_VND" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="GT_HD_USD" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="GHI_CHU" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="DANH_DAU" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TRANG_THAI" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.KT_DMLenhSX" Member="KT_DMLenhSXes">
+    <Type Name="KT_DMLenhSX">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="MA_LENH_SX" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="TEN_LENH" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="NGAY_LENH" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="ND_HD" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="MA_DTPN" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TEN_DTPN" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DANH_DAU" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TRANG_THAI" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.KT_DonMuaHang" Member="KT_DonMuaHangs">
+    <Type Name="KT_DonMuaHang">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="STT" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="LOAI_DH" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="SO_HD" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="NGAY_HD" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="NOI_DUNG_HOPDONG" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="MA_KH" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TEN_KH" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="DIA_CHI_KH" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="MST" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="MA_NLH_MUA" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TEN_NLH_MUA" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="DT_NLH_MUA" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="MA_NLH_BAN" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TEN_NLH_BAN" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="DT_NLH_BAN" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="NGAY_GH" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="MA_DM" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TEN_DM" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="DVT" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="SO_LUONG" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="DON_GIA" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="THANH_TIEN" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="TS_GTGT" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="TIEN_THUE" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="TONG_TIEN" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="TON_CK_SL" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="TON_CK_GT" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="DON_GIA_TON" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="GHI_CHU" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="DANH_DAU" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TRANG_THAI" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.KT_DTPN" Member="KT_DTPNs">
+    <Type Name="KT_DTPN">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="MA_DTPN" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TEN_DTPN" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="DIA_CHI" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="DIA_CHI_GH" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="MA_SO_THUE" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="LIEN_HE" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="DIEN_THOAI" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TK_NH" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="TEN_TKNH" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="MA_TT" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TEN_TT" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="MA_NHOM" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TEN_NHOM" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="FAX" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="CK_PT" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="NGUOI_DD" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="DANH_DAU" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TRANG_THAI" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.KT_GTCT" Member="KT_GTCTs">
+    <Type Name="KT_GTCT">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="THANG" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="MA_CT" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="MA_TP" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="TEN_CT" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="TEN_TP" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="SL_TP" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="DOANH_THU" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="DG_BAN" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="NGAY_HD" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="SO_HD" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="NOI_DUNG" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="GIA_TRI" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="GIA_TRI_NT" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="NGAY_KC" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="PSTK_621" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="PSTK_622" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="PSTK_623" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="PSTK_627" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="PSTK_TONG" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="PSNO_154" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="PSCO_154" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="TLPB" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Z1TP" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="ZTP" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="DANH_DAU" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TRANG_THAI" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.KT_GTCT_THANG" Member="KT_GTCT_THANGs">
+    <Type Name="KT_GTCT_THANG">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="THANG" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="MA_CT" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="TEN_CT" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="HOAN_THANH" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="NGAY_HD" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="SO_HD" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="NOI_DUNG" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="GIA_TRI" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="GIA_TRI_NT" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="SO_NGAY_LAM" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="NGAY_NT" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="NGAY_KC" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="CP_DK_621" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="CP_DK_622" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="CP_DK_623" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="CP_DK_627" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="DO_DANG_DK" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="LK_CPDK_621" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="LK_CPDK_622" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="LK_CPDK_623" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="LK_CPDK_627" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="LK_CPDK_TONG" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="DOANH_THU_DK" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="DOANH_THU_TK" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="DOANH_THU_LK" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="DOANH_THU_CK" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="THUE_VAT_DK" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="THUE_VAT_TK" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="THUE_VAT_CK" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="DS_HD_DK" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="DS_HD_TK" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="PSTK_621" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="PSTK_622" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="PSTK_623" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="PSTK_627" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="PSTK_TONG" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="PSLK_621" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="PSLK_622" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="PSLK_623" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="PSLK_627" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="TONG_CP" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="CP_CK_621" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="CP_CK_622" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="CP_CK_623" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="CP_CK_627" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="DO_DANG_CK" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="LAI_GOP" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="TY_LE_LAI" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="TY_LE_PB" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="GIA_VON_DK" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="GIA_VON_TK" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="GIA_VON_CK" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="GIA_VON_LK" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="TK_DO_DANG" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="TK_GIA_VON" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="PSNO_154" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="PSCO_154" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="PSCO_154_MTC" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="PSCO_154_NC" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="PSCO_154_NVL" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="PSCO_154_SXC" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="MA_NHOMCT" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TEN_NHOMCT" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="DANH_DAU" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TRANG_THAI" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.KT_LCTG" Member="KT_LCTGs">
+    <Type Name="KT_LCTG">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ID_LOAI" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TEN_CT" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="TK_THUE" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="CO_TK_DU_TK_THUE" Type="System.String" DbType="NVarChar(1)" CanBeNull="true" />
+      <Column Name="CO_THUE_GTGT" Type="System.String" DbType="NVarChar(1)" CanBeNull="true" />
+      <Column Name="CO_HANG_HOA" Type="System.String" DbType="NVarChar(1)" CanBeNull="true" />
+      <Column Name="SERI_HD" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="LOAI_TIEN" Type="System.String" DbType="NVarChar(5)" CanBeNull="true" />
+      <Column Name="SO_CT" Type="System.String" DbType="NVarChar(15)" CanBeNull="true" />
+      <Column Name="SO_HD" Type="System.String" DbType="NVarChar(15)" CanBeNull="true" />
+      <Column Name="CO_XUAT_KHO" Type="System.String" DbType="NVarChar(1)" CanBeNull="true" />
+      <Column Name="CO_NHIEU_HD" Type="System.String" DbType="NVarChar(1)" CanBeNull="true" />
+      <Column Name="TK_NO" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="TK_CO" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="TK_THUE_NK" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="CO_UN_CHI" Type="System.String" DbType="NVarChar(1)" CanBeNull="true" />
+      <Column Name="CO_XK_CUM" Type="System.String" DbType="NVarChar(1)" CanBeNull="true" />
+      <Column Name="NGUOI_GD" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="CO_VUNG_BAN" Type="System.String" DbType="NVarChar(1)" CanBeNull="true" />
+      <Column Name="CO_DON_TRONG" Type="System.String" DbType="NVarChar(1)" CanBeNull="true" />
+      <Column Name="CO_LO_NHAP" Type="System.String" DbType="NVarChar(1)" CanBeNull="true" />
+      <Column Name="FILE_MAU" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="NHIEU_LIEN" Type="System.String" DbType="NVarChar(1)" CanBeNull="true" />
+      <Column Name="CLTG" Type="System.String" DbType="NVarChar(1)" CanBeNull="true" />
+      <Column Name="HOI_IN" Type="System.String" DbType="NVarChar(1)" CanBeNull="true" />
+      <Column Name="DIEN_GIAI" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="SO_DONG_IN" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MA_TIEP_THI" Type="System.String" DbType="NVarChar(2)" CanBeNull="true" />
+      <Column Name="NHIEU_DV" Type="System.String" DbType="NVarChar(1)" CanBeNull="true" />
+      <Column Name="CO_DIEN_GIAI2" Type="System.String" DbType="NVarChar(1)" CanBeNull="true" />
+      <Column Name="CO_CK" Type="System.String" DbType="NVarChar(1)" CanBeNull="true" />
+      <Column Name="TK_CLTG_LAI" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="TK_CLTG_LO" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="CO_CHUYEN_KHO" Type="System.String" DbType="NVarChar(1)" CanBeNull="true" />
+      <Column Name="CO_TIEN_HANG" Type="System.String" DbType="NVarChar(1)" CanBeNull="true" />
+      <Column Name="CO_FORM_RIENG" Type="System.String" DbType="NVarChar(1)" CanBeNull="true" />
+      <Column Name="CO_CK_TRUOC" Type="System.String" DbType="NVarChar(1)" CanBeNull="true" />
+      <Column Name="CO_DV_PHU" Type="System.String" DbType="NVarChar(1)" CanBeNull="true" />
+      <Column Name="CO_QUY_CACH" Type="System.String" DbType="NVarChar(1)" CanBeNull="true" />
+      <Column Name="CO_PHE_LIEU" Type="System.String" DbType="NVarChar(1)" CanBeNull="true" />
+      <Column Name="CO_MS_KH" Type="System.String" DbType="NVarChar(1)" CanBeNull="true" />
+      <Column Name="LOAI_THUE" Type="System.String" DbType="NVarChar(2)" CanBeNull="true" />
+      <Column Name="MA_DTPN_NO" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="MA_DTPN_CO" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="CO_THUE_TTDB" Type="System.String" DbType="NVarChar(1)" CanBeNull="true" />
+      <Column Name="NHIEU_USER" Type="System.String" DbType="NVarChar(1)" CanBeNull="true" />
+      <Column Name="TRANG_THAI" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CO_TK_XUAT" Type="System.String" DbType="NVarChar(1)" CanBeNull="true" />
+      <Column Name="TK_XUAT" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="TK_GIA_VON" Type="System.String" DbType="NVarChar(60)" CanBeNull="true" />
+      <Column Name="NHOM_CT" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="TS_GTGT" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="KIEU_CONGTY" Type="System.String" DbType="NVarChar(40)" CanBeNull="true" />
+      <Column Name="CO_CK_TM" Type="System.String" DbType="NVarChar(2)" CanBeNull="true" />
+      <Column Name="CO_CK_TT" Type="System.String" DbType="NVarChar(2)" CanBeNull="true" />
+      <Column Name="CO_VANCHUYEN" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.KT_NHOMHH" Member="KT_NHOMHHs">
+    <Type Name="KT_NHOMHH">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="MA_NHOM" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TEN_NHOM" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DANH_DAU" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TRANG_THAI" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.KT_YTCP" Member="KT_YTCPs">
+    <Type Name="KT_YTCP">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="MA_YTCP" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="TEN_YTCP_V" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="TEN_YTCP_E" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="DUNO_VND" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="DUCO_VND" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="PSNO_VND" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="PSCO_VND" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="CKNO_VND" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="CKCO_VND" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="DUNO_USD" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="DUCO_USD" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="PSNO_USD" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="PSCO_USD" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="PSNO_LK_VND" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="PSCO_LK_VND" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="PSNO_LK_USD" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="PSCO_LK_USD" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="CKNO_USD" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="CKCO_USD" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="MA_NHOM1" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="MA_NHOM2" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TEN_NHOM1" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="TEN_NHOM2" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="DANH_DAU" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TRANG_THAI" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.KT_DMCPChoPB" Member="KT_DMCPChoPBs">
+    <Type Name="KT_DMCPChoPB">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="MA_TS" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="TEN_TS" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="CO_KH" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TK_TS" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TK_CP" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TK_HM" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DT_SUDUNG" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="NGUYEN_GIA" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="NGAY_MUA" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="NGAY_BAN" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="NGAY_TRICH_KH" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="THOI_GIAN_KH" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="KH_1_THANG" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="LK_KH_DAUNAM" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="GT_CL_DAUNAM" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="MA_DTPN_NO" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="MA_DTPN_CO" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="MA_CT" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="MA_YTCP_NO" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DVT" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="KY_HIEU" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="MA_NHOM" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="MA_NHOM1" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TEN_NHOM" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="TEN_NHOM1" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="MODEL" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="NAM_SX" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="NUOC_SX" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="NGUON_VON" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="QUY_CACH" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="SO_LUONG" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="TY_GIA" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="DANH_DAU" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TRANG_THAI" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.KT_NHANVIEN" Member="KT_NHANVIENs">
+    <Type Name="KT_NHANVIEN">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="STT" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MA_NV" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TEN_NV_VIET" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="TEN_NV_ANH" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="TEN_NV_HOA" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="MA_VACH" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="HSO_LUONG" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="NGAY_VAO" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="NGAY_RA" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="NGAY_CONG" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="TK_LUONG" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TK_CP_LUONG" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TK_KPCD" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TK_BHXH" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TK_BHYT" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TK_BHTN" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TK_TNCN" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="LUONG_CB" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="PC_CHUCVU" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="PC_TRACH_NHIEM" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="PC_AN" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="PC_THAM_NIEN" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="TONG_LUONG" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="BHXH_NLD" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="BHXH_CTY" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="BHYT_NLD" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="BHYT_CTY" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="BHTN_NLD" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="BHTN_CTY" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="KP_CD" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="LUONG_TN" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="NGAY_SINH" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="NOI_SINH" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="GIOI_TINH" Type="System.String" DbType="NVarChar(1)" CanBeNull="true" />
+      <Column Name="QUOC_GIA" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TINH_TP" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="QUAN_HUYEN" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="CMND" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="NGAY_CAP" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="NOI_CAP" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="QUE_QUAN" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="THUONG_TRU" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="TAM_TRU" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="DAN_TOC" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DIEN_THOAI1" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="DIEN_THOAI2" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="EMAIL" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TON_GIAO" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="QUOC_TICH" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="VAN_HOA" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="CHUYEN_NGANH" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="CHUC_VU" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="CHUC_DANH" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="CHUC_VU_DN" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="PHONG_BAN" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TEN_PHONG_BAN" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="THUOC_TO" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="NGAY_LUU" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="GHI_CHU" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="DANH_DAU" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TRANG_THAI" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.KT_CPChoPB" Member="KT_CPChoPBs">
+    <Type Name="KT_CPChoPB">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="THANG" Type="System.String" DbType="NVarChar(2) NOT NULL" CanBeNull="false" />
+      <Column Name="NAM" Type="System.String" DbType="NVarChar(4)" CanBeNull="true" />
+      <Column Name="MA_TS" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="TEN_TS" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="CO_KH" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TK_TS" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TK_CP" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TK_HM" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DT_SUDUNG" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="NGUYEN_GIA" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="NGAY_MUA" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="NGAY_BAN" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="NGAY_TRICH_KH" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="THOI_GIAN_KH" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="KH_1_THANG" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="KH_THANG_NAY" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="LK_KH_DAUNAM" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="GT_CL_DAUNAM" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="MA_DTPN_NO" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="MA_DTPN_CO" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="MA_CT" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="MA_YTCP_NO" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="MA_NHOM" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TEN_NHOM" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="TY_GIA" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="DANH_DAU" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TRANG_THAI" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.KT_CHAM_CONG" Member="KT_CHAM_CONGs">
+    <Type Name="KT_CHAM_CONG">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="STT" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="LOAI_BL" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="NAM" Type="System.String" DbType="NVarChar(4)" CanBeNull="true" />
+      <Column Name="THANG" Type="System.String" DbType="NVarChar(2)" CanBeNull="true" />
+      <Column Name="PHONG_BAN" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TEN_PHONG_BAN" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="MA_NV" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TEN_NV" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="TONG_NC" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="TONG_NN" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="HSO_LUONG" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="CHUC_VU" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="LUONG_CB" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="N01" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="N02" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="N03" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="N04" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="N05" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="N06" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="N07" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="N08" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="N09" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="N10" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="N11" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="N12" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="N13" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="N14" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="N15" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="N16" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="N17" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="N18" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="N19" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="N20" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="N21" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="N22" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="N23" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="N24" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="N25" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="N26" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="N27" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="N28" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="N29" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="N30" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="N31" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="DANH_DAU" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TRANG_THAI" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.KT_UNG_LUONG" Member="KT_UNG_LUONGs">
+    <Type Name="KT_UNG_LUONG">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="STT" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="LOAI_BL" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="NAM" Type="System.String" DbType="NVarChar(4)" CanBeNull="true" />
+      <Column Name="THANG" Type="System.String" DbType="NVarChar(2)" CanBeNull="true" />
+      <Column Name="TK_LUONG" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TK_TAMUNG" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="MA_NV" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TEN_NV" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="MA_VACH" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="PHONG_BAN" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TEN_PHONG_BAN" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="LUONG_CB" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="TAM_UNG" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="DANH_DAU" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TRANG_THAI" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.KT_DMBH" Member="KT_DMBHs">
+    <Type Name="KT_DMBH">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IMEI" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="MA_CN" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TINH_TRANG" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TK_HH" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="MA_DM" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TEN_DM" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="DVT" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="SO_HOADON" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="NGAY_BAN" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="NGAY_HET_BH" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="MA_KH" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TEN_KH" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="DIEN_THOAI" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DIA_CHI" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="MA_SO_THUE" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="NGAY_NHAP" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="NGAY_XUAT" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="NOIDUNG_BH" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="TON_DK" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="GHI_CHU" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="DANH_DAU" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TRANG_THAI" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.KT_BH" Member="KT_BHs">
+    <Type Name="KT_BH">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IMEI" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="MA_CN" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TINH_TRANG" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TK_HH" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="MA_DM" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TEN_DM" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="DVT" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="SO_HOADON" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="NGAY_BAN" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="NGAY_HET_BH" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="MA_KH" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TEN_KH" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="DIEN_THOAI" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DIA_CHI" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="MA_SO_THUE" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="NGAY_NHAP" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="NGAY_XUAT" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="NOIDUNG_BH" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="TON_DK" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="TON_CK" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="NHAP_TK" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="XUAT_TK" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="GHI_CHU" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="DANH_DAU" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TRANG_THAI" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.KT_CTLUONG" Member="KT_CTLUONGs">
+    <Type Name="KT_CTLUONG">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="STT" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NAM" Type="System.String" DbType="NVarChar(4)" CanBeNull="true" />
+      <Column Name="THANG" Type="System.String" DbType="NVarChar(2)" CanBeNull="true" />
+      <Column Name="TEN_BANG" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="CONG_THUC" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="DIEU_KIEN" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="GHI_CHU" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="DANH_DAU" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TRANG_THAI" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.KT_MA_CONG" Member="KT_MA_CONGs">
+    <Type Name="KT_MA_CONG">
+      <Column Name="MA_CONG" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TEN_BANG" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="SO_NGAY_CONG" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="DANH_DAU" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TRANG_THAI" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.KT_NGAY_LE" Member="KT_NGAY_LEs">
+    <Type Name="KT_NGAY_LE">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="STT" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NGAY" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="THANG" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="DANH_DAU" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TRANG_THAI" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.KT_MA_TT" Member="KT_MA_TTs">
+    <Type Name="KT_MA_TT">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="KY_HIEU" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DIEN_GIAI" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="GHI_CHU" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="DANH_DAU" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TRANG_THAI" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.KT_MA_HD" Member="KT_MA_HDs">
+    <Type Name="KT_MA_HD">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="KY_HIEU" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DIEN_GIAI" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="GHI_CHU" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="DANH_DAU" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TRANG_THAI" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.KT_BANG_LUONG" Member="KT_BANG_LUONGs">
+    <Type Name="KT_BANG_LUONG">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="STT" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="LOAI_BL" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="NAM" Type="System.String" DbType="NVarChar(4)" CanBeNull="true" />
+      <Column Name="THANG" Type="System.String" DbType="NVarChar(2)" CanBeNull="true" />
+      <Column Name="MA_NV" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TEN_NV_VIET" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="TEN_NV_ANH" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="TEN_NV_HOA" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="MA_VACH" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="HSO_LUONG" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="TK_LUONG" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TK_CP_LUONG" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TK_TAMUNG" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TK_KPCD" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TK_BHXH" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TK_BHYT" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TK_BHTN" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TK_TNCN" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="PHONG_BAN" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TEN_PHONG_BAN" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="LUONG_CB" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="NGAY_CONG" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="NGAY_NGHI" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="TAM_UNG" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="PC_CHUCVU" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="PC_TRACH_NHIEM" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="PC_AN" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="PC_THAM_NIEN" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="TONG_LUONG" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="BHXH_NLD" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="BHXH_CTY" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="BHYT_NLD" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="BHYT_CTY" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="BHTN_NLD" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="BHTN_CTY" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="KP_CD" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="LUONG_TN" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="NGAY_SINH" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="NOI_SINH" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="GIOI_TINH" Type="System.String" DbType="NVarChar(1)" CanBeNull="true" />
+      <Column Name="QUOC_GIA" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TINH_TP" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="QUAN_HUYEN" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="CMND" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="NGAY_CAP" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="NOI_CAP" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="QUE_QUAN" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="THUONG_TRU" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="TAM_TRU" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="DAN_TOC" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DIEN_THOAI1" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="DIEN_THOAI2" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="EMAIL" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TON_GIAO" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="QUOC_TICH" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="VAN_HOA" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="CHUYEN_NGANH" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="CHUC_VU" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="CHUC_DANH" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="CHUC_VU_DN" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="THUOC_TO" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="NGAY_LUU" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="GHI_CHU" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="DANH_DAU" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TRANG_THAI" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.KT_DMTSCD" Member="KT_DMTSCDs">
+    <Type Name="KT_DMTSCD">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="STT" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MA_TS" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="TEN_TS" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="CO_KH" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TK_TS" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TK_CP" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TK_HM" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DT_SUDUNG" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="NGUYEN_GIA" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="NGAY_MUA" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="NGAY_BAN" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="NGAY_TRICH_KH" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="THOI_GIAN_KH" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="KH_1_THANG" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="LK_KH_DAUNAM" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="GT_CL_DAUNAM" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="MA_DTPN_NO" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="MA_DTPN_CO" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="MA_CT" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="MA_YTCP_NO" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DVT" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="KY_HIEU" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="MA_NHOM" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="MA_NHOM1" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TEN_NHOM" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="TEN_NHOM1" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="MODEL" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="NAM_SX" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="NUOC_SX" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="NGUON_VON" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="QUY_CACH" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="SO_LUONG" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="TON_CK_SL" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="TON_DK_SL" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="TY_GIA" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="DANH_DAU" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TRANG_THAI" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.KT_TSCD" Member="KT_TSCDs">
+    <Type Name="KT_TSCD">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="STT" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="THANG" Type="System.String" DbType="NVarChar(2) NOT NULL" CanBeNull="false" />
+      <Column Name="NAM" Type="System.String" DbType="NVarChar(4)" CanBeNull="true" />
+      <Column Name="MA_TS" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="TEN_TS" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="CO_KH" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TK_TS" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TK_CP" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TK_HM" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DT_SUDUNG" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="NGUYEN_GIA" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="NGAY_MUA" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="NGAY_BAN" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="NGAY_TRICH_KH" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="THOI_GIAN_KH" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="KH_1_THANG" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="KH_THANG_NAY" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="LK_KH_DAUNAM" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="GT_CL_DAUNAM" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="MA_DTPN_NO" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="MA_DTPN_CO" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="MA_CT" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="MA_YTCP_NO" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DVT" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="KY_HIEU" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="MA_NHOM" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TEN_NHOM" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="TY_GIA" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="DANH_DAU" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TRANG_THAI" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.KB_CDKT" Member="KB_CDKTs">
+    <Type Name="KB_CDKT">
+      <Column Name="CHI_TIEU" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TEN_CT1" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="TEN_CT2" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="MA_SO" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TM" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TT_DK_USD" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="TT_CK_USD" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="TT_DK_VND" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="TT_CK_VND" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="TAI_KHOAN" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="SO_DU" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="KIEU_IN" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="CO_IN" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="NHOM_1" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="NHOM_2" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="NHOM_3" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="NHOM_4" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="NHOM_0" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DANH_DAU" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TRANG_THAI" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TT_NT_USD" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="TT_NT_VND" Type="System.Double" DbType="Float" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.KB_KQKD" Member="KB_KQKDs">
+    <Type Name="KB_KQKD">
+      <Column Name="CHI_TIEU" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TEN_CT1" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="TK_NO" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TK_CO" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TEN_CT2" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="MA_SO" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TT_KT_VND" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="TT_KN_VND" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="TT_KT_USD" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="TT_KN_USD" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="NHAN_VOI" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="CO_IN" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="THUYET_MINH" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="CONG_THUC" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="DANH_DAU" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TRANG_THAI" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TT_LK_VND" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="TT_LK_USD" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="TT_NT_VND" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="TT_NT_USD" Type="System.Double" DbType="Float" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.KB_LCTT_TT" Member="KB_LCTT_TTs">
+    <Type Name="KB_LCTT_TT">
+      <Column Name="SAP_XEP" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="CHI_TIEU" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TEN_CT1" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="SO_DU" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TK_NO" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TK_CO" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TEN_CT2" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="MA_SO" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TT_KT_VND" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="TT_KN_VND" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="TT_KT_USD" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="TT_KN_USD" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="NHAN_VOI" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="CO_IN" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="THUYET_MINH" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="DANH_DAU" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TRANG_THAI" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TT_LK_VND" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="TT_LK_USD" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="TT_NT_VND" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="TT_NT_USD" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="MA_YTCP_CO" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="MA_YTCP_NO" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.KB_LCTT_GT" Member="KB_LCTT_GTs">
+    <Type Name="KB_LCTT_GT">
+      <Column Name="SAP_XEP" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="CHI_TIEU" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TEN_CT1" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="SO_DU" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TK_NO" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="TK_CO" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="TEN_CT2" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="MA_SO" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="TT_KT_VND" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="TT_KN_VND" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="TT_KT_USD" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="TT_KN_USD" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="NHAN_VOI" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="CO_IN" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="THUYET_MINH" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="DANH_DAU" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TRANG_THAI" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CONG_THUC" Type="System.String" DbType="NVarChar(510)" CanBeNull="true" />
+      <Column Name="DK_CK" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="KIEU_LAY" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="MA_DTPN_CO" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="MA_DTPN_NO" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="MA_TK" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="MA_YTCP_CO" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="MA_YTCP_NO" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TEN_BANG" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="TT_LK_USD" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="TT_LK_VND" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.KB_TM" Member="KB_TMs">
+    <Type Name="KB_TM">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TEN" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="GIA_TRI" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="GHI_CHU" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="TRANG_THAI" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DANH_DAU" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.KB_KQKD_PT" Member="KB_KQKD_PTs">
+    <Type Name="KB_KQKD_PT">
+      <Column Name="CHI_TIEU" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TEN_CT1" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="TK_NO" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TK_CO" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TEN_CT2" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="MA_SO" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TT_KT_VND" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="TT_KN_VND" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="TT_KT_USD" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="TT_KN_USD" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="NHAN_VOI" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="CO_IN" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="THUYET_MINH" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="DANH_DAU" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TRANG_THAI" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.KT_TK" Member="KT_TKs">
+    <Type Name="KT_TK">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="MA_TK" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TEN_TK" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="MA_TK_EN" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TEN_TK_EN" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="LOAI_TIEN" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="VND_DU_NO" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="VND_DU_CO" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="VND_PS_NO" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="VND_PS_CO" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="VND_PS_NO_LK" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="VND_PS_CO_LK" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="VND_CK_NO" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="VND_CK_CO" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="USD_DU_NO" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="USD_DU_CO" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="USD_PS_NO" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="USD_PS_CO" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="USD_PS_NO_LK" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="USD_PS_CO_LK" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="USD_CK_NO" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="USD_CK_CO" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="EUR_DU_NO" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="EUR_DU_CO" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="EUR_PS_NO" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="EUR_PS_CO" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="EUR_PS_NO_LK" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="EUR_PS_CO_LK" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="EUR_CK_NO" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="EUR_CK_CO" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="MA_TK_KC" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DANH_DAU" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TRANG_THAI" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.KT_SoDu_TK" Member="KT_SoDu_TKs">
+    <Type Name="KT_SoDu_TK">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="NGAY_BD" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="NGAY_KT" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="MA_TK" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TEN_TK" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="MA_TK_EN" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TEN_TK_EN" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="LOAI_TIEN" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="VND_DU_NO" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="VND_DU_CO" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="VND_PS_NO" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="VND_PS_CO" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="VND_PS_NO_LK" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="VND_PS_CO_LK" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="VND_CK_NO" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="VND_CK_CO" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="USD_DU_NO" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="USD_DU_CO" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="USD_PS_NO" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="USD_PS_CO" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="USD_PS_NO_LK" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="USD_PS_CO_LK" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="USD_CK_NO" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="USD_CK_CO" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="EUR_DU_NO" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="EUR_DU_CO" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="EUR_PS_NO" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="EUR_PS_CO" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="EUR_PS_NO_LK" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="EUR_PS_CO_LK" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="EUR_CK_NO" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="EUR_CK_CO" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="MA_TK_KC" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DANH_DAU" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TRANG_THAI" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

@@ -1,0 +1,8 @@
+D:\ThanhPT\Win_App\phanmemketoan.app\Activate\obj\x86\Debug\Activate.frmActivate.resources
+D:\ThanhPT\Win_App\phanmemketoan.app\Activate\obj\x86\Debug\Activate.Properties.Resources.resources
+D:\ThanhPT\Win_App\phanmemketoan.app\Activate\obj\x86\Debug\Activate.csproj.GenerateResource.Cache
+D:\ThanhPT\Win_App\phanmemketoan.app\Activate\bin\Debug\Activate.exe
+D:\ThanhPT\Win_App\phanmemketoan.app\Activate\bin\Debug\Activate.pdb
+D:\ThanhPT\Win_App\phanmemketoan.app\Activate\obj\x86\Debug\Activate.exe
+D:\ThanhPT\Win_App\phanmemketoan.app\Activate\obj\x86\Debug\Activate.pdb
+D:\ThanhPT\Win_App\phanmemketoan.app\Activate\obj\x86\Debug\Activate.csprojResolveAssemblyReference.cache
