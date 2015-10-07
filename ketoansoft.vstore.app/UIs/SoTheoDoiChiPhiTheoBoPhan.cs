@@ -192,10 +192,6 @@ namespace ketoansoft.app
         }
         private void gridView1_InvalidRowException(object sender, DevExpress.XtraGrid.Views.Base.InvalidRowExceptionEventArgs e)
         {
-            // Sự kiện này để người ta không chuyển qua dòng khác được khi có lỗi xảy ra nè
-            // Nó nhận giá trị e.Valid của gridView1_ValidateRow để ứng xử
-            // neu e,Valid =True thì nó cho chuyển qua dòng khác hoặc làm tác vụ khác
-            // và ngược lại
              e.ExceptionMode = DevExpress.XtraEditors.Controls.ExceptionMode.NoAction;
         }
         private void gridView1_CellValueChanged(object sender, DevExpress.XtraGrid.Views.Base.CellValueChangedEventArgs e)

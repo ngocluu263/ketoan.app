@@ -102,6 +102,16 @@ namespace ketoansoft.app.Class.Data
                 throw new Exception(e.Message);
             }
         }
-
+        public virtual List<KT_CPChoPB> GetListByCT(string _maCT)
+        {
+            try
+            {
+                return this.db.KT_CPChoPBs.Where(u => u.MA_CT == _maCT).ToList();
+            }
+            catch
+            {
+                throw;
+            }
+        }
     }
 }
