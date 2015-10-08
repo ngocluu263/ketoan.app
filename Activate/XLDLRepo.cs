@@ -10,7 +10,7 @@ namespace Activate
 {
     public class XLDLRepo
     {
-        public static string StrCnn = "Data Source=ADMIN12;Initial Catalog=db_ketoan_admin;Persist Security Info=True;User ID=quanly;Password=1";
+        public static string StrCnn = "Data Source=.\\SQL2008R2;Initial Catalog=db_ketoan_admin;Persist Security Info=True;User ID=sa;Password=123";
         static SqlConnection Cnn;
         public static DataTable ReadData(string comm)
         {

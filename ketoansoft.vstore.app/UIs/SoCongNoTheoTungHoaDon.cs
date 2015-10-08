@@ -37,11 +37,6 @@ namespace ketoansoft.app
             {
                 _KTCNHoaDonRepo = new KTCNHoaDonRepo();
                 gridData.DataSource = _KTCNHoaDonRepo.GetAll();
-                //_db = new dbVstoreAppDataContext(Const.builder.ConnectionString);
-                //gridData.DataSource = null;
-                //gridData.DataSource = _db.KT_DMHHs;
-                //gridData.RefreshDataSource();
-                //gridView1.RefreshData();
             }
             catch (Exception) { }
         }
@@ -98,17 +93,13 @@ namespace ketoansoft.app
                         obj.TY_GIA_NO = Utils.CDblDef(gridView1.GetRowCellValue(pos, "TY_GIA_NO"), 0);
                         obj.TY_GIA_CO = Utils.CDblDef(gridView1.GetRowCellValue(pos, "TY_GIA_CO"), 0);
                         obj.DANH_DAU = Utils.CStrDef(gridView1.GetRowCellValue(pos, "DANH_DAU"), "");
-                        obj.TRANG_THAI = Utils.CIntDef(gridView1.GetRowCellValue(pos, "TRANG_THAI"), 0);                        
+                        obj.TRANG_THAI = Utils.CIntDef(gridView1.GetRowCellValue(pos, "TRANG_THAI"), 0);
 
                         _KTCNHoaDonRepo.Update(obj);
                         i++;
                     }
                 }
                 _listUpdate = new List<int>();
-                //if (i > 0 && msg)
-                //{
-                //    MessageBox.Show("Lưu thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                //}
             }
             catch (Exception ex)
             {
