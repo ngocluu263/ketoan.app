@@ -8,6 +8,7 @@ using System.Windows.Forms;
 using DevComponents.DotNetBar;
 using ketoansoft.app.Class.Global;
 using ketoansoft.app.UIs;
+using ketoansoft.app.Components.clsVproUtility;
 
 namespace ketoansoft.app
 {
@@ -34,6 +35,12 @@ namespace ketoansoft.app
                     e.Cancel = true;
                 }
             }
+        }
+        private void Load_InfoBottom()
+        {
+            lblBottom_Month.Text = Utils.CStrDef(fTerm._month, "") + "/" + Utils.CStrDef(fTerm._year, "");
+            lblBottomDatabase.Text = Unit.Get_DatabaseName();
+            lblBottom_Company.Text = Unit.Get_CompanyName();
         }
         #endregion
 
@@ -786,6 +793,11 @@ namespace ketoansoft.app
             return base.ProcessCmdKey(ref msg, keyData);
         }
         #endregion
+
+        private void fHome_Load(object sender, EventArgs e)
+        {
+            Load_InfoBottom();
+        }
 
 
 

@@ -221,7 +221,7 @@ namespace ketoansoft.app
         #region Event
         private void fLogin_Load(object sender, EventArgs e)
         {
-            if (!CheckActivate()) return;
+            //if (!CheckActivate()) return;
             if(!Const.ISCHANGEDATABASE)
                 ReadXML();
             Load_Server();
