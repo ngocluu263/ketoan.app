@@ -496,6 +496,16 @@ namespace ketoansoft.app
         }
         private void cboTKNo_SelectedIndexChanged(object sender, EventArgs e)
         {
+            //if (cboTKNo.SelectedIndex > -1 && tek > 2)
+            //{
+            //    _KTTKRepo = new KTTKRepo();
+            //    var item = _KTTKRepo.GetById(Utils.CIntDef(cboTKNo.SelectedValue, 0));
+            //    if (item != null)
+            //        txtTKNo.Text = item.TEN_TK;
+            //}
+        }
+        private void cboTKNo_Enter(object sender, EventArgs e)
+        {
             if (cboTKNo.SelectedIndex > -1 && tek > 2)
             {
                 _KTTKRepo = new KTTKRepo();
@@ -2063,6 +2073,8 @@ namespace ketoansoft.app
             txtTienUsd.SelectionStart = txtTienUsd.Text.Length;
         }
         #endregion
+
+
 
     }
 }

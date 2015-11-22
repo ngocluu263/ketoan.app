@@ -30,6 +30,86 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fHome));
             this.superTabControl1 = new DevComponents.DotNetBar.SuperTabControl();
+            this.superTabControlPanel3 = new DevComponents.DotNetBar.SuperTabControlPanel();
+            this.superTabControl8 = new DevComponents.DotNetBar.SuperTabControl();
+            this.superTabControlPanel34 = new DevComponents.DotNetBar.SuperTabControlPanel();
+            this.itemPanel18 = new DevComponents.DotNetBar.ItemPanel();
+            this.btnInCanDoiPhatSinhTaiKhoan = new DevComponents.DotNetBar.ButtonItem();
+            this.buttonItem2 = new DevComponents.DotNetBar.ButtonItem();
+            this.buttonItem11 = new DevComponents.DotNetBar.ButtonItem();
+            this.buttonItem16 = new DevComponents.DotNetBar.ButtonItem();
+            this.buttonItem18 = new DevComponents.DotNetBar.ButtonItem();
+            this.buttonItem31 = new DevComponents.DotNetBar.ButtonItem();
+            this.buttonItem32 = new DevComponents.DotNetBar.ButtonItem();
+            this.buttonItem33 = new DevComponents.DotNetBar.ButtonItem();
+            this.buttonItem50 = new DevComponents.DotNetBar.ButtonItem();
+            this.buttonItem51 = new DevComponents.DotNetBar.ButtonItem();
+            this.buttonItem52 = new DevComponents.DotNetBar.ButtonItem();
+            this.superTabItem34 = new DevComponents.DotNetBar.SuperTabItem();
+            this.superTabControlPanel35 = new DevComponents.DotNetBar.SuperTabControlPanel();
+            this.itemPanel19 = new DevComponents.DotNetBar.ItemPanel();
+            this.buttonItem34 = new DevComponents.DotNetBar.ButtonItem();
+            this.buttonItem35 = new DevComponents.DotNetBar.ButtonItem();
+            this.buttonItem36 = new DevComponents.DotNetBar.ButtonItem();
+            this.superTabItem35 = new DevComponents.DotNetBar.SuperTabItem();
+            this.superTabControlPanel36 = new DevComponents.DotNetBar.SuperTabControlPanel();
+            this.itemPanel20 = new DevComponents.DotNetBar.ItemPanel();
+            this.btnKhaiBaoCanDoiKeToan = new DevComponents.DotNetBar.ButtonItem();
+            this.btnKhaiBaoKetQuaKinhDoanh = new DevComponents.DotNetBar.ButtonItem();
+            this.btnKhaiBaoLuuChuyenTT = new DevComponents.DotNetBar.ButtonItem();
+            this.btnKhaiBaoLuuChuyenGT = new DevComponents.DotNetBar.ButtonItem();
+            this.btnKhaiBaoThuyetMinh = new DevComponents.DotNetBar.ButtonItem();
+            this.btnKhaiBaoKetQuaPT = new DevComponents.DotNetBar.ButtonItem();
+            this.buttonItem56 = new DevComponents.DotNetBar.ButtonItem();
+            this.buttonItem57 = new DevComponents.DotNetBar.ButtonItem();
+            this.superTabItem36 = new DevComponents.DotNetBar.SuperTabItem();
+            this.superTabItem3 = new DevComponents.DotNetBar.SuperTabItem();
+            this.superTabControlPanel2 = new DevComponents.DotNetBar.SuperTabControlPanel();
+            this.superTabControl3 = new DevComponents.DotNetBar.SuperTabControl();
+            this.superTabControlPanel21 = new DevComponents.DotNetBar.SuperTabControlPanel();
+            this.itemPanel5 = new DevComponents.DotNetBar.ItemPanel();
+            this.buttonItem14 = new DevComponents.DotNetBar.ButtonItem();
+            this.buttonItem15 = new DevComponents.DotNetBar.ButtonItem();
+            this.btnDoituongphapnhan = new DevComponents.DotNetBar.ButtonItem();
+            this.buttonItem17 = new DevComponents.DotNetBar.ButtonItem();
+            this.buttonItem22 = new DevComponents.DotNetBar.ButtonItem();
+            this.buttonItem23 = new DevComponents.DotNetBar.ButtonItem();
+            this.btnDMCauthanhSP = new DevComponents.DotNetBar.ButtonItem();
+            this.buttonItem25 = new DevComponents.DotNetBar.ButtonItem();
+            this.btnDMKheuoc = new DevComponents.DotNetBar.ButtonItem();
+            this.buttonItem27 = new DevComponents.DotNetBar.ButtonItem();
+            this.buttonItem28 = new DevComponents.DotNetBar.ButtonItem();
+            this.btnDMSoHD = new DevComponents.DotNetBar.ButtonItem();
+            this.superTabItem21 = new DevComponents.DotNetBar.SuperTabItem();
+            this.superTabControlPanel20 = new DevComponents.DotNetBar.SuperTabControlPanel();
+            this.itemPanel4 = new DevComponents.DotNetBar.ItemPanel();
+            this.btnHanghoachung = new DevComponents.DotNetBar.ButtonItem();
+            this.btnHanghoatheokho = new DevComponents.DotNetBar.ButtonItem();
+            this.btnHanghoatheolo = new DevComponents.DotNetBar.ButtonItem();
+            this.btnKhaibaodongiabantheonhomvung = new DevComponents.DotNetBar.ButtonItem();
+            this.btnKhaibaodongiabantheonhomdoituong = new DevComponents.DotNetBar.ButtonItem();
+            this.btnDanhmuclenhsanxuat = new DevComponents.DotNetBar.ButtonItem();
+            this.btnChitietlenhsanxuat = new DevComponents.DotNetBar.ButtonItem();
+            this.btnGiabantheohanghoavangayapdung = new DevComponents.DotNetBar.ButtonItem();
+            this.superTabItem20 = new DevComponents.DotNetBar.SuperTabItem();
+            this.superTabControlPanel22 = new DevComponents.DotNetBar.SuperTabControlPanel();
+            this.itemPanel6 = new DevComponents.DotNetBar.ItemPanel();
+            this.btnTheodoituong = new DevComponents.DotNetBar.ButtonItem();
+            this.btnTheocongtrinh = new DevComponents.DotNetBar.ButtonItem();
+            this.btnTheohoadon = new DevComponents.DotNetBar.ButtonItem();
+            this.btnTheohopdong = new DevComponents.DotNetBar.ButtonItem();
+            this.btnTheochungtuvanchuyen = new DevComponents.DotNetBar.ButtonItem();
+            this.btnTheohanghoa = new DevComponents.DotNetBar.ButtonItem();
+            this.btnTheocongtrinhvadotthanhtoan = new DevComponents.DotNetBar.ButtonItem();
+            this.btnTheokheuocvay = new DevComponents.DotNetBar.ButtonItem();
+            this.superTabItem22 = new DevComponents.DotNetBar.SuperTabItem();
+            this.superTabControlPanel23 = new DevComponents.DotNetBar.SuperTabControlPanel();
+            this.itemPanel7 = new DevComponents.DotNetBar.ItemPanel();
+            this.btnYeutochiphi = new DevComponents.DotNetBar.ButtonItem();
+            this.btnSotheodoichiphitheobophan = new DevComponents.DotNetBar.ButtonItem();
+            this.btnSotonghopchiphitheocongtrinh = new DevComponents.DotNetBar.ButtonItem();
+            this.superTabItem23 = new DevComponents.DotNetBar.SuperTabItem();
+            this.superTabItem2 = new DevComponents.DotNetBar.SuperTabItem();
             this.superTabControlPanel1 = new DevComponents.DotNetBar.SuperTabControlPanel();
             this.superTabControl2 = new DevComponents.DotNetBar.SuperTabControl();
             this.superTabControlPanel17 = new DevComponents.DotNetBar.SuperTabControlPanel();
@@ -125,86 +205,6 @@
             this.buttonItem19 = new DevComponents.DotNetBar.ButtonItem();
             this.superTabItem31 = new DevComponents.DotNetBar.SuperTabItem();
             this.superTabItem15 = new DevComponents.DotNetBar.SuperTabItem();
-            this.superTabControlPanel2 = new DevComponents.DotNetBar.SuperTabControlPanel();
-            this.superTabControl3 = new DevComponents.DotNetBar.SuperTabControl();
-            this.superTabControlPanel21 = new DevComponents.DotNetBar.SuperTabControlPanel();
-            this.itemPanel5 = new DevComponents.DotNetBar.ItemPanel();
-            this.buttonItem14 = new DevComponents.DotNetBar.ButtonItem();
-            this.buttonItem15 = new DevComponents.DotNetBar.ButtonItem();
-            this.btnDoituongphapnhan = new DevComponents.DotNetBar.ButtonItem();
-            this.buttonItem17 = new DevComponents.DotNetBar.ButtonItem();
-            this.buttonItem22 = new DevComponents.DotNetBar.ButtonItem();
-            this.buttonItem23 = new DevComponents.DotNetBar.ButtonItem();
-            this.btnDMCauthanhSP = new DevComponents.DotNetBar.ButtonItem();
-            this.buttonItem25 = new DevComponents.DotNetBar.ButtonItem();
-            this.btnDMKheuoc = new DevComponents.DotNetBar.ButtonItem();
-            this.buttonItem27 = new DevComponents.DotNetBar.ButtonItem();
-            this.buttonItem28 = new DevComponents.DotNetBar.ButtonItem();
-            this.btnDMSoHD = new DevComponents.DotNetBar.ButtonItem();
-            this.superTabItem21 = new DevComponents.DotNetBar.SuperTabItem();
-            this.superTabControlPanel20 = new DevComponents.DotNetBar.SuperTabControlPanel();
-            this.itemPanel4 = new DevComponents.DotNetBar.ItemPanel();
-            this.btnHanghoachung = new DevComponents.DotNetBar.ButtonItem();
-            this.btnHanghoatheokho = new DevComponents.DotNetBar.ButtonItem();
-            this.btnHanghoatheolo = new DevComponents.DotNetBar.ButtonItem();
-            this.btnKhaibaodongiabantheonhomvung = new DevComponents.DotNetBar.ButtonItem();
-            this.btnKhaibaodongiabantheonhomdoituong = new DevComponents.DotNetBar.ButtonItem();
-            this.btnDanhmuclenhsanxuat = new DevComponents.DotNetBar.ButtonItem();
-            this.btnChitietlenhsanxuat = new DevComponents.DotNetBar.ButtonItem();
-            this.btnGiabantheohanghoavangayapdung = new DevComponents.DotNetBar.ButtonItem();
-            this.superTabItem20 = new DevComponents.DotNetBar.SuperTabItem();
-            this.superTabControlPanel22 = new DevComponents.DotNetBar.SuperTabControlPanel();
-            this.itemPanel6 = new DevComponents.DotNetBar.ItemPanel();
-            this.btnTheodoituong = new DevComponents.DotNetBar.ButtonItem();
-            this.btnTheocongtrinh = new DevComponents.DotNetBar.ButtonItem();
-            this.btnTheohoadon = new DevComponents.DotNetBar.ButtonItem();
-            this.btnTheohopdong = new DevComponents.DotNetBar.ButtonItem();
-            this.btnTheochungtuvanchuyen = new DevComponents.DotNetBar.ButtonItem();
-            this.btnTheohanghoa = new DevComponents.DotNetBar.ButtonItem();
-            this.btnTheocongtrinhvadotthanhtoan = new DevComponents.DotNetBar.ButtonItem();
-            this.btnTheokheuocvay = new DevComponents.DotNetBar.ButtonItem();
-            this.superTabItem22 = new DevComponents.DotNetBar.SuperTabItem();
-            this.superTabControlPanel23 = new DevComponents.DotNetBar.SuperTabControlPanel();
-            this.itemPanel7 = new DevComponents.DotNetBar.ItemPanel();
-            this.btnYeutochiphi = new DevComponents.DotNetBar.ButtonItem();
-            this.btnSotheodoichiphitheobophan = new DevComponents.DotNetBar.ButtonItem();
-            this.btnSotonghopchiphitheocongtrinh = new DevComponents.DotNetBar.ButtonItem();
-            this.superTabItem23 = new DevComponents.DotNetBar.SuperTabItem();
-            this.superTabItem2 = new DevComponents.DotNetBar.SuperTabItem();
-            this.superTabControlPanel3 = new DevComponents.DotNetBar.SuperTabControlPanel();
-            this.superTabControl8 = new DevComponents.DotNetBar.SuperTabControl();
-            this.superTabControlPanel34 = new DevComponents.DotNetBar.SuperTabControlPanel();
-            this.itemPanel18 = new DevComponents.DotNetBar.ItemPanel();
-            this.buttonItem1 = new DevComponents.DotNetBar.ButtonItem();
-            this.buttonItem2 = new DevComponents.DotNetBar.ButtonItem();
-            this.buttonItem11 = new DevComponents.DotNetBar.ButtonItem();
-            this.buttonItem16 = new DevComponents.DotNetBar.ButtonItem();
-            this.buttonItem18 = new DevComponents.DotNetBar.ButtonItem();
-            this.buttonItem31 = new DevComponents.DotNetBar.ButtonItem();
-            this.buttonItem32 = new DevComponents.DotNetBar.ButtonItem();
-            this.buttonItem33 = new DevComponents.DotNetBar.ButtonItem();
-            this.buttonItem50 = new DevComponents.DotNetBar.ButtonItem();
-            this.buttonItem51 = new DevComponents.DotNetBar.ButtonItem();
-            this.buttonItem52 = new DevComponents.DotNetBar.ButtonItem();
-            this.superTabItem34 = new DevComponents.DotNetBar.SuperTabItem();
-            this.superTabControlPanel35 = new DevComponents.DotNetBar.SuperTabControlPanel();
-            this.itemPanel19 = new DevComponents.DotNetBar.ItemPanel();
-            this.buttonItem34 = new DevComponents.DotNetBar.ButtonItem();
-            this.buttonItem35 = new DevComponents.DotNetBar.ButtonItem();
-            this.buttonItem36 = new DevComponents.DotNetBar.ButtonItem();
-            this.superTabItem35 = new DevComponents.DotNetBar.SuperTabItem();
-            this.superTabControlPanel36 = new DevComponents.DotNetBar.SuperTabControlPanel();
-            this.itemPanel20 = new DevComponents.DotNetBar.ItemPanel();
-            this.btnKhaiBaoCanDoiKeToan = new DevComponents.DotNetBar.ButtonItem();
-            this.btnKhaiBaoKetQuaKinhDoanh = new DevComponents.DotNetBar.ButtonItem();
-            this.btnKhaiBaoLuuChuyenTT = new DevComponents.DotNetBar.ButtonItem();
-            this.btnKhaiBaoLuuChuyenGT = new DevComponents.DotNetBar.ButtonItem();
-            this.btnKhaiBaoThuyetMinh = new DevComponents.DotNetBar.ButtonItem();
-            this.btnKhaiBaoKetQuaPT = new DevComponents.DotNetBar.ButtonItem();
-            this.buttonItem56 = new DevComponents.DotNetBar.ButtonItem();
-            this.buttonItem57 = new DevComponents.DotNetBar.ButtonItem();
-            this.superTabItem36 = new DevComponents.DotNetBar.SuperTabItem();
-            this.superTabItem3 = new DevComponents.DotNetBar.SuperTabItem();
             this.superTabControlPanel8 = new DevComponents.DotNetBar.SuperTabControlPanel();
             this.superTabControl4 = new DevComponents.DotNetBar.SuperTabControl();
             this.superTabControlPanel25 = new DevComponents.DotNetBar.SuperTabControlPanel();
@@ -323,6 +323,19 @@
             this.buttonItem5 = new DevComponents.DotNetBar.ButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.superTabControl1)).BeginInit();
             this.superTabControl1.SuspendLayout();
+            this.superTabControlPanel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.superTabControl8)).BeginInit();
+            this.superTabControl8.SuspendLayout();
+            this.superTabControlPanel34.SuspendLayout();
+            this.superTabControlPanel35.SuspendLayout();
+            this.superTabControlPanel36.SuspendLayout();
+            this.superTabControlPanel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.superTabControl3)).BeginInit();
+            this.superTabControl3.SuspendLayout();
+            this.superTabControlPanel21.SuspendLayout();
+            this.superTabControlPanel20.SuspendLayout();
+            this.superTabControlPanel22.SuspendLayout();
+            this.superTabControlPanel23.SuspendLayout();
             this.superTabControlPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.superTabControl2)).BeginInit();
             this.superTabControl2.SuspendLayout();
@@ -342,19 +355,6 @@
             this.superTabControlPanel30.SuspendLayout();
             this.superTabControlPanel32.SuspendLayout();
             this.superTabControlPanel31.SuspendLayout();
-            this.superTabControlPanel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.superTabControl3)).BeginInit();
-            this.superTabControl3.SuspendLayout();
-            this.superTabControlPanel21.SuspendLayout();
-            this.superTabControlPanel20.SuspendLayout();
-            this.superTabControlPanel22.SuspendLayout();
-            this.superTabControlPanel23.SuspendLayout();
-            this.superTabControlPanel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.superTabControl8)).BeginInit();
-            this.superTabControl8.SuspendLayout();
-            this.superTabControlPanel34.SuspendLayout();
-            this.superTabControlPanel35.SuspendLayout();
-            this.superTabControlPanel36.SuspendLayout();
             this.superTabControlPanel8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.superTabControl4)).BeginInit();
             this.superTabControl4.SuspendLayout();
@@ -401,11 +401,11 @@
             this.superTabControl1.ControlBox.SubItems.AddRange(new DevComponents.DotNetBar.BaseItem[] {
             this.superTabControl1.ControlBox.MenuBox,
             this.superTabControl1.ControlBox.CloseBox});
+            this.superTabControl1.Controls.Add(this.superTabControlPanel3);
+            this.superTabControl1.Controls.Add(this.superTabControlPanel2);
             this.superTabControl1.Controls.Add(this.superTabControlPanel1);
             this.superTabControl1.Controls.Add(this.superTabControlPanel6);
             this.superTabControl1.Controls.Add(this.superTabControlPanel15);
-            this.superTabControl1.Controls.Add(this.superTabControlPanel2);
-            this.superTabControl1.Controls.Add(this.superTabControlPanel3);
             this.superTabControl1.Controls.Add(this.superTabControlPanel8);
             this.superTabControl1.Controls.Add(this.superTabControlPanel12);
             this.superTabControl1.Controls.Add(this.superTabControlPanel11);
@@ -449,13 +449,1094 @@
             this.superTabControl1.TabStyle = DevComponents.DotNetBar.eSuperTabStyle.WinMediaPlayer12;
             this.superTabControl1.Text = "superTabControl1";
             // 
+            // superTabControlPanel3
+            // 
+            this.superTabControlPanel3.Controls.Add(this.superTabControl8);
+            this.superTabControlPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.superTabControlPanel3.Location = new System.Drawing.Point(166, 0);
+            this.superTabControlPanel3.Name = "superTabControlPanel3";
+            this.superTabControlPanel3.Size = new System.Drawing.Size(690, 688);
+            this.superTabControlPanel3.TabIndex = 0;
+            this.superTabControlPanel3.TabItem = this.superTabItem3;
+            // 
+            // superTabControl8
+            // 
+            this.superTabControl8.BackColor = System.Drawing.Color.White;
+            // 
+            // 
+            // 
+            // 
+            // 
+            // 
+            this.superTabControl8.ControlBox.CloseBox.Name = "";
+            // 
+            // 
+            // 
+            this.superTabControl8.ControlBox.MenuBox.Name = "";
+            this.superTabControl8.ControlBox.Name = "";
+            this.superTabControl8.ControlBox.SubItems.AddRange(new DevComponents.DotNetBar.BaseItem[] {
+            this.superTabControl8.ControlBox.MenuBox,
+            this.superTabControl8.ControlBox.CloseBox});
+            this.superTabControl8.Controls.Add(this.superTabControlPanel34);
+            this.superTabControl8.Controls.Add(this.superTabControlPanel35);
+            this.superTabControl8.Controls.Add(this.superTabControlPanel36);
+            this.superTabControl8.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.superTabControl8.ForeColor = System.Drawing.Color.Black;
+            this.superTabControl8.Location = new System.Drawing.Point(0, 0);
+            this.superTabControl8.Name = "superTabControl8";
+            this.superTabControl8.ReorderTabsEnabled = true;
+            this.superTabControl8.SelectedTabFont = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold);
+            this.superTabControl8.SelectedTabIndex = 0;
+            this.superTabControl8.Size = new System.Drawing.Size(690, 688);
+            this.superTabControl8.TabFont = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.superTabControl8.TabIndex = 2;
+            this.superTabControl8.Tabs.AddRange(new DevComponents.DotNetBar.BaseItem[] {
+            this.superTabItem34,
+            this.superTabItem36,
+            this.superTabItem35});
+            this.superTabControl8.TabStyle = DevComponents.DotNetBar.eSuperTabStyle.WinMediaPlayer12;
+            this.superTabControl8.Text = "Báo cáo tài chính";
+            // 
+            // superTabControlPanel34
+            // 
+            this.superTabControlPanel34.Controls.Add(this.itemPanel18);
+            this.superTabControlPanel34.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.superTabControlPanel34.Location = new System.Drawing.Point(0, 29);
+            this.superTabControlPanel34.Name = "superTabControlPanel34";
+            this.superTabControlPanel34.Size = new System.Drawing.Size(690, 659);
+            this.superTabControlPanel34.TabIndex = 1;
+            this.superTabControlPanel34.TabItem = this.superTabItem34;
+            // 
+            // itemPanel18
+            // 
+            this.itemPanel18.BackColor = System.Drawing.Color.White;
+            // 
+            // 
+            // 
+            this.itemPanel18.BackgroundStyle.BackColor = System.Drawing.Color.White;
+            this.itemPanel18.BackgroundStyle.BorderBottom = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.itemPanel18.BackgroundStyle.BorderBottomWidth = 1;
+            this.itemPanel18.BackgroundStyle.BorderColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBorder;
+            this.itemPanel18.BackgroundStyle.BorderLeft = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.itemPanel18.BackgroundStyle.BorderLeftWidth = 1;
+            this.itemPanel18.BackgroundStyle.BorderRight = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.itemPanel18.BackgroundStyle.BorderRightWidth = 1;
+            this.itemPanel18.BackgroundStyle.BorderTop = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.itemPanel18.BackgroundStyle.BorderTopWidth = 1;
+            this.itemPanel18.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.itemPanel18.ContainerControlProcessDialogKey = true;
+            this.itemPanel18.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.itemPanel18.DragDropSupport = true;
+            this.itemPanel18.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.itemPanel18.ForeColor = System.Drawing.Color.Black;
+            this.itemPanel18.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
+            this.btnInCanDoiPhatSinhTaiKhoan,
+            this.buttonItem2,
+            this.buttonItem11,
+            this.buttonItem16,
+            this.buttonItem18,
+            this.buttonItem31,
+            this.buttonItem32,
+            this.buttonItem33,
+            this.buttonItem50,
+            this.buttonItem51,
+            this.buttonItem52});
+            this.itemPanel18.LayoutOrientation = DevComponents.DotNetBar.eOrientation.Vertical;
+            this.itemPanel18.Location = new System.Drawing.Point(0, 0);
+            this.itemPanel18.Name = "itemPanel18";
+            this.itemPanel18.Size = new System.Drawing.Size(690, 659);
+            this.itemPanel18.Style = DevComponents.DotNetBar.eDotNetBarStyle.OfficeMobile2014;
+            this.itemPanel18.TabIndex = 0;
+            this.itemPanel18.Text = "itemPanel18";
+            // 
+            // btnInCanDoiPhatSinhTaiKhoan
+            // 
+            this.btnInCanDoiPhatSinhTaiKhoan.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
+            this.btnInCanDoiPhatSinhTaiKhoan.Image = ((System.Drawing.Image)(resources.GetObject("btnInCanDoiPhatSinhTaiKhoan.Image")));
+            this.btnInCanDoiPhatSinhTaiKhoan.ImagePaddingHorizontal = 16;
+            this.btnInCanDoiPhatSinhTaiKhoan.ImagePaddingVertical = 10;
+            this.btnInCanDoiPhatSinhTaiKhoan.Name = "btnInCanDoiPhatSinhTaiKhoan";
+            this.btnInCanDoiPhatSinhTaiKhoan.PopupAnimation = DevComponents.DotNetBar.ePopupAnimation.Random;
+            this.btnInCanDoiPhatSinhTaiKhoan.Text = "01. Bảng cân đối phát sinh tài khoản";
+            // 
+            // buttonItem2
+            // 
+            this.buttonItem2.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
+            this.buttonItem2.Image = ((System.Drawing.Image)(resources.GetObject("buttonItem2.Image")));
+            this.buttonItem2.ImagePaddingHorizontal = 16;
+            this.buttonItem2.ImagePaddingVertical = 10;
+            this.buttonItem2.Name = "buttonItem2";
+            this.buttonItem2.PopupAnimation = DevComponents.DotNetBar.ePopupAnimation.Random;
+            this.buttonItem2.Text = "02. Bảng cân đối kế toán";
+            // 
+            // buttonItem11
+            // 
+            this.buttonItem11.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
+            this.buttonItem11.Image = ((System.Drawing.Image)(resources.GetObject("buttonItem11.Image")));
+            this.buttonItem11.ImagePaddingHorizontal = 16;
+            this.buttonItem11.ImagePaddingVertical = 10;
+            this.buttonItem11.Name = "buttonItem11";
+            this.buttonItem11.PopupAnimation = DevComponents.DotNetBar.ePopupAnimation.Random;
+            this.buttonItem11.Text = "03. Kết quả kinh doanh";
+            // 
+            // buttonItem16
+            // 
+            this.buttonItem16.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
+            this.buttonItem16.Image = ((System.Drawing.Image)(resources.GetObject("buttonItem16.Image")));
+            this.buttonItem16.ImagePaddingHorizontal = 16;
+            this.buttonItem16.ImagePaddingVertical = 10;
+            this.buttonItem16.Name = "buttonItem16";
+            this.buttonItem16.PopupAnimation = DevComponents.DotNetBar.ePopupAnimation.Random;
+            this.buttonItem16.Text = "04. Báo cáo lưu chuyển tiền tệ (TT)";
+            // 
+            // buttonItem18
+            // 
+            this.buttonItem18.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
+            this.buttonItem18.Image = ((System.Drawing.Image)(resources.GetObject("buttonItem18.Image")));
+            this.buttonItem18.ImagePaddingHorizontal = 16;
+            this.buttonItem18.ImagePaddingVertical = 10;
+            this.buttonItem18.Name = "buttonItem18";
+            this.buttonItem18.PopupAnimation = DevComponents.DotNetBar.ePopupAnimation.Random;
+            this.buttonItem18.Text = "05. Thuyết minh báo cáo tài chính";
+            // 
+            // buttonItem31
+            // 
+            this.buttonItem31.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
+            this.buttonItem31.Image = ((System.Drawing.Image)(resources.GetObject("buttonItem31.Image")));
+            this.buttonItem31.ImagePaddingHorizontal = 16;
+            this.buttonItem31.ImagePaddingVertical = 10;
+            this.buttonItem31.Name = "buttonItem31";
+            this.buttonItem31.PopupAnimation = DevComponents.DotNetBar.ePopupAnimation.Random;
+            this.buttonItem31.Text = "06. Phân tích báo cáo tài chính";
+            // 
+            // buttonItem32
+            // 
+            this.buttonItem32.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
+            this.buttonItem32.Image = ((System.Drawing.Image)(resources.GetObject("buttonItem32.Image")));
+            this.buttonItem32.ImagePaddingHorizontal = 16;
+            this.buttonItem32.ImagePaddingVertical = 10;
+            this.buttonItem32.Name = "buttonItem32";
+            this.buttonItem32.PopupAnimation = DevComponents.DotNetBar.ePopupAnimation.Random;
+            this.buttonItem32.Text = "07. Báo cáo lưu chuyển tiền tệ (GT)";
+            // 
+            // buttonItem33
+            // 
+            this.buttonItem33.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
+            this.buttonItem33.Image = ((System.Drawing.Image)(resources.GetObject("buttonItem33.Image")));
+            this.buttonItem33.ImagePaddingHorizontal = 16;
+            this.buttonItem33.ImagePaddingVertical = 10;
+            this.buttonItem33.Name = "buttonItem33";
+            this.buttonItem33.PopupAnimation = DevComponents.DotNetBar.ePopupAnimation.Random;
+            this.buttonItem33.Text = "08. Phân tích kết quả kinh doanh";
+            // 
+            // buttonItem50
+            // 
+            this.buttonItem50.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
+            this.buttonItem50.Image = ((System.Drawing.Image)(resources.GetObject("buttonItem50.Image")));
+            this.buttonItem50.ImagePaddingHorizontal = 16;
+            this.buttonItem50.ImagePaddingVertical = 10;
+            this.buttonItem50.Name = "buttonItem50";
+            this.buttonItem50.PopupAnimation = DevComponents.DotNetBar.ePopupAnimation.Random;
+            this.buttonItem50.Text = "09. Phân tích biến động các khoản mục so với doanh thu";
+            // 
+            // buttonItem51
+            // 
+            this.buttonItem51.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
+            this.buttonItem51.Image = ((System.Drawing.Image)(resources.GetObject("buttonItem51.Image")));
+            this.buttonItem51.ImagePaddingHorizontal = 16;
+            this.buttonItem51.ImagePaddingVertical = 10;
+            this.buttonItem51.Name = "buttonItem51";
+            this.buttonItem51.PopupAnimation = DevComponents.DotNetBar.ePopupAnimation.Random;
+            this.buttonItem51.Text = "10. Báo cáo - Chủ đầu tư";
+            // 
+            // buttonItem52
+            // 
+            this.buttonItem52.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
+            this.buttonItem52.Image = ((System.Drawing.Image)(resources.GetObject("buttonItem52.Image")));
+            this.buttonItem52.ImagePaddingHorizontal = 16;
+            this.buttonItem52.ImagePaddingVertical = 10;
+            this.buttonItem52.Name = "buttonItem52";
+            this.buttonItem52.PopupAnimation = DevComponents.DotNetBar.ePopupAnimation.Random;
+            this.buttonItem52.Text = "11. Cập nhật khai báo";
+            // 
+            // superTabItem34
+            // 
+            this.superTabItem34.AttachedControl = this.superTabControlPanel34;
+            this.superTabItem34.GlobalItem = false;
+            this.superTabItem34.Name = "superTabItem34";
+            this.superTabItem34.Text = "In báo cáo";
+            // 
+            // superTabControlPanel35
+            // 
+            this.superTabControlPanel35.Controls.Add(this.itemPanel19);
+            this.superTabControlPanel35.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.superTabControlPanel35.Location = new System.Drawing.Point(0, 25);
+            this.superTabControlPanel35.Name = "superTabControlPanel35";
+            this.superTabControlPanel35.Size = new System.Drawing.Size(714, 696);
+            this.superTabControlPanel35.TabIndex = 0;
+            this.superTabControlPanel35.TabItem = this.superTabItem35;
+            // 
+            // itemPanel19
+            // 
+            this.itemPanel19.BackColor = System.Drawing.Color.White;
+            // 
+            // 
+            // 
+            this.itemPanel19.BackgroundStyle.BackColor = System.Drawing.Color.White;
+            this.itemPanel19.BackgroundStyle.BorderBottom = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.itemPanel19.BackgroundStyle.BorderBottomWidth = 1;
+            this.itemPanel19.BackgroundStyle.BorderColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBorder;
+            this.itemPanel19.BackgroundStyle.BorderLeft = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.itemPanel19.BackgroundStyle.BorderLeftWidth = 1;
+            this.itemPanel19.BackgroundStyle.BorderRight = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.itemPanel19.BackgroundStyle.BorderRightWidth = 1;
+            this.itemPanel19.BackgroundStyle.BorderTop = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.itemPanel19.BackgroundStyle.BorderTopWidth = 1;
+            this.itemPanel19.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.itemPanel19.ContainerControlProcessDialogKey = true;
+            this.itemPanel19.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.itemPanel19.DragDropSupport = true;
+            this.itemPanel19.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.itemPanel19.ForeColor = System.Drawing.Color.Black;
+            this.itemPanel19.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
+            this.buttonItem34,
+            this.buttonItem35,
+            this.buttonItem36});
+            this.itemPanel19.LayoutOrientation = DevComponents.DotNetBar.eOrientation.Vertical;
+            this.itemPanel19.Location = new System.Drawing.Point(0, 0);
+            this.itemPanel19.Name = "itemPanel19";
+            this.itemPanel19.Size = new System.Drawing.Size(714, 696);
+            this.itemPanel19.Style = DevComponents.DotNetBar.eDotNetBarStyle.Office2013;
+            this.itemPanel19.TabIndex = 1;
+            this.itemPanel19.Text = "itemPanel19";
+            // 
+            // buttonItem34
+            // 
+            this.buttonItem34.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
+            this.buttonItem34.Image = ((System.Drawing.Image)(resources.GetObject("buttonItem34.Image")));
+            this.buttonItem34.ImagePaddingHorizontal = 16;
+            this.buttonItem34.ImagePaddingVertical = 10;
+            this.buttonItem34.Name = "buttonItem34";
+            this.buttonItem34.PopupAnimation = DevComponents.DotNetBar.ePopupAnimation.Random;
+            this.buttonItem34.Text = "01. Cân đối kế toán";
+            // 
+            // buttonItem35
+            // 
+            this.buttonItem35.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
+            this.buttonItem35.Image = ((System.Drawing.Image)(resources.GetObject("buttonItem35.Image")));
+            this.buttonItem35.ImagePaddingHorizontal = 16;
+            this.buttonItem35.ImagePaddingVertical = 10;
+            this.buttonItem35.Name = "buttonItem35";
+            this.buttonItem35.PopupAnimation = DevComponents.DotNetBar.ePopupAnimation.Random;
+            this.buttonItem35.Text = "02. Kết quả kinh doanh";
+            // 
+            // buttonItem36
+            // 
+            this.buttonItem36.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
+            this.buttonItem36.Image = ((System.Drawing.Image)(resources.GetObject("buttonItem36.Image")));
+            this.buttonItem36.ImagePaddingHorizontal = 16;
+            this.buttonItem36.ImagePaddingVertical = 10;
+            this.buttonItem36.Name = "buttonItem36";
+            this.buttonItem36.PopupAnimation = DevComponents.DotNetBar.ePopupAnimation.Random;
+            this.buttonItem36.Text = "03. Lưu chuyển tiền tệ";
+            // 
+            // superTabItem35
+            // 
+            this.superTabItem35.AttachedControl = this.superTabControlPanel35;
+            this.superTabItem35.GlobalItem = false;
+            this.superTabItem35.Name = "superTabItem35";
+            this.superTabItem35.Text = "Khai báo - QT";
+            // 
+            // superTabControlPanel36
+            // 
+            this.superTabControlPanel36.Controls.Add(this.itemPanel20);
+            this.superTabControlPanel36.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.superTabControlPanel36.Location = new System.Drawing.Point(0, 25);
+            this.superTabControlPanel36.Name = "superTabControlPanel36";
+            this.superTabControlPanel36.Size = new System.Drawing.Size(714, 696);
+            this.superTabControlPanel36.TabIndex = 0;
+            this.superTabControlPanel36.TabItem = this.superTabItem36;
+            // 
+            // itemPanel20
+            // 
+            this.itemPanel20.BackColor = System.Drawing.Color.White;
+            // 
+            // 
+            // 
+            this.itemPanel20.BackgroundStyle.BackColor = System.Drawing.Color.White;
+            this.itemPanel20.BackgroundStyle.BorderBottom = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.itemPanel20.BackgroundStyle.BorderBottomWidth = 1;
+            this.itemPanel20.BackgroundStyle.BorderColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBorder;
+            this.itemPanel20.BackgroundStyle.BorderLeft = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.itemPanel20.BackgroundStyle.BorderLeftWidth = 1;
+            this.itemPanel20.BackgroundStyle.BorderRight = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.itemPanel20.BackgroundStyle.BorderRightWidth = 1;
+            this.itemPanel20.BackgroundStyle.BorderTop = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.itemPanel20.BackgroundStyle.BorderTopWidth = 1;
+            this.itemPanel20.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.itemPanel20.ContainerControlProcessDialogKey = true;
+            this.itemPanel20.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.itemPanel20.DragDropSupport = true;
+            this.itemPanel20.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.itemPanel20.ForeColor = System.Drawing.Color.Black;
+            this.itemPanel20.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
+            this.btnKhaiBaoCanDoiKeToan,
+            this.btnKhaiBaoKetQuaKinhDoanh,
+            this.btnKhaiBaoLuuChuyenTT,
+            this.btnKhaiBaoLuuChuyenGT,
+            this.btnKhaiBaoThuyetMinh,
+            this.btnKhaiBaoKetQuaPT,
+            this.buttonItem56,
+            this.buttonItem57});
+            this.itemPanel20.LayoutOrientation = DevComponents.DotNetBar.eOrientation.Vertical;
+            this.itemPanel20.Location = new System.Drawing.Point(0, 0);
+            this.itemPanel20.Name = "itemPanel20";
+            this.itemPanel20.Size = new System.Drawing.Size(714, 696);
+            this.itemPanel20.Style = DevComponents.DotNetBar.eDotNetBarStyle.Office2013;
+            this.itemPanel20.TabIndex = 1;
+            this.itemPanel20.Text = "itemPanel20";
+            // 
+            // btnKhaiBaoCanDoiKeToan
+            // 
+            this.btnKhaiBaoCanDoiKeToan.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
+            this.btnKhaiBaoCanDoiKeToan.Image = ((System.Drawing.Image)(resources.GetObject("btnKhaiBaoCanDoiKeToan.Image")));
+            this.btnKhaiBaoCanDoiKeToan.ImagePaddingHorizontal = 16;
+            this.btnKhaiBaoCanDoiKeToan.ImagePaddingVertical = 10;
+            this.btnKhaiBaoCanDoiKeToan.Name = "btnKhaiBaoCanDoiKeToan";
+            this.btnKhaiBaoCanDoiKeToan.PopupAnimation = DevComponents.DotNetBar.ePopupAnimation.Random;
+            this.btnKhaiBaoCanDoiKeToan.Text = "01. Khai báo cho cân đối kế toán";
+            this.btnKhaiBaoCanDoiKeToan.DoubleClick += new System.EventHandler(this.btnKhaiBaoCanDoiKeToan_DoubleClick);
+            // 
+            // btnKhaiBaoKetQuaKinhDoanh
+            // 
+            this.btnKhaiBaoKetQuaKinhDoanh.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
+            this.btnKhaiBaoKetQuaKinhDoanh.Image = ((System.Drawing.Image)(resources.GetObject("btnKhaiBaoKetQuaKinhDoanh.Image")));
+            this.btnKhaiBaoKetQuaKinhDoanh.ImagePaddingHorizontal = 16;
+            this.btnKhaiBaoKetQuaKinhDoanh.ImagePaddingVertical = 10;
+            this.btnKhaiBaoKetQuaKinhDoanh.Name = "btnKhaiBaoKetQuaKinhDoanh";
+            this.btnKhaiBaoKetQuaKinhDoanh.PopupAnimation = DevComponents.DotNetBar.ePopupAnimation.Random;
+            this.btnKhaiBaoKetQuaKinhDoanh.Text = "02. Khai báo cho kết quả kinh doanh";
+            this.btnKhaiBaoKetQuaKinhDoanh.DoubleClick += new System.EventHandler(this.btnKhaiBaoKetQuaKinhDoanh_DoubleClick);
+            // 
+            // btnKhaiBaoLuuChuyenTT
+            // 
+            this.btnKhaiBaoLuuChuyenTT.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
+            this.btnKhaiBaoLuuChuyenTT.Image = ((System.Drawing.Image)(resources.GetObject("btnKhaiBaoLuuChuyenTT.Image")));
+            this.btnKhaiBaoLuuChuyenTT.ImagePaddingHorizontal = 16;
+            this.btnKhaiBaoLuuChuyenTT.ImagePaddingVertical = 10;
+            this.btnKhaiBaoLuuChuyenTT.Name = "btnKhaiBaoLuuChuyenTT";
+            this.btnKhaiBaoLuuChuyenTT.PopupAnimation = DevComponents.DotNetBar.ePopupAnimation.Random;
+            this.btnKhaiBaoLuuChuyenTT.Text = "03. Khai báo Lưu chuyển tiền tệ (TT)";
+            this.btnKhaiBaoLuuChuyenTT.DoubleClick += new System.EventHandler(this.btnKhaiBaoLuuChuyenTT_DoubleClick);
+            // 
+            // btnKhaiBaoLuuChuyenGT
+            // 
+            this.btnKhaiBaoLuuChuyenGT.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
+            this.btnKhaiBaoLuuChuyenGT.Image = ((System.Drawing.Image)(resources.GetObject("btnKhaiBaoLuuChuyenGT.Image")));
+            this.btnKhaiBaoLuuChuyenGT.ImagePaddingHorizontal = 16;
+            this.btnKhaiBaoLuuChuyenGT.ImagePaddingVertical = 10;
+            this.btnKhaiBaoLuuChuyenGT.Name = "btnKhaiBaoLuuChuyenGT";
+            this.btnKhaiBaoLuuChuyenGT.PopupAnimation = DevComponents.DotNetBar.ePopupAnimation.Random;
+            this.btnKhaiBaoLuuChuyenGT.Text = "04. Khai báo Lưu chuyển tiền tệ (GT)";
+            this.btnKhaiBaoLuuChuyenGT.DoubleClick += new System.EventHandler(this.btnKhaiBaoLuuChuyenGT_DoubleClick);
+            // 
+            // btnKhaiBaoThuyetMinh
+            // 
+            this.btnKhaiBaoThuyetMinh.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
+            this.btnKhaiBaoThuyetMinh.Image = ((System.Drawing.Image)(resources.GetObject("btnKhaiBaoThuyetMinh.Image")));
+            this.btnKhaiBaoThuyetMinh.ImagePaddingHorizontal = 16;
+            this.btnKhaiBaoThuyetMinh.ImagePaddingVertical = 10;
+            this.btnKhaiBaoThuyetMinh.Name = "btnKhaiBaoThuyetMinh";
+            this.btnKhaiBaoThuyetMinh.PopupAnimation = DevComponents.DotNetBar.ePopupAnimation.Random;
+            this.btnKhaiBaoThuyetMinh.Text = "05. Khai báo thuyết minh BCTC";
+            this.btnKhaiBaoThuyetMinh.DoubleClick += new System.EventHandler(this.btnKhaiBaoThuyetMinh_DoubleClick);
+            // 
+            // btnKhaiBaoKetQuaPT
+            // 
+            this.btnKhaiBaoKetQuaPT.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
+            this.btnKhaiBaoKetQuaPT.Image = ((System.Drawing.Image)(resources.GetObject("btnKhaiBaoKetQuaPT.Image")));
+            this.btnKhaiBaoKetQuaPT.ImagePaddingHorizontal = 16;
+            this.btnKhaiBaoKetQuaPT.ImagePaddingVertical = 10;
+            this.btnKhaiBaoKetQuaPT.Name = "btnKhaiBaoKetQuaPT";
+            this.btnKhaiBaoKetQuaPT.PopupAnimation = DevComponents.DotNetBar.ePopupAnimation.Random;
+            this.btnKhaiBaoKetQuaPT.Text = "06. Khai báo PT kết quả kinh doanh";
+            this.btnKhaiBaoKetQuaPT.DoubleClick += new System.EventHandler(this.btnKhaiBaoKetQuaPT_DoubleClick);
+            // 
+            // buttonItem56
+            // 
+            this.buttonItem56.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
+            this.buttonItem56.Image = ((System.Drawing.Image)(resources.GetObject("buttonItem56.Image")));
+            this.buttonItem56.ImagePaddingHorizontal = 16;
+            this.buttonItem56.ImagePaddingVertical = 10;
+            this.buttonItem56.Name = "buttonItem56";
+            this.buttonItem56.PopupAnimation = DevComponents.DotNetBar.ePopupAnimation.Random;
+            this.buttonItem56.Text = "07. Khai báo công thức cho thuyết minh BCTC";
+            // 
+            // buttonItem57
+            // 
+            this.buttonItem57.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
+            this.buttonItem57.Image = ((System.Drawing.Image)(resources.GetObject("buttonItem57.Image")));
+            this.buttonItem57.ImagePaddingHorizontal = 16;
+            this.buttonItem57.ImagePaddingVertical = 10;
+            this.buttonItem57.Name = "buttonItem57";
+            this.buttonItem57.PopupAnimation = DevComponents.DotNetBar.ePopupAnimation.Random;
+            this.buttonItem57.Text = "08. Khai báo kết quả kinh doanh mở rộng";
+            // 
+            // superTabItem36
+            // 
+            this.superTabItem36.AttachedControl = this.superTabControlPanel36;
+            this.superTabItem36.GlobalItem = false;
+            this.superTabItem36.Name = "superTabItem36";
+            this.superTabItem36.Text = "Khai báo";
+            // 
+            // superTabItem3
+            // 
+            this.superTabItem3.AttachedControl = this.superTabControlPanel3;
+            this.superTabItem3.GlobalItem = false;
+            this.superTabItem3.Image = ((System.Drawing.Image)(resources.GetObject("superTabItem3.Image")));
+            this.superTabItem3.Name = "superTabItem3";
+            this.superTabItem3.Text = "Báo cáo tài chính";
+            // 
+            // superTabControlPanel2
+            // 
+            this.superTabControlPanel2.Controls.Add(this.superTabControl3);
+            this.superTabControlPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.superTabControlPanel2.Location = new System.Drawing.Point(173, 0);
+            this.superTabControlPanel2.Name = "superTabControlPanel2";
+            this.superTabControlPanel2.Size = new System.Drawing.Size(683, 688);
+            this.superTabControlPanel2.TabIndex = 0;
+            this.superTabControlPanel2.TabItem = this.superTabItem2;
+            // 
+            // superTabControl3
+            // 
+            this.superTabControl3.BackColor = System.Drawing.Color.White;
+            // 
+            // 
+            // 
+            // 
+            // 
+            // 
+            this.superTabControl3.ControlBox.CloseBox.Name = "";
+            // 
+            // 
+            // 
+            this.superTabControl3.ControlBox.MenuBox.Name = "";
+            this.superTabControl3.ControlBox.Name = "";
+            this.superTabControl3.ControlBox.SubItems.AddRange(new DevComponents.DotNetBar.BaseItem[] {
+            this.superTabControl3.ControlBox.MenuBox,
+            this.superTabControl3.ControlBox.CloseBox});
+            this.superTabControl3.Controls.Add(this.superTabControlPanel21);
+            this.superTabControl3.Controls.Add(this.superTabControlPanel20);
+            this.superTabControl3.Controls.Add(this.superTabControlPanel22);
+            this.superTabControl3.Controls.Add(this.superTabControlPanel23);
+            this.superTabControl3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.superTabControl3.ForeColor = System.Drawing.Color.Black;
+            this.superTabControl3.Location = new System.Drawing.Point(0, 0);
+            this.superTabControl3.Name = "superTabControl3";
+            this.superTabControl3.ReorderTabsEnabled = true;
+            this.superTabControl3.SelectedTabFont = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold);
+            this.superTabControl3.SelectedTabIndex = 0;
+            this.superTabControl3.Size = new System.Drawing.Size(683, 688);
+            this.superTabControl3.TabFont = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.superTabControl3.TabIndex = 1;
+            this.superTabControl3.Tabs.AddRange(new DevComponents.DotNetBar.BaseItem[] {
+            this.superTabItem21,
+            this.superTabItem20,
+            this.superTabItem22,
+            this.superTabItem23});
+            this.superTabControl3.TabStyle = DevComponents.DotNetBar.eSuperTabStyle.WinMediaPlayer12;
+            this.superTabControl3.Text = "Quản lý đơn hàng";
+            // 
+            // superTabControlPanel21
+            // 
+            this.superTabControlPanel21.Controls.Add(this.itemPanel5);
+            this.superTabControlPanel21.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.superTabControlPanel21.Location = new System.Drawing.Point(0, 29);
+            this.superTabControlPanel21.Name = "superTabControlPanel21";
+            this.superTabControlPanel21.Size = new System.Drawing.Size(683, 659);
+            this.superTabControlPanel21.TabIndex = 1;
+            this.superTabControlPanel21.TabItem = this.superTabItem21;
+            // 
+            // itemPanel5
+            // 
+            this.itemPanel5.AutoScroll = true;
+            this.itemPanel5.BackColor = System.Drawing.Color.White;
+            // 
+            // 
+            // 
+            this.itemPanel5.BackgroundStyle.BackColor = System.Drawing.Color.White;
+            this.itemPanel5.BackgroundStyle.BorderBottom = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.itemPanel5.BackgroundStyle.BorderBottomWidth = 1;
+            this.itemPanel5.BackgroundStyle.BorderColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBorder;
+            this.itemPanel5.BackgroundStyle.BorderLeft = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.itemPanel5.BackgroundStyle.BorderLeftWidth = 1;
+            this.itemPanel5.BackgroundStyle.BorderRight = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.itemPanel5.BackgroundStyle.BorderRightWidth = 1;
+            this.itemPanel5.BackgroundStyle.BorderTop = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.itemPanel5.BackgroundStyle.BorderTopWidth = 1;
+            this.itemPanel5.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.itemPanel5.ContainerControlProcessDialogKey = true;
+            this.itemPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.itemPanel5.DragDropSupport = true;
+            this.itemPanel5.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.itemPanel5.ForeColor = System.Drawing.Color.Black;
+            this.itemPanel5.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
+            this.buttonItem14,
+            this.buttonItem15,
+            this.btnDoituongphapnhan,
+            this.buttonItem17,
+            this.buttonItem22,
+            this.buttonItem23,
+            this.btnDMCauthanhSP,
+            this.buttonItem25,
+            this.btnDMKheuoc,
+            this.buttonItem27,
+            this.buttonItem28,
+            this.btnDMSoHD});
+            this.itemPanel5.LayoutOrientation = DevComponents.DotNetBar.eOrientation.Vertical;
+            this.itemPanel5.Location = new System.Drawing.Point(0, 0);
+            this.itemPanel5.Name = "itemPanel5";
+            this.itemPanel5.Size = new System.Drawing.Size(683, 659);
+            this.itemPanel5.Style = DevComponents.DotNetBar.eDotNetBarStyle.Office2013;
+            this.itemPanel5.TabIndex = 0;
+            this.itemPanel5.Text = "itemPanel5";
+            // 
+            // buttonItem14
+            // 
+            this.buttonItem14.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
+            this.buttonItem14.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonItem14.Image = ((System.Drawing.Image)(resources.GetObject("buttonItem14.Image")));
+            this.buttonItem14.ImagePaddingHorizontal = 16;
+            this.buttonItem14.ImagePaddingVertical = 10;
+            this.buttonItem14.Name = "buttonItem14";
+            this.buttonItem14.PopupAnimation = DevComponents.DotNetBar.ePopupAnimation.Random;
+            this.buttonItem14.Text = "01. Hệ thống tài khoản";
+            this.buttonItem14.DoubleClick += new System.EventHandler(this.buttonItem14_DoubleClick);
+            // 
+            // buttonItem15
+            // 
+            this.buttonItem15.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
+            this.buttonItem15.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonItem15.Image = ((System.Drawing.Image)(resources.GetObject("buttonItem15.Image")));
+            this.buttonItem15.ImagePaddingHorizontal = 16;
+            this.buttonItem15.ImagePaddingVertical = 10;
+            this.buttonItem15.Name = "buttonItem15";
+            this.buttonItem15.PopupAnimation = DevComponents.DotNetBar.ePopupAnimation.Random;
+            this.buttonItem15.Text = "02. Các loại chứng từ";
+            this.buttonItem15.DoubleClick += new System.EventHandler(this.buttonItem15_DoubleClick);
+            // 
+            // btnDoituongphapnhan
+            // 
+            this.btnDoituongphapnhan.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
+            this.btnDoituongphapnhan.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnDoituongphapnhan.Image = ((System.Drawing.Image)(resources.GetObject("btnDoituongphapnhan.Image")));
+            this.btnDoituongphapnhan.ImagePaddingHorizontal = 16;
+            this.btnDoituongphapnhan.ImagePaddingVertical = 10;
+            this.btnDoituongphapnhan.Name = "btnDoituongphapnhan";
+            this.btnDoituongphapnhan.PopupAnimation = DevComponents.DotNetBar.ePopupAnimation.Random;
+            this.btnDoituongphapnhan.Text = "03. Đối tượng pháp nhân";
+            this.btnDoituongphapnhan.DoubleClick += new System.EventHandler(this.btnDoituongphapnhan_DoubleClick);
+            // 
+            // buttonItem17
+            // 
+            this.buttonItem17.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
+            this.buttonItem17.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonItem17.Image = ((System.Drawing.Image)(resources.GetObject("buttonItem17.Image")));
+            this.buttonItem17.ImagePaddingHorizontal = 16;
+            this.buttonItem17.ImagePaddingVertical = 10;
+            this.buttonItem17.Name = "buttonItem17";
+            this.buttonItem17.PopupAnimation = DevComponents.DotNetBar.ePopupAnimation.Random;
+            this.buttonItem17.Text = "04. Danh mục nhóm";
+            this.buttonItem17.DoubleClick += new System.EventHandler(this.btnDanhMucNhomHH_DoubleClick);
+            // 
+            // buttonItem22
+            // 
+            this.buttonItem22.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
+            this.buttonItem22.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonItem22.Image = ((System.Drawing.Image)(resources.GetObject("buttonItem22.Image")));
+            this.buttonItem22.ImagePaddingHorizontal = 16;
+            this.buttonItem22.ImagePaddingVertical = 10;
+            this.buttonItem22.Name = "buttonItem22";
+            this.buttonItem22.PopupAnimation = DevComponents.DotNetBar.ePopupAnimation.Random;
+            this.buttonItem22.Text = "05. Danh mục diễn giải";
+            this.buttonItem22.DoubleClick += new System.EventHandler(this.buttonItem22_DoubleClick);
+            // 
+            // buttonItem23
+            // 
+            this.buttonItem23.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
+            this.buttonItem23.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonItem23.Image = ((System.Drawing.Image)(resources.GetObject("buttonItem23.Image")));
+            this.buttonItem23.ImagePaddingHorizontal = 16;
+            this.buttonItem23.ImagePaddingVertical = 10;
+            this.buttonItem23.Name = "buttonItem23";
+            this.buttonItem23.PopupAnimation = DevComponents.DotNetBar.ePopupAnimation.Random;
+            this.buttonItem23.Text = "06. Danh mục các công trình";
+            this.buttonItem23.DoubleClick += new System.EventHandler(this.buttonItem23_DoubleClick);
+            // 
+            // btnDMCauthanhSP
+            // 
+            this.btnDMCauthanhSP.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
+            this.btnDMCauthanhSP.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnDMCauthanhSP.Image = ((System.Drawing.Image)(resources.GetObject("btnDMCauthanhSP.Image")));
+            this.btnDMCauthanhSP.ImagePaddingHorizontal = 16;
+            this.btnDMCauthanhSP.ImagePaddingVertical = 10;
+            this.btnDMCauthanhSP.Name = "btnDMCauthanhSP";
+            this.btnDMCauthanhSP.PopupAnimation = DevComponents.DotNetBar.ePopupAnimation.Random;
+            this.btnDMCauthanhSP.Text = "07. Danh mục cấu thành sản phẩm";
+            this.btnDMCauthanhSP.DoubleClick += new System.EventHandler(this.btnDMCauthanhSP_DoubleClick);
+            // 
+            // buttonItem25
+            // 
+            this.buttonItem25.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
+            this.buttonItem25.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonItem25.Image = ((System.Drawing.Image)(resources.GetObject("buttonItem25.Image")));
+            this.buttonItem25.ImagePaddingHorizontal = 16;
+            this.buttonItem25.ImagePaddingVertical = 10;
+            this.buttonItem25.Name = "buttonItem25";
+            this.buttonItem25.PopupAnimation = DevComponents.DotNetBar.ePopupAnimation.Random;
+            this.buttonItem25.Text = "08. Khai báo tên cấp HH, DT, CP";
+            // 
+            // btnDMKheuoc
+            // 
+            this.btnDMKheuoc.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
+            this.btnDMKheuoc.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnDMKheuoc.Image = ((System.Drawing.Image)(resources.GetObject("btnDMKheuoc.Image")));
+            this.btnDMKheuoc.ImagePaddingHorizontal = 16;
+            this.btnDMKheuoc.ImagePaddingVertical = 10;
+            this.btnDMKheuoc.Name = "btnDMKheuoc";
+            this.btnDMKheuoc.PopupAnimation = DevComponents.DotNetBar.ePopupAnimation.Random;
+            this.btnDMKheuoc.Text = "09. Danh mục khế ước";
+            this.btnDMKheuoc.DoubleClick += new System.EventHandler(this.btnDMKheuoc_DoubleClick);
+            // 
+            // buttonItem27
+            // 
+            this.buttonItem27.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
+            this.buttonItem27.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonItem27.Image = ((System.Drawing.Image)(resources.GetObject("buttonItem27.Image")));
+            this.buttonItem27.ImagePaddingHorizontal = 16;
+            this.buttonItem27.ImagePaddingVertical = 10;
+            this.buttonItem27.Name = "buttonItem27";
+            this.buttonItem27.PopupAnimation = DevComponents.DotNetBar.ePopupAnimation.Random;
+            this.buttonItem27.Text = "10. Danh mục báo cáo theo F8->D";
+            // 
+            // buttonItem28
+            // 
+            this.buttonItem28.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
+            this.buttonItem28.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonItem28.Image = ((System.Drawing.Image)(resources.GetObject("buttonItem28.Image")));
+            this.buttonItem28.ImagePaddingHorizontal = 16;
+            this.buttonItem28.ImagePaddingVertical = 10;
+            this.buttonItem28.Name = "buttonItem28";
+            this.buttonItem28.PopupAnimation = DevComponents.DotNetBar.ePopupAnimation.Random;
+            this.buttonItem28.Text = "11. Danh mục đối tượng giá thành";
+            // 
+            // btnDMSoHD
+            // 
+            this.btnDMSoHD.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
+            this.btnDMSoHD.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnDMSoHD.Image = ((System.Drawing.Image)(resources.GetObject("btnDMSoHD.Image")));
+            this.btnDMSoHD.ImagePaddingHorizontal = 16;
+            this.btnDMSoHD.ImagePaddingVertical = 10;
+            this.btnDMSoHD.Name = "btnDMSoHD";
+            this.btnDMSoHD.PopupAnimation = DevComponents.DotNetBar.ePopupAnimation.Random;
+            this.btnDMSoHD.Text = "12. Danh mục số hóa đơn";
+            this.btnDMSoHD.DoubleClick += new System.EventHandler(this.btnDMSoHD_DoubleClick);
+            // 
+            // superTabItem21
+            // 
+            this.superTabItem21.AttachedControl = this.superTabControlPanel21;
+            this.superTabItem21.GlobalItem = false;
+            this.superTabItem21.Name = "superTabItem21";
+            this.superTabItem21.Text = "Danh mục chung";
+            // 
+            // superTabControlPanel20
+            // 
+            this.superTabControlPanel20.Controls.Add(this.itemPanel4);
+            this.superTabControlPanel20.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.superTabControlPanel20.Location = new System.Drawing.Point(0, 25);
+            this.superTabControlPanel20.Name = "superTabControlPanel20";
+            this.superTabControlPanel20.Size = new System.Drawing.Size(709, 696);
+            this.superTabControlPanel20.TabIndex = 0;
+            this.superTabControlPanel20.TabItem = this.superTabItem20;
+            // 
+            // itemPanel4
+            // 
+            this.itemPanel4.AutoScroll = true;
+            this.itemPanel4.BackColor = System.Drawing.Color.White;
+            // 
+            // 
+            // 
+            this.itemPanel4.BackgroundStyle.BackColor = System.Drawing.Color.White;
+            this.itemPanel4.BackgroundStyle.BorderBottom = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.itemPanel4.BackgroundStyle.BorderBottomWidth = 1;
+            this.itemPanel4.BackgroundStyle.BorderColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBorder;
+            this.itemPanel4.BackgroundStyle.BorderLeft = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.itemPanel4.BackgroundStyle.BorderLeftWidth = 1;
+            this.itemPanel4.BackgroundStyle.BorderRight = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.itemPanel4.BackgroundStyle.BorderRightWidth = 1;
+            this.itemPanel4.BackgroundStyle.BorderTop = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.itemPanel4.BackgroundStyle.BorderTopWidth = 1;
+            this.itemPanel4.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.itemPanel4.ContainerControlProcessDialogKey = true;
+            this.itemPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.itemPanel4.DragDropSupport = true;
+            this.itemPanel4.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.itemPanel4.ForeColor = System.Drawing.Color.Black;
+            this.itemPanel4.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
+            this.btnHanghoachung,
+            this.btnHanghoatheokho,
+            this.btnHanghoatheolo,
+            this.btnKhaibaodongiabantheonhomvung,
+            this.btnKhaibaodongiabantheonhomdoituong,
+            this.btnDanhmuclenhsanxuat,
+            this.btnChitietlenhsanxuat,
+            this.btnGiabantheohanghoavangayapdung});
+            this.itemPanel4.LayoutOrientation = DevComponents.DotNetBar.eOrientation.Vertical;
+            this.itemPanel4.Location = new System.Drawing.Point(0, 0);
+            this.itemPanel4.Name = "itemPanel4";
+            this.itemPanel4.Size = new System.Drawing.Size(709, 696);
+            this.itemPanel4.Style = DevComponents.DotNetBar.eDotNetBarStyle.Office2013;
+            this.itemPanel4.TabIndex = 1;
+            this.itemPanel4.Text = "itemPanel4";
+            // 
+            // btnHanghoachung
+            // 
+            this.btnHanghoachung.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
+            this.btnHanghoachung.Image = ((System.Drawing.Image)(resources.GetObject("btnHanghoachung.Image")));
+            this.btnHanghoachung.ImagePaddingHorizontal = 16;
+            this.btnHanghoachung.ImagePaddingVertical = 10;
+            this.btnHanghoachung.Name = "btnHanghoachung";
+            this.btnHanghoachung.PopupAnimation = DevComponents.DotNetBar.ePopupAnimation.Random;
+            this.btnHanghoachung.Text = "01. Hàng hóa chung";
+            this.btnHanghoachung.DoubleClick += new System.EventHandler(this.btnHanghoachung_DoubleClick);
+            // 
+            // btnHanghoatheokho
+            // 
+            this.btnHanghoatheokho.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
+            this.btnHanghoatheokho.Image = ((System.Drawing.Image)(resources.GetObject("btnHanghoatheokho.Image")));
+            this.btnHanghoatheokho.ImagePaddingHorizontal = 16;
+            this.btnHanghoatheokho.ImagePaddingVertical = 10;
+            this.btnHanghoatheokho.Name = "btnHanghoatheokho";
+            this.btnHanghoatheokho.PopupAnimation = DevComponents.DotNetBar.ePopupAnimation.Random;
+            this.btnHanghoatheokho.Text = "02. Hàng hóa theo kho";
+            this.btnHanghoatheokho.DoubleClick += new System.EventHandler(this.btnHanghoatheokho_DoubleClick);
+            // 
+            // btnHanghoatheolo
+            // 
+            this.btnHanghoatheolo.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
+            this.btnHanghoatheolo.Image = ((System.Drawing.Image)(resources.GetObject("btnHanghoatheolo.Image")));
+            this.btnHanghoatheolo.ImagePaddingHorizontal = 16;
+            this.btnHanghoatheolo.ImagePaddingVertical = 10;
+            this.btnHanghoatheolo.Name = "btnHanghoatheolo";
+            this.btnHanghoatheolo.PopupAnimation = DevComponents.DotNetBar.ePopupAnimation.Random;
+            this.btnHanghoatheolo.Text = "03. Hàng hóa theo lô";
+            this.btnHanghoatheolo.DoubleClick += new System.EventHandler(this.btnHanghoatheolo_DoubleClick);
+            // 
+            // btnKhaibaodongiabantheonhomvung
+            // 
+            this.btnKhaibaodongiabantheonhomvung.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
+            this.btnKhaibaodongiabantheonhomvung.Image = ((System.Drawing.Image)(resources.GetObject("btnKhaibaodongiabantheonhomvung.Image")));
+            this.btnKhaibaodongiabantheonhomvung.ImagePaddingHorizontal = 16;
+            this.btnKhaibaodongiabantheonhomvung.ImagePaddingVertical = 10;
+            this.btnKhaibaodongiabantheonhomvung.Name = "btnKhaibaodongiabantheonhomvung";
+            this.btnKhaibaodongiabantheonhomvung.PopupAnimation = DevComponents.DotNetBar.ePopupAnimation.Random;
+            this.btnKhaibaodongiabantheonhomvung.Text = "04. Khai báo đơn giá bán theo nhóm vùng";
+            this.btnKhaibaodongiabantheonhomvung.DoubleClick += new System.EventHandler(this.btnKhaibaodongiabantheonhomvung_DoubleClick);
+            // 
+            // btnKhaibaodongiabantheonhomdoituong
+            // 
+            this.btnKhaibaodongiabantheonhomdoituong.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
+            this.btnKhaibaodongiabantheonhomdoituong.Image = ((System.Drawing.Image)(resources.GetObject("btnKhaibaodongiabantheonhomdoituong.Image")));
+            this.btnKhaibaodongiabantheonhomdoituong.ImagePaddingHorizontal = 16;
+            this.btnKhaibaodongiabantheonhomdoituong.ImagePaddingVertical = 10;
+            this.btnKhaibaodongiabantheonhomdoituong.Name = "btnKhaibaodongiabantheonhomdoituong";
+            this.btnKhaibaodongiabantheonhomdoituong.PopupAnimation = DevComponents.DotNetBar.ePopupAnimation.Random;
+            this.btnKhaibaodongiabantheonhomdoituong.Text = "05. Khai báo đơn giá bán theo nhóm đối tượng";
+            this.btnKhaibaodongiabantheonhomdoituong.DoubleClick += new System.EventHandler(this.btnKhaibaodongiabantheonhomdoituong_DoubleClick);
+            // 
+            // btnDanhmuclenhsanxuat
+            // 
+            this.btnDanhmuclenhsanxuat.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
+            this.btnDanhmuclenhsanxuat.Image = ((System.Drawing.Image)(resources.GetObject("btnDanhmuclenhsanxuat.Image")));
+            this.btnDanhmuclenhsanxuat.ImagePaddingHorizontal = 16;
+            this.btnDanhmuclenhsanxuat.ImagePaddingVertical = 10;
+            this.btnDanhmuclenhsanxuat.Name = "btnDanhmuclenhsanxuat";
+            this.btnDanhmuclenhsanxuat.PopupAnimation = DevComponents.DotNetBar.ePopupAnimation.Random;
+            this.btnDanhmuclenhsanxuat.Text = "06. Danh mục lệnh sản xuất";
+            this.btnDanhmuclenhsanxuat.DoubleClick += new System.EventHandler(this.btnDanhmuclenhsanxuat_DoubleClick);
+            // 
+            // btnChitietlenhsanxuat
+            // 
+            this.btnChitietlenhsanxuat.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
+            this.btnChitietlenhsanxuat.Image = ((System.Drawing.Image)(resources.GetObject("btnChitietlenhsanxuat.Image")));
+            this.btnChitietlenhsanxuat.ImagePaddingHorizontal = 16;
+            this.btnChitietlenhsanxuat.ImagePaddingVertical = 10;
+            this.btnChitietlenhsanxuat.Name = "btnChitietlenhsanxuat";
+            this.btnChitietlenhsanxuat.PopupAnimation = DevComponents.DotNetBar.ePopupAnimation.Random;
+            this.btnChitietlenhsanxuat.Text = "07. Chi tiết lệnh sản xuất";
+            this.btnChitietlenhsanxuat.DoubleClick += new System.EventHandler(this.btnChitietlenhsanxuat_DoubleClick);
+            // 
+            // btnGiabantheohanghoavangayapdung
+            // 
+            this.btnGiabantheohanghoavangayapdung.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
+            this.btnGiabantheohanghoavangayapdung.Image = ((System.Drawing.Image)(resources.GetObject("btnGiabantheohanghoavangayapdung.Image")));
+            this.btnGiabantheohanghoavangayapdung.ImagePaddingHorizontal = 16;
+            this.btnGiabantheohanghoavangayapdung.ImagePaddingVertical = 10;
+            this.btnGiabantheohanghoavangayapdung.Name = "btnGiabantheohanghoavangayapdung";
+            this.btnGiabantheohanghoavangayapdung.PopupAnimation = DevComponents.DotNetBar.ePopupAnimation.Random;
+            this.btnGiabantheohanghoavangayapdung.Text = "08. Giá bán theo hàng hóa và ngày áp dụng";
+            this.btnGiabantheohanghoavangayapdung.DoubleClick += new System.EventHandler(this.btnGiabantheohanghoavangayapdung_DoubleClick);
+            // 
+            // superTabItem20
+            // 
+            this.superTabItem20.AttachedControl = this.superTabControlPanel20;
+            this.superTabItem20.GlobalItem = false;
+            this.superTabItem20.Name = "superTabItem20";
+            this.superTabItem20.Text = "Hàng hóa";
+            // 
+            // superTabControlPanel22
+            // 
+            this.superTabControlPanel22.Controls.Add(this.itemPanel6);
+            this.superTabControlPanel22.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.superTabControlPanel22.Location = new System.Drawing.Point(0, 25);
+            this.superTabControlPanel22.Name = "superTabControlPanel22";
+            this.superTabControlPanel22.Size = new System.Drawing.Size(709, 696);
+            this.superTabControlPanel22.TabIndex = 0;
+            this.superTabControlPanel22.TabItem = this.superTabItem22;
+            // 
+            // itemPanel6
+            // 
+            this.itemPanel6.BackColor = System.Drawing.Color.White;
+            // 
+            // 
+            // 
+            this.itemPanel6.BackgroundStyle.BackColor = System.Drawing.Color.White;
+            this.itemPanel6.BackgroundStyle.BorderBottom = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.itemPanel6.BackgroundStyle.BorderBottomWidth = 1;
+            this.itemPanel6.BackgroundStyle.BorderColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBorder;
+            this.itemPanel6.BackgroundStyle.BorderLeft = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.itemPanel6.BackgroundStyle.BorderLeftWidth = 1;
+            this.itemPanel6.BackgroundStyle.BorderRight = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.itemPanel6.BackgroundStyle.BorderRightWidth = 1;
+            this.itemPanel6.BackgroundStyle.BorderTop = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.itemPanel6.BackgroundStyle.BorderTopWidth = 1;
+            this.itemPanel6.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.itemPanel6.ContainerControlProcessDialogKey = true;
+            this.itemPanel6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.itemPanel6.DragDropSupport = true;
+            this.itemPanel6.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.itemPanel6.ForeColor = System.Drawing.Color.Black;
+            this.itemPanel6.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
+            this.btnTheodoituong,
+            this.btnTheocongtrinh,
+            this.btnTheohoadon,
+            this.btnTheohopdong,
+            this.btnTheochungtuvanchuyen,
+            this.btnTheohanghoa,
+            this.btnTheocongtrinhvadotthanhtoan,
+            this.btnTheokheuocvay});
+            this.itemPanel6.LayoutOrientation = DevComponents.DotNetBar.eOrientation.Vertical;
+            this.itemPanel6.Location = new System.Drawing.Point(0, 0);
+            this.itemPanel6.Name = "itemPanel6";
+            this.itemPanel6.Size = new System.Drawing.Size(709, 696);
+            this.itemPanel6.Style = DevComponents.DotNetBar.eDotNetBarStyle.Office2013;
+            this.itemPanel6.TabIndex = 1;
+            this.itemPanel6.Text = "itemPanel6";
+            // 
+            // btnTheodoituong
+            // 
+            this.btnTheodoituong.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
+            this.btnTheodoituong.Image = ((System.Drawing.Image)(resources.GetObject("btnTheodoituong.Image")));
+            this.btnTheodoituong.ImagePaddingHorizontal = 16;
+            this.btnTheodoituong.ImagePaddingVertical = 10;
+            this.btnTheodoituong.Name = "btnTheodoituong";
+            this.btnTheodoituong.PopupAnimation = DevComponents.DotNetBar.ePopupAnimation.Random;
+            this.btnTheodoituong.Text = "01. Theo đối tượng";
+            this.btnTheodoituong.DoubleClick += new System.EventHandler(this.btnTheodoituong_DoubleClick);
+            // 
+            // btnTheocongtrinh
+            // 
+            this.btnTheocongtrinh.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
+            this.btnTheocongtrinh.Image = ((System.Drawing.Image)(resources.GetObject("btnTheocongtrinh.Image")));
+            this.btnTheocongtrinh.ImagePaddingHorizontal = 16;
+            this.btnTheocongtrinh.ImagePaddingVertical = 10;
+            this.btnTheocongtrinh.Name = "btnTheocongtrinh";
+            this.btnTheocongtrinh.PopupAnimation = DevComponents.DotNetBar.ePopupAnimation.Random;
+            this.btnTheocongtrinh.Text = "02. Theo công trình";
+            this.btnTheocongtrinh.DoubleClick += new System.EventHandler(this.btnTheocongtrinh_DoubleClick);
+            // 
+            // btnTheohoadon
+            // 
+            this.btnTheohoadon.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
+            this.btnTheohoadon.Image = ((System.Drawing.Image)(resources.GetObject("btnTheohoadon.Image")));
+            this.btnTheohoadon.ImagePaddingHorizontal = 16;
+            this.btnTheohoadon.ImagePaddingVertical = 10;
+            this.btnTheohoadon.Name = "btnTheohoadon";
+            this.btnTheohoadon.PopupAnimation = DevComponents.DotNetBar.ePopupAnimation.Random;
+            this.btnTheohoadon.Text = "03. Theo hóa đơn";
+            this.btnTheohoadon.DoubleClick += new System.EventHandler(this.btnTheohoadon_DoubleClick);
+            // 
+            // btnTheohopdong
+            // 
+            this.btnTheohopdong.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
+            this.btnTheohopdong.Image = ((System.Drawing.Image)(resources.GetObject("btnTheohopdong.Image")));
+            this.btnTheohopdong.ImagePaddingHorizontal = 16;
+            this.btnTheohopdong.ImagePaddingVertical = 10;
+            this.btnTheohopdong.Name = "btnTheohopdong";
+            this.btnTheohopdong.PopupAnimation = DevComponents.DotNetBar.ePopupAnimation.Random;
+            this.btnTheohopdong.Text = "04. Theo hợp đồng";
+            this.btnTheohopdong.DoubleClick += new System.EventHandler(this.btnTheohopdong_DoubleClick);
+            // 
+            // btnTheochungtuvanchuyen
+            // 
+            this.btnTheochungtuvanchuyen.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
+            this.btnTheochungtuvanchuyen.Image = ((System.Drawing.Image)(resources.GetObject("btnTheochungtuvanchuyen.Image")));
+            this.btnTheochungtuvanchuyen.ImagePaddingHorizontal = 16;
+            this.btnTheochungtuvanchuyen.ImagePaddingVertical = 10;
+            this.btnTheochungtuvanchuyen.Name = "btnTheochungtuvanchuyen";
+            this.btnTheochungtuvanchuyen.PopupAnimation = DevComponents.DotNetBar.ePopupAnimation.Random;
+            this.btnTheochungtuvanchuyen.Text = "05. Theo chứng từ vận chuyển";
+            this.btnTheochungtuvanchuyen.DoubleClick += new System.EventHandler(this.btnTheochungtuvanchuyen_DoubleClick);
+            // 
+            // btnTheohanghoa
+            // 
+            this.btnTheohanghoa.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
+            this.btnTheohanghoa.Image = ((System.Drawing.Image)(resources.GetObject("btnTheohanghoa.Image")));
+            this.btnTheohanghoa.ImagePaddingHorizontal = 16;
+            this.btnTheohanghoa.ImagePaddingVertical = 10;
+            this.btnTheohanghoa.Name = "btnTheohanghoa";
+            this.btnTheohanghoa.PopupAnimation = DevComponents.DotNetBar.ePopupAnimation.Random;
+            this.btnTheohanghoa.Text = "06. Theo hàng hóa";
+            this.btnTheohanghoa.DoubleClick += new System.EventHandler(this.btnTheohanghoa_DoubleClick);
+            // 
+            // btnTheocongtrinhvadotthanhtoan
+            // 
+            this.btnTheocongtrinhvadotthanhtoan.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
+            this.btnTheocongtrinhvadotthanhtoan.Image = ((System.Drawing.Image)(resources.GetObject("btnTheocongtrinhvadotthanhtoan.Image")));
+            this.btnTheocongtrinhvadotthanhtoan.ImagePaddingHorizontal = 16;
+            this.btnTheocongtrinhvadotthanhtoan.ImagePaddingVertical = 10;
+            this.btnTheocongtrinhvadotthanhtoan.Name = "btnTheocongtrinhvadotthanhtoan";
+            this.btnTheocongtrinhvadotthanhtoan.PopupAnimation = DevComponents.DotNetBar.ePopupAnimation.Random;
+            this.btnTheocongtrinhvadotthanhtoan.Text = "07. Theo công trình và đợt thanh toán";
+            this.btnTheocongtrinhvadotthanhtoan.DoubleClick += new System.EventHandler(this.btnTheocongtrinhvadotthanhtoan_DoubleClick);
+            // 
+            // btnTheokheuocvay
+            // 
+            this.btnTheokheuocvay.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
+            this.btnTheokheuocvay.Image = ((System.Drawing.Image)(resources.GetObject("btnTheokheuocvay.Image")));
+            this.btnTheokheuocvay.ImagePaddingHorizontal = 16;
+            this.btnTheokheuocvay.ImagePaddingVertical = 10;
+            this.btnTheokheuocvay.Name = "btnTheokheuocvay";
+            this.btnTheokheuocvay.PopupAnimation = DevComponents.DotNetBar.ePopupAnimation.Random;
+            this.btnTheokheuocvay.Text = "08. Theo khế ước vay";
+            this.btnTheokheuocvay.DoubleClick += new System.EventHandler(this.btnTheokheuocvay_DoubleClick);
+            // 
+            // superTabItem22
+            // 
+            this.superTabItem22.AttachedControl = this.superTabControlPanel22;
+            this.superTabItem22.GlobalItem = false;
+            this.superTabItem22.Name = "superTabItem22";
+            this.superTabItem22.Text = "Công nợ";
+            // 
+            // superTabControlPanel23
+            // 
+            this.superTabControlPanel23.Controls.Add(this.itemPanel7);
+            this.superTabControlPanel23.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.superTabControlPanel23.Location = new System.Drawing.Point(0, 25);
+            this.superTabControlPanel23.Name = "superTabControlPanel23";
+            this.superTabControlPanel23.Size = new System.Drawing.Size(709, 696);
+            this.superTabControlPanel23.TabIndex = 0;
+            this.superTabControlPanel23.TabItem = this.superTabItem23;
+            // 
+            // itemPanel7
+            // 
+            this.itemPanel7.BackColor = System.Drawing.Color.White;
+            // 
+            // 
+            // 
+            this.itemPanel7.BackgroundStyle.BackColor = System.Drawing.Color.White;
+            this.itemPanel7.BackgroundStyle.BorderBottom = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.itemPanel7.BackgroundStyle.BorderBottomWidth = 1;
+            this.itemPanel7.BackgroundStyle.BorderColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBorder;
+            this.itemPanel7.BackgroundStyle.BorderLeft = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.itemPanel7.BackgroundStyle.BorderLeftWidth = 1;
+            this.itemPanel7.BackgroundStyle.BorderRight = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.itemPanel7.BackgroundStyle.BorderRightWidth = 1;
+            this.itemPanel7.BackgroundStyle.BorderTop = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.itemPanel7.BackgroundStyle.BorderTopWidth = 1;
+            this.itemPanel7.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.itemPanel7.ContainerControlProcessDialogKey = true;
+            this.itemPanel7.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.itemPanel7.DragDropSupport = true;
+            this.itemPanel7.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.itemPanel7.ForeColor = System.Drawing.Color.Black;
+            this.itemPanel7.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
+            this.btnYeutochiphi,
+            this.btnSotheodoichiphitheobophan,
+            this.btnSotonghopchiphitheocongtrinh});
+            this.itemPanel7.LayoutOrientation = DevComponents.DotNetBar.eOrientation.Vertical;
+            this.itemPanel7.Location = new System.Drawing.Point(0, 0);
+            this.itemPanel7.Name = "itemPanel7";
+            this.itemPanel7.Size = new System.Drawing.Size(709, 696);
+            this.itemPanel7.Style = DevComponents.DotNetBar.eDotNetBarStyle.Office2013;
+            this.itemPanel7.TabIndex = 2;
+            this.itemPanel7.Text = "itemPanel7";
+            // 
+            // btnYeutochiphi
+            // 
+            this.btnYeutochiphi.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
+            this.btnYeutochiphi.Image = ((System.Drawing.Image)(resources.GetObject("btnYeutochiphi.Image")));
+            this.btnYeutochiphi.ImagePaddingHorizontal = 16;
+            this.btnYeutochiphi.ImagePaddingVertical = 10;
+            this.btnYeutochiphi.Name = "btnYeutochiphi";
+            this.btnYeutochiphi.PopupAnimation = DevComponents.DotNetBar.ePopupAnimation.Random;
+            this.btnYeutochiphi.Text = "01. Yếu tố chi phí";
+            this.btnYeutochiphi.DoubleClick += new System.EventHandler(this.btnYeutochiphi_DoubleClick);
+            // 
+            // btnSotheodoichiphitheobophan
+            // 
+            this.btnSotheodoichiphitheobophan.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
+            this.btnSotheodoichiphitheobophan.Image = ((System.Drawing.Image)(resources.GetObject("btnSotheodoichiphitheobophan.Image")));
+            this.btnSotheodoichiphitheobophan.ImagePaddingHorizontal = 16;
+            this.btnSotheodoichiphitheobophan.ImagePaddingVertical = 10;
+            this.btnSotheodoichiphitheobophan.Name = "btnSotheodoichiphitheobophan";
+            this.btnSotheodoichiphitheobophan.PopupAnimation = DevComponents.DotNetBar.ePopupAnimation.Random;
+            this.btnSotheodoichiphitheobophan.Text = "02. Sổ theo dõi chi phí theo bộ phận";
+            this.btnSotheodoichiphitheobophan.DoubleClick += new System.EventHandler(this.btnSotheodoichiphitheobophan_DoubleClick);
+            // 
+            // btnSotonghopchiphitheocongtrinh
+            // 
+            this.btnSotonghopchiphitheocongtrinh.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
+            this.btnSotonghopchiphitheocongtrinh.Image = ((System.Drawing.Image)(resources.GetObject("btnSotonghopchiphitheocongtrinh.Image")));
+            this.btnSotonghopchiphitheocongtrinh.ImagePaddingHorizontal = 16;
+            this.btnSotonghopchiphitheocongtrinh.ImagePaddingVertical = 10;
+            this.btnSotonghopchiphitheocongtrinh.Name = "btnSotonghopchiphitheocongtrinh";
+            this.btnSotonghopchiphitheocongtrinh.PopupAnimation = DevComponents.DotNetBar.ePopupAnimation.Random;
+            this.btnSotonghopchiphitheocongtrinh.Text = "03. Sổ tổng hợp chi phí theo công trình";
+            this.btnSotonghopchiphitheocongtrinh.DoubleClick += new System.EventHandler(this.btnSotonghopchiphitheocongtrinh_DoubleClick);
+            // 
+            // superTabItem23
+            // 
+            this.superTabItem23.AttachedControl = this.superTabControlPanel23;
+            this.superTabItem23.GlobalItem = false;
+            this.superTabItem23.Name = "superTabItem23";
+            this.superTabItem23.Text = "Chi phí";
+            // 
+            // superTabItem2
+            // 
+            this.superTabItem2.AttachedControl = this.superTabControlPanel2;
+            this.superTabItem2.GlobalItem = false;
+            this.superTabItem2.Image = ((System.Drawing.Image)(resources.GetObject("superTabItem2.Image")));
+            this.superTabItem2.Name = "superTabItem2";
+            this.superTabItem2.Text = "Hệ thống danh mục";
+            // 
             // superTabControlPanel1
             // 
             this.superTabControlPanel1.Controls.Add(this.superTabControl2);
             this.superTabControlPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.superTabControlPanel1.Location = new System.Drawing.Point(142, 0);
+            this.superTabControlPanel1.Location = new System.Drawing.Point(166, 0);
             this.superTabControlPanel1.Name = "superTabControlPanel1";
-            this.superTabControlPanel1.Size = new System.Drawing.Size(714, 688);
+            this.superTabControlPanel1.Size = new System.Drawing.Size(690, 688);
             this.superTabControlPanel1.TabIndex = 1;
             this.superTabControlPanel1.TabItem = this.superTabItem1;
             // 
@@ -487,7 +1568,7 @@
             this.superTabControl2.ReorderTabsEnabled = true;
             this.superTabControl2.SelectedTabFont = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold);
             this.superTabControl2.SelectedTabIndex = 0;
-            this.superTabControl2.Size = new System.Drawing.Size(714, 688);
+            this.superTabControl2.Size = new System.Drawing.Size(690, 688);
             this.superTabControl2.TabFont = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.superTabControl2.TabIndex = 0;
             this.superTabControl2.Tabs.AddRange(new DevComponents.DotNetBar.BaseItem[] {
@@ -501,9 +1582,9 @@
             // 
             this.superTabControlPanel17.Controls.Add(this.itemPanel1);
             this.superTabControlPanel17.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.superTabControlPanel17.Location = new System.Drawing.Point(0, 25);
+            this.superTabControlPanel17.Location = new System.Drawing.Point(0, 29);
             this.superTabControlPanel17.Name = "superTabControlPanel17";
-            this.superTabControlPanel17.Size = new System.Drawing.Size(714, 663);
+            this.superTabControlPanel17.Size = new System.Drawing.Size(690, 659);
             this.superTabControlPanel17.TabIndex = 1;
             this.superTabControlPanel17.TabItem = this.superTabItem17;
             // 
@@ -538,7 +1619,7 @@
             this.itemPanel1.LayoutOrientation = DevComponents.DotNetBar.eOrientation.Vertical;
             this.itemPanel1.Location = new System.Drawing.Point(0, 0);
             this.itemPanel1.Name = "itemPanel1";
-            this.itemPanel1.Size = new System.Drawing.Size(714, 663);
+            this.itemPanel1.Size = new System.Drawing.Size(690, 659);
             this.itemPanel1.Style = DevComponents.DotNetBar.eDotNetBarStyle.OfficeMobile2014;
             this.itemPanel1.TabIndex = 0;
             this.itemPanel1.Text = "itemPanel1";
@@ -798,9 +1879,9 @@
             // 
             this.superTabControlPanel6.Controls.Add(this.superTabControl10);
             this.superTabControlPanel6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.superTabControlPanel6.Location = new System.Drawing.Point(142, 0);
+            this.superTabControlPanel6.Location = new System.Drawing.Point(166, 0);
             this.superTabControlPanel6.Name = "superTabControlPanel6";
-            this.superTabControlPanel6.Size = new System.Drawing.Size(714, 721);
+            this.superTabControlPanel6.Size = new System.Drawing.Size(690, 688);
             this.superTabControlPanel6.TabIndex = 0;
             this.superTabControlPanel6.TabItem = this.superTabItem6;
             // 
@@ -833,7 +1914,7 @@
             this.superTabControl10.ReorderTabsEnabled = true;
             this.superTabControl10.SelectedTabFont = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold);
             this.superTabControl10.SelectedTabIndex = 0;
-            this.superTabControl10.Size = new System.Drawing.Size(714, 721);
+            this.superTabControl10.Size = new System.Drawing.Size(690, 688);
             this.superTabControl10.TabFont = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.superTabControl10.TabIndex = 3;
             this.superTabControl10.Tabs.AddRange(new DevComponents.DotNetBar.BaseItem[] {
@@ -850,7 +1931,7 @@
             this.superTabControlPanel38.Dock = System.Windows.Forms.DockStyle.Fill;
             this.superTabControlPanel38.Location = new System.Drawing.Point(0, 25);
             this.superTabControlPanel38.Name = "superTabControlPanel38";
-            this.superTabControlPanel38.Size = new System.Drawing.Size(714, 696);
+            this.superTabControlPanel38.Size = new System.Drawing.Size(690, 663);
             this.superTabControlPanel38.TabIndex = 1;
             this.superTabControlPanel38.TabItem = this.superTabItem38;
             // 
@@ -889,7 +1970,7 @@
             this.itemPanel22.LayoutOrientation = DevComponents.DotNetBar.eOrientation.Vertical;
             this.itemPanel22.Location = new System.Drawing.Point(0, 0);
             this.itemPanel22.Name = "itemPanel22";
-            this.itemPanel22.Size = new System.Drawing.Size(714, 696);
+            this.itemPanel22.Size = new System.Drawing.Size(690, 663);
             this.itemPanel22.Style = DevComponents.DotNetBar.eDotNetBarStyle.OfficeMobile2014;
             this.itemPanel22.TabIndex = 0;
             this.itemPanel22.Text = "itemPanel22";
@@ -1768,1087 +2849,6 @@
             this.superTabItem15.Image = ((System.Drawing.Image)(resources.GetObject("superTabItem15.Image")));
             this.superTabItem15.Name = "superTabItem15";
             this.superTabItem15.Text = "Quản lý lương";
-            // 
-            // superTabControlPanel2
-            // 
-            this.superTabControlPanel2.Controls.Add(this.superTabControl3);
-            this.superTabControlPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.superTabControlPanel2.Location = new System.Drawing.Point(147, 0);
-            this.superTabControlPanel2.Name = "superTabControlPanel2";
-            this.superTabControlPanel2.Size = new System.Drawing.Size(709, 721);
-            this.superTabControlPanel2.TabIndex = 0;
-            this.superTabControlPanel2.TabItem = this.superTabItem2;
-            // 
-            // superTabControl3
-            // 
-            this.superTabControl3.BackColor = System.Drawing.Color.White;
-            // 
-            // 
-            // 
-            // 
-            // 
-            // 
-            this.superTabControl3.ControlBox.CloseBox.Name = "";
-            // 
-            // 
-            // 
-            this.superTabControl3.ControlBox.MenuBox.Name = "";
-            this.superTabControl3.ControlBox.Name = "";
-            this.superTabControl3.ControlBox.SubItems.AddRange(new DevComponents.DotNetBar.BaseItem[] {
-            this.superTabControl3.ControlBox.MenuBox,
-            this.superTabControl3.ControlBox.CloseBox});
-            this.superTabControl3.Controls.Add(this.superTabControlPanel21);
-            this.superTabControl3.Controls.Add(this.superTabControlPanel20);
-            this.superTabControl3.Controls.Add(this.superTabControlPanel22);
-            this.superTabControl3.Controls.Add(this.superTabControlPanel23);
-            this.superTabControl3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.superTabControl3.ForeColor = System.Drawing.Color.Black;
-            this.superTabControl3.Location = new System.Drawing.Point(0, 0);
-            this.superTabControl3.Name = "superTabControl3";
-            this.superTabControl3.ReorderTabsEnabled = true;
-            this.superTabControl3.SelectedTabFont = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold);
-            this.superTabControl3.SelectedTabIndex = 0;
-            this.superTabControl3.Size = new System.Drawing.Size(709, 721);
-            this.superTabControl3.TabFont = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.superTabControl3.TabIndex = 1;
-            this.superTabControl3.Tabs.AddRange(new DevComponents.DotNetBar.BaseItem[] {
-            this.superTabItem21,
-            this.superTabItem20,
-            this.superTabItem22,
-            this.superTabItem23});
-            this.superTabControl3.TabStyle = DevComponents.DotNetBar.eSuperTabStyle.WinMediaPlayer12;
-            this.superTabControl3.Text = "Quản lý đơn hàng";
-            // 
-            // superTabControlPanel21
-            // 
-            this.superTabControlPanel21.Controls.Add(this.itemPanel5);
-            this.superTabControlPanel21.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.superTabControlPanel21.Location = new System.Drawing.Point(0, 25);
-            this.superTabControlPanel21.Name = "superTabControlPanel21";
-            this.superTabControlPanel21.Size = new System.Drawing.Size(709, 696);
-            this.superTabControlPanel21.TabIndex = 1;
-            this.superTabControlPanel21.TabItem = this.superTabItem21;
-            // 
-            // itemPanel5
-            // 
-            this.itemPanel5.AutoScroll = true;
-            this.itemPanel5.BackColor = System.Drawing.Color.White;
-            // 
-            // 
-            // 
-            this.itemPanel5.BackgroundStyle.BackColor = System.Drawing.Color.White;
-            this.itemPanel5.BackgroundStyle.BorderBottom = DevComponents.DotNetBar.eStyleBorderType.Solid;
-            this.itemPanel5.BackgroundStyle.BorderBottomWidth = 1;
-            this.itemPanel5.BackgroundStyle.BorderColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBorder;
-            this.itemPanel5.BackgroundStyle.BorderLeft = DevComponents.DotNetBar.eStyleBorderType.Solid;
-            this.itemPanel5.BackgroundStyle.BorderLeftWidth = 1;
-            this.itemPanel5.BackgroundStyle.BorderRight = DevComponents.DotNetBar.eStyleBorderType.Solid;
-            this.itemPanel5.BackgroundStyle.BorderRightWidth = 1;
-            this.itemPanel5.BackgroundStyle.BorderTop = DevComponents.DotNetBar.eStyleBorderType.Solid;
-            this.itemPanel5.BackgroundStyle.BorderTopWidth = 1;
-            this.itemPanel5.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.itemPanel5.ContainerControlProcessDialogKey = true;
-            this.itemPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.itemPanel5.DragDropSupport = true;
-            this.itemPanel5.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.itemPanel5.ForeColor = System.Drawing.Color.Black;
-            this.itemPanel5.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
-            this.buttonItem14,
-            this.buttonItem15,
-            this.btnDoituongphapnhan,
-            this.buttonItem17,
-            this.buttonItem22,
-            this.buttonItem23,
-            this.btnDMCauthanhSP,
-            this.buttonItem25,
-            this.btnDMKheuoc,
-            this.buttonItem27,
-            this.buttonItem28,
-            this.btnDMSoHD});
-            this.itemPanel5.LayoutOrientation = DevComponents.DotNetBar.eOrientation.Vertical;
-            this.itemPanel5.Location = new System.Drawing.Point(0, 0);
-            this.itemPanel5.Name = "itemPanel5";
-            this.itemPanel5.Size = new System.Drawing.Size(709, 696);
-            this.itemPanel5.Style = DevComponents.DotNetBar.eDotNetBarStyle.Office2013;
-            this.itemPanel5.TabIndex = 0;
-            this.itemPanel5.Text = "itemPanel5";
-            // 
-            // buttonItem14
-            // 
-            this.buttonItem14.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
-            this.buttonItem14.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonItem14.Image = ((System.Drawing.Image)(resources.GetObject("buttonItem14.Image")));
-            this.buttonItem14.ImagePaddingHorizontal = 16;
-            this.buttonItem14.ImagePaddingVertical = 10;
-            this.buttonItem14.Name = "buttonItem14";
-            this.buttonItem14.PopupAnimation = DevComponents.DotNetBar.ePopupAnimation.Random;
-            this.buttonItem14.Text = "01. Hệ thống tài khoản";
-            this.buttonItem14.DoubleClick += new System.EventHandler(this.buttonItem14_DoubleClick);
-            // 
-            // buttonItem15
-            // 
-            this.buttonItem15.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
-            this.buttonItem15.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonItem15.Image = ((System.Drawing.Image)(resources.GetObject("buttonItem15.Image")));
-            this.buttonItem15.ImagePaddingHorizontal = 16;
-            this.buttonItem15.ImagePaddingVertical = 10;
-            this.buttonItem15.Name = "buttonItem15";
-            this.buttonItem15.PopupAnimation = DevComponents.DotNetBar.ePopupAnimation.Random;
-            this.buttonItem15.Text = "02. Các loại chứng từ";
-            this.buttonItem15.DoubleClick += new System.EventHandler(this.buttonItem15_DoubleClick);
-            // 
-            // btnDoituongphapnhan
-            // 
-            this.btnDoituongphapnhan.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
-            this.btnDoituongphapnhan.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnDoituongphapnhan.Image = ((System.Drawing.Image)(resources.GetObject("btnDoituongphapnhan.Image")));
-            this.btnDoituongphapnhan.ImagePaddingHorizontal = 16;
-            this.btnDoituongphapnhan.ImagePaddingVertical = 10;
-            this.btnDoituongphapnhan.Name = "btnDoituongphapnhan";
-            this.btnDoituongphapnhan.PopupAnimation = DevComponents.DotNetBar.ePopupAnimation.Random;
-            this.btnDoituongphapnhan.Text = "03. Đối tượng pháp nhân";
-            this.btnDoituongphapnhan.DoubleClick += new System.EventHandler(this.btnDoituongphapnhan_DoubleClick);
-            // 
-            // buttonItem17
-            // 
-            this.buttonItem17.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
-            this.buttonItem17.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonItem17.Image = ((System.Drawing.Image)(resources.GetObject("buttonItem17.Image")));
-            this.buttonItem17.ImagePaddingHorizontal = 16;
-            this.buttonItem17.ImagePaddingVertical = 10;
-            this.buttonItem17.Name = "buttonItem17";
-            this.buttonItem17.PopupAnimation = DevComponents.DotNetBar.ePopupAnimation.Random;
-            this.buttonItem17.Text = "04. Danh mục nhóm";
-            this.buttonItem17.DoubleClick += new System.EventHandler(this.btnDanhMucNhomHH_DoubleClick);
-            // 
-            // buttonItem22
-            // 
-            this.buttonItem22.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
-            this.buttonItem22.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonItem22.Image = ((System.Drawing.Image)(resources.GetObject("buttonItem22.Image")));
-            this.buttonItem22.ImagePaddingHorizontal = 16;
-            this.buttonItem22.ImagePaddingVertical = 10;
-            this.buttonItem22.Name = "buttonItem22";
-            this.buttonItem22.PopupAnimation = DevComponents.DotNetBar.ePopupAnimation.Random;
-            this.buttonItem22.Text = "05. Danh mục diễn giải";
-            this.buttonItem22.DoubleClick += new System.EventHandler(this.buttonItem22_DoubleClick);
-            // 
-            // buttonItem23
-            // 
-            this.buttonItem23.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
-            this.buttonItem23.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonItem23.Image = ((System.Drawing.Image)(resources.GetObject("buttonItem23.Image")));
-            this.buttonItem23.ImagePaddingHorizontal = 16;
-            this.buttonItem23.ImagePaddingVertical = 10;
-            this.buttonItem23.Name = "buttonItem23";
-            this.buttonItem23.PopupAnimation = DevComponents.DotNetBar.ePopupAnimation.Random;
-            this.buttonItem23.Text = "06. Danh mục các công trình";
-            this.buttonItem23.DoubleClick += new System.EventHandler(this.buttonItem23_DoubleClick);
-            // 
-            // btnDMCauthanhSP
-            // 
-            this.btnDMCauthanhSP.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
-            this.btnDMCauthanhSP.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnDMCauthanhSP.Image = ((System.Drawing.Image)(resources.GetObject("btnDMCauthanhSP.Image")));
-            this.btnDMCauthanhSP.ImagePaddingHorizontal = 16;
-            this.btnDMCauthanhSP.ImagePaddingVertical = 10;
-            this.btnDMCauthanhSP.Name = "btnDMCauthanhSP";
-            this.btnDMCauthanhSP.PopupAnimation = DevComponents.DotNetBar.ePopupAnimation.Random;
-            this.btnDMCauthanhSP.Text = "07. Danh mục cấu thành sản phẩm";
-            this.btnDMCauthanhSP.DoubleClick += new System.EventHandler(this.btnDMCauthanhSP_DoubleClick);
-            // 
-            // buttonItem25
-            // 
-            this.buttonItem25.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
-            this.buttonItem25.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonItem25.Image = ((System.Drawing.Image)(resources.GetObject("buttonItem25.Image")));
-            this.buttonItem25.ImagePaddingHorizontal = 16;
-            this.buttonItem25.ImagePaddingVertical = 10;
-            this.buttonItem25.Name = "buttonItem25";
-            this.buttonItem25.PopupAnimation = DevComponents.DotNetBar.ePopupAnimation.Random;
-            this.buttonItem25.Text = "08. Khai báo tên cấp HH, DT, CP";
-            // 
-            // btnDMKheuoc
-            // 
-            this.btnDMKheuoc.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
-            this.btnDMKheuoc.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnDMKheuoc.Image = ((System.Drawing.Image)(resources.GetObject("btnDMKheuoc.Image")));
-            this.btnDMKheuoc.ImagePaddingHorizontal = 16;
-            this.btnDMKheuoc.ImagePaddingVertical = 10;
-            this.btnDMKheuoc.Name = "btnDMKheuoc";
-            this.btnDMKheuoc.PopupAnimation = DevComponents.DotNetBar.ePopupAnimation.Random;
-            this.btnDMKheuoc.Text = "09. Danh mục khế ước";
-            this.btnDMKheuoc.DoubleClick += new System.EventHandler(this.btnDMKheuoc_DoubleClick);
-            // 
-            // buttonItem27
-            // 
-            this.buttonItem27.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
-            this.buttonItem27.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonItem27.Image = ((System.Drawing.Image)(resources.GetObject("buttonItem27.Image")));
-            this.buttonItem27.ImagePaddingHorizontal = 16;
-            this.buttonItem27.ImagePaddingVertical = 10;
-            this.buttonItem27.Name = "buttonItem27";
-            this.buttonItem27.PopupAnimation = DevComponents.DotNetBar.ePopupAnimation.Random;
-            this.buttonItem27.Text = "10. Danh mục báo cáo theo F8->D";
-            // 
-            // buttonItem28
-            // 
-            this.buttonItem28.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
-            this.buttonItem28.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonItem28.Image = ((System.Drawing.Image)(resources.GetObject("buttonItem28.Image")));
-            this.buttonItem28.ImagePaddingHorizontal = 16;
-            this.buttonItem28.ImagePaddingVertical = 10;
-            this.buttonItem28.Name = "buttonItem28";
-            this.buttonItem28.PopupAnimation = DevComponents.DotNetBar.ePopupAnimation.Random;
-            this.buttonItem28.Text = "11. Danh mục đối tượng giá thành";
-            // 
-            // btnDMSoHD
-            // 
-            this.btnDMSoHD.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
-            this.btnDMSoHD.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnDMSoHD.Image = ((System.Drawing.Image)(resources.GetObject("btnDMSoHD.Image")));
-            this.btnDMSoHD.ImagePaddingHorizontal = 16;
-            this.btnDMSoHD.ImagePaddingVertical = 10;
-            this.btnDMSoHD.Name = "btnDMSoHD";
-            this.btnDMSoHD.PopupAnimation = DevComponents.DotNetBar.ePopupAnimation.Random;
-            this.btnDMSoHD.Text = "12. Danh mục số hóa đơn";
-            this.btnDMSoHD.DoubleClick += new System.EventHandler(this.btnDMSoHD_DoubleClick);
-            // 
-            // superTabItem21
-            // 
-            this.superTabItem21.AttachedControl = this.superTabControlPanel21;
-            this.superTabItem21.GlobalItem = false;
-            this.superTabItem21.Name = "superTabItem21";
-            this.superTabItem21.Text = "Danh mục chung";
-            // 
-            // superTabControlPanel20
-            // 
-            this.superTabControlPanel20.Controls.Add(this.itemPanel4);
-            this.superTabControlPanel20.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.superTabControlPanel20.Location = new System.Drawing.Point(0, 25);
-            this.superTabControlPanel20.Name = "superTabControlPanel20";
-            this.superTabControlPanel20.Size = new System.Drawing.Size(709, 696);
-            this.superTabControlPanel20.TabIndex = 0;
-            this.superTabControlPanel20.TabItem = this.superTabItem20;
-            // 
-            // itemPanel4
-            // 
-            this.itemPanel4.AutoScroll = true;
-            this.itemPanel4.BackColor = System.Drawing.Color.White;
-            // 
-            // 
-            // 
-            this.itemPanel4.BackgroundStyle.BackColor = System.Drawing.Color.White;
-            this.itemPanel4.BackgroundStyle.BorderBottom = DevComponents.DotNetBar.eStyleBorderType.Solid;
-            this.itemPanel4.BackgroundStyle.BorderBottomWidth = 1;
-            this.itemPanel4.BackgroundStyle.BorderColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBorder;
-            this.itemPanel4.BackgroundStyle.BorderLeft = DevComponents.DotNetBar.eStyleBorderType.Solid;
-            this.itemPanel4.BackgroundStyle.BorderLeftWidth = 1;
-            this.itemPanel4.BackgroundStyle.BorderRight = DevComponents.DotNetBar.eStyleBorderType.Solid;
-            this.itemPanel4.BackgroundStyle.BorderRightWidth = 1;
-            this.itemPanel4.BackgroundStyle.BorderTop = DevComponents.DotNetBar.eStyleBorderType.Solid;
-            this.itemPanel4.BackgroundStyle.BorderTopWidth = 1;
-            this.itemPanel4.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.itemPanel4.ContainerControlProcessDialogKey = true;
-            this.itemPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.itemPanel4.DragDropSupport = true;
-            this.itemPanel4.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.itemPanel4.ForeColor = System.Drawing.Color.Black;
-            this.itemPanel4.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
-            this.btnHanghoachung,
-            this.btnHanghoatheokho,
-            this.btnHanghoatheolo,
-            this.btnKhaibaodongiabantheonhomvung,
-            this.btnKhaibaodongiabantheonhomdoituong,
-            this.btnDanhmuclenhsanxuat,
-            this.btnChitietlenhsanxuat,
-            this.btnGiabantheohanghoavangayapdung});
-            this.itemPanel4.LayoutOrientation = DevComponents.DotNetBar.eOrientation.Vertical;
-            this.itemPanel4.Location = new System.Drawing.Point(0, 0);
-            this.itemPanel4.Name = "itemPanel4";
-            this.itemPanel4.Size = new System.Drawing.Size(709, 696);
-            this.itemPanel4.Style = DevComponents.DotNetBar.eDotNetBarStyle.Office2013;
-            this.itemPanel4.TabIndex = 1;
-            this.itemPanel4.Text = "itemPanel4";
-            // 
-            // btnHanghoachung
-            // 
-            this.btnHanghoachung.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
-            this.btnHanghoachung.Image = ((System.Drawing.Image)(resources.GetObject("btnHanghoachung.Image")));
-            this.btnHanghoachung.ImagePaddingHorizontal = 16;
-            this.btnHanghoachung.ImagePaddingVertical = 10;
-            this.btnHanghoachung.Name = "btnHanghoachung";
-            this.btnHanghoachung.PopupAnimation = DevComponents.DotNetBar.ePopupAnimation.Random;
-            this.btnHanghoachung.Text = "01. Hàng hóa chung";
-            this.btnHanghoachung.DoubleClick += new System.EventHandler(this.btnHanghoachung_DoubleClick);
-            // 
-            // btnHanghoatheokho
-            // 
-            this.btnHanghoatheokho.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
-            this.btnHanghoatheokho.Image = ((System.Drawing.Image)(resources.GetObject("btnHanghoatheokho.Image")));
-            this.btnHanghoatheokho.ImagePaddingHorizontal = 16;
-            this.btnHanghoatheokho.ImagePaddingVertical = 10;
-            this.btnHanghoatheokho.Name = "btnHanghoatheokho";
-            this.btnHanghoatheokho.PopupAnimation = DevComponents.DotNetBar.ePopupAnimation.Random;
-            this.btnHanghoatheokho.Text = "02. Hàng hóa theo kho";
-            this.btnHanghoatheokho.DoubleClick += new System.EventHandler(this.btnHanghoatheokho_DoubleClick);
-            // 
-            // btnHanghoatheolo
-            // 
-            this.btnHanghoatheolo.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
-            this.btnHanghoatheolo.Image = ((System.Drawing.Image)(resources.GetObject("btnHanghoatheolo.Image")));
-            this.btnHanghoatheolo.ImagePaddingHorizontal = 16;
-            this.btnHanghoatheolo.ImagePaddingVertical = 10;
-            this.btnHanghoatheolo.Name = "btnHanghoatheolo";
-            this.btnHanghoatheolo.PopupAnimation = DevComponents.DotNetBar.ePopupAnimation.Random;
-            this.btnHanghoatheolo.Text = "03. Hàng hóa theo lô";
-            this.btnHanghoatheolo.DoubleClick += new System.EventHandler(this.btnHanghoatheolo_DoubleClick);
-            // 
-            // btnKhaibaodongiabantheonhomvung
-            // 
-            this.btnKhaibaodongiabantheonhomvung.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
-            this.btnKhaibaodongiabantheonhomvung.Image = ((System.Drawing.Image)(resources.GetObject("btnKhaibaodongiabantheonhomvung.Image")));
-            this.btnKhaibaodongiabantheonhomvung.ImagePaddingHorizontal = 16;
-            this.btnKhaibaodongiabantheonhomvung.ImagePaddingVertical = 10;
-            this.btnKhaibaodongiabantheonhomvung.Name = "btnKhaibaodongiabantheonhomvung";
-            this.btnKhaibaodongiabantheonhomvung.PopupAnimation = DevComponents.DotNetBar.ePopupAnimation.Random;
-            this.btnKhaibaodongiabantheonhomvung.Text = "04. Khai báo đơn giá bán theo nhóm vùng";
-            this.btnKhaibaodongiabantheonhomvung.DoubleClick += new System.EventHandler(this.btnKhaibaodongiabantheonhomvung_DoubleClick);
-            // 
-            // btnKhaibaodongiabantheonhomdoituong
-            // 
-            this.btnKhaibaodongiabantheonhomdoituong.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
-            this.btnKhaibaodongiabantheonhomdoituong.Image = ((System.Drawing.Image)(resources.GetObject("btnKhaibaodongiabantheonhomdoituong.Image")));
-            this.btnKhaibaodongiabantheonhomdoituong.ImagePaddingHorizontal = 16;
-            this.btnKhaibaodongiabantheonhomdoituong.ImagePaddingVertical = 10;
-            this.btnKhaibaodongiabantheonhomdoituong.Name = "btnKhaibaodongiabantheonhomdoituong";
-            this.btnKhaibaodongiabantheonhomdoituong.PopupAnimation = DevComponents.DotNetBar.ePopupAnimation.Random;
-            this.btnKhaibaodongiabantheonhomdoituong.Text = "05. Khai báo đơn giá bán theo nhóm đối tượng";
-            this.btnKhaibaodongiabantheonhomdoituong.DoubleClick += new System.EventHandler(this.btnKhaibaodongiabantheonhomdoituong_DoubleClick);
-            // 
-            // btnDanhmuclenhsanxuat
-            // 
-            this.btnDanhmuclenhsanxuat.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
-            this.btnDanhmuclenhsanxuat.Image = ((System.Drawing.Image)(resources.GetObject("btnDanhmuclenhsanxuat.Image")));
-            this.btnDanhmuclenhsanxuat.ImagePaddingHorizontal = 16;
-            this.btnDanhmuclenhsanxuat.ImagePaddingVertical = 10;
-            this.btnDanhmuclenhsanxuat.Name = "btnDanhmuclenhsanxuat";
-            this.btnDanhmuclenhsanxuat.PopupAnimation = DevComponents.DotNetBar.ePopupAnimation.Random;
-            this.btnDanhmuclenhsanxuat.Text = "06. Danh mục lệnh sản xuất";
-            this.btnDanhmuclenhsanxuat.DoubleClick += new System.EventHandler(this.btnDanhmuclenhsanxuat_DoubleClick);
-            // 
-            // btnChitietlenhsanxuat
-            // 
-            this.btnChitietlenhsanxuat.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
-            this.btnChitietlenhsanxuat.Image = ((System.Drawing.Image)(resources.GetObject("btnChitietlenhsanxuat.Image")));
-            this.btnChitietlenhsanxuat.ImagePaddingHorizontal = 16;
-            this.btnChitietlenhsanxuat.ImagePaddingVertical = 10;
-            this.btnChitietlenhsanxuat.Name = "btnChitietlenhsanxuat";
-            this.btnChitietlenhsanxuat.PopupAnimation = DevComponents.DotNetBar.ePopupAnimation.Random;
-            this.btnChitietlenhsanxuat.Text = "07. Chi tiết lệnh sản xuất";
-            this.btnChitietlenhsanxuat.DoubleClick += new System.EventHandler(this.btnChitietlenhsanxuat_DoubleClick);
-            // 
-            // btnGiabantheohanghoavangayapdung
-            // 
-            this.btnGiabantheohanghoavangayapdung.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
-            this.btnGiabantheohanghoavangayapdung.Image = ((System.Drawing.Image)(resources.GetObject("btnGiabantheohanghoavangayapdung.Image")));
-            this.btnGiabantheohanghoavangayapdung.ImagePaddingHorizontal = 16;
-            this.btnGiabantheohanghoavangayapdung.ImagePaddingVertical = 10;
-            this.btnGiabantheohanghoavangayapdung.Name = "btnGiabantheohanghoavangayapdung";
-            this.btnGiabantheohanghoavangayapdung.PopupAnimation = DevComponents.DotNetBar.ePopupAnimation.Random;
-            this.btnGiabantheohanghoavangayapdung.Text = "08. Giá bán theo hàng hóa và ngày áp dụng";
-            this.btnGiabantheohanghoavangayapdung.DoubleClick += new System.EventHandler(this.btnGiabantheohanghoavangayapdung_DoubleClick);
-            // 
-            // superTabItem20
-            // 
-            this.superTabItem20.AttachedControl = this.superTabControlPanel20;
-            this.superTabItem20.GlobalItem = false;
-            this.superTabItem20.Name = "superTabItem20";
-            this.superTabItem20.Text = "Hàng hóa";
-            // 
-            // superTabControlPanel22
-            // 
-            this.superTabControlPanel22.Controls.Add(this.itemPanel6);
-            this.superTabControlPanel22.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.superTabControlPanel22.Location = new System.Drawing.Point(0, 25);
-            this.superTabControlPanel22.Name = "superTabControlPanel22";
-            this.superTabControlPanel22.Size = new System.Drawing.Size(709, 696);
-            this.superTabControlPanel22.TabIndex = 0;
-            this.superTabControlPanel22.TabItem = this.superTabItem22;
-            // 
-            // itemPanel6
-            // 
-            this.itemPanel6.BackColor = System.Drawing.Color.White;
-            // 
-            // 
-            // 
-            this.itemPanel6.BackgroundStyle.BackColor = System.Drawing.Color.White;
-            this.itemPanel6.BackgroundStyle.BorderBottom = DevComponents.DotNetBar.eStyleBorderType.Solid;
-            this.itemPanel6.BackgroundStyle.BorderBottomWidth = 1;
-            this.itemPanel6.BackgroundStyle.BorderColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBorder;
-            this.itemPanel6.BackgroundStyle.BorderLeft = DevComponents.DotNetBar.eStyleBorderType.Solid;
-            this.itemPanel6.BackgroundStyle.BorderLeftWidth = 1;
-            this.itemPanel6.BackgroundStyle.BorderRight = DevComponents.DotNetBar.eStyleBorderType.Solid;
-            this.itemPanel6.BackgroundStyle.BorderRightWidth = 1;
-            this.itemPanel6.BackgroundStyle.BorderTop = DevComponents.DotNetBar.eStyleBorderType.Solid;
-            this.itemPanel6.BackgroundStyle.BorderTopWidth = 1;
-            this.itemPanel6.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.itemPanel6.ContainerControlProcessDialogKey = true;
-            this.itemPanel6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.itemPanel6.DragDropSupport = true;
-            this.itemPanel6.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.itemPanel6.ForeColor = System.Drawing.Color.Black;
-            this.itemPanel6.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
-            this.btnTheodoituong,
-            this.btnTheocongtrinh,
-            this.btnTheohoadon,
-            this.btnTheohopdong,
-            this.btnTheochungtuvanchuyen,
-            this.btnTheohanghoa,
-            this.btnTheocongtrinhvadotthanhtoan,
-            this.btnTheokheuocvay});
-            this.itemPanel6.LayoutOrientation = DevComponents.DotNetBar.eOrientation.Vertical;
-            this.itemPanel6.Location = new System.Drawing.Point(0, 0);
-            this.itemPanel6.Name = "itemPanel6";
-            this.itemPanel6.Size = new System.Drawing.Size(709, 696);
-            this.itemPanel6.Style = DevComponents.DotNetBar.eDotNetBarStyle.Office2013;
-            this.itemPanel6.TabIndex = 1;
-            this.itemPanel6.Text = "itemPanel6";
-            // 
-            // btnTheodoituong
-            // 
-            this.btnTheodoituong.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
-            this.btnTheodoituong.Image = ((System.Drawing.Image)(resources.GetObject("btnTheodoituong.Image")));
-            this.btnTheodoituong.ImagePaddingHorizontal = 16;
-            this.btnTheodoituong.ImagePaddingVertical = 10;
-            this.btnTheodoituong.Name = "btnTheodoituong";
-            this.btnTheodoituong.PopupAnimation = DevComponents.DotNetBar.ePopupAnimation.Random;
-            this.btnTheodoituong.Text = "01. Theo đối tượng";
-            this.btnTheodoituong.DoubleClick += new System.EventHandler(this.btnTheodoituong_DoubleClick);
-            // 
-            // btnTheocongtrinh
-            // 
-            this.btnTheocongtrinh.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
-            this.btnTheocongtrinh.Image = ((System.Drawing.Image)(resources.GetObject("btnTheocongtrinh.Image")));
-            this.btnTheocongtrinh.ImagePaddingHorizontal = 16;
-            this.btnTheocongtrinh.ImagePaddingVertical = 10;
-            this.btnTheocongtrinh.Name = "btnTheocongtrinh";
-            this.btnTheocongtrinh.PopupAnimation = DevComponents.DotNetBar.ePopupAnimation.Random;
-            this.btnTheocongtrinh.Text = "02. Theo công trình";
-            this.btnTheocongtrinh.DoubleClick += new System.EventHandler(this.btnTheocongtrinh_DoubleClick);
-            // 
-            // btnTheohoadon
-            // 
-            this.btnTheohoadon.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
-            this.btnTheohoadon.Image = ((System.Drawing.Image)(resources.GetObject("btnTheohoadon.Image")));
-            this.btnTheohoadon.ImagePaddingHorizontal = 16;
-            this.btnTheohoadon.ImagePaddingVertical = 10;
-            this.btnTheohoadon.Name = "btnTheohoadon";
-            this.btnTheohoadon.PopupAnimation = DevComponents.DotNetBar.ePopupAnimation.Random;
-            this.btnTheohoadon.Text = "03. Theo hóa đơn";
-            this.btnTheohoadon.DoubleClick += new System.EventHandler(this.btnTheohoadon_DoubleClick);
-            // 
-            // btnTheohopdong
-            // 
-            this.btnTheohopdong.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
-            this.btnTheohopdong.Image = ((System.Drawing.Image)(resources.GetObject("btnTheohopdong.Image")));
-            this.btnTheohopdong.ImagePaddingHorizontal = 16;
-            this.btnTheohopdong.ImagePaddingVertical = 10;
-            this.btnTheohopdong.Name = "btnTheohopdong";
-            this.btnTheohopdong.PopupAnimation = DevComponents.DotNetBar.ePopupAnimation.Random;
-            this.btnTheohopdong.Text = "04. Theo hợp đồng";
-            this.btnTheohopdong.DoubleClick += new System.EventHandler(this.btnTheohopdong_DoubleClick);
-            // 
-            // btnTheochungtuvanchuyen
-            // 
-            this.btnTheochungtuvanchuyen.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
-            this.btnTheochungtuvanchuyen.Image = ((System.Drawing.Image)(resources.GetObject("btnTheochungtuvanchuyen.Image")));
-            this.btnTheochungtuvanchuyen.ImagePaddingHorizontal = 16;
-            this.btnTheochungtuvanchuyen.ImagePaddingVertical = 10;
-            this.btnTheochungtuvanchuyen.Name = "btnTheochungtuvanchuyen";
-            this.btnTheochungtuvanchuyen.PopupAnimation = DevComponents.DotNetBar.ePopupAnimation.Random;
-            this.btnTheochungtuvanchuyen.Text = "05. Theo chứng từ vận chuyển";
-            this.btnTheochungtuvanchuyen.DoubleClick += new System.EventHandler(this.btnTheochungtuvanchuyen_DoubleClick);
-            // 
-            // btnTheohanghoa
-            // 
-            this.btnTheohanghoa.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
-            this.btnTheohanghoa.Image = ((System.Drawing.Image)(resources.GetObject("btnTheohanghoa.Image")));
-            this.btnTheohanghoa.ImagePaddingHorizontal = 16;
-            this.btnTheohanghoa.ImagePaddingVertical = 10;
-            this.btnTheohanghoa.Name = "btnTheohanghoa";
-            this.btnTheohanghoa.PopupAnimation = DevComponents.DotNetBar.ePopupAnimation.Random;
-            this.btnTheohanghoa.Text = "06. Theo hàng hóa";
-            this.btnTheohanghoa.DoubleClick += new System.EventHandler(this.btnTheohanghoa_DoubleClick);
-            // 
-            // btnTheocongtrinhvadotthanhtoan
-            // 
-            this.btnTheocongtrinhvadotthanhtoan.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
-            this.btnTheocongtrinhvadotthanhtoan.Image = ((System.Drawing.Image)(resources.GetObject("btnTheocongtrinhvadotthanhtoan.Image")));
-            this.btnTheocongtrinhvadotthanhtoan.ImagePaddingHorizontal = 16;
-            this.btnTheocongtrinhvadotthanhtoan.ImagePaddingVertical = 10;
-            this.btnTheocongtrinhvadotthanhtoan.Name = "btnTheocongtrinhvadotthanhtoan";
-            this.btnTheocongtrinhvadotthanhtoan.PopupAnimation = DevComponents.DotNetBar.ePopupAnimation.Random;
-            this.btnTheocongtrinhvadotthanhtoan.Text = "07. Theo công trình và đợt thanh toán";
-            this.btnTheocongtrinhvadotthanhtoan.DoubleClick += new System.EventHandler(this.btnTheocongtrinhvadotthanhtoan_DoubleClick);
-            // 
-            // btnTheokheuocvay
-            // 
-            this.btnTheokheuocvay.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
-            this.btnTheokheuocvay.Image = ((System.Drawing.Image)(resources.GetObject("btnTheokheuocvay.Image")));
-            this.btnTheokheuocvay.ImagePaddingHorizontal = 16;
-            this.btnTheokheuocvay.ImagePaddingVertical = 10;
-            this.btnTheokheuocvay.Name = "btnTheokheuocvay";
-            this.btnTheokheuocvay.PopupAnimation = DevComponents.DotNetBar.ePopupAnimation.Random;
-            this.btnTheokheuocvay.Text = "08. Theo khế ước vay";
-            this.btnTheokheuocvay.DoubleClick += new System.EventHandler(this.btnTheokheuocvay_DoubleClick);
-            // 
-            // superTabItem22
-            // 
-            this.superTabItem22.AttachedControl = this.superTabControlPanel22;
-            this.superTabItem22.GlobalItem = false;
-            this.superTabItem22.Name = "superTabItem22";
-            this.superTabItem22.Text = "Công nợ";
-            // 
-            // superTabControlPanel23
-            // 
-            this.superTabControlPanel23.Controls.Add(this.itemPanel7);
-            this.superTabControlPanel23.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.superTabControlPanel23.Location = new System.Drawing.Point(0, 25);
-            this.superTabControlPanel23.Name = "superTabControlPanel23";
-            this.superTabControlPanel23.Size = new System.Drawing.Size(709, 696);
-            this.superTabControlPanel23.TabIndex = 0;
-            this.superTabControlPanel23.TabItem = this.superTabItem23;
-            // 
-            // itemPanel7
-            // 
-            this.itemPanel7.BackColor = System.Drawing.Color.White;
-            // 
-            // 
-            // 
-            this.itemPanel7.BackgroundStyle.BackColor = System.Drawing.Color.White;
-            this.itemPanel7.BackgroundStyle.BorderBottom = DevComponents.DotNetBar.eStyleBorderType.Solid;
-            this.itemPanel7.BackgroundStyle.BorderBottomWidth = 1;
-            this.itemPanel7.BackgroundStyle.BorderColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBorder;
-            this.itemPanel7.BackgroundStyle.BorderLeft = DevComponents.DotNetBar.eStyleBorderType.Solid;
-            this.itemPanel7.BackgroundStyle.BorderLeftWidth = 1;
-            this.itemPanel7.BackgroundStyle.BorderRight = DevComponents.DotNetBar.eStyleBorderType.Solid;
-            this.itemPanel7.BackgroundStyle.BorderRightWidth = 1;
-            this.itemPanel7.BackgroundStyle.BorderTop = DevComponents.DotNetBar.eStyleBorderType.Solid;
-            this.itemPanel7.BackgroundStyle.BorderTopWidth = 1;
-            this.itemPanel7.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.itemPanel7.ContainerControlProcessDialogKey = true;
-            this.itemPanel7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.itemPanel7.DragDropSupport = true;
-            this.itemPanel7.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.itemPanel7.ForeColor = System.Drawing.Color.Black;
-            this.itemPanel7.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
-            this.btnYeutochiphi,
-            this.btnSotheodoichiphitheobophan,
-            this.btnSotonghopchiphitheocongtrinh});
-            this.itemPanel7.LayoutOrientation = DevComponents.DotNetBar.eOrientation.Vertical;
-            this.itemPanel7.Location = new System.Drawing.Point(0, 0);
-            this.itemPanel7.Name = "itemPanel7";
-            this.itemPanel7.Size = new System.Drawing.Size(709, 696);
-            this.itemPanel7.Style = DevComponents.DotNetBar.eDotNetBarStyle.Office2013;
-            this.itemPanel7.TabIndex = 2;
-            this.itemPanel7.Text = "itemPanel7";
-            // 
-            // btnYeutochiphi
-            // 
-            this.btnYeutochiphi.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
-            this.btnYeutochiphi.Image = ((System.Drawing.Image)(resources.GetObject("btnYeutochiphi.Image")));
-            this.btnYeutochiphi.ImagePaddingHorizontal = 16;
-            this.btnYeutochiphi.ImagePaddingVertical = 10;
-            this.btnYeutochiphi.Name = "btnYeutochiphi";
-            this.btnYeutochiphi.PopupAnimation = DevComponents.DotNetBar.ePopupAnimation.Random;
-            this.btnYeutochiphi.Text = "01. Yếu tố chi phí";
-            this.btnYeutochiphi.DoubleClick += new System.EventHandler(this.btnYeutochiphi_DoubleClick);
-            // 
-            // btnSotheodoichiphitheobophan
-            // 
-            this.btnSotheodoichiphitheobophan.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
-            this.btnSotheodoichiphitheobophan.Image = ((System.Drawing.Image)(resources.GetObject("btnSotheodoichiphitheobophan.Image")));
-            this.btnSotheodoichiphitheobophan.ImagePaddingHorizontal = 16;
-            this.btnSotheodoichiphitheobophan.ImagePaddingVertical = 10;
-            this.btnSotheodoichiphitheobophan.Name = "btnSotheodoichiphitheobophan";
-            this.btnSotheodoichiphitheobophan.PopupAnimation = DevComponents.DotNetBar.ePopupAnimation.Random;
-            this.btnSotheodoichiphitheobophan.Text = "02. Sổ theo dõi chi phí theo bộ phận";
-            this.btnSotheodoichiphitheobophan.DoubleClick += new System.EventHandler(this.btnSotheodoichiphitheobophan_DoubleClick);
-            // 
-            // btnSotonghopchiphitheocongtrinh
-            // 
-            this.btnSotonghopchiphitheocongtrinh.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
-            this.btnSotonghopchiphitheocongtrinh.Image = ((System.Drawing.Image)(resources.GetObject("btnSotonghopchiphitheocongtrinh.Image")));
-            this.btnSotonghopchiphitheocongtrinh.ImagePaddingHorizontal = 16;
-            this.btnSotonghopchiphitheocongtrinh.ImagePaddingVertical = 10;
-            this.btnSotonghopchiphitheocongtrinh.Name = "btnSotonghopchiphitheocongtrinh";
-            this.btnSotonghopchiphitheocongtrinh.PopupAnimation = DevComponents.DotNetBar.ePopupAnimation.Random;
-            this.btnSotonghopchiphitheocongtrinh.Text = "03. Sổ tổng hợp chi phí theo công trình";
-            this.btnSotonghopchiphitheocongtrinh.DoubleClick += new System.EventHandler(this.btnSotonghopchiphitheocongtrinh_DoubleClick);
-            // 
-            // superTabItem23
-            // 
-            this.superTabItem23.AttachedControl = this.superTabControlPanel23;
-            this.superTabItem23.GlobalItem = false;
-            this.superTabItem23.Name = "superTabItem23";
-            this.superTabItem23.Text = "Chi phí";
-            // 
-            // superTabItem2
-            // 
-            this.superTabItem2.AttachedControl = this.superTabControlPanel2;
-            this.superTabItem2.GlobalItem = false;
-            this.superTabItem2.Image = ((System.Drawing.Image)(resources.GetObject("superTabItem2.Image")));
-            this.superTabItem2.Name = "superTabItem2";
-            this.superTabItem2.Text = "Hệ thống danh mục";
-            // 
-            // superTabControlPanel3
-            // 
-            this.superTabControlPanel3.Controls.Add(this.superTabControl8);
-            this.superTabControlPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.superTabControlPanel3.Location = new System.Drawing.Point(147, 0);
-            this.superTabControlPanel3.Name = "superTabControlPanel3";
-            this.superTabControlPanel3.Size = new System.Drawing.Size(709, 721);
-            this.superTabControlPanel3.TabIndex = 0;
-            this.superTabControlPanel3.TabItem = this.superTabItem3;
-            // 
-            // superTabControl8
-            // 
-            this.superTabControl8.BackColor = System.Drawing.Color.White;
-            // 
-            // 
-            // 
-            // 
-            // 
-            // 
-            this.superTabControl8.ControlBox.CloseBox.Name = "";
-            // 
-            // 
-            // 
-            this.superTabControl8.ControlBox.MenuBox.Name = "";
-            this.superTabControl8.ControlBox.Name = "";
-            this.superTabControl8.ControlBox.SubItems.AddRange(new DevComponents.DotNetBar.BaseItem[] {
-            this.superTabControl8.ControlBox.MenuBox,
-            this.superTabControl8.ControlBox.CloseBox});
-            this.superTabControl8.Controls.Add(this.superTabControlPanel34);
-            this.superTabControl8.Controls.Add(this.superTabControlPanel35);
-            this.superTabControl8.Controls.Add(this.superTabControlPanel36);
-            this.superTabControl8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.superTabControl8.ForeColor = System.Drawing.Color.Black;
-            this.superTabControl8.Location = new System.Drawing.Point(0, 0);
-            this.superTabControl8.Name = "superTabControl8";
-            this.superTabControl8.ReorderTabsEnabled = true;
-            this.superTabControl8.SelectedTabFont = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold);
-            this.superTabControl8.SelectedTabIndex = 0;
-            this.superTabControl8.Size = new System.Drawing.Size(709, 721);
-            this.superTabControl8.TabFont = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.superTabControl8.TabIndex = 2;
-            this.superTabControl8.Tabs.AddRange(new DevComponents.DotNetBar.BaseItem[] {
-            this.superTabItem34,
-            this.superTabItem36,
-            this.superTabItem35});
-            this.superTabControl8.TabStyle = DevComponents.DotNetBar.eSuperTabStyle.WinMediaPlayer12;
-            this.superTabControl8.Text = "Báo cáo tài chính";
-            // 
-            // superTabControlPanel34
-            // 
-            this.superTabControlPanel34.Controls.Add(this.itemPanel18);
-            this.superTabControlPanel34.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.superTabControlPanel34.Location = new System.Drawing.Point(0, 25);
-            this.superTabControlPanel34.Name = "superTabControlPanel34";
-            this.superTabControlPanel34.Size = new System.Drawing.Size(709, 696);
-            this.superTabControlPanel34.TabIndex = 1;
-            this.superTabControlPanel34.TabItem = this.superTabItem34;
-            // 
-            // itemPanel18
-            // 
-            this.itemPanel18.BackColor = System.Drawing.Color.White;
-            // 
-            // 
-            // 
-            this.itemPanel18.BackgroundStyle.BackColor = System.Drawing.Color.White;
-            this.itemPanel18.BackgroundStyle.BorderBottom = DevComponents.DotNetBar.eStyleBorderType.Solid;
-            this.itemPanel18.BackgroundStyle.BorderBottomWidth = 1;
-            this.itemPanel18.BackgroundStyle.BorderColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBorder;
-            this.itemPanel18.BackgroundStyle.BorderLeft = DevComponents.DotNetBar.eStyleBorderType.Solid;
-            this.itemPanel18.BackgroundStyle.BorderLeftWidth = 1;
-            this.itemPanel18.BackgroundStyle.BorderRight = DevComponents.DotNetBar.eStyleBorderType.Solid;
-            this.itemPanel18.BackgroundStyle.BorderRightWidth = 1;
-            this.itemPanel18.BackgroundStyle.BorderTop = DevComponents.DotNetBar.eStyleBorderType.Solid;
-            this.itemPanel18.BackgroundStyle.BorderTopWidth = 1;
-            this.itemPanel18.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.itemPanel18.ContainerControlProcessDialogKey = true;
-            this.itemPanel18.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.itemPanel18.DragDropSupport = true;
-            this.itemPanel18.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.itemPanel18.ForeColor = System.Drawing.Color.Black;
-            this.itemPanel18.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
-            this.buttonItem1,
-            this.buttonItem2,
-            this.buttonItem11,
-            this.buttonItem16,
-            this.buttonItem18,
-            this.buttonItem31,
-            this.buttonItem32,
-            this.buttonItem33,
-            this.buttonItem50,
-            this.buttonItem51,
-            this.buttonItem52});
-            this.itemPanel18.LayoutOrientation = DevComponents.DotNetBar.eOrientation.Vertical;
-            this.itemPanel18.Location = new System.Drawing.Point(0, 0);
-            this.itemPanel18.Name = "itemPanel18";
-            this.itemPanel18.Size = new System.Drawing.Size(709, 696);
-            this.itemPanel18.Style = DevComponents.DotNetBar.eDotNetBarStyle.OfficeMobile2014;
-            this.itemPanel18.TabIndex = 0;
-            this.itemPanel18.Text = "itemPanel18";
-            // 
-            // buttonItem1
-            // 
-            this.buttonItem1.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
-            this.buttonItem1.Image = ((System.Drawing.Image)(resources.GetObject("buttonItem1.Image")));
-            this.buttonItem1.ImagePaddingHorizontal = 16;
-            this.buttonItem1.ImagePaddingVertical = 10;
-            this.buttonItem1.Name = "buttonItem1";
-            this.buttonItem1.PopupAnimation = DevComponents.DotNetBar.ePopupAnimation.Random;
-            this.buttonItem1.Text = "01. Bảng cân đối phát sinh tài khoản";
-            // 
-            // buttonItem2
-            // 
-            this.buttonItem2.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
-            this.buttonItem2.Image = ((System.Drawing.Image)(resources.GetObject("buttonItem2.Image")));
-            this.buttonItem2.ImagePaddingHorizontal = 16;
-            this.buttonItem2.ImagePaddingVertical = 10;
-            this.buttonItem2.Name = "buttonItem2";
-            this.buttonItem2.PopupAnimation = DevComponents.DotNetBar.ePopupAnimation.Random;
-            this.buttonItem2.Text = "02. Bảng cân đối kế toán";
-            // 
-            // buttonItem11
-            // 
-            this.buttonItem11.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
-            this.buttonItem11.Image = ((System.Drawing.Image)(resources.GetObject("buttonItem11.Image")));
-            this.buttonItem11.ImagePaddingHorizontal = 16;
-            this.buttonItem11.ImagePaddingVertical = 10;
-            this.buttonItem11.Name = "buttonItem11";
-            this.buttonItem11.PopupAnimation = DevComponents.DotNetBar.ePopupAnimation.Random;
-            this.buttonItem11.Text = "03. Kết quả kinh doanh";
-            // 
-            // buttonItem16
-            // 
-            this.buttonItem16.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
-            this.buttonItem16.Image = ((System.Drawing.Image)(resources.GetObject("buttonItem16.Image")));
-            this.buttonItem16.ImagePaddingHorizontal = 16;
-            this.buttonItem16.ImagePaddingVertical = 10;
-            this.buttonItem16.Name = "buttonItem16";
-            this.buttonItem16.PopupAnimation = DevComponents.DotNetBar.ePopupAnimation.Random;
-            this.buttonItem16.Text = "04. Báo cáo lưu chuyển tiền tệ (TT)";
-            // 
-            // buttonItem18
-            // 
-            this.buttonItem18.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
-            this.buttonItem18.Image = ((System.Drawing.Image)(resources.GetObject("buttonItem18.Image")));
-            this.buttonItem18.ImagePaddingHorizontal = 16;
-            this.buttonItem18.ImagePaddingVertical = 10;
-            this.buttonItem18.Name = "buttonItem18";
-            this.buttonItem18.PopupAnimation = DevComponents.DotNetBar.ePopupAnimation.Random;
-            this.buttonItem18.Text = "05. Thuyết minh báo cáo tài chính";
-            // 
-            // buttonItem31
-            // 
-            this.buttonItem31.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
-            this.buttonItem31.Image = ((System.Drawing.Image)(resources.GetObject("buttonItem31.Image")));
-            this.buttonItem31.ImagePaddingHorizontal = 16;
-            this.buttonItem31.ImagePaddingVertical = 10;
-            this.buttonItem31.Name = "buttonItem31";
-            this.buttonItem31.PopupAnimation = DevComponents.DotNetBar.ePopupAnimation.Random;
-            this.buttonItem31.Text = "06. Phân tích báo cáo tài chính";
-            // 
-            // buttonItem32
-            // 
-            this.buttonItem32.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
-            this.buttonItem32.Image = ((System.Drawing.Image)(resources.GetObject("buttonItem32.Image")));
-            this.buttonItem32.ImagePaddingHorizontal = 16;
-            this.buttonItem32.ImagePaddingVertical = 10;
-            this.buttonItem32.Name = "buttonItem32";
-            this.buttonItem32.PopupAnimation = DevComponents.DotNetBar.ePopupAnimation.Random;
-            this.buttonItem32.Text = "07. Báo cáo lưu chuyển tiền tệ (GT)";
-            // 
-            // buttonItem33
-            // 
-            this.buttonItem33.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
-            this.buttonItem33.Image = ((System.Drawing.Image)(resources.GetObject("buttonItem33.Image")));
-            this.buttonItem33.ImagePaddingHorizontal = 16;
-            this.buttonItem33.ImagePaddingVertical = 10;
-            this.buttonItem33.Name = "buttonItem33";
-            this.buttonItem33.PopupAnimation = DevComponents.DotNetBar.ePopupAnimation.Random;
-            this.buttonItem33.Text = "08. Phân tích kết quả kinh doanh";
-            // 
-            // buttonItem50
-            // 
-            this.buttonItem50.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
-            this.buttonItem50.Image = ((System.Drawing.Image)(resources.GetObject("buttonItem50.Image")));
-            this.buttonItem50.ImagePaddingHorizontal = 16;
-            this.buttonItem50.ImagePaddingVertical = 10;
-            this.buttonItem50.Name = "buttonItem50";
-            this.buttonItem50.PopupAnimation = DevComponents.DotNetBar.ePopupAnimation.Random;
-            this.buttonItem50.Text = "09. Phân tích biến động các khoản mục so với doanh thu";
-            // 
-            // buttonItem51
-            // 
-            this.buttonItem51.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
-            this.buttonItem51.Image = ((System.Drawing.Image)(resources.GetObject("buttonItem51.Image")));
-            this.buttonItem51.ImagePaddingHorizontal = 16;
-            this.buttonItem51.ImagePaddingVertical = 10;
-            this.buttonItem51.Name = "buttonItem51";
-            this.buttonItem51.PopupAnimation = DevComponents.DotNetBar.ePopupAnimation.Random;
-            this.buttonItem51.Text = "10. Báo cáo - Chủ đầu tư";
-            // 
-            // buttonItem52
-            // 
-            this.buttonItem52.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
-            this.buttonItem52.Image = ((System.Drawing.Image)(resources.GetObject("buttonItem52.Image")));
-            this.buttonItem52.ImagePaddingHorizontal = 16;
-            this.buttonItem52.ImagePaddingVertical = 10;
-            this.buttonItem52.Name = "buttonItem52";
-            this.buttonItem52.PopupAnimation = DevComponents.DotNetBar.ePopupAnimation.Random;
-            this.buttonItem52.Text = "11. Cập nhật khai báo";
-            // 
-            // superTabItem34
-            // 
-            this.superTabItem34.AttachedControl = this.superTabControlPanel34;
-            this.superTabItem34.GlobalItem = false;
-            this.superTabItem34.Name = "superTabItem34";
-            this.superTabItem34.Text = "In báo cáo";
-            // 
-            // superTabControlPanel35
-            // 
-            this.superTabControlPanel35.Controls.Add(this.itemPanel19);
-            this.superTabControlPanel35.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.superTabControlPanel35.Location = new System.Drawing.Point(0, 25);
-            this.superTabControlPanel35.Name = "superTabControlPanel35";
-            this.superTabControlPanel35.Size = new System.Drawing.Size(714, 696);
-            this.superTabControlPanel35.TabIndex = 0;
-            this.superTabControlPanel35.TabItem = this.superTabItem35;
-            // 
-            // itemPanel19
-            // 
-            this.itemPanel19.BackColor = System.Drawing.Color.White;
-            // 
-            // 
-            // 
-            this.itemPanel19.BackgroundStyle.BackColor = System.Drawing.Color.White;
-            this.itemPanel19.BackgroundStyle.BorderBottom = DevComponents.DotNetBar.eStyleBorderType.Solid;
-            this.itemPanel19.BackgroundStyle.BorderBottomWidth = 1;
-            this.itemPanel19.BackgroundStyle.BorderColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBorder;
-            this.itemPanel19.BackgroundStyle.BorderLeft = DevComponents.DotNetBar.eStyleBorderType.Solid;
-            this.itemPanel19.BackgroundStyle.BorderLeftWidth = 1;
-            this.itemPanel19.BackgroundStyle.BorderRight = DevComponents.DotNetBar.eStyleBorderType.Solid;
-            this.itemPanel19.BackgroundStyle.BorderRightWidth = 1;
-            this.itemPanel19.BackgroundStyle.BorderTop = DevComponents.DotNetBar.eStyleBorderType.Solid;
-            this.itemPanel19.BackgroundStyle.BorderTopWidth = 1;
-            this.itemPanel19.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.itemPanel19.ContainerControlProcessDialogKey = true;
-            this.itemPanel19.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.itemPanel19.DragDropSupport = true;
-            this.itemPanel19.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.itemPanel19.ForeColor = System.Drawing.Color.Black;
-            this.itemPanel19.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
-            this.buttonItem34,
-            this.buttonItem35,
-            this.buttonItem36});
-            this.itemPanel19.LayoutOrientation = DevComponents.DotNetBar.eOrientation.Vertical;
-            this.itemPanel19.Location = new System.Drawing.Point(0, 0);
-            this.itemPanel19.Name = "itemPanel19";
-            this.itemPanel19.Size = new System.Drawing.Size(714, 696);
-            this.itemPanel19.Style = DevComponents.DotNetBar.eDotNetBarStyle.Office2013;
-            this.itemPanel19.TabIndex = 1;
-            this.itemPanel19.Text = "itemPanel19";
-            // 
-            // buttonItem34
-            // 
-            this.buttonItem34.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
-            this.buttonItem34.Image = ((System.Drawing.Image)(resources.GetObject("buttonItem34.Image")));
-            this.buttonItem34.ImagePaddingHorizontal = 16;
-            this.buttonItem34.ImagePaddingVertical = 10;
-            this.buttonItem34.Name = "buttonItem34";
-            this.buttonItem34.PopupAnimation = DevComponents.DotNetBar.ePopupAnimation.Random;
-            this.buttonItem34.Text = "01. Cân đối kế toán";
-            // 
-            // buttonItem35
-            // 
-            this.buttonItem35.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
-            this.buttonItem35.Image = ((System.Drawing.Image)(resources.GetObject("buttonItem35.Image")));
-            this.buttonItem35.ImagePaddingHorizontal = 16;
-            this.buttonItem35.ImagePaddingVertical = 10;
-            this.buttonItem35.Name = "buttonItem35";
-            this.buttonItem35.PopupAnimation = DevComponents.DotNetBar.ePopupAnimation.Random;
-            this.buttonItem35.Text = "02. Kết quả kinh doanh";
-            // 
-            // buttonItem36
-            // 
-            this.buttonItem36.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
-            this.buttonItem36.Image = ((System.Drawing.Image)(resources.GetObject("buttonItem36.Image")));
-            this.buttonItem36.ImagePaddingHorizontal = 16;
-            this.buttonItem36.ImagePaddingVertical = 10;
-            this.buttonItem36.Name = "buttonItem36";
-            this.buttonItem36.PopupAnimation = DevComponents.DotNetBar.ePopupAnimation.Random;
-            this.buttonItem36.Text = "03. Lưu chuyển tiền tệ";
-            // 
-            // superTabItem35
-            // 
-            this.superTabItem35.AttachedControl = this.superTabControlPanel35;
-            this.superTabItem35.GlobalItem = false;
-            this.superTabItem35.Name = "superTabItem35";
-            this.superTabItem35.Text = "Khai báo - QT";
-            // 
-            // superTabControlPanel36
-            // 
-            this.superTabControlPanel36.Controls.Add(this.itemPanel20);
-            this.superTabControlPanel36.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.superTabControlPanel36.Location = new System.Drawing.Point(0, 25);
-            this.superTabControlPanel36.Name = "superTabControlPanel36";
-            this.superTabControlPanel36.Size = new System.Drawing.Size(714, 696);
-            this.superTabControlPanel36.TabIndex = 0;
-            this.superTabControlPanel36.TabItem = this.superTabItem36;
-            // 
-            // itemPanel20
-            // 
-            this.itemPanel20.BackColor = System.Drawing.Color.White;
-            // 
-            // 
-            // 
-            this.itemPanel20.BackgroundStyle.BackColor = System.Drawing.Color.White;
-            this.itemPanel20.BackgroundStyle.BorderBottom = DevComponents.DotNetBar.eStyleBorderType.Solid;
-            this.itemPanel20.BackgroundStyle.BorderBottomWidth = 1;
-            this.itemPanel20.BackgroundStyle.BorderColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBorder;
-            this.itemPanel20.BackgroundStyle.BorderLeft = DevComponents.DotNetBar.eStyleBorderType.Solid;
-            this.itemPanel20.BackgroundStyle.BorderLeftWidth = 1;
-            this.itemPanel20.BackgroundStyle.BorderRight = DevComponents.DotNetBar.eStyleBorderType.Solid;
-            this.itemPanel20.BackgroundStyle.BorderRightWidth = 1;
-            this.itemPanel20.BackgroundStyle.BorderTop = DevComponents.DotNetBar.eStyleBorderType.Solid;
-            this.itemPanel20.BackgroundStyle.BorderTopWidth = 1;
-            this.itemPanel20.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.itemPanel20.ContainerControlProcessDialogKey = true;
-            this.itemPanel20.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.itemPanel20.DragDropSupport = true;
-            this.itemPanel20.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.itemPanel20.ForeColor = System.Drawing.Color.Black;
-            this.itemPanel20.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
-            this.btnKhaiBaoCanDoiKeToan,
-            this.btnKhaiBaoKetQuaKinhDoanh,
-            this.btnKhaiBaoLuuChuyenTT,
-            this.btnKhaiBaoLuuChuyenGT,
-            this.btnKhaiBaoThuyetMinh,
-            this.btnKhaiBaoKetQuaPT,
-            this.buttonItem56,
-            this.buttonItem57});
-            this.itemPanel20.LayoutOrientation = DevComponents.DotNetBar.eOrientation.Vertical;
-            this.itemPanel20.Location = new System.Drawing.Point(0, 0);
-            this.itemPanel20.Name = "itemPanel20";
-            this.itemPanel20.Size = new System.Drawing.Size(714, 696);
-            this.itemPanel20.Style = DevComponents.DotNetBar.eDotNetBarStyle.Office2013;
-            this.itemPanel20.TabIndex = 1;
-            this.itemPanel20.Text = "itemPanel20";
-            // 
-            // btnKhaiBaoCanDoiKeToan
-            // 
-            this.btnKhaiBaoCanDoiKeToan.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
-            this.btnKhaiBaoCanDoiKeToan.Image = ((System.Drawing.Image)(resources.GetObject("btnKhaiBaoCanDoiKeToan.Image")));
-            this.btnKhaiBaoCanDoiKeToan.ImagePaddingHorizontal = 16;
-            this.btnKhaiBaoCanDoiKeToan.ImagePaddingVertical = 10;
-            this.btnKhaiBaoCanDoiKeToan.Name = "btnKhaiBaoCanDoiKeToan";
-            this.btnKhaiBaoCanDoiKeToan.PopupAnimation = DevComponents.DotNetBar.ePopupAnimation.Random;
-            this.btnKhaiBaoCanDoiKeToan.Text = "01. Khai báo cho cân đối kế toán";
-            this.btnKhaiBaoCanDoiKeToan.DoubleClick += new System.EventHandler(this.btnKhaiBaoCanDoiKeToan_DoubleClick);
-            // 
-            // btnKhaiBaoKetQuaKinhDoanh
-            // 
-            this.btnKhaiBaoKetQuaKinhDoanh.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
-            this.btnKhaiBaoKetQuaKinhDoanh.Image = ((System.Drawing.Image)(resources.GetObject("btnKhaiBaoKetQuaKinhDoanh.Image")));
-            this.btnKhaiBaoKetQuaKinhDoanh.ImagePaddingHorizontal = 16;
-            this.btnKhaiBaoKetQuaKinhDoanh.ImagePaddingVertical = 10;
-            this.btnKhaiBaoKetQuaKinhDoanh.Name = "btnKhaiBaoKetQuaKinhDoanh";
-            this.btnKhaiBaoKetQuaKinhDoanh.PopupAnimation = DevComponents.DotNetBar.ePopupAnimation.Random;
-            this.btnKhaiBaoKetQuaKinhDoanh.Text = "02. Khai báo cho kết quả kinh doanh";
-            this.btnKhaiBaoKetQuaKinhDoanh.DoubleClick += new System.EventHandler(this.btnKhaiBaoKetQuaKinhDoanh_DoubleClick);
-            // 
-            // btnKhaiBaoLuuChuyenTT
-            // 
-            this.btnKhaiBaoLuuChuyenTT.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
-            this.btnKhaiBaoLuuChuyenTT.Image = ((System.Drawing.Image)(resources.GetObject("btnKhaiBaoLuuChuyenTT.Image")));
-            this.btnKhaiBaoLuuChuyenTT.ImagePaddingHorizontal = 16;
-            this.btnKhaiBaoLuuChuyenTT.ImagePaddingVertical = 10;
-            this.btnKhaiBaoLuuChuyenTT.Name = "btnKhaiBaoLuuChuyenTT";
-            this.btnKhaiBaoLuuChuyenTT.PopupAnimation = DevComponents.DotNetBar.ePopupAnimation.Random;
-            this.btnKhaiBaoLuuChuyenTT.Text = "03. Khai báo Lưu chuyển tiền tệ (TT)";
-            this.btnKhaiBaoLuuChuyenTT.DoubleClick += new System.EventHandler(this.btnKhaiBaoLuuChuyenTT_DoubleClick);
-            // 
-            // btnKhaiBaoLuuChuyenGT
-            // 
-            this.btnKhaiBaoLuuChuyenGT.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
-            this.btnKhaiBaoLuuChuyenGT.Image = ((System.Drawing.Image)(resources.GetObject("btnKhaiBaoLuuChuyenGT.Image")));
-            this.btnKhaiBaoLuuChuyenGT.ImagePaddingHorizontal = 16;
-            this.btnKhaiBaoLuuChuyenGT.ImagePaddingVertical = 10;
-            this.btnKhaiBaoLuuChuyenGT.Name = "btnKhaiBaoLuuChuyenGT";
-            this.btnKhaiBaoLuuChuyenGT.PopupAnimation = DevComponents.DotNetBar.ePopupAnimation.Random;
-            this.btnKhaiBaoLuuChuyenGT.Text = "04. Khai báo Lưu chuyển tiền tệ (GT)";
-            this.btnKhaiBaoLuuChuyenGT.DoubleClick += new System.EventHandler(this.btnKhaiBaoLuuChuyenGT_DoubleClick);
-            // 
-            // btnKhaiBaoThuyetMinh
-            // 
-            this.btnKhaiBaoThuyetMinh.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
-            this.btnKhaiBaoThuyetMinh.Image = ((System.Drawing.Image)(resources.GetObject("btnKhaiBaoThuyetMinh.Image")));
-            this.btnKhaiBaoThuyetMinh.ImagePaddingHorizontal = 16;
-            this.btnKhaiBaoThuyetMinh.ImagePaddingVertical = 10;
-            this.btnKhaiBaoThuyetMinh.Name = "btnKhaiBaoThuyetMinh";
-            this.btnKhaiBaoThuyetMinh.PopupAnimation = DevComponents.DotNetBar.ePopupAnimation.Random;
-            this.btnKhaiBaoThuyetMinh.Text = "05. Khai báo thuyết minh BCTC";
-            this.btnKhaiBaoThuyetMinh.DoubleClick += new System.EventHandler(this.btnKhaiBaoThuyetMinh_DoubleClick);
-            // 
-            // btnKhaiBaoKetQuaPT
-            // 
-            this.btnKhaiBaoKetQuaPT.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
-            this.btnKhaiBaoKetQuaPT.Image = ((System.Drawing.Image)(resources.GetObject("btnKhaiBaoKetQuaPT.Image")));
-            this.btnKhaiBaoKetQuaPT.ImagePaddingHorizontal = 16;
-            this.btnKhaiBaoKetQuaPT.ImagePaddingVertical = 10;
-            this.btnKhaiBaoKetQuaPT.Name = "btnKhaiBaoKetQuaPT";
-            this.btnKhaiBaoKetQuaPT.PopupAnimation = DevComponents.DotNetBar.ePopupAnimation.Random;
-            this.btnKhaiBaoKetQuaPT.Text = "06. Khai báo PT kết quả kinh doanh";
-            this.btnKhaiBaoKetQuaPT.DoubleClick += new System.EventHandler(this.btnKhaiBaoKetQuaPT_DoubleClick);
-            // 
-            // buttonItem56
-            // 
-            this.buttonItem56.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
-            this.buttonItem56.Image = ((System.Drawing.Image)(resources.GetObject("buttonItem56.Image")));
-            this.buttonItem56.ImagePaddingHorizontal = 16;
-            this.buttonItem56.ImagePaddingVertical = 10;
-            this.buttonItem56.Name = "buttonItem56";
-            this.buttonItem56.PopupAnimation = DevComponents.DotNetBar.ePopupAnimation.Random;
-            this.buttonItem56.Text = "07. Khai báo công thức cho thuyết minh BCTC";
-            // 
-            // buttonItem57
-            // 
-            this.buttonItem57.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
-            this.buttonItem57.Image = ((System.Drawing.Image)(resources.GetObject("buttonItem57.Image")));
-            this.buttonItem57.ImagePaddingHorizontal = 16;
-            this.buttonItem57.ImagePaddingVertical = 10;
-            this.buttonItem57.Name = "buttonItem57";
-            this.buttonItem57.PopupAnimation = DevComponents.DotNetBar.ePopupAnimation.Random;
-            this.buttonItem57.Text = "08. Khai báo kết quả kinh doanh mở rộng";
-            // 
-            // superTabItem36
-            // 
-            this.superTabItem36.AttachedControl = this.superTabControlPanel36;
-            this.superTabItem36.GlobalItem = false;
-            this.superTabItem36.Name = "superTabItem36";
-            this.superTabItem36.Text = "Khai báo";
-            // 
-            // superTabItem3
-            // 
-            this.superTabItem3.AttachedControl = this.superTabControlPanel3;
-            this.superTabItem3.GlobalItem = false;
-            this.superTabItem3.Image = ((System.Drawing.Image)(resources.GetObject("superTabItem3.Image")));
-            this.superTabItem3.Name = "superTabItem3";
-            this.superTabItem3.Text = "Báo cáo tài chính";
             // 
             // superTabControlPanel8
             // 
@@ -4274,21 +4274,21 @@
             // lblBottomDatabase
             // 
             this.lblBottomDatabase.Name = "lblBottomDatabase";
-            this.lblBottomDatabase.Size = new System.Drawing.Size(63, 44);
+            this.lblBottomDatabase.Size = new System.Drawing.Size(82, 44);
             this.lblBottomDatabase.Text = "[Database]";
             // 
             // lblBottom_Month
             // 
             this.lblBottom_Month.BorderSides = System.Windows.Forms.ToolStripStatusLabelBorderSides.Left;
             this.lblBottom_Month.Name = "lblBottom_Month";
-            this.lblBottom_Month.Size = new System.Drawing.Size(55, 44);
+            this.lblBottom_Month.Size = new System.Drawing.Size(66, 44);
             this.lblBottom_Month.Text = "[Month]";
             // 
             // lblBottom_Company
             // 
             this.lblBottom_Company.BorderSides = System.Windows.Forms.ToolStripStatusLabelBorderSides.Left;
             this.lblBottom_Company.Name = "lblBottom_Company";
-            this.lblBottom_Company.Size = new System.Drawing.Size(71, 44);
+            this.lblBottom_Company.Size = new System.Drawing.Size(86, 44);
             this.lblBottom_Company.Text = "[Company]";
             // 
             // splitContainer1
@@ -4350,7 +4350,7 @@
             // 
             // fHome
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.CaptionFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -4366,6 +4366,19 @@
             this.Load += new System.EventHandler(this.fHome_Load);
             ((System.ComponentModel.ISupportInitialize)(this.superTabControl1)).EndInit();
             this.superTabControl1.ResumeLayout(false);
+            this.superTabControlPanel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.superTabControl8)).EndInit();
+            this.superTabControl8.ResumeLayout(false);
+            this.superTabControlPanel34.ResumeLayout(false);
+            this.superTabControlPanel35.ResumeLayout(false);
+            this.superTabControlPanel36.ResumeLayout(false);
+            this.superTabControlPanel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.superTabControl3)).EndInit();
+            this.superTabControl3.ResumeLayout(false);
+            this.superTabControlPanel21.ResumeLayout(false);
+            this.superTabControlPanel20.ResumeLayout(false);
+            this.superTabControlPanel22.ResumeLayout(false);
+            this.superTabControlPanel23.ResumeLayout(false);
             this.superTabControlPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.superTabControl2)).EndInit();
             this.superTabControl2.ResumeLayout(false);
@@ -4385,19 +4398,6 @@
             this.superTabControlPanel30.ResumeLayout(false);
             this.superTabControlPanel32.ResumeLayout(false);
             this.superTabControlPanel31.ResumeLayout(false);
-            this.superTabControlPanel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.superTabControl3)).EndInit();
-            this.superTabControl3.ResumeLayout(false);
-            this.superTabControlPanel21.ResumeLayout(false);
-            this.superTabControlPanel20.ResumeLayout(false);
-            this.superTabControlPanel22.ResumeLayout(false);
-            this.superTabControlPanel23.ResumeLayout(false);
-            this.superTabControlPanel3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.superTabControl8)).EndInit();
-            this.superTabControl8.ResumeLayout(false);
-            this.superTabControlPanel34.ResumeLayout(false);
-            this.superTabControlPanel35.ResumeLayout(false);
-            this.superTabControlPanel36.ResumeLayout(false);
             this.superTabControlPanel8.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.superTabControl4)).EndInit();
             this.superTabControl4.ResumeLayout(false);
@@ -4635,7 +4635,7 @@
         private DevComponents.DotNetBar.SuperTabControl superTabControl8;
         private DevComponents.DotNetBar.SuperTabControlPanel superTabControlPanel34;
         private DevComponents.DotNetBar.ItemPanel itemPanel18;
-        private DevComponents.DotNetBar.ButtonItem buttonItem1;
+        private DevComponents.DotNetBar.ButtonItem btnInCanDoiPhatSinhTaiKhoan;
         private DevComponents.DotNetBar.ButtonItem buttonItem2;
         private DevComponents.DotNetBar.ButtonItem buttonItem11;
         private DevComponents.DotNetBar.ButtonItem buttonItem16;

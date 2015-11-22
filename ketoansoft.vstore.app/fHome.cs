@@ -323,6 +323,16 @@ namespace ketoansoft.app
         }
         #endregion
 
+        #region báo cáo tài chính->in báo cáo
+        private void btnInCanDoiPhatSinhTaiKhoan_DoubleClick(object sender, EventArgs e)
+        {
+            _IdAction = 112233;
+            InCanDoiPhatSinhTaiKhoan f = new InCanDoiPhatSinhTaiKhoan();
+            f.ShowDialog();
+            f.Dispose();
+        }
+        #endregion
+
         #region báo cáo tài chính->khai báo
         private void btnKhaiBaoCanDoiKeToan_DoubleClick(object sender, EventArgs e)
         {
@@ -798,9 +808,6 @@ namespace ketoansoft.app
         {
             Load_InfoBottom();
         }
-
-
-
 
     }
 }
