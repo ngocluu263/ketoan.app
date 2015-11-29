@@ -126,5 +126,6 @@ namespace ketoansoft.app.Class.Global
         public const int KHAIBAOLUUCHUYENTIENTEGT = 1034;
         public const int KHAIBAOTHUYETMINH = 1035;
         public const int KHAIBAOKETQUAKINHDOANHPT = 1036;
+        public const int INCANDOIPHATSINHTAIKHOAN = 1037;
     }
 }

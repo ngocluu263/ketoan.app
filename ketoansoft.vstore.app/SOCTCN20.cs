@@ -13,13 +13,13 @@ using ketoansoft.app.Reports;
 
 namespace ketoansoft.app
 {
-    public partial class SOCTCN20 : Form
+    public partial class InCanDoiPhatSinhTK : Form
     {
         private dbVstoreAppDataContext _db = new dbVstoreAppDataContext(Const.builder.ConnectionString);
         private KT_CTuGocRepo _KT_CTuGocRepo = new KT_CTuGocRepo();
         private KTTKRepo _KTTKRepo = new KTTKRepo();
         private KTDTPNRepo _KTDTPNRepo = new KTDTPNRepo();
-        public SOCTCN20()
+        public InCanDoiPhatSinhTK()
         {
             InitializeComponent();
         }

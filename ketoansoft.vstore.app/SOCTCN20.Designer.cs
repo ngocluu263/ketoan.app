@@ -1,6 +1,6 @@
 ﻿namespace ketoansoft.app
 {
-    partial class SOCTCN20
+    partial class InCanDoiPhatSinhTK
     {
         /// <summary>
         /// Required designer variable.

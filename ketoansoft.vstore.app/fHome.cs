@@ -326,8 +326,8 @@ namespace ketoansoft.app
         #region báo cáo tài chính->in báo cáo
         private void btnInCanDoiPhatSinhTaiKhoan_DoubleClick(object sender, EventArgs e)
         {
-            _IdAction = 112233;
-            InCanDoiPhatSinhTaiKhoan f = new InCanDoiPhatSinhTaiKhoan();
+            _IdAction = Const.INCANDOIPHATSINHTAIKHOAN;
+            ReportsForm.InConDoiPhatSinhTK f = new ReportsForm.InConDoiPhatSinhTK();
             f.ShowDialog();
             f.Dispose();
         }
@@ -784,7 +784,7 @@ namespace ketoansoft.app
         private void btnDoichieucongno_DoubleClick(object sender, EventArgs e)
         {
             _IdAction = 112233;
-            SOCTCN20 f = new SOCTCN20();
+            InCanDoiPhatSinhTK f = new InCanDoiPhatSinhTK();
             f.ShowDialog();
             f.Dispose();
         }
