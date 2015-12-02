@@ -480,7 +480,7 @@
             this.toolStripStatusLabel1.ForeColor = System.Drawing.Color.White;
             this.toolStripStatusLabel1.Margin = new System.Windows.Forms.Padding(10, 3, 0, 2);
             this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            this.toolStripStatusLabel1.Size = new System.Drawing.Size(65, 20);
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(86, 20);
             this.toolStripStatusLabel1.Text = "TÊN DATA:";
             // 
             // lblBottomDatabase
@@ -488,7 +488,7 @@
             this.lblBottomDatabase.ForeColor = System.Drawing.Color.White;
             this.lblBottomDatabase.Margin = new System.Windows.Forms.Padding(0, 3, 10, 2);
             this.lblBottomDatabase.Name = "lblBottomDatabase";
-            this.lblBottomDatabase.Size = new System.Drawing.Size(63, 20);
+            this.lblBottomDatabase.Size = new System.Drawing.Size(82, 20);
             this.lblBottomDatabase.Text = "[Database]";
             // 
             // toolStripStatusLabel4
@@ -503,7 +503,7 @@
             this.toolStripStatusLabel2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.toolStripStatusLabel2.ForeColor = System.Drawing.Color.White;
             this.toolStripStatusLabel2.Name = "toolStripStatusLabel2";
-            this.toolStripStatusLabel2.Size = new System.Drawing.Size(52, 20);
+            this.toolStripStatusLabel2.Size = new System.Drawing.Size(67, 20);
             this.toolStripStatusLabel2.Text = "THÁNG:";
             // 
             // lblBottom_Month
@@ -511,7 +511,7 @@
             this.lblBottom_Month.ForeColor = System.Drawing.Color.White;
             this.lblBottom_Month.Margin = new System.Windows.Forms.Padding(0, 3, 10, 2);
             this.lblBottom_Month.Name = "lblBottom_Month";
-            this.lblBottom_Month.Size = new System.Drawing.Size(51, 20);
+            this.lblBottom_Month.Size = new System.Drawing.Size(62, 20);
             this.lblBottom_Month.Text = "[Month]";
             // 
             // toolStripStatusLabel5
@@ -526,14 +526,14 @@
             this.toolStripStatusLabel3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.toolStripStatusLabel3.ForeColor = System.Drawing.Color.White;
             this.toolStripStatusLabel3.Name = "toolStripStatusLabel3";
-            this.toolStripStatusLabel3.Size = new System.Drawing.Size(86, 20);
+            this.toolStripStatusLabel3.Size = new System.Drawing.Size(111, 20);
             this.toolStripStatusLabel3.Text = "TÊN CÔNG TY:";
             // 
             // lblBottom_Company
             // 
             this.lblBottom_Company.ForeColor = System.Drawing.Color.White;
             this.lblBottom_Company.Name = "lblBottom_Company";
-            this.lblBottom_Company.Size = new System.Drawing.Size(67, 20);
+            this.lblBottom_Company.Size = new System.Drawing.Size(82, 20);
             this.lblBottom_Company.Text = "[Company]";
             // 
             // toolStripStatusLabel6
@@ -548,7 +548,7 @@
             this.toolStripStatusLabel7.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.toolStripStatusLabel7.ForeColor = System.Drawing.Color.White;
             this.toolStripStatusLabel7.Name = "toolStripStatusLabel7";
-            this.toolStripStatusLabel7.Size = new System.Drawing.Size(119, 20);
+            this.toolStripStatusLabel7.Size = new System.Drawing.Size(152, 20);
             this.toolStripStatusLabel7.Text = "HỖ TRỢ KỸ THUẬT: ";
             // 
             // superTabControl1
@@ -569,10 +569,10 @@
             this.superTabControl1.ControlBox.SubItems.AddRange(new DevComponents.DotNetBar.BaseItem[] {
             this.superTabControl1.ControlBox.MenuBox,
             this.superTabControl1.ControlBox.CloseBox});
-            this.superTabControl1.Controls.Add(this.superTabControlPanel3);
-            this.superTabControl1.Controls.Add(this.superTabControlPanel1);
-            this.superTabControl1.Controls.Add(this.superTabControlPanel4);
             this.superTabControl1.Controls.Add(this.superTabControlPanel2);
+            this.superTabControl1.Controls.Add(this.superTabControlPanel1);
+            this.superTabControl1.Controls.Add(this.superTabControlPanel3);
+            this.superTabControl1.Controls.Add(this.superTabControlPanel4);
             this.superTabControl1.Controls.Add(this.superTabControlPanel15);
             this.superTabControl1.Controls.Add(this.superTabControlPanel12);
             this.superTabControl1.Controls.Add(this.superTabControlPanel11);
@@ -1070,9 +1070,9 @@
             // 
             this.superTabControlPanel1.Controls.Add(this.superTabControl2);
             this.superTabControlPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.superTabControlPanel1.Location = new System.Drawing.Point(147, 0);
+            this.superTabControlPanel1.Location = new System.Drawing.Point(171, 0);
             this.superTabControlPanel1.Name = "superTabControlPanel1";
-            this.superTabControlPanel1.Size = new System.Drawing.Size(709, 704);
+            this.superTabControlPanel1.Size = new System.Drawing.Size(685, 704);
             this.superTabControlPanel1.TabIndex = 1;
             this.superTabControlPanel1.TabItem = this.superTabItem1;
             // 
@@ -1095,8 +1095,8 @@
             this.superTabControl2.ControlBox.MenuBox,
             this.superTabControl2.ControlBox.CloseBox});
             this.superTabControl2.Controls.Add(this.superTabControlPanel17);
-            this.superTabControl2.Controls.Add(this.superTabControlPanel19);
             this.superTabControl2.Controls.Add(this.superTabControlPanel18);
+            this.superTabControl2.Controls.Add(this.superTabControlPanel19);
             this.superTabControl2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.superTabControl2.ForeColor = System.Drawing.Color.Black;
             this.superTabControl2.Location = new System.Drawing.Point(0, 0);
@@ -1104,7 +1104,7 @@
             this.superTabControl2.ReorderTabsEnabled = true;
             this.superTabControl2.SelectedTabFont = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold);
             this.superTabControl2.SelectedTabIndex = 0;
-            this.superTabControl2.Size = new System.Drawing.Size(709, 704);
+            this.superTabControl2.Size = new System.Drawing.Size(685, 704);
             this.superTabControl2.TabFont = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.superTabControl2.TabIndex = 0;
             this.superTabControl2.Tabs.AddRange(new DevComponents.DotNetBar.BaseItem[] {
@@ -1118,9 +1118,9 @@
             // 
             this.superTabControlPanel17.Controls.Add(this.itemPanel1);
             this.superTabControlPanel17.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.superTabControlPanel17.Location = new System.Drawing.Point(0, 25);
+            this.superTabControlPanel17.Location = new System.Drawing.Point(0, 29);
             this.superTabControlPanel17.Name = "superTabControlPanel17";
-            this.superTabControlPanel17.Size = new System.Drawing.Size(709, 679);
+            this.superTabControlPanel17.Size = new System.Drawing.Size(685, 675);
             this.superTabControlPanel17.TabIndex = 1;
             this.superTabControlPanel17.TabItem = this.superTabItem17;
             // 
@@ -1155,7 +1155,7 @@
             this.itemPanel1.LayoutOrientation = DevComponents.DotNetBar.eOrientation.Vertical;
             this.itemPanel1.Location = new System.Drawing.Point(0, 0);
             this.itemPanel1.Name = "itemPanel1";
-            this.itemPanel1.Size = new System.Drawing.Size(709, 679);
+            this.itemPanel1.Size = new System.Drawing.Size(685, 675);
             this.itemPanel1.Style = DevComponents.DotNetBar.eDotNetBarStyle.OfficeMobile2014;
             this.itemPanel1.TabIndex = 0;
             this.itemPanel1.Text = "itemPanel1";
@@ -1230,9 +1230,9 @@
             // 
             this.superTabControlPanel19.Controls.Add(this.itemPanel3);
             this.superTabControlPanel19.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.superTabControlPanel19.Location = new System.Drawing.Point(0, 25);
+            this.superTabControlPanel19.Location = new System.Drawing.Point(0, 29);
             this.superTabControlPanel19.Name = "superTabControlPanel19";
-            this.superTabControlPanel19.Size = new System.Drawing.Size(709, 663);
+            this.superTabControlPanel19.Size = new System.Drawing.Size(685, 675);
             this.superTabControlPanel19.TabIndex = 0;
             this.superTabControlPanel19.TabItem = this.superTabItem19;
             // 
@@ -1266,7 +1266,7 @@
             this.itemPanel3.LayoutOrientation = DevComponents.DotNetBar.eOrientation.Vertical;
             this.itemPanel3.Location = new System.Drawing.Point(0, 0);
             this.itemPanel3.Name = "itemPanel3";
-            this.itemPanel3.Size = new System.Drawing.Size(709, 663);
+            this.itemPanel3.Size = new System.Drawing.Size(685, 675);
             this.itemPanel3.Style = DevComponents.DotNetBar.eDotNetBarStyle.Office2013;
             this.itemPanel3.TabIndex = 1;
             this.itemPanel3.Text = "itemPanel3";
@@ -1323,9 +1323,9 @@
             // 
             this.superTabControlPanel18.Controls.Add(this.itemPanel2);
             this.superTabControlPanel18.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.superTabControlPanel18.Location = new System.Drawing.Point(0, 25);
+            this.superTabControlPanel18.Location = new System.Drawing.Point(0, 29);
             this.superTabControlPanel18.Name = "superTabControlPanel18";
-            this.superTabControlPanel18.Size = new System.Drawing.Size(709, 663);
+            this.superTabControlPanel18.Size = new System.Drawing.Size(685, 675);
             this.superTabControlPanel18.TabIndex = 0;
             this.superTabControlPanel18.TabItem = this.superTabItem18;
             // 
@@ -1358,7 +1358,7 @@
             this.itemPanel2.LayoutOrientation = DevComponents.DotNetBar.eOrientation.Vertical;
             this.itemPanel2.Location = new System.Drawing.Point(0, 0);
             this.itemPanel2.Name = "itemPanel2";
-            this.itemPanel2.Size = new System.Drawing.Size(709, 663);
+            this.itemPanel2.Size = new System.Drawing.Size(685, 675);
             this.itemPanel2.Style = DevComponents.DotNetBar.eDotNetBarStyle.Office2013;
             this.itemPanel2.TabIndex = 1;
             this.itemPanel2.Text = "itemPanel2";
@@ -1587,9 +1587,9 @@
             // 
             this.superTabControlPanel2.Controls.Add(this.superTabControl3);
             this.superTabControlPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.superTabControlPanel2.Location = new System.Drawing.Point(152, 0);
+            this.superTabControlPanel2.Location = new System.Drawing.Point(178, 0);
             this.superTabControlPanel2.Name = "superTabControlPanel2";
-            this.superTabControlPanel2.Size = new System.Drawing.Size(704, 704);
+            this.superTabControlPanel2.Size = new System.Drawing.Size(678, 704);
             this.superTabControlPanel2.TabIndex = 0;
             this.superTabControlPanel2.TabItem = this.superTabItem2;
             // 
@@ -1622,7 +1622,7 @@
             this.superTabControl3.ReorderTabsEnabled = true;
             this.superTabControl3.SelectedTabFont = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold);
             this.superTabControl3.SelectedTabIndex = 0;
-            this.superTabControl3.Size = new System.Drawing.Size(704, 704);
+            this.superTabControl3.Size = new System.Drawing.Size(678, 704);
             this.superTabControl3.TabFont = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.superTabControl3.TabIndex = 1;
             this.superTabControl3.Tabs.AddRange(new DevComponents.DotNetBar.BaseItem[] {
@@ -1637,9 +1637,9 @@
             // 
             this.superTabControlPanel21.Controls.Add(this.itemPanel5);
             this.superTabControlPanel21.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.superTabControlPanel21.Location = new System.Drawing.Point(0, 25);
+            this.superTabControlPanel21.Location = new System.Drawing.Point(0, 29);
             this.superTabControlPanel21.Name = "superTabControlPanel21";
-            this.superTabControlPanel21.Size = new System.Drawing.Size(704, 679);
+            this.superTabControlPanel21.Size = new System.Drawing.Size(678, 675);
             this.superTabControlPanel21.TabIndex = 1;
             this.superTabControlPanel21.TabItem = this.superTabItem21;
             // 
@@ -1682,7 +1682,7 @@
             this.itemPanel5.LayoutOrientation = DevComponents.DotNetBar.eOrientation.Vertical;
             this.itemPanel5.Location = new System.Drawing.Point(0, 0);
             this.itemPanel5.Name = "itemPanel5";
-            this.itemPanel5.Size = new System.Drawing.Size(704, 679);
+            this.itemPanel5.Size = new System.Drawing.Size(678, 675);
             this.itemPanel5.Style = DevComponents.DotNetBar.eDotNetBarStyle.Office2013;
             this.itemPanel5.TabIndex = 0;
             this.itemPanel5.Text = "itemPanel5";
@@ -4592,7 +4592,7 @@
             // 
             // fHome
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.CaptionFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
