@@ -1956,10 +1956,10 @@ namespace ketoansoft.app.Class.Global
                 excelSheet.Range["A8", "H" + (dataTable.Rows.Count + 8)].Font.Size = 9;
                 excelSheet.Range["A4", "A4"].Font.FontStyle = "Bold";
                 excelSheet.Range["A" + (dataTable.Rows.Count+ 30), "H" + (dataTable.Rows.Count + 30)].Font.FontStyle = "Bold";
-                excelSheet.Range["A" + (dataTable.Rows.Count + 11), "H" + (dataTable.Rows.Count + 16)].Font.FontStyle = "Bold";
+                excelSheet.Range["A" + (dataTable.Rows.Count + 8), "H" + (dataTable.Rows.Count + 8)].Font.FontStyle = "Bold";
                 //Canh giữa chữ
                 excelSheet.Range["A4", "H7"].HorizontalAlignment = -4108;
-                excelSheet.Range["A" + (dataTable.Rows.Count + 11), "H" + (dataTable.Rows.Count + 16)].HorizontalAlignment = -4108;
+                excelSheet.Range["A" + (dataTable.Rows.Count + 10), "H" + (dataTable.Rows.Count + 14)].HorizontalAlignment = -4108;
                 excelSheet.Range["G1", "G3"].HorizontalAlignment = -4108;
                 //Merge
                 excelSheet.Range["A4", "H4"].MergeCells = true;
@@ -1980,12 +1980,17 @@ namespace ketoansoft.app.Class.Global
                 //Border
                 excelSheet.Range["A6", "H7"].Borders.LineStyle = Microsoft.Office.Interop.Excel.XlLineStyle.xlContinuous;
                 excelSheet.Range["A6", "H7"].Borders.Weight = 2d;
-                excelSheet.Range["A8", "H" + (dataTable.Rows.Count + 8)].Borders.LineStyle = Microsoft.Office.Interop.Excel.XlLineStyle.xlDot;
-                excelSheet.Range["A8", "H" + (dataTable.Rows.Count + 8)].Borders.Weight = 2d;
-                excelSheet.Range["A" + (dataTable.Rows.Count + 9), "H" + (dataTable.Rows.Count + 9)].Borders.LineStyle = Microsoft.Office.Interop.Excel.XlLineStyle.xlContinuous;
-                excelSheet.Range["A" + (dataTable.Rows.Count + 9), "H" + (dataTable.Rows.Count + 9)].Borders.Weight = 2d;
+                excelSheet.Range["A8", "H" + (dataTable.Rows.Count + 7)].Borders.LineStyle = Microsoft.Office.Interop.Excel.XlLineStyle.xlDot;
+                excelSheet.Range["A8", "H" + (dataTable.Rows.Count + 7)].Borders.Weight = 2d;
+                excelSheet.Range["A" + (dataTable.Rows.Count + 8), "H" + (dataTable.Rows.Count + 8)].Borders.LineStyle = Microsoft.Office.Interop.Excel.XlLineStyle.xlContinuous;
+                excelSheet.Range["A" + (dataTable.Rows.Count + 8), "H" + (dataTable.Rows.Count + 8)].Borders.Weight = 2d;
                 //Công thức
-                excelSheet.Range["H" + (dataTable.Rows.Count + 9), "H" + (dataTable.Rows.Count + 9)].Formula = String.Format("=sum(H10:H{0})", dataTable.Rows.Count + 9);
+                excelSheet.Range["C" + (dataTable.Rows.Count + 8)].Formula = String.Format("=sum(C8:C{0})", dataTable.Rows.Count + 7);
+                excelSheet.Range["D" + (dataTable.Rows.Count + 8)].Formula = String.Format("=sum(D8:D{0})", dataTable.Rows.Count + 7);
+                excelSheet.Range["E" + (dataTable.Rows.Count + 8)].Formula = String.Format("=sum(E8:E{0})", dataTable.Rows.Count + 7);
+                excelSheet.Range["F" + (dataTable.Rows.Count + 8)].Formula = String.Format("=sum(F8:F{0})", dataTable.Rows.Count + 7);
+                excelSheet.Range["G" + (dataTable.Rows.Count + 8)].Formula = String.Format("=sum(G8:G{0})", dataTable.Rows.Count + 7);
+                excelSheet.Range["H" + (dataTable.Rows.Count + 8)].Formula = String.Format("=sum(H8:H{0})", dataTable.Rows.Count + 7);
                 //format
                 
                 #endregion
@@ -2012,27 +2017,33 @@ namespace ketoansoft.app.Class.Global
                 excelSheet.Range["F7"].Value2 = "Có";
                 excelSheet.Range["G7"].Value2 = "Nợ";
                 excelSheet.Range["H7"].Value2 = "Có";
-                excelSheet.Range["B" + (dataTable.Rows.Count + 9)].Value2 = "Tổng cộng";
-                excelSheet.Range["G" + (dataTable.Rows.Count + 11)].Value2 = "Ngày " + print.Day + " tháng " + print.Month + " năm " + print.Year;
-                excelSheet.Range["B" + (dataTable.Rows.Count + 12)].Value2 = "Người lập";
-                excelSheet.Range["D" + (dataTable.Rows.Count + 12)].Value2 = "Kế toán trưởng";
-                excelSheet.Range["G" + (dataTable.Rows.Count + 12)].Value2 = "Giám đốc";
-                excelSheet.Range["B" + (dataTable.Rows.Count + 16)].Value2 = "";
-                excelSheet.Range["G" + (dataTable.Rows.Count + 16)].Value2 = _CFGRepo.GetNameByIDV("ID04");
+                excelSheet.Range["B" + (dataTable.Rows.Count + 8)].Value2 = "Tổng cộng";
+                excelSheet.Range["G" + (dataTable.Rows.Count + 10)].Value2 = "Ngày " + print.Day + " tháng " + print.Month + " năm " + print.Year;
+                excelSheet.Range["B" + (dataTable.Rows.Count + 11)].Value2 = "Người lập";
+                excelSheet.Range["D" + (dataTable.Rows.Count + 11)].Value2 = "Kế toán trưởng";
+                excelSheet.Range["G" + (dataTable.Rows.Count + 11)].Value2 = "Giám đốc";
+                excelSheet.Range["B" + (dataTable.Rows.Count + 15)].Value2 = "";
+                excelSheet.Range["G" + (dataTable.Rows.Count + 15)].Value2 = _CFGRepo.GetNameByIDV("ID04");
                 // loop through each row and add values to our sheet
                 int rowcount = 7;
 
                 foreach (DataRow datarow in dataTable.Rows)
                 {
+                    double _vnd_du_no = Utils.CDblDef(datarow["VND_DU_NO"], 0);
+                    double _vnd_du_co = Utils.CDblDef(datarow["VND_DU_CO"], 0);
+                    double _vnd_ps_no = Utils.CDblDef(datarow["VND_PS_NO"], 0);
+                    double _vnd_ps_co = Utils.CDblDef(datarow["VND_PS_CO"], 0);
+                    double _vnd_ck_no = Utils.CDblDef(datarow["VND_CK_NO"], 0);
+                    double _vnd_ck_co = Utils.CDblDef(datarow["VND_CK_CO"], 0);
                     rowcount += 1;
-                    excelSheet.Range["A" + rowcount].Value2 = datarow["MA_TK"].ToString();
-                    excelSheet.Range["B" + rowcount].Value2 = datarow["TEN_TK"].ToString();
-                    excelSheet.Range["C" + rowcount].Value2 = datarow["VND_DU_NO"].ToString();
-                    excelSheet.Range["D" + rowcount].Value2 = datarow["VND_DU_CO"].ToString();
-                    excelSheet.Range["E" + rowcount].Value2 = datarow["VND_PS_NO"].ToString();
-                    excelSheet.Range["F" + rowcount].Value2 = datarow["VND_PS_CO"].ToString();
-                    excelSheet.Range["G" + rowcount].Value2 = datarow["VND_CK_NO"].ToString();
-                    excelSheet.Range["H" + rowcount].Value2 = datarow["VND_CK_CO"].ToString();
+                    excelSheet.Range["A" + rowcount].Value2 = Utils.CStrDef(datarow["MA_TK"], "");
+                    excelSheet.Range["B" + rowcount].Value2 = Utils.CStrDef(datarow["TEN_TK"], "");
+                    excelSheet.Range["C" + rowcount].Value2 = _vnd_du_no > 0 ? String.Format("{0:###,##0}",datarow["VND_DU_NO"]) : "";
+                    excelSheet.Range["D" + rowcount].Value2 = _vnd_du_co > 0 ? String.Format("{0:###,##0}", datarow["VND_DU_CO"]) : "";
+                    excelSheet.Range["E" + rowcount].Value2 = _vnd_ps_no > 0 ? String.Format("{0:###,##0}", datarow["VND_PS_NO"]) : "";
+                    excelSheet.Range["F" + rowcount].Value2 = _vnd_ps_co > 0 ? String.Format("{0:###,##0}", datarow["VND_PS_CO"]) : "";
+                    excelSheet.Range["G" + rowcount].Value2 = _vnd_ck_no > 0 ? String.Format("{0:###,##0}", datarow["VND_CK_NO"]) : "";
+                    excelSheet.Range["H" + rowcount].Value2 = _vnd_ck_co > 0 ? String.Format("{0:###,##0}", datarow["VND_CK_CO"]) : "";
                 }
 
                 //now save the workbook and exit Excel
