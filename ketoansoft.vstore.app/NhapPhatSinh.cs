@@ -484,106 +484,96 @@ namespace ketoansoft.app
 
         #region cbo change
         public int tek = 0;
-        private void cboLoaiCTu_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            tek++;
-            if (cboLoaiCTu.SelectedIndex > -1 && tek > 2)
-            {
-                EnableCtr(cboLoaiCTu.Text);
-                _KT_CTuGocRepo = new KT_CTuGocRepo();
-                gridControl1.DataSource = _KT_CTuGocRepo.GetByMaCT(Utils.CStrDef(cboLoaiCTu.SelectedValue, ""), Utils.CIntDef(fTerm._month, 0), Utils.CIntDef(fTerm._year, 0), "");
-            }
-        }
-        private void cboTKNo_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            //if (cboTKNo.SelectedIndex > -1 && tek > 2)
-            //{
-            //    _KTTKRepo = new KTTKRepo();
-            //    var item = _KTTKRepo.GetById(Utils.CIntDef(cboTKNo.SelectedValue, 0));
-            //    if (item != null)
-            //        txtTKNo.Text = item.TEN_TK;
-            //}
-        }
-        private void cboTKNo_Enter(object sender, EventArgs e)
-        {
-            if (cboTKNo.SelectedIndex > -1 && tek > 2)
-            {
-                _KTTKRepo = new KTTKRepo();
-                var item = _KTTKRepo.GetById(Utils.CIntDef(cboTKNo.SelectedValue, 0));
-                if (item != null)
-                    txtTKNo.Text = item.TEN_TK;
-            }
-        }
-        private void cboDTPNNo_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            if (cboDTPNNo.SelectedIndex > -1 && tek > 2)
-            {
-                _KTDTPNRepo = new KTDTPNRepo();
-                var item = _KTDTPNRepo.GetById(Utils.CIntDef(cboDTPNNo.SelectedValue, 0));
-                if (item != null)
-                    txtDTPNNo.Text = item.TEN_DTPN;
-            }
-        }
-        private void cboYTCPNo_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            if (cboYTCPNo.SelectedIndex > -1 && tek > 2)
-            {
-                _KTYTCPRepo = new KTYTCPRepo();
-                var item = _KTYTCPRepo.GetById(Utils.CIntDef(cboYTCPNo.SelectedValue, 0));
-                if (item != null)
-                    txtYTCPNo.Text = item.TEN_YTCP_V;
-            }
-        }
-        private void cboVTHHNo_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            if (cboVTHHNo.SelectedIndex > -1 && tek > 2)
-            {
-                _KTDMHHRepo = new KTDMHHRepo();
-                var item = _KTDMHHRepo.GetById(Utils.CIntDef(cboVTHHNo.SelectedValue, 0));
-                if (item != null)
-                    txtVTHHNo.Text = item.TEN_DM;
-            }
-        }
-        private void cboTKCo_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            if (cboTKCo.SelectedIndex > -1 && tek > 2)
-            {
-                _KTTKRepo = new KTTKRepo();
-                var item = _KTTKRepo.GetById(Utils.CIntDef(cboTKCo.SelectedValue, 0));
-                if (item != null)
-                    txtTKCo.Text = item.TEN_TK;
-            }
-        }
-        private void cboDTPNCo_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            if (cboDTPNCo.SelectedIndex > -1 && tek > 2)
-            {
-                _KTDTPNRepo = new KTDTPNRepo();
-                var item = _KTDTPNRepo.GetById(Utils.CIntDef(cboDTPNCo.SelectedValue, 0));
-                if (item != null)
-                    txtDTPNCo.Text = item.TEN_DTPN;
-            }
-        }
-        private void cboYTCPCo_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            if (cboYTCPCo.SelectedIndex > -1 && tek > 2)
-            {
-                _KTYTCPRepo = new KTYTCPRepo();
-                var item = _KTYTCPRepo.GetById(Utils.CIntDef(cboYTCPCo.SelectedValue, 0));
-                if (item != null)
-                    txtYTCPCo.Text = item.TEN_YTCP_V;
-            }
-        }
-        private void cboVTHHCo_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            if (cboVTHHCo.SelectedIndex > -1 && tek > 2)
-            {
-                _KTDMHHRepo = new KTDMHHRepo();
-                var item = _KTDMHHRepo.GetById(Utils.CIntDef(cboVTHHCo.SelectedValue, 0));
-                if (item != null)
-                    txtVTHHCo.Text = item.TEN_DM;
-            }
-        }
+        //private void cboLoaiCTu_SelectedIndexChanged(object sender, EventArgs e)
+        //{
+        //    //tek++;
+        //    //if (cboLoaiCTu.SelectedIndex > -1 && tek > 2)
+        //    //{
+        //    //    EnableCtr(cboLoaiCTu.Text);
+        //    //    _KT_CTuGocRepo = new KT_CTuGocRepo();
+        //    //    gridControl1.DataSource = _KT_CTuGocRepo.GetByMaCT(Utils.CStrDef(cboLoaiCTu.SelectedValue, ""), Utils.CIntDef(fTerm._month, 0), Utils.CIntDef(fTerm._year, 0), "");
+        //    //}
+        //}
+        //private void cboTKNo_SelectedIndexChanged(object sender, EventArgs e)
+        //{
+        //    //if (cboTKNo.SelectedIndex > -1 && tek > 2)
+        //    //{
+        //    //    _KTTKRepo = new KTTKRepo();
+        //    //    var item = _KTTKRepo.GetById(Utils.CIntDef(cboTKNo.SelectedValue, 0));
+        //    //    if (item != null)
+        //    //        txtTKNo.Text = item.TEN_TK;
+        //    //}
+        //}
+        //private void cboDTPNNo_SelectedIndexChanged(object sender, EventArgs e)
+        //{
+        //    //if (cboDTPNNo.SelectedIndex > -1 && tek > 2)
+        //    //{
+        //    //    _KTDTPNRepo = new KTDTPNRepo();
+        //    //    var item = _KTDTPNRepo.GetById(Utils.CIntDef(cboDTPNNo.SelectedValue, 0));
+        //    //    if (item != null)
+        //    //        txtDTPNNo.Text = item.TEN_DTPN;
+        //    //}
+        //}
+        //private void cboYTCPNo_SelectedIndexChanged(object sender, EventArgs e)
+        //{
+        //    //if (cboYTCPNo.SelectedIndex > -1 && tek > 2)
+        //    //{
+        //    //    _KTYTCPRepo = new KTYTCPRepo();
+        //    //    var item = _KTYTCPRepo.GetById(Utils.CIntDef(cboYTCPNo.SelectedValue, 0));
+        //    //    if (item != null)
+        //    //        txtYTCPNo.Text = item.TEN_YTCP_V;
+        //    //}
+        //}
+        //private void cboVTHHNo_SelectedIndexChanged(object sender, EventArgs e)
+        //{
+        //    //if (cboVTHHNo.SelectedIndex > -1 && tek > 2)
+        //    //{
+        //    //    _KTDMHHRepo = new KTDMHHRepo();
+        //    //    var item = _KTDMHHRepo.GetById(Utils.CIntDef(cboVTHHNo.SelectedValue, 0));
+        //    //    if (item != null)
+        //    //        txtVTHHNo.Text = item.TEN_DM;
+        //    //}
+        //}
+        //private void cboTKCo_SelectedIndexChanged(object sender, EventArgs e)
+        //{
+        //    //if (cboTKCo.SelectedIndex > -1 && tek > 2)
+        //    //{
+        //    //    _KTTKRepo = new KTTKRepo();
+        //    //    var item = _KTTKRepo.GetById(Utils.CIntDef(cboTKCo.SelectedValue, 0));
+        //    //    if (item != null)
+        //    //        txtTKCo.Text = item.TEN_TK;
+        //    //}
+        //}
+        //private void cboDTPNCo_SelectedIndexChanged(object sender, EventArgs e)
+        //{
+        //    //if (cboDTPNCo.SelectedIndex > -1 && tek > 2)
+        //    //{
+        //    //    _KTDTPNRepo = new KTDTPNRepo();
+        //    //    var item = _KTDTPNRepo.GetById(Utils.CIntDef(cboDTPNCo.SelectedValue, 0));
+        //    //    if (item != null)
+        //    //        txtDTPNCo.Text = item.TEN_DTPN;
+        //    //}
+        //}
+        //private void cboYTCPCo_SelectedIndexChanged(object sender, EventArgs e)
+        //{
+        //    //if (cboYTCPCo.SelectedIndex > -1 && tek > 2)
+        //    //{
+        //    //    _KTYTCPRepo = new KTYTCPRepo();
+        //    //    var item = _KTYTCPRepo.GetById(Utils.CIntDef(cboYTCPCo.SelectedValue, 0));
+        //    //    if (item != null)
+        //    //        txtYTCPCo.Text = item.TEN_YTCP_V;
+        //    //}
+        //}
+        //private void cboVTHHCo_SelectedIndexChanged(object sender, EventArgs e)
+        //{
+        //    //if (cboVTHHCo.SelectedIndex > -1 && tek > 2)
+        //    //{
+        //    //    _KTDMHHRepo = new KTDMHHRepo();
+        //    //    var item = _KTDMHHRepo.GetById(Utils.CIntDef(cboVTHHCo.SelectedValue, 0));
+        //    //    if (item != null)
+        //    //        txtVTHHCo.Text = item.TEN_DM;
+        //    //}
+        //}
         private void cboMakhachhang_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (cboVTHHCo.SelectedIndex > -1 && tek > 2)
@@ -791,1049 +781,2071 @@ namespace ketoansoft.app
                 lbTongtien.Visible = true;
                 #endregion
 
-                if (cboLoaiCTu.Text.ToUpper() == "BG")
+                switch (cboLoaiCTu.Text.ToUpper())
                 {
-                    cboMaTT.Visible = false;
-                    lbMaTT.Visible = false;
-                    cboSoHopDong.Visible = false;
-                    lbSoHopDong.Visible = false;
-                    cboCongtrinh.Visible = false;
-                    lbCongtrinh.Visible = false;
+                    case "BG":
+                        cboMaTT.Visible = false;
+                        lbMaTT.Visible = false;
+                        cboSoHopDong.Visible = false;
+                        lbSoHopDong.Visible = false;
+                        cboCongtrinh.Visible = false;
+                        lbCongtrinh.Visible = false;
 
-                    cboYTCPNo.Visible = false;
-                    lbYTCPNo.Visible = false;
-                    txtYTCPNo.Visible = false;
-                    txtYTCPDuNgay.Visible = false;
-                    txtYTCPDuThang.Visible = false;
-                    cboYTCPCo.Visible = false;
-                    lbYTCPCo.Visible = false;
-                    txtYTCPCo.Visible = false;
-                    txtYTCPDuNgayCo.Visible = false;
-                    txtYTCPDuThangCo.Visible = false;
-                    cboVTHHNo.Visible = false;
-                    lbVTHHNo.Visible = false;
-                    txtVTHHNo.Visible = false;
-                    txtVTHHDuNgay.Visible = false;
-                    txtVTHHDuThang.Visible = false;
+                        cboYTCPNo.Visible = false;
+                        lbYTCPNo.Visible = false;
+                        txtYTCPNo.Visible = false;
+                        txtYTCPDuNgay.Visible = false;
+                        txtYTCPDuThang.Visible = false;
+                        cboYTCPCo.Visible = false;
+                        lbYTCPCo.Visible = false;
+                        txtYTCPCo.Visible = false;
+                        txtYTCPDuNgayCo.Visible = false;
+                        txtYTCPDuThangCo.Visible = false;
+                        cboVTHHNo.Visible = false;
+                        lbVTHHNo.Visible = false;
+                        txtVTHHNo.Visible = false;
+                        txtVTHHDuNgay.Visible = false;
+                        txtVTHHDuThang.Visible = false;
 
-                    txtTygia.Visible = false;
-                    lbTygia.Visible = false;
-                    txtTienUsd.Visible = false;
-                    lbTienUsd.Visible = false;
-                    txtPTNK.Visible = false;
-                    lbPTNK.Visible = false;
-                    txtThueNK.Visible = false;
-                    lbThueNK.Visible = false;
+                        txtTygia.Visible = false;
+                        lbTygia.Visible = false;
+                        txtTienUsd.Visible = false;
+                        lbTienUsd.Visible = false;
+                        txtPTNK.Visible = false;
+                        lbPTNK.Visible = false;
+                        txtThueNK.Visible = false;
+                        lbThueNK.Visible = false;
+                        break;
+                    case "CNH":
+                        cboMaTT.Visible = false;
+                        lbMaTT.Visible = false;
+                        cboSoHopDong.Visible = false;
+                        lbSoHopDong.Visible = false;
+                        cboCongtrinh.Visible = false;
+                        lbCongtrinh.Visible = false;
+
+                        cboVTHHNo.Visible = false;
+                        lbVTHHNo.Visible = false;
+                        txtVTHHNo.Visible = false;
+                        txtVTHHDuNgay.Visible = false;
+                        txtVTHHDuThang.Visible = false;
+                        cboYTCPCo.Visible = false;
+                        lbYTCPCo.Visible = false;
+                        txtYTCPCo.Visible = false;
+                        txtYTCPDuNgayCo.Visible = false;
+                        txtYTCPDuThangCo.Visible = false;
+                        cboVTHHCo.Visible = false;
+                        lbVTHHCo.Visible = false;
+                        txtVTHHCo.Visible = false;
+                        txtVTHHDuNgayCo.Visible = false;
+                        txtVTHHDuThangCo.Visible = false;
+
+                        comboBoxEx9.Visible = false;
+                        txtSoluong.Visible = false;
+                        lbSoluong.Visible = false;
+                        txtDongia.Visible = false;
+                        lbDongia.Visible = false;
+                        txtPTNK.Visible = false;
+                        lbPTNK.Visible = false;
+                        txtThueNK.Visible = false;
+                        lbThueNK.Visible = false;
+                        break;
+                    case "CTGS":
+                        cboMaTT.Visible = false;
+                        lbMaTT.Visible = false;
+                        cboSoHopDong.Visible = false;
+                        lbSoHopDong.Visible = false;
+                        cboCongtrinh.Visible = false;
+                        lbCongtrinh.Visible = false;
+
+                        cboVTHHNo.Visible = false;
+                        lbVTHHNo.Visible = false;
+                        txtVTHHNo.Visible = false;
+                        txtVTHHDuNgay.Visible = false;
+                        txtVTHHDuThang.Visible = false;
+                        cboYTCPCo.Visible = false;
+                        lbYTCPCo.Visible = false;
+                        txtYTCPCo.Visible = false;
+                        txtYTCPDuNgayCo.Visible = false;
+                        txtYTCPDuThangCo.Visible = false;
+                        cboVTHHCo.Visible = false;
+                        lbVTHHCo.Visible = false;
+                        txtVTHHCo.Visible = false;
+                        txtVTHHDuNgayCo.Visible = false;
+                        txtVTHHDuThangCo.Visible = false;
+
+                        comboBoxEx9.Visible = false;
+                        txtSoluong.Visible = false;
+                        lbSoluong.Visible = false;
+                        txtDongia.Visible = false;
+                        lbDongia.Visible = false;
+                        txtPTNK.Visible = false;
+                        lbPTNK.Visible = false;
+                        txtThueNK.Visible = false;
+                        lbThueNK.Visible = false;
+                        txtTygia.Visible = false;
+                        lbTygia.Visible = false;
+                        txtTienUsd.Visible = false;
+                        lbTienUsd.Visible = false;
+                        break;
+                    case "CTNH":
+                        cboMaTT.Visible = false;
+                        lbMaTT.Visible = false;
+                        cboSoHopDong.Visible = false;
+                        lbSoHopDong.Visible = false;
+                        cboCongtrinh.Visible = false;
+                        lbCongtrinh.Visible = false;
+
+                        cboVTHHNo.Visible = false;
+                        lbVTHHNo.Visible = false;
+                        txtVTHHNo.Visible = false;
+                        txtVTHHDuNgay.Visible = false;
+                        txtVTHHDuThang.Visible = false;
+                        cboYTCPCo.Visible = false;
+                        lbYTCPCo.Visible = false;
+                        txtYTCPCo.Visible = false;
+                        txtYTCPDuNgayCo.Visible = false;
+                        txtYTCPDuThangCo.Visible = false;
+                        cboVTHHCo.Visible = false;
+                        lbVTHHCo.Visible = false;
+                        txtVTHHCo.Visible = false;
+                        txtVTHHDuNgayCo.Visible = false;
+                        txtVTHHDuThangCo.Visible = false;
+
+                        comboBoxEx9.Visible = false;
+                        txtSoluong.Visible = false;
+                        lbSoluong.Visible = false;
+                        txtDongia.Visible = false;
+                        lbDongia.Visible = false;
+                        txtPTNK.Visible = false;
+                        lbPTNK.Visible = false;
+                        txtThueNK.Visible = false;
+                        lbThueNK.Visible = false;
+                        break;
+                    case "DHB":
+                        cboMaTT.Visible = false;
+                        lbMaTT.Visible = false;
+                        cboSoHopDong.Visible = false;
+                        lbSoHopDong.Visible = false;
+                        cboCongtrinh.Visible = false;
+                        lbCongtrinh.Visible = false;
+
+                        cboVTHHNo.Visible = false;
+                        lbVTHHNo.Visible = false;
+                        txtVTHHNo.Visible = false;
+                        txtVTHHDuNgay.Visible = false;
+                        txtVTHHDuThang.Visible = false;
+                        cboYTCPNo.Visible = false;
+                        lbYTCPNo.Visible = false;
+                        txtYTCPNo.Visible = false;
+                        txtYTCPDuNgay.Visible = false;
+                        txtYTCPDuThang.Visible = false;
+                        cboYTCPCo.Visible = false;
+                        lbYTCPCo.Visible = false;
+                        txtYTCPCo.Visible = false;
+                        txtYTCPDuNgayCo.Visible = false;
+                        txtYTCPDuThangCo.Visible = false;
+
+                        txtTygia.Visible = false;
+                        lbTygia.Visible = false;
+                        txtTienUsd.Visible = false;
+                        lbTienUsd.Visible = false;
+                        txtPTNK.Visible = false;
+                        lbPTNK.Visible = false;
+                        txtThueNK.Visible = false;
+                        lbThueNK.Visible = false;
+                        break;
+                    case "DMH":
+                        cboMaTT.Visible = false;
+                        lbMaTT.Visible = false;
+                        cboSoHopDong.Visible = false;
+                        lbSoHopDong.Visible = false;
+                        cboCongtrinh.Visible = false;
+                        lbCongtrinh.Visible = false;
+
+                        cboYTCPNo.Visible = false;
+                        lbYTCPNo.Visible = false;
+                        txtYTCPNo.Visible = false;
+                        txtYTCPDuNgay.Visible = false;
+                        txtYTCPDuThang.Visible = false;
+                        cboYTCPCo.Visible = false;
+                        lbYTCPCo.Visible = false;
+                        txtYTCPCo.Visible = false;
+                        txtYTCPDuNgayCo.Visible = false;
+                        txtYTCPDuThangCo.Visible = false;
+                        cboVTHHCo.Visible = false;
+                        lbVTHHCo.Visible = false;
+                        txtVTHHCo.Visible = false;
+                        txtVTHHDuNgayCo.Visible = false;
+                        txtVTHHDuThangCo.Visible = false;
+
+                        txtTygia.Visible = false;
+                        lbTygia.Visible = false;
+                        txtTienUsd.Visible = false;
+                        lbTienUsd.Visible = false;
+                        txtPTNK.Visible = false;
+                        lbPTNK.Visible = false;
+                        txtThueNK.Visible = false;
+                        lbThueNK.Visible = false;
+                        break;
+                    case "HD":
+                        cboMaTT.Visible = false;
+                        lbMaTT.Visible = false;
+                        cboSoHopDong.Visible = false;
+                        lbSoHopDong.Visible = false;
+                        cboCongtrinh.Visible = false;
+                        lbCongtrinh.Visible = false;
+
+                        cboVTHHNo.Visible = false;
+                        lbVTHHNo.Visible = false;
+                        txtVTHHNo.Visible = false;
+                        txtVTHHDuNgay.Visible = false;
+                        txtVTHHDuThang.Visible = false;
+                        cboYTCPCo.Visible = false;
+                        lbYTCPCo.Visible = false;
+                        txtYTCPCo.Visible = false;
+                        txtYTCPDuNgayCo.Visible = false;
+                        txtYTCPDuThangCo.Visible = false;
+                        cboVTHHCo.Visible = false;
+                        lbVTHHCo.Visible = false;
+                        txtVTHHCo.Visible = false;
+                        txtVTHHDuNgayCo.Visible = false;
+                        txtVTHHDuThangCo.Visible = false;
+
+                        comboBoxEx9.Visible = false;
+                        txtSoluong.Visible = false;
+                        lbSoluong.Visible = false;
+                        txtDongia.Visible = false;
+                        lbDongia.Visible = false;
+                        txtTygia.Visible = false;
+                        lbTygia.Visible = false;
+                        txtTienUsd.Visible = false;
+                        lbTienUsd.Visible = false;
+                        txtPTNK.Visible = false;
+                        lbPTNK.Visible = false;
+                        txtThueNK.Visible = false;
+                        lbThueNK.Visible = false;
+                        break;
+                    case "HDBR":
+                        cboMaTT.Visible = false;
+                        lbMaTT.Visible = false;
+                        cboSoHopDong.Visible = false;
+                        lbSoHopDong.Visible = false;
+                        cboCongtrinh.Visible = false;
+                        lbCongtrinh.Visible = false;
+
+                        cboYTCPNo.Visible = false;
+                        lbYTCPNo.Visible = false;
+                        txtYTCPNo.Visible = false;
+                        txtYTCPDuNgay.Visible = false;
+                        txtYTCPDuThang.Visible = false;
+                        cboVTHHNo.Visible = false;
+                        lbVTHHNo.Visible = false;
+                        txtVTHHNo.Visible = false;
+                        txtVTHHDuNgay.Visible = false;
+                        txtVTHHDuThang.Visible = false;
+                        cboYTCPCo.Visible = false;
+                        lbYTCPCo.Visible = false;
+                        txtYTCPCo.Visible = false;
+                        txtYTCPDuNgayCo.Visible = false;
+                        txtYTCPDuThangCo.Visible = false;
+
+                        txtTygia.Visible = false;
+                        lbTygia.Visible = false;
+                        txtTienUsd.Visible = false;
+                        lbTienUsd.Visible = false;
+                        txtPTNK.Visible = false;
+                        lbPTNK.Visible = false;
+                        txtThueNK.Visible = false;
+                        lbThueNK.Visible = false;
+                        break;
+                    case "PBCP":
+                        cboMaTT.Visible = false;
+                        lbMaTT.Visible = false;
+                        cboSoHopDong.Visible = false;
+                        lbSoHopDong.Visible = false;
+                        cboCongtrinh.Visible = false;
+                        lbCongtrinh.Visible = false;
+
+                        cboVTHHNo.Visible = false;
+                        lbVTHHNo.Visible = false;
+                        txtVTHHNo.Visible = false;
+                        txtVTHHDuNgay.Visible = false;
+                        txtVTHHDuThang.Visible = false;
+                        cboYTCPCo.Visible = false;
+                        lbYTCPCo.Visible = false;
+                        txtYTCPCo.Visible = false;
+                        txtYTCPDuNgayCo.Visible = false;
+                        txtYTCPDuThangCo.Visible = false;
+                        cboVTHHCo.Visible = false;
+                        lbVTHHCo.Visible = false;
+                        txtVTHHCo.Visible = false;
+                        txtVTHHDuNgayCo.Visible = false;
+                        txtVTHHDuThangCo.Visible = false;
+
+                        comboBoxEx9.Visible = false;
+                        txtSoluong.Visible = false;
+                        lbSoluong.Visible = false;
+                        txtDongia.Visible = false;
+                        lbDongia.Visible = false;
+                        txtTygia.Visible = false;
+                        lbTygia.Visible = false;
+                        txtTienUsd.Visible = false;
+                        lbTienUsd.Visible = false;
+                        txtPTNK.Visible = false;
+                        lbPTNK.Visible = false;
+                        txtThueNK.Visible = false;
+                        lbThueNK.Visible = false;
+                        break;
+                    case "PC":
+                        cboMaTT.Visible = false;
+                        lbMaTT.Visible = false;
+                        cboSoHopDong.Visible = false;
+                        lbSoHopDong.Visible = false;
+                        cboCongtrinh.Visible = false;
+                        lbCongtrinh.Visible = false;
+
+                        cboVTHHNo.Visible = false;
+                        lbVTHHNo.Visible = false;
+                        txtVTHHNo.Visible = false;
+                        txtVTHHDuNgay.Visible = false;
+                        txtVTHHDuThang.Visible = false;
+                        cboYTCPCo.Visible = false;
+                        lbYTCPCo.Visible = false;
+                        txtYTCPCo.Visible = false;
+                        txtYTCPDuNgayCo.Visible = false;
+                        txtYTCPDuThangCo.Visible = false;
+                        cboVTHHCo.Visible = false;
+                        lbVTHHCo.Visible = false;
+                        txtVTHHCo.Visible = false;
+                        txtVTHHDuNgayCo.Visible = false;
+                        txtVTHHDuThangCo.Visible = false;
+
+                        comboBoxEx9.Visible = false;
+                        txtSoluong.Visible = false;
+                        lbSoluong.Visible = false;
+                        txtDongia.Visible = false;
+                        lbDongia.Visible = false;
+                        txtTygia.Visible = false;
+                        lbTygia.Visible = false;
+                        txtTienUsd.Visible = false;
+                        lbTienUsd.Visible = false;
+                        txtPTNK.Visible = false;
+                        lbPTNK.Visible = false;
+                        txtThueNK.Visible = false;
+                        lbThueNK.Visible = false;
+                        break;
+                    case "PCK":
+                        cboMaTT.Visible = false;
+                        lbMaTT.Visible = false;
+                        cboCongtrinh.Visible = false;
+                        lbCongtrinh.Visible = false;
+
+                        cboVTHHNo.Visible = false;
+                        lbVTHHNo.Visible = false;
+                        txtVTHHNo.Visible = false;
+                        txtVTHHDuNgay.Visible = false;
+                        txtVTHHDuThang.Visible = false;
+                        cboYTCPCo.Visible = false;
+                        lbYTCPCo.Visible = false;
+                        txtYTCPCo.Visible = false;
+                        txtYTCPDuNgayCo.Visible = false;
+                        txtYTCPDuThangCo.Visible = false;
+                        cboVTHHCo.Visible = false;
+                        lbVTHHCo.Visible = false;
+                        txtVTHHCo.Visible = false;
+                        txtVTHHDuNgayCo.Visible = false;
+                        txtVTHHDuThangCo.Visible = false;
+
+                        txtTygia.Visible = false;
+                        lbTygia.Visible = false;
+                        txtTienUsd.Visible = false;
+                        lbTienUsd.Visible = false;
+                        txtPTNK.Visible = false;
+                        lbPTNK.Visible = false;
+                        txtThueNK.Visible = false;
+                        lbThueNK.Visible = false;
+                        break;
+                    case "PKT":
+                        cboMaTT.Visible = false;
+                        lbMaTT.Visible = false;
+                        cboSoHopDong.Visible = false;
+                        lbSoHopDong.Visible = false;
+                        cboCongtrinh.Visible = false;
+                        lbCongtrinh.Visible = false;
+
+                        cboVTHHNo.Visible = false;
+                        lbVTHHNo.Visible = false;
+                        txtVTHHNo.Visible = false;
+                        txtVTHHDuNgay.Visible = false;
+                        txtVTHHDuThang.Visible = false;
+                        cboYTCPCo.Visible = false;
+                        lbYTCPCo.Visible = false;
+                        txtYTCPCo.Visible = false;
+                        txtYTCPDuNgayCo.Visible = false;
+                        txtYTCPDuThangCo.Visible = false;
+                        cboVTHHCo.Visible = false;
+                        lbVTHHCo.Visible = false;
+                        txtVTHHCo.Visible = false;
+                        txtVTHHDuNgayCo.Visible = false;
+                        txtVTHHDuThangCo.Visible = false;
+
+                        comboBoxEx9.Visible = false;
+                        txtSoluong.Visible = false;
+                        lbSoluong.Visible = false;
+                        txtDongia.Visible = false;
+                        lbDongia.Visible = false;
+                        txtTygia.Visible = false;
+                        lbTygia.Visible = false;
+                        txtTienUsd.Visible = false;
+                        lbTienUsd.Visible = false;
+                        txtPTNK.Visible = false;
+                        lbPTNK.Visible = false;
+                        txtThueNK.Visible = false;
+                        lbThueNK.Visible = false;
+                        break;
+                    case "PKT02":
+                        cboMaTT.Visible = false;
+                        lbMaTT.Visible = false;
+                        cboSoHopDong.Visible = false;
+                        lbSoHopDong.Visible = false;
+                        cboCongtrinh.Visible = false;
+                        lbCongtrinh.Visible = false;
+
+                        cboVTHHNo.Visible = false;
+                        lbVTHHNo.Visible = false;
+                        txtVTHHNo.Visible = false;
+                        txtVTHHDuNgay.Visible = false;
+                        txtVTHHDuThang.Visible = false;
+                        cboYTCPCo.Visible = false;
+                        lbYTCPCo.Visible = false;
+                        txtYTCPCo.Visible = false;
+                        txtYTCPDuNgayCo.Visible = false;
+                        txtYTCPDuThangCo.Visible = false;
+                        cboVTHHCo.Visible = false;
+                        lbVTHHCo.Visible = false;
+                        txtVTHHCo.Visible = false;
+                        txtVTHHDuNgayCo.Visible = false;
+                        txtVTHHDuThangCo.Visible = false;
+
+                        comboBoxEx9.Visible = false;
+                        txtSoluong.Visible = false;
+                        lbSoluong.Visible = false;
+                        txtDongia.Visible = false;
+                        lbDongia.Visible = false;
+                        txtTygia.Visible = false;
+                        lbTygia.Visible = false;
+                        txtTienUsd.Visible = false;
+                        lbTienUsd.Visible = false;
+                        txtPTNK.Visible = false;
+                        lbPTNK.Visible = false;
+                        txtThueNK.Visible = false;
+                        lbThueNK.Visible = false;
+                        break;
+                    case "PNK":
+                        cboMaTT.Visible = false;
+                        lbMaTT.Visible = false;
+                        cboSoHopDong.Visible = false;
+                        lbSoHopDong.Visible = false;
+                        cboCongtrinh.Visible = false;
+                        lbCongtrinh.Visible = false;
+
+                        cboYTCPNo.Visible = false;
+                        lbYTCPNo.Visible = false;
+                        txtYTCPNo.Visible = false;
+                        txtYTCPDuNgay.Visible = false;
+                        txtYTCPDuThang.Visible = false;
+                        cboYTCPCo.Visible = false;
+                        lbYTCPCo.Visible = false;
+                        txtYTCPCo.Visible = false;
+                        txtYTCPDuNgayCo.Visible = false;
+                        txtYTCPDuThangCo.Visible = false;
+                        cboVTHHCo.Visible = false;
+                        lbVTHHCo.Visible = false;
+                        txtVTHHCo.Visible = false;
+                        txtVTHHDuNgayCo.Visible = false;
+                        txtVTHHDuThangCo.Visible = false;
+
+                        txtTygia.Visible = false;
+                        lbTygia.Visible = false;
+                        txtTienUsd.Visible = false;
+                        lbTienUsd.Visible = false;
+                        txtPTNK.Visible = false;
+                        lbPTNK.Visible = false;
+                        txtThueNK.Visible = false;
+                        lbThueNK.Visible = false;
+                        break;
+                    case "PNKGC":
+                        cboMaTT.Visible = false;
+                        lbMaTT.Visible = false;
+                        cboSoHopDong.Visible = false;
+                        lbSoHopDong.Visible = false;
+                        cboCongtrinh.Visible = false;
+                        lbCongtrinh.Visible = false;
+
+                        cboYTCPNo.Visible = false;
+                        lbYTCPNo.Visible = false;
+                        txtYTCPNo.Visible = false;
+                        txtYTCPDuNgay.Visible = false;
+                        txtYTCPDuThang.Visible = false;
+                        cboYTCPCo.Visible = false;
+                        lbYTCPCo.Visible = false;
+                        txtYTCPCo.Visible = false;
+                        txtYTCPDuNgayCo.Visible = false;
+                        txtYTCPDuThangCo.Visible = false;
+                        cboVTHHCo.Visible = false;
+                        lbVTHHCo.Visible = false;
+                        txtVTHHCo.Visible = false;
+                        txtVTHHDuNgayCo.Visible = false;
+                        txtVTHHDuThangCo.Visible = false;
+
+                        comboBoxEx9.Visible = false;
+                        txtSoluong.Visible = false;
+                        lbSoluong.Visible = false;
+                        txtDongia.Visible = false;
+                        lbDongia.Visible = false;
+                        txtTygia.Visible = false;
+                        lbTygia.Visible = false;
+                        txtTienUsd.Visible = false;
+                        lbTienUsd.Visible = false;
+                        txtPTNK.Visible = false;
+                        lbPTNK.Visible = false;
+                        txtThueNK.Visible = false;
+                        lbThueNK.Visible = false;
+                        break;
+                    case "PNKNK":
+                        cboMaTT.Visible = false;
+                        lbMaTT.Visible = false;
+                        cboSoHopDong.Visible = false;
+                        lbSoHopDong.Visible = false;
+                        cboCongtrinh.Visible = false;
+                        lbCongtrinh.Visible = false;
+
+                        cboYTCPNo.Visible = false;
+                        lbYTCPNo.Visible = false;
+                        txtYTCPNo.Visible = false;
+                        txtYTCPDuNgay.Visible = false;
+                        txtYTCPDuThang.Visible = false;
+                        cboYTCPCo.Visible = false;
+                        lbYTCPCo.Visible = false;
+                        txtYTCPCo.Visible = false;
+                        txtYTCPDuNgayCo.Visible = false;
+                        txtYTCPDuThangCo.Visible = false;
+                        cboVTHHCo.Visible = false;
+                        lbVTHHCo.Visible = false;
+                        txtVTHHCo.Visible = false;
+                        txtVTHHDuNgayCo.Visible = false;
+                        txtVTHHDuThangCo.Visible = false;
+                        break;
+                    case "PNKNL":
+                        cboMaTT.Visible = false;
+                        lbMaTT.Visible = false;
+                        cboSoHopDong.Visible = false;
+                        lbSoHopDong.Visible = false;
+                        cboCongtrinh.Visible = false;
+                        lbCongtrinh.Visible = false;
+
+                        cboYTCPNo.Visible = false;
+                        lbYTCPNo.Visible = false;
+                        txtYTCPNo.Visible = false;
+                        txtYTCPDuNgay.Visible = false;
+                        txtYTCPDuThang.Visible = false;
+                        cboYTCPCo.Visible = false;
+                        lbYTCPCo.Visible = false;
+                        txtYTCPCo.Visible = false;
+                        txtYTCPDuNgayCo.Visible = false;
+                        txtYTCPDuThangCo.Visible = false;
+                        cboVTHHCo.Visible = false;
+                        lbVTHHCo.Visible = false;
+                        txtVTHHCo.Visible = false;
+                        txtVTHHDuNgayCo.Visible = false;
+                        txtVTHHDuThangCo.Visible = false;
+
+                        txtTygia.Visible = false;
+                        lbTygia.Visible = false;
+                        txtTienUsd.Visible = false;
+                        lbTienUsd.Visible = false;
+                        txtPTNK.Visible = false;
+                        lbPTNK.Visible = false;
+                        txtThueNK.Visible = false;
+                        lbThueNK.Visible = false;
+                        break;
+                    case "PNKTP":
+                        cboMaTT.Visible = false;
+                        lbMaTT.Visible = false;
+                        cboSoHopDong.Visible = false;
+                        lbSoHopDong.Visible = false;
+                        cboCongtrinh.Visible = false;
+                        lbCongtrinh.Visible = false;
+
+                        cboYTCPNo.Visible = false;
+                        lbYTCPNo.Visible = false;
+                        txtYTCPNo.Visible = false;
+                        txtYTCPDuNgay.Visible = false;
+                        txtYTCPDuThang.Visible = false;
+                        cboYTCPCo.Visible = false;
+                        lbYTCPCo.Visible = false;
+                        txtYTCPCo.Visible = false;
+                        txtYTCPDuNgayCo.Visible = false;
+                        txtYTCPDuThangCo.Visible = false;
+                        cboVTHHCo.Visible = false;
+                        lbVTHHCo.Visible = false;
+                        txtVTHHCo.Visible = false;
+                        txtVTHHDuNgayCo.Visible = false;
+                        txtVTHHDuThangCo.Visible = false;
+
+                        txtTS.Visible = false;
+                        lbTS.Visible = false;
+                        txtTKThue.Visible = false;
+                        lbTKThue.Visible = false;
+                        txtThueVND.Visible = false;
+                        lbThueVND.Visible = false;
+                        txtTygia.Visible = false;
+                        lbTygia.Visible = false;
+                        txtTienUsd.Visible = false;
+                        lbTienUsd.Visible = false;
+                        txtPTNK.Visible = false;
+                        lbPTNK.Visible = false;
+                        txtThueNK.Visible = false;
+                        lbThueNK.Visible = false;
+                        break;
+                    case "PT":
+                        cboSoHopDong.Visible = false;
+                        lbSoHopDong.Visible = false;
+                        cboCongtrinh.Visible = false;
+                        lbCongtrinh.Visible = false;
+
+                        cboYTCPNo.Visible = false;
+                        lbYTCPNo.Visible = false;
+                        txtYTCPNo.Visible = false;
+                        txtYTCPDuNgay.Visible = false;
+                        txtYTCPDuThang.Visible = false;
+                        cboVTHHNo.Visible = false;
+                        lbVTHHNo.Visible = false;
+                        txtVTHHNo.Visible = false;
+                        txtVTHHDuNgay.Visible = false;
+                        txtVTHHDuThang.Visible = false;
+                        cboYTCPCo.Visible = false;
+                        lbYTCPCo.Visible = false;
+                        txtYTCPCo.Visible = false;
+                        txtYTCPDuNgayCo.Visible = false;
+                        txtYTCPDuThangCo.Visible = false;
+                        cboVTHHCo.Visible = false;
+                        lbVTHHCo.Visible = false;
+                        txtVTHHCo.Visible = false;
+                        txtVTHHDuNgayCo.Visible = false;
+                        txtVTHHDuThangCo.Visible = false;
+
+                        comboBoxEx9.Visible = false;
+                        txtSoluong.Visible = false;
+                        lbSoluong.Visible = false;
+                        txtDongia.Visible = false;
+                        lbDongia.Visible = false;
+                        txtTygia.Visible = false;
+                        lbTygia.Visible = false;
+                        txtTienUsd.Visible = false;
+                        lbTienUsd.Visible = false;
+                        txtPTNK.Visible = false;
+                        lbPTNK.Visible = false;
+                        txtThueNK.Visible = false;
+                        lbThueNK.Visible = false;
+                        break;
+                    case "PXK":
+                        cboMaTT.Visible = false;
+                        lbMaTT.Visible = false;
+                        cboSoHopDong.Visible = false;
+                        lbSoHopDong.Visible = false;
+                        cboCongtrinh.Visible = false;
+                        lbCongtrinh.Visible = false;
+
+                        cboVTHHNo.Visible = false;
+                        lbVTHHNo.Visible = false;
+                        txtVTHHNo.Visible = false;
+                        txtVTHHDuNgay.Visible = false;
+                        txtVTHHDuThang.Visible = false;
+                        cboYTCPNo.Visible = false;
+                        lbYTCPNo.Visible = false;
+                        txtYTCPNo.Visible = false;
+                        txtYTCPDuNgay.Visible = false;
+                        txtYTCPDuThang.Visible = false;
+                        cboYTCPCo.Visible = false;
+                        lbYTCPCo.Visible = false;
+                        txtYTCPCo.Visible = false;
+                        txtYTCPDuNgayCo.Visible = false;
+                        txtYTCPDuThangCo.Visible = false;
+
+                        txtTS.Visible = false;
+                        lbTS.Visible = false;
+                        txtTKThue.Visible = false;
+                        lbTKThue.Visible = false;
+                        txtThueVND.Visible = false;
+                        lbThueVND.Visible = false;
+                        txtTygia.Visible = false;
+                        lbTygia.Visible = false;
+                        txtTienUsd.Visible = false;
+                        lbTienUsd.Visible = false;
+                        txtPTNK.Visible = false;
+                        lbPTNK.Visible = false;
+                        txtThueNK.Visible = false;
+                        lbThueNK.Visible = false;
+                        break;
+                    case "PXKGC":
+                        cboMaTT.Visible = false;
+                        lbMaTT.Visible = false;
+                        cboSoHopDong.Visible = false;
+                        lbSoHopDong.Visible = false;
+                        cboCongtrinh.Visible = false;
+                        lbCongtrinh.Visible = false;
+
+                        cboVTHHNo.Visible = false;
+                        lbVTHHNo.Visible = false;
+                        txtVTHHNo.Visible = false;
+                        txtVTHHDuNgay.Visible = false;
+                        txtVTHHDuThang.Visible = false;
+                        cboYTCPNo.Visible = false;
+                        lbYTCPNo.Visible = false;
+                        txtYTCPNo.Visible = false;
+                        txtYTCPDuNgay.Visible = false;
+                        txtYTCPDuThang.Visible = false;
+                        cboYTCPCo.Visible = false;
+                        lbYTCPCo.Visible = false;
+                        txtYTCPCo.Visible = false;
+                        txtYTCPDuNgayCo.Visible = false;
+                        txtYTCPDuThangCo.Visible = false;
+
+                        txtTS.Visible = false;
+                        lbTS.Visible = false;
+                        txtTKThue.Visible = false;
+                        lbTKThue.Visible = false;
+                        txtThueVND.Visible = false;
+                        lbThueVND.Visible = false;
+                        txtTygia.Visible = false;
+                        lbTygia.Visible = false;
+                        txtTienUsd.Visible = false;
+                        lbTienUsd.Visible = false;
+                        txtPTNK.Visible = false;
+                        lbPTNK.Visible = false;
+                        txtThueNK.Visible = false;
+                        lbThueNK.Visible = false;
+                        break;
+                    case "PXKNL":
+                        cboMaTT.Visible = false;
+                        lbMaTT.Visible = false;
+                        cboSoHopDong.Visible = false;
+                        lbSoHopDong.Visible = false;
+                        cboCongtrinh.Visible = false;
+                        lbCongtrinh.Visible = false;
+
+                        cboVTHHNo.Visible = false;
+                        lbVTHHNo.Visible = false;
+                        txtVTHHNo.Visible = false;
+                        txtVTHHDuNgay.Visible = false;
+                        txtVTHHDuThang.Visible = false;
+                        cboYTCPNo.Visible = false;
+                        lbYTCPNo.Visible = false;
+                        txtYTCPNo.Visible = false;
+                        txtYTCPDuNgay.Visible = false;
+                        txtYTCPDuThang.Visible = false;
+                        cboYTCPCo.Visible = false;
+                        lbYTCPCo.Visible = false;
+                        txtYTCPCo.Visible = false;
+                        txtYTCPDuNgayCo.Visible = false;
+                        txtYTCPDuThangCo.Visible = false;
+
+                        txtTS.Visible = false;
+                        lbTS.Visible = false;
+                        txtTKThue.Visible = false;
+                        lbTKThue.Visible = false;
+                        txtThueVND.Visible = false;
+                        lbThueVND.Visible = false;
+                        txtTygia.Visible = false;
+                        lbTygia.Visible = false;
+                        txtTienUsd.Visible = false;
+                        lbTienUsd.Visible = false;
+                        txtPTNK.Visible = false;
+                        lbPTNK.Visible = false;
+                        txtThueNK.Visible = false;
+                        lbThueNK.Visible = false;
+                        break;
+                    case "TNH":
+                        cboMaTT.Visible = false;
+                        lbMaTT.Visible = false;
+                        cboSoHopDong.Visible = false;
+                        lbSoHopDong.Visible = false;
+                        cboCongtrinh.Visible = false;
+                        lbCongtrinh.Visible = false;
+
+                        cboVTHHNo.Visible = false;
+                        lbVTHHNo.Visible = false;
+                        txtVTHHNo.Visible = false;
+                        txtVTHHDuNgay.Visible = false;
+                        txtVTHHDuThang.Visible = false;
+                        cboYTCPCo.Visible = false;
+                        lbYTCPCo.Visible = false;
+                        txtYTCPCo.Visible = false;
+                        txtYTCPDuNgayCo.Visible = false;
+                        txtYTCPDuThangCo.Visible = false;
+                        cboVTHHCo.Visible = false;
+                        lbVTHHCo.Visible = false;
+                        txtVTHHCo.Visible = false;
+                        txtVTHHDuNgayCo.Visible = false;
+                        txtVTHHDuThangCo.Visible = false;
+
+                        comboBoxEx9.Visible = false;
+                        txtSoluong.Visible = false;
+                        lbSoluong.Visible = false;
+                        txtDongia.Visible = false;
+                        lbDongia.Visible = false;
+                        txtTS.Visible = false;
+                        lbTS.Visible = false;
+                        txtTKThue.Visible = false;
+                        lbTKThue.Visible = false;
+                        txtThueVND.Visible = false;
+                        lbThueVND.Visible = false;
+                        txtPTNK.Visible = false;
+                        lbPTNK.Visible = false;
+                        txtThueNK.Visible = false;
+                        lbThueNK.Visible = false;
+                        break;
+                    case "TTTU":
+                        cboMaTT.Visible = false;
+                        lbMaTT.Visible = false;
+                        cboSoHopDong.Visible = false;
+                        lbSoHopDong.Visible = false;
+                        cboCongtrinh.Visible = false;
+                        lbCongtrinh.Visible = false;
+
+                        cboVTHHNo.Visible = false;
+                        lbVTHHNo.Visible = false;
+                        txtVTHHNo.Visible = false;
+                        txtVTHHDuNgay.Visible = false;
+                        txtVTHHDuThang.Visible = false;
+                        cboYTCPCo.Visible = false;
+                        lbYTCPCo.Visible = false;
+                        txtYTCPCo.Visible = false;
+                        txtYTCPDuNgayCo.Visible = false;
+                        txtYTCPDuThangCo.Visible = false;
+                        cboVTHHCo.Visible = false;
+                        lbVTHHCo.Visible = false;
+                        txtVTHHCo.Visible = false;
+                        txtVTHHDuNgayCo.Visible = false;
+                        txtVTHHDuThangCo.Visible = false;
+
+                        comboBoxEx9.Visible = false;
+                        txtSoluong.Visible = false;
+                        lbSoluong.Visible = false;
+                        txtDongia.Visible = false;
+                        lbDongia.Visible = false;
+                        txtTygia.Visible = false;
+                        lbTygia.Visible = false;
+                        txtTienUsd.Visible = false;
+                        lbTienUsd.Visible = false;
+                        txtPTNK.Visible = false;
+                        lbPTNK.Visible = false;
+                        txtThueNK.Visible = false;
+                        lbThueNK.Visible = false;
+                        break;
+                    case "UNC":
+                        cboMaTT.Visible = false;
+                        lbMaTT.Visible = false;
+                        cboSoHopDong.Visible = false;
+                        lbSoHopDong.Visible = false;
+                        cboCongtrinh.Visible = false;
+                        lbCongtrinh.Visible = false;
+
+                        cboVTHHNo.Visible = false;
+                        lbVTHHNo.Visible = false;
+                        txtVTHHNo.Visible = false;
+                        txtVTHHDuNgay.Visible = false;
+                        txtVTHHDuThang.Visible = false;
+                        cboYTCPCo.Visible = false;
+                        lbYTCPCo.Visible = false;
+                        txtYTCPCo.Visible = false;
+                        txtYTCPDuNgayCo.Visible = false;
+                        txtYTCPDuThangCo.Visible = false;
+                        cboVTHHCo.Visible = false;
+                        lbVTHHCo.Visible = false;
+                        txtVTHHCo.Visible = false;
+                        txtVTHHDuNgayCo.Visible = false;
+                        txtVTHHDuThangCo.Visible = false;
+
+                        comboBoxEx9.Visible = false;
+                        txtSoluong.Visible = false;
+                        lbSoluong.Visible = false;
+                        txtDongia.Visible = false;
+                        lbDongia.Visible = false;
+                        txtTS.Visible = false;
+                        lbTS.Visible = false;
+                        txtTKThue.Visible = false;
+                        lbTKThue.Visible = false;
+                        txtThueVND.Visible = false;
+                        lbThueVND.Visible = false;
+                        txtTygia.Visible = false;
+                        lbTygia.Visible = false;
+                        txtTienUsd.Visible = false;
+                        lbTienUsd.Visible = false;
+                        txtPTNK.Visible = false;
+                        lbPTNK.Visible = false;
+                        txtThueNK.Visible = false;
+                        lbThueNK.Visible = false;
+                        break;
+                    case "VAT_R":
+                        cboMaTT.Visible = false;
+                        lbMaTT.Visible = false;
+                        cboSoHopDong.Visible = false;
+                        lbSoHopDong.Visible = false;
+                        cboCongtrinh.Visible = false;
+                        lbCongtrinh.Visible = false;
+
+                        cboVTHHNo.Visible = false;
+                        lbVTHHNo.Visible = false;
+                        txtVTHHNo.Visible = false;
+                        txtVTHHDuNgay.Visible = false;
+                        txtVTHHDuThang.Visible = false;
+                        cboYTCPCo.Visible = false;
+                        lbYTCPCo.Visible = false;
+                        txtYTCPCo.Visible = false;
+                        txtYTCPDuNgayCo.Visible = false;
+                        txtYTCPDuThangCo.Visible = false;
+                        cboVTHHCo.Visible = false;
+                        lbVTHHCo.Visible = false;
+                        txtVTHHCo.Visible = false;
+                        txtVTHHDuNgayCo.Visible = false;
+                        txtVTHHDuThangCo.Visible = false;
+
+                        comboBoxEx9.Visible = false;
+                        txtSoluong.Visible = false;
+                        lbSoluong.Visible = false;
+                        txtDongia.Visible = false;
+                        lbDongia.Visible = false;
+                        txtTygia.Visible = false;
+                        lbTygia.Visible = false;
+                        txtTienUsd.Visible = false;
+                        lbTienUsd.Visible = false;
+                        txtPTNK.Visible = false;
+                        lbPTNK.Visible = false;
+                        txtThueNK.Visible = false;
+                        lbThueNK.Visible = false;
+                        break;
+                    case "VAT_V":
+                        cboMaTT.Visible = false;
+                        lbMaTT.Visible = false;
+                        cboSoHopDong.Visible = false;
+                        lbSoHopDong.Visible = false;
+                        cboCongtrinh.Visible = false;
+                        lbCongtrinh.Visible = false;
+
+                        cboVTHHNo.Visible = false;
+                        lbVTHHNo.Visible = false;
+                        txtVTHHNo.Visible = false;
+                        txtVTHHDuNgay.Visible = false;
+                        txtVTHHDuThang.Visible = false;
+                        cboYTCPCo.Visible = false;
+                        lbYTCPCo.Visible = false;
+                        txtYTCPCo.Visible = false;
+                        txtYTCPDuNgayCo.Visible = false;
+                        txtYTCPDuThangCo.Visible = false;
+                        cboVTHHCo.Visible = false;
+                        lbVTHHCo.Visible = false;
+                        txtVTHHCo.Visible = false;
+                        txtVTHHDuNgayCo.Visible = false;
+                        txtVTHHDuThangCo.Visible = false;
+
+                        comboBoxEx9.Visible = false;
+                        txtSoluong.Visible = false;
+                        lbSoluong.Visible = false;
+                        txtDongia.Visible = false;
+                        lbDongia.Visible = false;
+                        txtTygia.Visible = false;
+                        lbTygia.Visible = false;
+                        txtTienUsd.Visible = false;
+                        lbTienUsd.Visible = false;
+                        txtPTNK.Visible = false;
+                        lbPTNK.Visible = false;
+                        txtThueNK.Visible = false;
+                        lbThueNK.Visible = false;
+                        break;
+                    case "XGG":
+                        cboMaTT.Visible = false;
+                        lbMaTT.Visible = false;
+                        cboSoHopDong.Visible = false;
+                        lbSoHopDong.Visible = false;
+                        cboCongtrinh.Visible = false;
+                        lbCongtrinh.Visible = false;
+
+                        cboYTCPNo.Visible = false;
+                        lbYTCPNo.Visible = false;
+                        txtYTCPNo.Visible = false;
+                        txtYTCPDuNgay.Visible = false;
+                        txtYTCPDuThang.Visible = false;
+                        cboYTCPCo.Visible = false;
+                        lbYTCPCo.Visible = false;
+                        txtYTCPCo.Visible = false;
+                        txtYTCPDuNgayCo.Visible = false;
+                        txtYTCPDuThangCo.Visible = false;
+                        cboVTHHCo.Visible = false;
+                        lbVTHHCo.Visible = false;
+                        txtVTHHCo.Visible = false;
+                        txtVTHHDuNgayCo.Visible = false;
+                        txtVTHHDuThangCo.Visible = false;
+
+                        txtTygia.Visible = false;
+                        lbTygia.Visible = false;
+                        txtTienUsd.Visible = false;
+                        lbTienUsd.Visible = false;
+                        txtPTNK.Visible = false;
+                        lbPTNK.Visible = false;
+                        txtThueNK.Visible = false;
+                        lbThueNK.Visible = false;
+                        break;
+                    default:
+                        break;
                 }
-                if (cboLoaiCTu.Text.ToUpper() == "CNH")
-                {
-                    cboMaTT.Visible = false;
-                    lbMaTT.Visible = false;
-                    cboSoHopDong.Visible = false;
-                    lbSoHopDong.Visible = false;
-                    cboCongtrinh.Visible = false;
-                    lbCongtrinh.Visible = false;
+                #region
+                //if (cboLoaiCTu.Text.ToUpper() == "BG")
+                //{
+                //    cboMaTT.Visible = false;
+                //    lbMaTT.Visible = false;
+                //    cboSoHopDong.Visible = false;
+                //    lbSoHopDong.Visible = false;
+                //    cboCongtrinh.Visible = false;
+                //    lbCongtrinh.Visible = false;
 
-                    cboVTHHNo.Visible = false;
-                    lbVTHHNo.Visible = false;
-                    txtVTHHNo.Visible = false;
-                    txtVTHHDuNgay.Visible = false;
-                    txtVTHHDuThang.Visible = false;
-                    cboYTCPCo.Visible = false;
-                    lbYTCPCo.Visible = false;
-                    txtYTCPCo.Visible = false;
-                    txtYTCPDuNgayCo.Visible = false;
-                    txtYTCPDuThangCo.Visible = false;
-                    cboVTHHCo.Visible = false;
-                    lbVTHHCo.Visible = false;
-                    txtVTHHCo.Visible = false;
-                    txtVTHHDuNgayCo.Visible = false;
-                    txtVTHHDuThangCo.Visible = false;
+                //    cboYTCPNo.Visible = false;
+                //    lbYTCPNo.Visible = false;
+                //    txtYTCPNo.Visible = false;
+                //    txtYTCPDuNgay.Visible = false;
+                //    txtYTCPDuThang.Visible = false;
+                //    cboYTCPCo.Visible = false;
+                //    lbYTCPCo.Visible = false;
+                //    txtYTCPCo.Visible = false;
+                //    txtYTCPDuNgayCo.Visible = false;
+                //    txtYTCPDuThangCo.Visible = false;
+                //    cboVTHHNo.Visible = false;
+                //    lbVTHHNo.Visible = false;
+                //    txtVTHHNo.Visible = false;
+                //    txtVTHHDuNgay.Visible = false;
+                //    txtVTHHDuThang.Visible = false;
 
-                    comboBoxEx9.Visible = false;
-                    txtSoluong.Visible = false;
-                    lbSoluong.Visible = false;
-                    txtDongia.Visible = false;
-                    lbDongia.Visible = false;
-                    txtPTNK.Visible = false;
-                    lbPTNK.Visible = false;
-                    txtThueNK.Visible = false;
-                    lbThueNK.Visible = false;
-                }
-                if (cboLoaiCTu.Text.ToUpper() == "CTGS")
-                {
-                    cboMaTT.Visible = false;
-                    lbMaTT.Visible = false;
-                    cboSoHopDong.Visible = false;
-                    lbSoHopDong.Visible = false;
-                    cboCongtrinh.Visible = false;
-                    lbCongtrinh.Visible = false;
+                //    txtTygia.Visible = false;
+                //    lbTygia.Visible = false;
+                //    txtTienUsd.Visible = false;
+                //    lbTienUsd.Visible = false;
+                //    txtPTNK.Visible = false;
+                //    lbPTNK.Visible = false;
+                //    txtThueNK.Visible = false;
+                //    lbThueNK.Visible = false;
+                //}
+                //if (cboLoaiCTu.Text.ToUpper() == "CNH")
+                //{
+                //    cboMaTT.Visible = false;
+                //    lbMaTT.Visible = false;
+                //    cboSoHopDong.Visible = false;
+                //    lbSoHopDong.Visible = false;
+                //    cboCongtrinh.Visible = false;
+                //    lbCongtrinh.Visible = false;
 
-                    cboVTHHNo.Visible = false;
-                    lbVTHHNo.Visible = false;
-                    txtVTHHNo.Visible = false;
-                    txtVTHHDuNgay.Visible = false;
-                    txtVTHHDuThang.Visible = false;
-                    cboYTCPCo.Visible = false;
-                    lbYTCPCo.Visible = false;
-                    txtYTCPCo.Visible = false;
-                    txtYTCPDuNgayCo.Visible = false;
-                    txtYTCPDuThangCo.Visible = false;
-                    cboVTHHCo.Visible = false;
-                    lbVTHHCo.Visible = false;
-                    txtVTHHCo.Visible = false;
-                    txtVTHHDuNgayCo.Visible = false;
-                    txtVTHHDuThangCo.Visible = false;
+                //    cboVTHHNo.Visible = false;
+                //    lbVTHHNo.Visible = false;
+                //    txtVTHHNo.Visible = false;
+                //    txtVTHHDuNgay.Visible = false;
+                //    txtVTHHDuThang.Visible = false;
+                //    cboYTCPCo.Visible = false;
+                //    lbYTCPCo.Visible = false;
+                //    txtYTCPCo.Visible = false;
+                //    txtYTCPDuNgayCo.Visible = false;
+                //    txtYTCPDuThangCo.Visible = false;
+                //    cboVTHHCo.Visible = false;
+                //    lbVTHHCo.Visible = false;
+                //    txtVTHHCo.Visible = false;
+                //    txtVTHHDuNgayCo.Visible = false;
+                //    txtVTHHDuThangCo.Visible = false;
 
-                    comboBoxEx9.Visible = false;
-                    txtSoluong.Visible = false;
-                    lbSoluong.Visible = false;
-                    txtDongia.Visible = false;
-                    lbDongia.Visible = false;
-                    txtPTNK.Visible = false;
-                    lbPTNK.Visible = false;
-                    txtThueNK.Visible = false;
-                    lbThueNK.Visible = false;
-                    txtTygia.Visible = false;
-                    lbTygia.Visible = false;
-                    txtTienUsd.Visible = false;
-                    lbTienUsd.Visible = false;
-                }
-                if (cboLoaiCTu.Text.ToUpper() == "CTNH")
-                {
-                    cboMaTT.Visible = false;
-                    lbMaTT.Visible = false;
-                    cboSoHopDong.Visible = false;
-                    lbSoHopDong.Visible = false;
-                    cboCongtrinh.Visible = false;
-                    lbCongtrinh.Visible = false;
+                //    comboBoxEx9.Visible = false;
+                //    txtSoluong.Visible = false;
+                //    lbSoluong.Visible = false;
+                //    txtDongia.Visible = false;
+                //    lbDongia.Visible = false;
+                //    txtPTNK.Visible = false;
+                //    lbPTNK.Visible = false;
+                //    txtThueNK.Visible = false;
+                //    lbThueNK.Visible = false;
+                //}
+                //if (cboLoaiCTu.Text.ToUpper() == "CTGS")
+                //{
+                //    cboMaTT.Visible = false;
+                //    lbMaTT.Visible = false;
+                //    cboSoHopDong.Visible = false;
+                //    lbSoHopDong.Visible = false;
+                //    cboCongtrinh.Visible = false;
+                //    lbCongtrinh.Visible = false;
 
-                    cboVTHHNo.Visible = false;
-                    lbVTHHNo.Visible = false;
-                    txtVTHHNo.Visible = false;
-                    txtVTHHDuNgay.Visible = false;
-                    txtVTHHDuThang.Visible = false;
-                    cboYTCPCo.Visible = false;
-                    lbYTCPCo.Visible = false;
-                    txtYTCPCo.Visible = false;
-                    txtYTCPDuNgayCo.Visible = false;
-                    txtYTCPDuThangCo.Visible = false;
-                    cboVTHHCo.Visible = false;
-                    lbVTHHCo.Visible = false;
-                    txtVTHHCo.Visible = false;
-                    txtVTHHDuNgayCo.Visible = false;
-                    txtVTHHDuThangCo.Visible = false;
+                //    cboVTHHNo.Visible = false;
+                //    lbVTHHNo.Visible = false;
+                //    txtVTHHNo.Visible = false;
+                //    txtVTHHDuNgay.Visible = false;
+                //    txtVTHHDuThang.Visible = false;
+                //    cboYTCPCo.Visible = false;
+                //    lbYTCPCo.Visible = false;
+                //    txtYTCPCo.Visible = false;
+                //    txtYTCPDuNgayCo.Visible = false;
+                //    txtYTCPDuThangCo.Visible = false;
+                //    cboVTHHCo.Visible = false;
+                //    lbVTHHCo.Visible = false;
+                //    txtVTHHCo.Visible = false;
+                //    txtVTHHDuNgayCo.Visible = false;
+                //    txtVTHHDuThangCo.Visible = false;
 
-                    comboBoxEx9.Visible = false;
-                    txtSoluong.Visible = false;
-                    lbSoluong.Visible = false;
-                    txtDongia.Visible = false;
-                    lbDongia.Visible = false;
-                    txtPTNK.Visible = false;
-                    lbPTNK.Visible = false;
-                    txtThueNK.Visible = false;
-                    lbThueNK.Visible = false;
-                }
-                if (cboLoaiCTu.Text.ToUpper() == "DHB")
-                {
-                    cboMaTT.Visible = false;
-                    lbMaTT.Visible = false;
-                    cboSoHopDong.Visible = false;
-                    lbSoHopDong.Visible = false;
-                    cboCongtrinh.Visible = false;
-                    lbCongtrinh.Visible = false;
+                //    comboBoxEx9.Visible = false;
+                //    txtSoluong.Visible = false;
+                //    lbSoluong.Visible = false;
+                //    txtDongia.Visible = false;
+                //    lbDongia.Visible = false;
+                //    txtPTNK.Visible = false;
+                //    lbPTNK.Visible = false;
+                //    txtThueNK.Visible = false;
+                //    lbThueNK.Visible = false;
+                //    txtTygia.Visible = false;
+                //    lbTygia.Visible = false;
+                //    txtTienUsd.Visible = false;
+                //    lbTienUsd.Visible = false;
+                //}
+                //if (cboLoaiCTu.Text.ToUpper() == "CTNH")
+                //{
+                //    cboMaTT.Visible = false;
+                //    lbMaTT.Visible = false;
+                //    cboSoHopDong.Visible = false;
+                //    lbSoHopDong.Visible = false;
+                //    cboCongtrinh.Visible = false;
+                //    lbCongtrinh.Visible = false;
 
-                    cboVTHHNo.Visible = false;
-                    lbVTHHNo.Visible = false;
-                    txtVTHHNo.Visible = false;
-                    txtVTHHDuNgay.Visible = false;
-                    txtVTHHDuThang.Visible = false;
-                    cboYTCPNo.Visible = false;
-                    lbYTCPNo.Visible = false;
-                    txtYTCPNo.Visible = false;
-                    txtYTCPDuNgay.Visible = false;
-                    txtYTCPDuThang.Visible = false;
-                    cboYTCPCo.Visible = false;
-                    lbYTCPCo.Visible = false;
-                    txtYTCPCo.Visible = false;
-                    txtYTCPDuNgayCo.Visible = false;
-                    txtYTCPDuThangCo.Visible = false;
+                //    cboVTHHNo.Visible = false;
+                //    lbVTHHNo.Visible = false;
+                //    txtVTHHNo.Visible = false;
+                //    txtVTHHDuNgay.Visible = false;
+                //    txtVTHHDuThang.Visible = false;
+                //    cboYTCPCo.Visible = false;
+                //    lbYTCPCo.Visible = false;
+                //    txtYTCPCo.Visible = false;
+                //    txtYTCPDuNgayCo.Visible = false;
+                //    txtYTCPDuThangCo.Visible = false;
+                //    cboVTHHCo.Visible = false;
+                //    lbVTHHCo.Visible = false;
+                //    txtVTHHCo.Visible = false;
+                //    txtVTHHDuNgayCo.Visible = false;
+                //    txtVTHHDuThangCo.Visible = false;
 
-                    txtTygia.Visible = false;
-                    lbTygia.Visible = false;
-                    txtTienUsd.Visible = false;
-                    lbTienUsd.Visible = false;
-                    txtPTNK.Visible = false;
-                    lbPTNK.Visible = false;
-                    txtThueNK.Visible = false;
-                    lbThueNK.Visible = false;
-                }
-                if (cboLoaiCTu.Text.ToUpper() == "DMH")
-                {
-                    cboMaTT.Visible = false;
-                    lbMaTT.Visible = false;
-                    cboSoHopDong.Visible = false;
-                    lbSoHopDong.Visible = false;
-                    cboCongtrinh.Visible = false;
-                    lbCongtrinh.Visible = false;
+                //    comboBoxEx9.Visible = false;
+                //    txtSoluong.Visible = false;
+                //    lbSoluong.Visible = false;
+                //    txtDongia.Visible = false;
+                //    lbDongia.Visible = false;
+                //    txtPTNK.Visible = false;
+                //    lbPTNK.Visible = false;
+                //    txtThueNK.Visible = false;
+                //    lbThueNK.Visible = false;
+                //}
+                //if (cboLoaiCTu.Text.ToUpper() == "DHB")
+                //{
+                //    cboMaTT.Visible = false;
+                //    lbMaTT.Visible = false;
+                //    cboSoHopDong.Visible = false;
+                //    lbSoHopDong.Visible = false;
+                //    cboCongtrinh.Visible = false;
+                //    lbCongtrinh.Visible = false;
 
-                    cboYTCPNo.Visible = false;
-                    lbYTCPNo.Visible = false;
-                    txtYTCPNo.Visible = false;
-                    txtYTCPDuNgay.Visible = false;
-                    txtYTCPDuThang.Visible = false;
-                    cboYTCPCo.Visible = false;
-                    lbYTCPCo.Visible = false;
-                    txtYTCPCo.Visible = false;
-                    txtYTCPDuNgayCo.Visible = false;
-                    txtYTCPDuThangCo.Visible = false;
-                    cboVTHHCo.Visible = false;
-                    lbVTHHCo.Visible = false;
-                    txtVTHHCo.Visible = false;
-                    txtVTHHDuNgayCo.Visible = false;
-                    txtVTHHDuThangCo.Visible = false;
+                //    cboVTHHNo.Visible = false;
+                //    lbVTHHNo.Visible = false;
+                //    txtVTHHNo.Visible = false;
+                //    txtVTHHDuNgay.Visible = false;
+                //    txtVTHHDuThang.Visible = false;
+                //    cboYTCPNo.Visible = false;
+                //    lbYTCPNo.Visible = false;
+                //    txtYTCPNo.Visible = false;
+                //    txtYTCPDuNgay.Visible = false;
+                //    txtYTCPDuThang.Visible = false;
+                //    cboYTCPCo.Visible = false;
+                //    lbYTCPCo.Visible = false;
+                //    txtYTCPCo.Visible = false;
+                //    txtYTCPDuNgayCo.Visible = false;
+                //    txtYTCPDuThangCo.Visible = false;
 
-                    txtTygia.Visible = false;
-                    lbTygia.Visible = false;
-                    txtTienUsd.Visible = false;
-                    lbTienUsd.Visible = false;
-                    txtPTNK.Visible = false;
-                    lbPTNK.Visible = false;
-                    txtThueNK.Visible = false;
-                    lbThueNK.Visible = false;
-                }
-                if (cboLoaiCTu.Text.ToUpper() == "HD")
-                {
-                    cboMaTT.Visible = false;
-                    lbMaTT.Visible = false;
-                    cboSoHopDong.Visible = false;
-                    lbSoHopDong.Visible = false;
-                    cboCongtrinh.Visible = false;
-                    lbCongtrinh.Visible = false;
+                //    txtTygia.Visible = false;
+                //    lbTygia.Visible = false;
+                //    txtTienUsd.Visible = false;
+                //    lbTienUsd.Visible = false;
+                //    txtPTNK.Visible = false;
+                //    lbPTNK.Visible = false;
+                //    txtThueNK.Visible = false;
+                //    lbThueNK.Visible = false;
+                //}
+                //if (cboLoaiCTu.Text.ToUpper() == "DMH")
+                //{
+                //    cboMaTT.Visible = false;
+                //    lbMaTT.Visible = false;
+                //    cboSoHopDong.Visible = false;
+                //    lbSoHopDong.Visible = false;
+                //    cboCongtrinh.Visible = false;
+                //    lbCongtrinh.Visible = false;
 
-                    cboVTHHNo.Visible = false;
-                    lbVTHHNo.Visible = false;
-                    txtVTHHNo.Visible = false;
-                    txtVTHHDuNgay.Visible = false;
-                    txtVTHHDuThang.Visible = false;
-                    cboYTCPCo.Visible = false;
-                    lbYTCPCo.Visible = false;
-                    txtYTCPCo.Visible = false;
-                    txtYTCPDuNgayCo.Visible = false;
-                    txtYTCPDuThangCo.Visible = false;
-                    cboVTHHCo.Visible = false;
-                    lbVTHHCo.Visible = false;
-                    txtVTHHCo.Visible = false;
-                    txtVTHHDuNgayCo.Visible = false;
-                    txtVTHHDuThangCo.Visible = false;
+                //    cboYTCPNo.Visible = false;
+                //    lbYTCPNo.Visible = false;
+                //    txtYTCPNo.Visible = false;
+                //    txtYTCPDuNgay.Visible = false;
+                //    txtYTCPDuThang.Visible = false;
+                //    cboYTCPCo.Visible = false;
+                //    lbYTCPCo.Visible = false;
+                //    txtYTCPCo.Visible = false;
+                //    txtYTCPDuNgayCo.Visible = false;
+                //    txtYTCPDuThangCo.Visible = false;
+                //    cboVTHHCo.Visible = false;
+                //    lbVTHHCo.Visible = false;
+                //    txtVTHHCo.Visible = false;
+                //    txtVTHHDuNgayCo.Visible = false;
+                //    txtVTHHDuThangCo.Visible = false;
 
-                    comboBoxEx9.Visible = false;
-                    txtSoluong.Visible = false;
-                    lbSoluong.Visible = false;
-                    txtDongia.Visible = false;
-                    lbDongia.Visible = false;
-                    txtTygia.Visible = false;
-                    lbTygia.Visible = false;
-                    txtTienUsd.Visible = false;
-                    lbTienUsd.Visible = false;
-                    txtPTNK.Visible = false;
-                    lbPTNK.Visible = false;
-                    txtThueNK.Visible = false;
-                    lbThueNK.Visible = false;
-                }
-                if (cboLoaiCTu.Text.ToUpper() == "HDBR")
-                {
-                    cboMaTT.Visible = false;
-                    lbMaTT.Visible = false;
-                    cboSoHopDong.Visible = false;
-                    lbSoHopDong.Visible = false;
-                    cboCongtrinh.Visible = false;
-                    lbCongtrinh.Visible = false;
+                //    txtTygia.Visible = false;
+                //    lbTygia.Visible = false;
+                //    txtTienUsd.Visible = false;
+                //    lbTienUsd.Visible = false;
+                //    txtPTNK.Visible = false;
+                //    lbPTNK.Visible = false;
+                //    txtThueNK.Visible = false;
+                //    lbThueNK.Visible = false;
+                //}
+                //if (cboLoaiCTu.Text.ToUpper() == "HD")
+                //{
+                //    cboMaTT.Visible = false;
+                //    lbMaTT.Visible = false;
+                //    cboSoHopDong.Visible = false;
+                //    lbSoHopDong.Visible = false;
+                //    cboCongtrinh.Visible = false;
+                //    lbCongtrinh.Visible = false;
 
-                    cboYTCPNo.Visible = false;
-                    lbYTCPNo.Visible = false;
-                    txtYTCPNo.Visible = false;
-                    txtYTCPDuNgay.Visible = false;
-                    txtYTCPDuThang.Visible = false;
-                    cboVTHHNo.Visible = false;
-                    lbVTHHNo.Visible = false;
-                    txtVTHHNo.Visible = false;
-                    txtVTHHDuNgay.Visible = false;
-                    txtVTHHDuThang.Visible = false;
-                    cboYTCPCo.Visible = false;
-                    lbYTCPCo.Visible = false;
-                    txtYTCPCo.Visible = false;
-                    txtYTCPDuNgayCo.Visible = false;
-                    txtYTCPDuThangCo.Visible = false;
+                //    cboVTHHNo.Visible = false;
+                //    lbVTHHNo.Visible = false;
+                //    txtVTHHNo.Visible = false;
+                //    txtVTHHDuNgay.Visible = false;
+                //    txtVTHHDuThang.Visible = false;
+                //    cboYTCPCo.Visible = false;
+                //    lbYTCPCo.Visible = false;
+                //    txtYTCPCo.Visible = false;
+                //    txtYTCPDuNgayCo.Visible = false;
+                //    txtYTCPDuThangCo.Visible = false;
+                //    cboVTHHCo.Visible = false;
+                //    lbVTHHCo.Visible = false;
+                //    txtVTHHCo.Visible = false;
+                //    txtVTHHDuNgayCo.Visible = false;
+                //    txtVTHHDuThangCo.Visible = false;
 
-                    txtTygia.Visible = false;
-                    lbTygia.Visible = false;
-                    txtTienUsd.Visible = false;
-                    lbTienUsd.Visible = false;
-                    txtPTNK.Visible = false;
-                    lbPTNK.Visible = false;
-                    txtThueNK.Visible = false;
-                    lbThueNK.Visible = false;
-                }
-                if (cboLoaiCTu.Text.ToUpper() == "PBCP")
-                {
-                    cboMaTT.Visible = false;
-                    lbMaTT.Visible = false;
-                    cboSoHopDong.Visible = false;
-                    lbSoHopDong.Visible = false;
-                    cboCongtrinh.Visible = false;
-                    lbCongtrinh.Visible = false;
+                //    comboBoxEx9.Visible = false;
+                //    txtSoluong.Visible = false;
+                //    lbSoluong.Visible = false;
+                //    txtDongia.Visible = false;
+                //    lbDongia.Visible = false;
+                //    txtTygia.Visible = false;
+                //    lbTygia.Visible = false;
+                //    txtTienUsd.Visible = false;
+                //    lbTienUsd.Visible = false;
+                //    txtPTNK.Visible = false;
+                //    lbPTNK.Visible = false;
+                //    txtThueNK.Visible = false;
+                //    lbThueNK.Visible = false;
+                //}
+                //if (cboLoaiCTu.Text.ToUpper() == "HDBR")
+                //{
+                //    cboMaTT.Visible = false;
+                //    lbMaTT.Visible = false;
+                //    cboSoHopDong.Visible = false;
+                //    lbSoHopDong.Visible = false;
+                //    cboCongtrinh.Visible = false;
+                //    lbCongtrinh.Visible = false;
 
-                    cboVTHHNo.Visible = false;
-                    lbVTHHNo.Visible = false;
-                    txtVTHHNo.Visible = false;
-                    txtVTHHDuNgay.Visible = false;
-                    txtVTHHDuThang.Visible = false;
-                    cboYTCPCo.Visible = false;
-                    lbYTCPCo.Visible = false;
-                    txtYTCPCo.Visible = false;
-                    txtYTCPDuNgayCo.Visible = false;
-                    txtYTCPDuThangCo.Visible = false;
-                    cboVTHHCo.Visible = false;
-                    lbVTHHCo.Visible = false;
-                    txtVTHHCo.Visible = false;
-                    txtVTHHDuNgayCo.Visible = false;
-                    txtVTHHDuThangCo.Visible = false;
+                //    cboYTCPNo.Visible = false;
+                //    lbYTCPNo.Visible = false;
+                //    txtYTCPNo.Visible = false;
+                //    txtYTCPDuNgay.Visible = false;
+                //    txtYTCPDuThang.Visible = false;
+                //    cboVTHHNo.Visible = false;
+                //    lbVTHHNo.Visible = false;
+                //    txtVTHHNo.Visible = false;
+                //    txtVTHHDuNgay.Visible = false;
+                //    txtVTHHDuThang.Visible = false;
+                //    cboYTCPCo.Visible = false;
+                //    lbYTCPCo.Visible = false;
+                //    txtYTCPCo.Visible = false;
+                //    txtYTCPDuNgayCo.Visible = false;
+                //    txtYTCPDuThangCo.Visible = false;
 
-                    comboBoxEx9.Visible = false;
-                    txtSoluong.Visible = false;
-                    lbSoluong.Visible = false;
-                    txtDongia.Visible = false;
-                    lbDongia.Visible = false;
-                    txtTygia.Visible = false;
-                    lbTygia.Visible = false;
-                    txtTienUsd.Visible = false;
-                    lbTienUsd.Visible = false;
-                    txtPTNK.Visible = false;
-                    lbPTNK.Visible = false;
-                    txtThueNK.Visible = false;
-                    lbThueNK.Visible = false;
-                }
-                if (cboLoaiCTu.Text.ToUpper() == "PC")
-                {
-                    cboMaTT.Visible = false;
-                    lbMaTT.Visible = false;
-                    cboSoHopDong.Visible = false;
-                    lbSoHopDong.Visible = false;
-                    cboCongtrinh.Visible = false;
-                    lbCongtrinh.Visible = false;
+                //    txtTygia.Visible = false;
+                //    lbTygia.Visible = false;
+                //    txtTienUsd.Visible = false;
+                //    lbTienUsd.Visible = false;
+                //    txtPTNK.Visible = false;
+                //    lbPTNK.Visible = false;
+                //    txtThueNK.Visible = false;
+                //    lbThueNK.Visible = false;
+                //}
+                //if (cboLoaiCTu.Text.ToUpper() == "PBCP")
+                //{
+                //    cboMaTT.Visible = false;
+                //    lbMaTT.Visible = false;
+                //    cboSoHopDong.Visible = false;
+                //    lbSoHopDong.Visible = false;
+                //    cboCongtrinh.Visible = false;
+                //    lbCongtrinh.Visible = false;
 
-                    cboVTHHNo.Visible = false;
-                    lbVTHHNo.Visible = false;
-                    txtVTHHNo.Visible = false;
-                    txtVTHHDuNgay.Visible = false;
-                    txtVTHHDuThang.Visible = false;
-                    cboYTCPCo.Visible = false;
-                    lbYTCPCo.Visible = false;
-                    txtYTCPCo.Visible = false;
-                    txtYTCPDuNgayCo.Visible = false;
-                    txtYTCPDuThangCo.Visible = false;
-                    cboVTHHCo.Visible = false;
-                    lbVTHHCo.Visible = false;
-                    txtVTHHCo.Visible = false;
-                    txtVTHHDuNgayCo.Visible = false;
-                    txtVTHHDuThangCo.Visible = false;
+                //    cboVTHHNo.Visible = false;
+                //    lbVTHHNo.Visible = false;
+                //    txtVTHHNo.Visible = false;
+                //    txtVTHHDuNgay.Visible = false;
+                //    txtVTHHDuThang.Visible = false;
+                //    cboYTCPCo.Visible = false;
+                //    lbYTCPCo.Visible = false;
+                //    txtYTCPCo.Visible = false;
+                //    txtYTCPDuNgayCo.Visible = false;
+                //    txtYTCPDuThangCo.Visible = false;
+                //    cboVTHHCo.Visible = false;
+                //    lbVTHHCo.Visible = false;
+                //    txtVTHHCo.Visible = false;
+                //    txtVTHHDuNgayCo.Visible = false;
+                //    txtVTHHDuThangCo.Visible = false;
 
-                    comboBoxEx9.Visible = false;
-                    txtSoluong.Visible = false;
-                    lbSoluong.Visible = false;
-                    txtDongia.Visible = false;
-                    lbDongia.Visible = false;
-                    txtTygia.Visible = false;
-                    lbTygia.Visible = false;
-                    txtTienUsd.Visible = false;
-                    lbTienUsd.Visible = false;
-                    txtPTNK.Visible = false;
-                    lbPTNK.Visible = false;
-                    txtThueNK.Visible = false;
-                    lbThueNK.Visible = false;
-                }
-                if (cboLoaiCTu.Text.ToUpper() == "PCK")
-                {
-                    cboMaTT.Visible = false;
-                    lbMaTT.Visible = false;
-                    cboCongtrinh.Visible = false;
-                    lbCongtrinh.Visible = false;
+                //    comboBoxEx9.Visible = false;
+                //    txtSoluong.Visible = false;
+                //    lbSoluong.Visible = false;
+                //    txtDongia.Visible = false;
+                //    lbDongia.Visible = false;
+                //    txtTygia.Visible = false;
+                //    lbTygia.Visible = false;
+                //    txtTienUsd.Visible = false;
+                //    lbTienUsd.Visible = false;
+                //    txtPTNK.Visible = false;
+                //    lbPTNK.Visible = false;
+                //    txtThueNK.Visible = false;
+                //    lbThueNK.Visible = false;
+                //}
+                //if (cboLoaiCTu.Text.ToUpper() == "PC")
+                //{
+                //    cboMaTT.Visible = false;
+                //    lbMaTT.Visible = false;
+                //    cboSoHopDong.Visible = false;
+                //    lbSoHopDong.Visible = false;
+                //    cboCongtrinh.Visible = false;
+                //    lbCongtrinh.Visible = false;
 
-                    cboVTHHNo.Visible = false;
-                    lbVTHHNo.Visible = false;
-                    txtVTHHNo.Visible = false;
-                    txtVTHHDuNgay.Visible = false;
-                    txtVTHHDuThang.Visible = false;
-                    cboYTCPCo.Visible = false;
-                    lbYTCPCo.Visible = false;
-                    txtYTCPCo.Visible = false;
-                    txtYTCPDuNgayCo.Visible = false;
-                    txtYTCPDuThangCo.Visible = false;
-                    cboVTHHCo.Visible = false;
-                    lbVTHHCo.Visible = false;
-                    txtVTHHCo.Visible = false;
-                    txtVTHHDuNgayCo.Visible = false;
-                    txtVTHHDuThangCo.Visible = false;
+                //    cboVTHHNo.Visible = false;
+                //    lbVTHHNo.Visible = false;
+                //    txtVTHHNo.Visible = false;
+                //    txtVTHHDuNgay.Visible = false;
+                //    txtVTHHDuThang.Visible = false;
+                //    cboYTCPCo.Visible = false;
+                //    lbYTCPCo.Visible = false;
+                //    txtYTCPCo.Visible = false;
+                //    txtYTCPDuNgayCo.Visible = false;
+                //    txtYTCPDuThangCo.Visible = false;
+                //    cboVTHHCo.Visible = false;
+                //    lbVTHHCo.Visible = false;
+                //    txtVTHHCo.Visible = false;
+                //    txtVTHHDuNgayCo.Visible = false;
+                //    txtVTHHDuThangCo.Visible = false;
+
+                //    comboBoxEx9.Visible = false;
+                //    txtSoluong.Visible = false;
+                //    lbSoluong.Visible = false;
+                //    txtDongia.Visible = false;
+                //    lbDongia.Visible = false;
+                //    txtTygia.Visible = false;
+                //    lbTygia.Visible = false;
+                //    txtTienUsd.Visible = false;
+                //    lbTienUsd.Visible = false;
+                //    txtPTNK.Visible = false;
+                //    lbPTNK.Visible = false;
+                //    txtThueNK.Visible = false;
+                //    lbThueNK.Visible = false;
+                //}
+                //if (cboLoaiCTu.Text.ToUpper() == "PCK")
+                //{
+                //    cboMaTT.Visible = false;
+                //    lbMaTT.Visible = false;
+                //    cboCongtrinh.Visible = false;
+                //    lbCongtrinh.Visible = false;
+
+                //    cboVTHHNo.Visible = false;
+                //    lbVTHHNo.Visible = false;
+                //    txtVTHHNo.Visible = false;
+                //    txtVTHHDuNgay.Visible = false;
+                //    txtVTHHDuThang.Visible = false;
+                //    cboYTCPCo.Visible = false;
+                //    lbYTCPCo.Visible = false;
+                //    txtYTCPCo.Visible = false;
+                //    txtYTCPDuNgayCo.Visible = false;
+                //    txtYTCPDuThangCo.Visible = false;
+                //    cboVTHHCo.Visible = false;
+                //    lbVTHHCo.Visible = false;
+                //    txtVTHHCo.Visible = false;
+                //    txtVTHHDuNgayCo.Visible = false;
+                //    txtVTHHDuThangCo.Visible = false;
                                         
-                    txtTygia.Visible = false;
-                    lbTygia.Visible = false;
-                    txtTienUsd.Visible = false;
-                    lbTienUsd.Visible = false;
-                    txtPTNK.Visible = false;
-                    lbPTNK.Visible = false;
-                    txtThueNK.Visible = false;
-                    lbThueNK.Visible = false;
-                }
-                if (cboLoaiCTu.Text.ToUpper() == "PKT")
-                {
-                    cboMaTT.Visible = false;
-                    lbMaTT.Visible = false;
-                    cboSoHopDong.Visible = false;
-                    lbSoHopDong.Visible = false;
-                    cboCongtrinh.Visible = false;
-                    lbCongtrinh.Visible = false;
+                //    txtTygia.Visible = false;
+                //    lbTygia.Visible = false;
+                //    txtTienUsd.Visible = false;
+                //    lbTienUsd.Visible = false;
+                //    txtPTNK.Visible = false;
+                //    lbPTNK.Visible = false;
+                //    txtThueNK.Visible = false;
+                //    lbThueNK.Visible = false;
+                //}
+                //if (cboLoaiCTu.Text.ToUpper() == "PKT")
+                //{
+                //    cboMaTT.Visible = false;
+                //    lbMaTT.Visible = false;
+                //    cboSoHopDong.Visible = false;
+                //    lbSoHopDong.Visible = false;
+                //    cboCongtrinh.Visible = false;
+                //    lbCongtrinh.Visible = false;
 
-                    cboVTHHNo.Visible = false;
-                    lbVTHHNo.Visible = false;
-                    txtVTHHNo.Visible = false;
-                    txtVTHHDuNgay.Visible = false;
-                    txtVTHHDuThang.Visible = false;
-                    cboYTCPCo.Visible = false;
-                    lbYTCPCo.Visible = false;
-                    txtYTCPCo.Visible = false;
-                    txtYTCPDuNgayCo.Visible = false;
-                    txtYTCPDuThangCo.Visible = false;
-                    cboVTHHCo.Visible = false;
-                    lbVTHHCo.Visible = false;
-                    txtVTHHCo.Visible = false;
-                    txtVTHHDuNgayCo.Visible = false;
-                    txtVTHHDuThangCo.Visible = false;
+                //    cboVTHHNo.Visible = false;
+                //    lbVTHHNo.Visible = false;
+                //    txtVTHHNo.Visible = false;
+                //    txtVTHHDuNgay.Visible = false;
+                //    txtVTHHDuThang.Visible = false;
+                //    cboYTCPCo.Visible = false;
+                //    lbYTCPCo.Visible = false;
+                //    txtYTCPCo.Visible = false;
+                //    txtYTCPDuNgayCo.Visible = false;
+                //    txtYTCPDuThangCo.Visible = false;
+                //    cboVTHHCo.Visible = false;
+                //    lbVTHHCo.Visible = false;
+                //    txtVTHHCo.Visible = false;
+                //    txtVTHHDuNgayCo.Visible = false;
+                //    txtVTHHDuThangCo.Visible = false;
 
-                    comboBoxEx9.Visible = false;
-                    txtSoluong.Visible = false;
-                    lbSoluong.Visible = false;
-                    txtDongia.Visible = false;
-                    lbDongia.Visible = false;
-                    txtTygia.Visible = false;
-                    lbTygia.Visible = false;
-                    txtTienUsd.Visible = false;
-                    lbTienUsd.Visible = false;
-                    txtPTNK.Visible = false;
-                    lbPTNK.Visible = false;
-                    txtThueNK.Visible = false;
-                    lbThueNK.Visible = false;
-                }
-                if (cboLoaiCTu.Text.ToUpper() == "PKT02")
-                {
-                    cboMaTT.Visible = false;
-                    lbMaTT.Visible = false;
-                    cboSoHopDong.Visible = false;
-                    lbSoHopDong.Visible = false;
-                    cboCongtrinh.Visible = false;
-                    lbCongtrinh.Visible = false;
+                //    comboBoxEx9.Visible = false;
+                //    txtSoluong.Visible = false;
+                //    lbSoluong.Visible = false;
+                //    txtDongia.Visible = false;
+                //    lbDongia.Visible = false;
+                //    txtTygia.Visible = false;
+                //    lbTygia.Visible = false;
+                //    txtTienUsd.Visible = false;
+                //    lbTienUsd.Visible = false;
+                //    txtPTNK.Visible = false;
+                //    lbPTNK.Visible = false;
+                //    txtThueNK.Visible = false;
+                //    lbThueNK.Visible = false;
+                //}
+                //if (cboLoaiCTu.Text.ToUpper() == "PKT02")
+                //{
+                //    cboMaTT.Visible = false;
+                //    lbMaTT.Visible = false;
+                //    cboSoHopDong.Visible = false;
+                //    lbSoHopDong.Visible = false;
+                //    cboCongtrinh.Visible = false;
+                //    lbCongtrinh.Visible = false;
 
-                    cboVTHHNo.Visible = false;
-                    lbVTHHNo.Visible = false;
-                    txtVTHHNo.Visible = false;
-                    txtVTHHDuNgay.Visible = false;
-                    txtVTHHDuThang.Visible = false;
-                    cboYTCPCo.Visible = false;
-                    lbYTCPCo.Visible = false;
-                    txtYTCPCo.Visible = false;
-                    txtYTCPDuNgayCo.Visible = false;
-                    txtYTCPDuThangCo.Visible = false;
-                    cboVTHHCo.Visible = false;
-                    lbVTHHCo.Visible = false;
-                    txtVTHHCo.Visible = false;
-                    txtVTHHDuNgayCo.Visible = false;
-                    txtVTHHDuThangCo.Visible = false;
+                //    cboVTHHNo.Visible = false;
+                //    lbVTHHNo.Visible = false;
+                //    txtVTHHNo.Visible = false;
+                //    txtVTHHDuNgay.Visible = false;
+                //    txtVTHHDuThang.Visible = false;
+                //    cboYTCPCo.Visible = false;
+                //    lbYTCPCo.Visible = false;
+                //    txtYTCPCo.Visible = false;
+                //    txtYTCPDuNgayCo.Visible = false;
+                //    txtYTCPDuThangCo.Visible = false;
+                //    cboVTHHCo.Visible = false;
+                //    lbVTHHCo.Visible = false;
+                //    txtVTHHCo.Visible = false;
+                //    txtVTHHDuNgayCo.Visible = false;
+                //    txtVTHHDuThangCo.Visible = false;
 
-                    comboBoxEx9.Visible = false;
-                    txtSoluong.Visible = false;
-                    lbSoluong.Visible = false;
-                    txtDongia.Visible = false;
-                    lbDongia.Visible = false;
-                    txtTygia.Visible = false;
-                    lbTygia.Visible = false;
-                    txtTienUsd.Visible = false;
-                    lbTienUsd.Visible = false;
-                    txtPTNK.Visible = false;
-                    lbPTNK.Visible = false;
-                    txtThueNK.Visible = false;
-                    lbThueNK.Visible = false;
-                }
-                if (cboLoaiCTu.Text.ToUpper() == "PNK")
-                {
-                    cboMaTT.Visible = false;
-                    lbMaTT.Visible = false;
-                    cboSoHopDong.Visible = false;
-                    lbSoHopDong.Visible = false;
-                    cboCongtrinh.Visible = false;
-                    lbCongtrinh.Visible = false;
+                //    comboBoxEx9.Visible = false;
+                //    txtSoluong.Visible = false;
+                //    lbSoluong.Visible = false;
+                //    txtDongia.Visible = false;
+                //    lbDongia.Visible = false;
+                //    txtTygia.Visible = false;
+                //    lbTygia.Visible = false;
+                //    txtTienUsd.Visible = false;
+                //    lbTienUsd.Visible = false;
+                //    txtPTNK.Visible = false;
+                //    lbPTNK.Visible = false;
+                //    txtThueNK.Visible = false;
+                //    lbThueNK.Visible = false;
+                //}                
+                //if (cboLoaiCTu.Text.ToUpper() == "PNK")
+                //{
+                //    cboMaTT.Visible = false;
+                //    lbMaTT.Visible = false;
+                //    cboSoHopDong.Visible = false;
+                //    lbSoHopDong.Visible = false;
+                //    cboCongtrinh.Visible = false;
+                //    lbCongtrinh.Visible = false;
 
-                    cboYTCPNo.Visible = false;
-                    lbYTCPNo.Visible = false;
-                    txtYTCPNo.Visible = false;
-                    txtYTCPDuNgay.Visible = false;
-                    txtYTCPDuThang.Visible = false;
-                    cboYTCPCo.Visible = false;
-                    lbYTCPCo.Visible = false;
-                    txtYTCPCo.Visible = false;
-                    txtYTCPDuNgayCo.Visible = false;
-                    txtYTCPDuThangCo.Visible = false;
-                    cboVTHHCo.Visible = false;
-                    lbVTHHCo.Visible = false;
-                    txtVTHHCo.Visible = false;
-                    txtVTHHDuNgayCo.Visible = false;
-                    txtVTHHDuThangCo.Visible = false;
+                //    cboYTCPNo.Visible = false;
+                //    lbYTCPNo.Visible = false;
+                //    txtYTCPNo.Visible = false;
+                //    txtYTCPDuNgay.Visible = false;
+                //    txtYTCPDuThang.Visible = false;
+                //    cboYTCPCo.Visible = false;
+                //    lbYTCPCo.Visible = false;
+                //    txtYTCPCo.Visible = false;
+                //    txtYTCPDuNgayCo.Visible = false;
+                //    txtYTCPDuThangCo.Visible = false;
+                //    cboVTHHCo.Visible = false;
+                //    lbVTHHCo.Visible = false;
+                //    txtVTHHCo.Visible = false;
+                //    txtVTHHDuNgayCo.Visible = false;
+                //    txtVTHHDuThangCo.Visible = false;
 
-                    txtTygia.Visible = false;
-                    lbTygia.Visible = false;
-                    txtTienUsd.Visible = false;
-                    lbTienUsd.Visible = false;
-                    txtPTNK.Visible = false;
-                    lbPTNK.Visible = false;
-                    txtThueNK.Visible = false;
-                    lbThueNK.Visible = false;
-                }
-                if (cboLoaiCTu.Text.ToUpper() == "PNKGC")
-                {
-                    cboMaTT.Visible = false;
-                    lbMaTT.Visible = false;
-                    cboSoHopDong.Visible = false;
-                    lbSoHopDong.Visible = false;
-                    cboCongtrinh.Visible = false;
-                    lbCongtrinh.Visible = false;
+                //    txtTygia.Visible = false;
+                //    lbTygia.Visible = false;
+                //    txtTienUsd.Visible = false;
+                //    lbTienUsd.Visible = false;
+                //    txtPTNK.Visible = false;
+                //    lbPTNK.Visible = false;
+                //    txtThueNK.Visible = false;
+                //    lbThueNK.Visible = false;
+                //}
+                //if (cboLoaiCTu.Text.ToUpper() == "PNKGC")
+                //{
+                //    cboMaTT.Visible = false;
+                //    lbMaTT.Visible = false;
+                //    cboSoHopDong.Visible = false;
+                //    lbSoHopDong.Visible = false;
+                //    cboCongtrinh.Visible = false;
+                //    lbCongtrinh.Visible = false;
 
-                    cboYTCPNo.Visible = false;
-                    lbYTCPNo.Visible = false;
-                    txtYTCPNo.Visible = false;
-                    txtYTCPDuNgay.Visible = false;
-                    txtYTCPDuThang.Visible = false;
-                    cboYTCPCo.Visible = false;
-                    lbYTCPCo.Visible = false;
-                    txtYTCPCo.Visible = false;
-                    txtYTCPDuNgayCo.Visible = false;
-                    txtYTCPDuThangCo.Visible = false;
-                    cboVTHHCo.Visible = false;
-                    lbVTHHCo.Visible = false;
-                    txtVTHHCo.Visible = false;
-                    txtVTHHDuNgayCo.Visible = false;
-                    txtVTHHDuThangCo.Visible = false;
+                //    cboYTCPNo.Visible = false;
+                //    lbYTCPNo.Visible = false;
+                //    txtYTCPNo.Visible = false;
+                //    txtYTCPDuNgay.Visible = false;
+                //    txtYTCPDuThang.Visible = false;
+                //    cboYTCPCo.Visible = false;
+                //    lbYTCPCo.Visible = false;
+                //    txtYTCPCo.Visible = false;
+                //    txtYTCPDuNgayCo.Visible = false;
+                //    txtYTCPDuThangCo.Visible = false;
+                //    cboVTHHCo.Visible = false;
+                //    lbVTHHCo.Visible = false;
+                //    txtVTHHCo.Visible = false;
+                //    txtVTHHDuNgayCo.Visible = false;
+                //    txtVTHHDuThangCo.Visible = false;
 
-                    comboBoxEx9.Visible = false;
-                    txtSoluong.Visible = false;
-                    lbSoluong.Visible = false;
-                    txtDongia.Visible = false;
-                    lbDongia.Visible = false;
-                    txtTygia.Visible = false;
-                    lbTygia.Visible = false;
-                    txtTienUsd.Visible = false;
-                    lbTienUsd.Visible = false;
-                    txtPTNK.Visible = false;
-                    lbPTNK.Visible = false;
-                    txtThueNK.Visible = false;
-                    lbThueNK.Visible = false;
-                }
-                if (cboLoaiCTu.Text.ToUpper() == "PNKNK")
-                {
-                    cboMaTT.Visible = false;
-                    lbMaTT.Visible = false;
-                    cboSoHopDong.Visible = false;
-                    lbSoHopDong.Visible = false;
-                    cboCongtrinh.Visible = false;
-                    lbCongtrinh.Visible = false;
+                //    comboBoxEx9.Visible = false;
+                //    txtSoluong.Visible = false;
+                //    lbSoluong.Visible = false;
+                //    txtDongia.Visible = false;
+                //    lbDongia.Visible = false;
+                //    txtTygia.Visible = false;
+                //    lbTygia.Visible = false;
+                //    txtTienUsd.Visible = false;
+                //    lbTienUsd.Visible = false;
+                //    txtPTNK.Visible = false;
+                //    lbPTNK.Visible = false;
+                //    txtThueNK.Visible = false;
+                //    lbThueNK.Visible = false;
+                //}
+                //if (cboLoaiCTu.Text.ToUpper() == "PNKNK")
+                //{
+                //    cboMaTT.Visible = false;
+                //    lbMaTT.Visible = false;
+                //    cboSoHopDong.Visible = false;
+                //    lbSoHopDong.Visible = false;
+                //    cboCongtrinh.Visible = false;
+                //    lbCongtrinh.Visible = false;
 
-                    cboYTCPNo.Visible = false;
-                    lbYTCPNo.Visible = false;
-                    txtYTCPNo.Visible = false;
-                    txtYTCPDuNgay.Visible = false;
-                    txtYTCPDuThang.Visible = false;
-                    cboYTCPCo.Visible = false;
-                    lbYTCPCo.Visible = false;
-                    txtYTCPCo.Visible = false;
-                    txtYTCPDuNgayCo.Visible = false;
-                    txtYTCPDuThangCo.Visible = false;
-                    cboVTHHCo.Visible = false;
-                    lbVTHHCo.Visible = false;
-                    txtVTHHCo.Visible = false;
-                    txtVTHHDuNgayCo.Visible = false;
-                    txtVTHHDuThangCo.Visible = false;                                        
-                }
-                if (cboLoaiCTu.Text.ToUpper() == "PNKNL")
-                {
-                    cboMaTT.Visible = false;
-                    lbMaTT.Visible = false;
-                    cboSoHopDong.Visible = false;
-                    lbSoHopDong.Visible = false;
-                    cboCongtrinh.Visible = false;
-                    lbCongtrinh.Visible = false;
+                //    cboYTCPNo.Visible = false;
+                //    lbYTCPNo.Visible = false;
+                //    txtYTCPNo.Visible = false;
+                //    txtYTCPDuNgay.Visible = false;
+                //    txtYTCPDuThang.Visible = false;
+                //    cboYTCPCo.Visible = false;
+                //    lbYTCPCo.Visible = false;
+                //    txtYTCPCo.Visible = false;
+                //    txtYTCPDuNgayCo.Visible = false;
+                //    txtYTCPDuThangCo.Visible = false;
+                //    cboVTHHCo.Visible = false;
+                //    lbVTHHCo.Visible = false;
+                //    txtVTHHCo.Visible = false;
+                //    txtVTHHDuNgayCo.Visible = false;
+                //    txtVTHHDuThangCo.Visible = false;                                        
+                //}
+                //if (cboLoaiCTu.Text.ToUpper() == "PNKNL")
+                //{
+                //    cboMaTT.Visible = false;
+                //    lbMaTT.Visible = false;
+                //    cboSoHopDong.Visible = false;
+                //    lbSoHopDong.Visible = false;
+                //    cboCongtrinh.Visible = false;
+                //    lbCongtrinh.Visible = false;
 
-                    cboYTCPNo.Visible = false;
-                    lbYTCPNo.Visible = false;
-                    txtYTCPNo.Visible = false;
-                    txtYTCPDuNgay.Visible = false;
-                    txtYTCPDuThang.Visible = false;
-                    cboYTCPCo.Visible = false;
-                    lbYTCPCo.Visible = false;
-                    txtYTCPCo.Visible = false;
-                    txtYTCPDuNgayCo.Visible = false;
-                    txtYTCPDuThangCo.Visible = false;
-                    cboVTHHCo.Visible = false;
-                    lbVTHHCo.Visible = false;
-                    txtVTHHCo.Visible = false;
-                    txtVTHHDuNgayCo.Visible = false;
-                    txtVTHHDuThangCo.Visible = false;
+                //    cboYTCPNo.Visible = false;
+                //    lbYTCPNo.Visible = false;
+                //    txtYTCPNo.Visible = false;
+                //    txtYTCPDuNgay.Visible = false;
+                //    txtYTCPDuThang.Visible = false;
+                //    cboYTCPCo.Visible = false;
+                //    lbYTCPCo.Visible = false;
+                //    txtYTCPCo.Visible = false;
+                //    txtYTCPDuNgayCo.Visible = false;
+                //    txtYTCPDuThangCo.Visible = false;
+                //    cboVTHHCo.Visible = false;
+                //    lbVTHHCo.Visible = false;
+                //    txtVTHHCo.Visible = false;
+                //    txtVTHHDuNgayCo.Visible = false;
+                //    txtVTHHDuThangCo.Visible = false;
 
-                    txtTygia.Visible = false;
-                    lbTygia.Visible = false;
-                    txtTienUsd.Visible = false;
-                    lbTienUsd.Visible = false;
-                    txtPTNK.Visible = false;
-                    lbPTNK.Visible = false;
-                    txtThueNK.Visible = false;
-                    lbThueNK.Visible = false;
-                }
-                if (cboLoaiCTu.Text.ToUpper() == "PNKTP")
-                {
-                    cboMaTT.Visible = false;
-                    lbMaTT.Visible = false;
-                    cboSoHopDong.Visible = false;
-                    lbSoHopDong.Visible = false;
-                    cboCongtrinh.Visible = false;
-                    lbCongtrinh.Visible = false;
+                //    txtTygia.Visible = false;
+                //    lbTygia.Visible = false;
+                //    txtTienUsd.Visible = false;
+                //    lbTienUsd.Visible = false;
+                //    txtPTNK.Visible = false;
+                //    lbPTNK.Visible = false;
+                //    txtThueNK.Visible = false;
+                //    lbThueNK.Visible = false;
+                //}
+                //if (cboLoaiCTu.Text.ToUpper() == "PNKTP")
+                //{
+                //    cboMaTT.Visible = false;
+                //    lbMaTT.Visible = false;
+                //    cboSoHopDong.Visible = false;
+                //    lbSoHopDong.Visible = false;
+                //    cboCongtrinh.Visible = false;
+                //    lbCongtrinh.Visible = false;
 
-                    cboYTCPNo.Visible = false;
-                    lbYTCPNo.Visible = false;
-                    txtYTCPNo.Visible = false;
-                    txtYTCPDuNgay.Visible = false;
-                    txtYTCPDuThang.Visible = false;
-                    cboYTCPCo.Visible = false;
-                    lbYTCPCo.Visible = false;
-                    txtYTCPCo.Visible = false;
-                    txtYTCPDuNgayCo.Visible = false;
-                    txtYTCPDuThangCo.Visible = false;
-                    cboVTHHCo.Visible = false;
-                    lbVTHHCo.Visible = false;
-                    txtVTHHCo.Visible = false;
-                    txtVTHHDuNgayCo.Visible = false;
-                    txtVTHHDuThangCo.Visible = false;
+                //    cboYTCPNo.Visible = false;
+                //    lbYTCPNo.Visible = false;
+                //    txtYTCPNo.Visible = false;
+                //    txtYTCPDuNgay.Visible = false;
+                //    txtYTCPDuThang.Visible = false;
+                //    cboYTCPCo.Visible = false;
+                //    lbYTCPCo.Visible = false;
+                //    txtYTCPCo.Visible = false;
+                //    txtYTCPDuNgayCo.Visible = false;
+                //    txtYTCPDuThangCo.Visible = false;
+                //    cboVTHHCo.Visible = false;
+                //    lbVTHHCo.Visible = false;
+                //    txtVTHHCo.Visible = false;
+                //    txtVTHHDuNgayCo.Visible = false;
+                //    txtVTHHDuThangCo.Visible = false;
 
-                    txtTS.Visible = false;
-                    lbTS.Visible = false;
-                    txtTKThue.Visible = false;
-                    lbTKThue.Visible = false;
-                    txtThueVND.Visible = false;
-                    lbThueVND.Visible = false;
-                    txtTygia.Visible = false;
-                    lbTygia.Visible = false;
-                    txtTienUsd.Visible = false;
-                    lbTienUsd.Visible = false;
-                    txtPTNK.Visible = false;
-                    lbPTNK.Visible = false;
-                    txtThueNK.Visible = false;
-                    lbThueNK.Visible = false;
-                }
-                if (cboLoaiCTu.Text.ToUpper() == "PT")
-                {
-                    cboSoHopDong.Visible = false;
-                    lbSoHopDong.Visible = false;
-                    cboCongtrinh.Visible = false;
-                    lbCongtrinh.Visible = false;
+                //    txtTS.Visible = false;
+                //    lbTS.Visible = false;
+                //    txtTKThue.Visible = false;
+                //    lbTKThue.Visible = false;
+                //    txtThueVND.Visible = false;
+                //    lbThueVND.Visible = false;
+                //    txtTygia.Visible = false;
+                //    lbTygia.Visible = false;
+                //    txtTienUsd.Visible = false;
+                //    lbTienUsd.Visible = false;
+                //    txtPTNK.Visible = false;
+                //    lbPTNK.Visible = false;
+                //    txtThueNK.Visible = false;
+                //    lbThueNK.Visible = false;
+                //}
+                //if (cboLoaiCTu.Text.ToUpper() == "PT")
+                //{
+                //    cboSoHopDong.Visible = false;
+                //    lbSoHopDong.Visible = false;
+                //    cboCongtrinh.Visible = false;
+                //    lbCongtrinh.Visible = false;
 
-                    cboYTCPNo.Visible = false;
-                    lbYTCPNo.Visible = false;
-                    txtYTCPNo.Visible = false;
-                    txtYTCPDuNgay.Visible = false;
-                    txtYTCPDuThang.Visible = false;
-                    cboVTHHNo.Visible = false;
-                    lbVTHHNo.Visible = false;
-                    txtVTHHNo.Visible = false;
-                    txtVTHHDuNgay.Visible = false;
-                    txtVTHHDuThang.Visible = false;
-                    cboYTCPCo.Visible = false;
-                    lbYTCPCo.Visible = false;
-                    txtYTCPCo.Visible = false;
-                    txtYTCPDuNgayCo.Visible = false;
-                    txtYTCPDuThangCo.Visible = false;
-                    cboVTHHCo.Visible = false;
-                    lbVTHHCo.Visible = false;
-                    txtVTHHCo.Visible = false;
-                    txtVTHHDuNgayCo.Visible = false;
-                    txtVTHHDuThangCo.Visible = false;
+                //    cboYTCPNo.Visible = false;
+                //    lbYTCPNo.Visible = false;
+                //    txtYTCPNo.Visible = false;
+                //    txtYTCPDuNgay.Visible = false;
+                //    txtYTCPDuThang.Visible = false;
+                //    cboVTHHNo.Visible = false;
+                //    lbVTHHNo.Visible = false;
+                //    txtVTHHNo.Visible = false;
+                //    txtVTHHDuNgay.Visible = false;
+                //    txtVTHHDuThang.Visible = false;
+                //    cboYTCPCo.Visible = false;
+                //    lbYTCPCo.Visible = false;
+                //    txtYTCPCo.Visible = false;
+                //    txtYTCPDuNgayCo.Visible = false;
+                //    txtYTCPDuThangCo.Visible = false;
+                //    cboVTHHCo.Visible = false;
+                //    lbVTHHCo.Visible = false;
+                //    txtVTHHCo.Visible = false;
+                //    txtVTHHDuNgayCo.Visible = false;
+                //    txtVTHHDuThangCo.Visible = false;
 
-                    comboBoxEx9.Visible = false;
-                    txtSoluong.Visible = false;
-                    lbSoluong.Visible = false;
-                    txtDongia.Visible = false;
-                    lbDongia.Visible = false;
-                    txtTygia.Visible = false;
-                    lbTygia.Visible = false;
-                    txtTienUsd.Visible = false;
-                    lbTienUsd.Visible = false;
-                    txtPTNK.Visible = false;
-                    lbPTNK.Visible = false;
-                    txtThueNK.Visible = false;
-                    lbThueNK.Visible = false;
-                }
-                if (cboLoaiCTu.Text.ToUpper() == "PXK")
-                {
-                    cboMaTT.Visible = false;
-                    lbMaTT.Visible = false;
-                    cboSoHopDong.Visible = false;
-                    lbSoHopDong.Visible = false;
-                    cboCongtrinh.Visible = false;
-                    lbCongtrinh.Visible = false;
+                //    comboBoxEx9.Visible = false;
+                //    txtSoluong.Visible = false;
+                //    lbSoluong.Visible = false;
+                //    txtDongia.Visible = false;
+                //    lbDongia.Visible = false;
+                //    txtTygia.Visible = false;
+                //    lbTygia.Visible = false;
+                //    txtTienUsd.Visible = false;
+                //    lbTienUsd.Visible = false;
+                //    txtPTNK.Visible = false;
+                //    lbPTNK.Visible = false;
+                //    txtThueNK.Visible = false;
+                //    lbThueNK.Visible = false;
+                //}
+                //if (cboLoaiCTu.Text.ToUpper() == "PXK")
+                //{
+                //    cboMaTT.Visible = false;
+                //    lbMaTT.Visible = false;
+                //    cboSoHopDong.Visible = false;
+                //    lbSoHopDong.Visible = false;
+                //    cboCongtrinh.Visible = false;
+                //    lbCongtrinh.Visible = false;
 
-                    cboVTHHNo.Visible = false;
-                    lbVTHHNo.Visible = false;
-                    txtVTHHNo.Visible = false;
-                    txtVTHHDuNgay.Visible = false;
-                    txtVTHHDuThang.Visible = false;
-                    cboYTCPNo.Visible = false;
-                    lbYTCPNo.Visible = false;
-                    txtYTCPNo.Visible = false;
-                    txtYTCPDuNgay.Visible = false;
-                    txtYTCPDuThang.Visible = false;
-                    cboYTCPCo.Visible = false;
-                    lbYTCPCo.Visible = false;
-                    txtYTCPCo.Visible = false;
-                    txtYTCPDuNgayCo.Visible = false;
-                    txtYTCPDuThangCo.Visible = false;                    
+                //    cboVTHHNo.Visible = false;
+                //    lbVTHHNo.Visible = false;
+                //    txtVTHHNo.Visible = false;
+                //    txtVTHHDuNgay.Visible = false;
+                //    txtVTHHDuThang.Visible = false;
+                //    cboYTCPNo.Visible = false;
+                //    lbYTCPNo.Visible = false;
+                //    txtYTCPNo.Visible = false;
+                //    txtYTCPDuNgay.Visible = false;
+                //    txtYTCPDuThang.Visible = false;
+                //    cboYTCPCo.Visible = false;
+                //    lbYTCPCo.Visible = false;
+                //    txtYTCPCo.Visible = false;
+                //    txtYTCPDuNgayCo.Visible = false;
+                //    txtYTCPDuThangCo.Visible = false;                    
 
-                    txtTS.Visible = false;
-                    lbTS.Visible = false;
-                    txtTKThue.Visible = false;
-                    lbTKThue.Visible = false;
-                    txtThueVND.Visible = false;
-                    lbThueVND.Visible = false;
-                    txtTygia.Visible = false;
-                    lbTygia.Visible = false;
-                    txtTienUsd.Visible = false;
-                    lbTienUsd.Visible = false;
-                    txtPTNK.Visible = false;
-                    lbPTNK.Visible = false;
-                    txtThueNK.Visible = false;
-                    lbThueNK.Visible = false;
-                }
-                if (cboLoaiCTu.Text.ToUpper() == "PXKGC")
-                {
-                    cboMaTT.Visible = false;
-                    lbMaTT.Visible = false;
-                    cboSoHopDong.Visible = false;
-                    lbSoHopDong.Visible = false;
-                    cboCongtrinh.Visible = false;
-                    lbCongtrinh.Visible = false;
+                //    txtTS.Visible = false;
+                //    lbTS.Visible = false;
+                //    txtTKThue.Visible = false;
+                //    lbTKThue.Visible = false;
+                //    txtThueVND.Visible = false;
+                //    lbThueVND.Visible = false;
+                //    txtTygia.Visible = false;
+                //    lbTygia.Visible = false;
+                //    txtTienUsd.Visible = false;
+                //    lbTienUsd.Visible = false;
+                //    txtPTNK.Visible = false;
+                //    lbPTNK.Visible = false;
+                //    txtThueNK.Visible = false;
+                //    lbThueNK.Visible = false;
+                //}
+                //if (cboLoaiCTu.Text.ToUpper() == "PXKGC")
+                //{
+                //    cboMaTT.Visible = false;
+                //    lbMaTT.Visible = false;
+                //    cboSoHopDong.Visible = false;
+                //    lbSoHopDong.Visible = false;
+                //    cboCongtrinh.Visible = false;
+                //    lbCongtrinh.Visible = false;
 
-                    cboVTHHNo.Visible = false;
-                    lbVTHHNo.Visible = false;
-                    txtVTHHNo.Visible = false;
-                    txtVTHHDuNgay.Visible = false;
-                    txtVTHHDuThang.Visible = false;
-                    cboYTCPNo.Visible = false;
-                    lbYTCPNo.Visible = false;
-                    txtYTCPNo.Visible = false;
-                    txtYTCPDuNgay.Visible = false;
-                    txtYTCPDuThang.Visible = false;
-                    cboYTCPCo.Visible = false;
-                    lbYTCPCo.Visible = false;
-                    txtYTCPCo.Visible = false;
-                    txtYTCPDuNgayCo.Visible = false;
-                    txtYTCPDuThangCo.Visible = false;
+                //    cboVTHHNo.Visible = false;
+                //    lbVTHHNo.Visible = false;
+                //    txtVTHHNo.Visible = false;
+                //    txtVTHHDuNgay.Visible = false;
+                //    txtVTHHDuThang.Visible = false;
+                //    cboYTCPNo.Visible = false;
+                //    lbYTCPNo.Visible = false;
+                //    txtYTCPNo.Visible = false;
+                //    txtYTCPDuNgay.Visible = false;
+                //    txtYTCPDuThang.Visible = false;
+                //    cboYTCPCo.Visible = false;
+                //    lbYTCPCo.Visible = false;
+                //    txtYTCPCo.Visible = false;
+                //    txtYTCPDuNgayCo.Visible = false;
+                //    txtYTCPDuThangCo.Visible = false;
 
-                    txtTS.Visible = false;
-                    lbTS.Visible = false;
-                    txtTKThue.Visible = false;
-                    lbTKThue.Visible = false;
-                    txtThueVND.Visible = false;
-                    lbThueVND.Visible = false;
-                    txtTygia.Visible = false;
-                    lbTygia.Visible = false;
-                    txtTienUsd.Visible = false;
-                    lbTienUsd.Visible = false;
-                    txtPTNK.Visible = false;
-                    lbPTNK.Visible = false;
-                    txtThueNK.Visible = false;
-                    lbThueNK.Visible = false;
-                }
-                if (cboLoaiCTu.Text.ToUpper() == "PXKNL")
-                {
-                    cboMaTT.Visible = false;
-                    lbMaTT.Visible = false;
-                    cboSoHopDong.Visible = false;
-                    lbSoHopDong.Visible = false;
-                    cboCongtrinh.Visible = false;
-                    lbCongtrinh.Visible = false;
+                //    txtTS.Visible = false;
+                //    lbTS.Visible = false;
+                //    txtTKThue.Visible = false;
+                //    lbTKThue.Visible = false;
+                //    txtThueVND.Visible = false;
+                //    lbThueVND.Visible = false;
+                //    txtTygia.Visible = false;
+                //    lbTygia.Visible = false;
+                //    txtTienUsd.Visible = false;
+                //    lbTienUsd.Visible = false;
+                //    txtPTNK.Visible = false;
+                //    lbPTNK.Visible = false;
+                //    txtThueNK.Visible = false;
+                //    lbThueNK.Visible = false;
+                //}
+                //if (cboLoaiCTu.Text.ToUpper() == "PXKNL")
+                //{
+                //    cboMaTT.Visible = false;
+                //    lbMaTT.Visible = false;
+                //    cboSoHopDong.Visible = false;
+                //    lbSoHopDong.Visible = false;
+                //    cboCongtrinh.Visible = false;
+                //    lbCongtrinh.Visible = false;
 
-                    cboVTHHNo.Visible = false;
-                    lbVTHHNo.Visible = false;
-                    txtVTHHNo.Visible = false;
-                    txtVTHHDuNgay.Visible = false;
-                    txtVTHHDuThang.Visible = false;
-                    cboYTCPNo.Visible = false;
-                    lbYTCPNo.Visible = false;
-                    txtYTCPNo.Visible = false;
-                    txtYTCPDuNgay.Visible = false;
-                    txtYTCPDuThang.Visible = false;
-                    cboYTCPCo.Visible = false;
-                    lbYTCPCo.Visible = false;
-                    txtYTCPCo.Visible = false;
-                    txtYTCPDuNgayCo.Visible = false;
-                    txtYTCPDuThangCo.Visible = false;
+                //    cboVTHHNo.Visible = false;
+                //    lbVTHHNo.Visible = false;
+                //    txtVTHHNo.Visible = false;
+                //    txtVTHHDuNgay.Visible = false;
+                //    txtVTHHDuThang.Visible = false;
+                //    cboYTCPNo.Visible = false;
+                //    lbYTCPNo.Visible = false;
+                //    txtYTCPNo.Visible = false;
+                //    txtYTCPDuNgay.Visible = false;
+                //    txtYTCPDuThang.Visible = false;
+                //    cboYTCPCo.Visible = false;
+                //    lbYTCPCo.Visible = false;
+                //    txtYTCPCo.Visible = false;
+                //    txtYTCPDuNgayCo.Visible = false;
+                //    txtYTCPDuThangCo.Visible = false;
 
-                    txtTS.Visible = false;
-                    lbTS.Visible = false;
-                    txtTKThue.Visible = false;
-                    lbTKThue.Visible = false;
-                    txtThueVND.Visible = false;
-                    lbThueVND.Visible = false;
-                    txtTygia.Visible = false;
-                    lbTygia.Visible = false;
-                    txtTienUsd.Visible = false;
-                    lbTienUsd.Visible = false;
-                    txtPTNK.Visible = false;
-                    lbPTNK.Visible = false;
-                    txtThueNK.Visible = false;
-                    lbThueNK.Visible = false;
-                }
-                if (cboLoaiCTu.Text.ToUpper() == "TNH")
-                {
-                    cboMaTT.Visible = false;
-                    lbMaTT.Visible = false;
-                    cboSoHopDong.Visible = false;
-                    lbSoHopDong.Visible = false;
-                    cboCongtrinh.Visible = false;
-                    lbCongtrinh.Visible = false;
+                //    txtTS.Visible = false;
+                //    lbTS.Visible = false;
+                //    txtTKThue.Visible = false;
+                //    lbTKThue.Visible = false;
+                //    txtThueVND.Visible = false;
+                //    lbThueVND.Visible = false;
+                //    txtTygia.Visible = false;
+                //    lbTygia.Visible = false;
+                //    txtTienUsd.Visible = false;
+                //    lbTienUsd.Visible = false;
+                //    txtPTNK.Visible = false;
+                //    lbPTNK.Visible = false;
+                //    txtThueNK.Visible = false;
+                //    lbThueNK.Visible = false;
+                //}
+                //if (cboLoaiCTu.Text.ToUpper() == "TNH")
+                //{
+                //    cboMaTT.Visible = false;
+                //    lbMaTT.Visible = false;
+                //    cboSoHopDong.Visible = false;
+                //    lbSoHopDong.Visible = false;
+                //    cboCongtrinh.Visible = false;
+                //    lbCongtrinh.Visible = false;
 
-                    cboVTHHNo.Visible = false;
-                    lbVTHHNo.Visible = false;
-                    txtVTHHNo.Visible = false;
-                    txtVTHHDuNgay.Visible = false;
-                    txtVTHHDuThang.Visible = false;                    
-                    cboYTCPCo.Visible = false;
-                    lbYTCPCo.Visible = false;
-                    txtYTCPCo.Visible = false;
-                    txtYTCPDuNgayCo.Visible = false;
-                    txtYTCPDuThangCo.Visible = false;
-                    cboVTHHCo.Visible = false;
-                    lbVTHHCo.Visible = false;
-                    txtVTHHCo.Visible = false;
-                    txtVTHHDuNgayCo.Visible = false;
-                    txtVTHHDuThangCo.Visible = false;
+                //    cboVTHHNo.Visible = false;
+                //    lbVTHHNo.Visible = false;
+                //    txtVTHHNo.Visible = false;
+                //    txtVTHHDuNgay.Visible = false;
+                //    txtVTHHDuThang.Visible = false;                    
+                //    cboYTCPCo.Visible = false;
+                //    lbYTCPCo.Visible = false;
+                //    txtYTCPCo.Visible = false;
+                //    txtYTCPDuNgayCo.Visible = false;
+                //    txtYTCPDuThangCo.Visible = false;
+                //    cboVTHHCo.Visible = false;
+                //    lbVTHHCo.Visible = false;
+                //    txtVTHHCo.Visible = false;
+                //    txtVTHHDuNgayCo.Visible = false;
+                //    txtVTHHDuThangCo.Visible = false;
 
-                    comboBoxEx9.Visible = false;
-                    txtSoluong.Visible = false;
-                    lbSoluong.Visible = false;
-                    txtDongia.Visible = false;
-                    lbDongia.Visible = false;
-                    txtTS.Visible = false;
-                    lbTS.Visible = false;
-                    txtTKThue.Visible = false;
-                    lbTKThue.Visible = false;
-                    txtThueVND.Visible = false;
-                    lbThueVND.Visible = false;                    
-                    txtPTNK.Visible = false;
-                    lbPTNK.Visible = false;
-                    txtThueNK.Visible = false;
-                    lbThueNK.Visible = false;
-                }
-                if (cboLoaiCTu.Text.ToUpper() == "TTTU")
-                {
-                    cboMaTT.Visible = false;
-                    lbMaTT.Visible = false;
-                    cboSoHopDong.Visible = false;
-                    lbSoHopDong.Visible = false;
-                    cboCongtrinh.Visible = false;
-                    lbCongtrinh.Visible = false;
+                //    comboBoxEx9.Visible = false;
+                //    txtSoluong.Visible = false;
+                //    lbSoluong.Visible = false;
+                //    txtDongia.Visible = false;
+                //    lbDongia.Visible = false;
+                //    txtTS.Visible = false;
+                //    lbTS.Visible = false;
+                //    txtTKThue.Visible = false;
+                //    lbTKThue.Visible = false;
+                //    txtThueVND.Visible = false;
+                //    lbThueVND.Visible = false;                    
+                //    txtPTNK.Visible = false;
+                //    lbPTNK.Visible = false;
+                //    txtThueNK.Visible = false;
+                //    lbThueNK.Visible = false;
+                //}
+                //if (cboLoaiCTu.Text.ToUpper() == "TTTU")
+                //{
+                //    cboMaTT.Visible = false;
+                //    lbMaTT.Visible = false;
+                //    cboSoHopDong.Visible = false;
+                //    lbSoHopDong.Visible = false;
+                //    cboCongtrinh.Visible = false;
+                //    lbCongtrinh.Visible = false;
 
-                    cboVTHHNo.Visible = false;
-                    lbVTHHNo.Visible = false;
-                    txtVTHHNo.Visible = false;
-                    txtVTHHDuNgay.Visible = false;
-                    txtVTHHDuThang.Visible = false;
-                    cboYTCPCo.Visible = false;
-                    lbYTCPCo.Visible = false;
-                    txtYTCPCo.Visible = false;
-                    txtYTCPDuNgayCo.Visible = false;
-                    txtYTCPDuThangCo.Visible = false;
-                    cboVTHHCo.Visible = false;
-                    lbVTHHCo.Visible = false;
-                    txtVTHHCo.Visible = false;
-                    txtVTHHDuNgayCo.Visible = false;
-                    txtVTHHDuThangCo.Visible = false;
+                //    cboVTHHNo.Visible = false;
+                //    lbVTHHNo.Visible = false;
+                //    txtVTHHNo.Visible = false;
+                //    txtVTHHDuNgay.Visible = false;
+                //    txtVTHHDuThang.Visible = false;
+                //    cboYTCPCo.Visible = false;
+                //    lbYTCPCo.Visible = false;
+                //    txtYTCPCo.Visible = false;
+                //    txtYTCPDuNgayCo.Visible = false;
+                //    txtYTCPDuThangCo.Visible = false;
+                //    cboVTHHCo.Visible = false;
+                //    lbVTHHCo.Visible = false;
+                //    txtVTHHCo.Visible = false;
+                //    txtVTHHDuNgayCo.Visible = false;
+                //    txtVTHHDuThangCo.Visible = false;
 
-                    comboBoxEx9.Visible = false;
-                    txtSoluong.Visible = false;
-                    lbSoluong.Visible = false;
-                    txtDongia.Visible = false;
-                    lbDongia.Visible = false;
-                    txtTygia.Visible = false;
-                    lbTygia.Visible = false;
-                    txtTienUsd.Visible = false;
-                    lbTienUsd.Visible = false;
-                    txtPTNK.Visible = false;
-                    lbPTNK.Visible = false;
-                    txtThueNK.Visible = false;
-                    lbThueNK.Visible = false;
-                }
-                if (cboLoaiCTu.Text.ToUpper() == "UNC")
-                {
-                    cboMaTT.Visible = false;
-                    lbMaTT.Visible = false;
-                    cboSoHopDong.Visible = false;
-                    lbSoHopDong.Visible = false;
-                    cboCongtrinh.Visible = false;
-                    lbCongtrinh.Visible = false;
+                //    comboBoxEx9.Visible = false;
+                //    txtSoluong.Visible = false;
+                //    lbSoluong.Visible = false;
+                //    txtDongia.Visible = false;
+                //    lbDongia.Visible = false;
+                //    txtTygia.Visible = false;
+                //    lbTygia.Visible = false;
+                //    txtTienUsd.Visible = false;
+                //    lbTienUsd.Visible = false;
+                //    txtPTNK.Visible = false;
+                //    lbPTNK.Visible = false;
+                //    txtThueNK.Visible = false;
+                //    lbThueNK.Visible = false;
+                //}
+                //if (cboLoaiCTu.Text.ToUpper() == "UNC")
+                //{
+                //    cboMaTT.Visible = false;
+                //    lbMaTT.Visible = false;
+                //    cboSoHopDong.Visible = false;
+                //    lbSoHopDong.Visible = false;
+                //    cboCongtrinh.Visible = false;
+                //    lbCongtrinh.Visible = false;
 
-                    cboVTHHNo.Visible = false;
-                    lbVTHHNo.Visible = false;
-                    txtVTHHNo.Visible = false;
-                    txtVTHHDuNgay.Visible = false;
-                    txtVTHHDuThang.Visible = false;
-                    cboYTCPCo.Visible = false;
-                    lbYTCPCo.Visible = false;
-                    txtYTCPCo.Visible = false;
-                    txtYTCPDuNgayCo.Visible = false;
-                    txtYTCPDuThangCo.Visible = false;
-                    cboVTHHCo.Visible = false;
-                    lbVTHHCo.Visible = false;
-                    txtVTHHCo.Visible = false;
-                    txtVTHHDuNgayCo.Visible = false;
-                    txtVTHHDuThangCo.Visible = false;
+                //    cboVTHHNo.Visible = false;
+                //    lbVTHHNo.Visible = false;
+                //    txtVTHHNo.Visible = false;
+                //    txtVTHHDuNgay.Visible = false;
+                //    txtVTHHDuThang.Visible = false;
+                //    cboYTCPCo.Visible = false;
+                //    lbYTCPCo.Visible = false;
+                //    txtYTCPCo.Visible = false;
+                //    txtYTCPDuNgayCo.Visible = false;
+                //    txtYTCPDuThangCo.Visible = false;
+                //    cboVTHHCo.Visible = false;
+                //    lbVTHHCo.Visible = false;
+                //    txtVTHHCo.Visible = false;
+                //    txtVTHHDuNgayCo.Visible = false;
+                //    txtVTHHDuThangCo.Visible = false;
 
-                    comboBoxEx9.Visible = false;
-                    txtSoluong.Visible = false;
-                    lbSoluong.Visible = false;
-                    txtDongia.Visible = false;
-                    lbDongia.Visible = false;
-                    txtTS.Visible = false;
-                    lbTS.Visible = false;
-                    txtTKThue.Visible = false;
-                    lbTKThue.Visible = false;
-                    txtThueVND.Visible = false;
-                    lbThueVND.Visible = false;
-                    txtTygia.Visible = false;
-                    lbTygia.Visible = false;
-                    txtTienUsd.Visible = false;
-                    lbTienUsd.Visible = false;
-                    txtPTNK.Visible = false;
-                    lbPTNK.Visible = false;
-                    txtThueNK.Visible = false;
-                    lbThueNK.Visible = false;
-                }
-                if (cboLoaiCTu.Text.ToUpper() == "VAT_R")
-                {
-                    cboMaTT.Visible = false;
-                    lbMaTT.Visible = false;
-                    cboSoHopDong.Visible = false;
-                    lbSoHopDong.Visible = false;
-                    cboCongtrinh.Visible = false;
-                    lbCongtrinh.Visible = false;
+                //    comboBoxEx9.Visible = false;
+                //    txtSoluong.Visible = false;
+                //    lbSoluong.Visible = false;
+                //    txtDongia.Visible = false;
+                //    lbDongia.Visible = false;
+                //    txtTS.Visible = false;
+                //    lbTS.Visible = false;
+                //    txtTKThue.Visible = false;
+                //    lbTKThue.Visible = false;
+                //    txtThueVND.Visible = false;
+                //    lbThueVND.Visible = false;
+                //    txtTygia.Visible = false;
+                //    lbTygia.Visible = false;
+                //    txtTienUsd.Visible = false;
+                //    lbTienUsd.Visible = false;
+                //    txtPTNK.Visible = false;
+                //    lbPTNK.Visible = false;
+                //    txtThueNK.Visible = false;
+                //    lbThueNK.Visible = false;
+                //}
+                //if (cboLoaiCTu.Text.ToUpper() == "VAT_R")
+                //{
+                //    cboMaTT.Visible = false;
+                //    lbMaTT.Visible = false;
+                //    cboSoHopDong.Visible = false;
+                //    lbSoHopDong.Visible = false;
+                //    cboCongtrinh.Visible = false;
+                //    lbCongtrinh.Visible = false;
 
-                    cboVTHHNo.Visible = false;
-                    lbVTHHNo.Visible = false;
-                    txtVTHHNo.Visible = false;
-                    txtVTHHDuNgay.Visible = false;
-                    txtVTHHDuThang.Visible = false;
-                    cboYTCPCo.Visible = false;
-                    lbYTCPCo.Visible = false;
-                    txtYTCPCo.Visible = false;
-                    txtYTCPDuNgayCo.Visible = false;
-                    txtYTCPDuThangCo.Visible = false;
-                    cboVTHHCo.Visible = false;
-                    lbVTHHCo.Visible = false;
-                    txtVTHHCo.Visible = false;
-                    txtVTHHDuNgayCo.Visible = false;
-                    txtVTHHDuThangCo.Visible = false;
+                //    cboVTHHNo.Visible = false;
+                //    lbVTHHNo.Visible = false;
+                //    txtVTHHNo.Visible = false;
+                //    txtVTHHDuNgay.Visible = false;
+                //    txtVTHHDuThang.Visible = false;
+                //    cboYTCPCo.Visible = false;
+                //    lbYTCPCo.Visible = false;
+                //    txtYTCPCo.Visible = false;
+                //    txtYTCPDuNgayCo.Visible = false;
+                //    txtYTCPDuThangCo.Visible = false;
+                //    cboVTHHCo.Visible = false;
+                //    lbVTHHCo.Visible = false;
+                //    txtVTHHCo.Visible = false;
+                //    txtVTHHDuNgayCo.Visible = false;
+                //    txtVTHHDuThangCo.Visible = false;
 
-                    comboBoxEx9.Visible = false;
-                    txtSoluong.Visible = false;
-                    lbSoluong.Visible = false;
-                    txtDongia.Visible = false;
-                    lbDongia.Visible = false;
-                    txtTygia.Visible = false;
-                    lbTygia.Visible = false;
-                    txtTienUsd.Visible = false;
-                    lbTienUsd.Visible = false;
-                    txtPTNK.Visible = false;
-                    lbPTNK.Visible = false;
-                    txtThueNK.Visible = false;
-                    lbThueNK.Visible = false;
-                }
-                if (cboLoaiCTu.Text.ToUpper() == "VAT_V")
-                {
-                    cboMaTT.Visible = false;
-                    lbMaTT.Visible = false;
-                    cboSoHopDong.Visible = false;
-                    lbSoHopDong.Visible = false;
-                    cboCongtrinh.Visible = false;
-                    lbCongtrinh.Visible = false;
+                //    comboBoxEx9.Visible = false;
+                //    txtSoluong.Visible = false;
+                //    lbSoluong.Visible = false;
+                //    txtDongia.Visible = false;
+                //    lbDongia.Visible = false;
+                //    txtTygia.Visible = false;
+                //    lbTygia.Visible = false;
+                //    txtTienUsd.Visible = false;
+                //    lbTienUsd.Visible = false;
+                //    txtPTNK.Visible = false;
+                //    lbPTNK.Visible = false;
+                //    txtThueNK.Visible = false;
+                //    lbThueNK.Visible = false;
+                //}
+                //if (cboLoaiCTu.Text.ToUpper() == "VAT_V")
+                //{
+                //    cboMaTT.Visible = false;
+                //    lbMaTT.Visible = false;
+                //    cboSoHopDong.Visible = false;
+                //    lbSoHopDong.Visible = false;
+                //    cboCongtrinh.Visible = false;
+                //    lbCongtrinh.Visible = false;
 
-                    cboVTHHNo.Visible = false;
-                    lbVTHHNo.Visible = false;
-                    txtVTHHNo.Visible = false;
-                    txtVTHHDuNgay.Visible = false;
-                    txtVTHHDuThang.Visible = false;
-                    cboYTCPCo.Visible = false;
-                    lbYTCPCo.Visible = false;
-                    txtYTCPCo.Visible = false;
-                    txtYTCPDuNgayCo.Visible = false;
-                    txtYTCPDuThangCo.Visible = false;
-                    cboVTHHCo.Visible = false;
-                    lbVTHHCo.Visible = false;
-                    txtVTHHCo.Visible = false;
-                    txtVTHHDuNgayCo.Visible = false;
-                    txtVTHHDuThangCo.Visible = false;
+                //    cboVTHHNo.Visible = false;
+                //    lbVTHHNo.Visible = false;
+                //    txtVTHHNo.Visible = false;
+                //    txtVTHHDuNgay.Visible = false;
+                //    txtVTHHDuThang.Visible = false;
+                //    cboYTCPCo.Visible = false;
+                //    lbYTCPCo.Visible = false;
+                //    txtYTCPCo.Visible = false;
+                //    txtYTCPDuNgayCo.Visible = false;
+                //    txtYTCPDuThangCo.Visible = false;
+                //    cboVTHHCo.Visible = false;
+                //    lbVTHHCo.Visible = false;
+                //    txtVTHHCo.Visible = false;
+                //    txtVTHHDuNgayCo.Visible = false;
+                //    txtVTHHDuThangCo.Visible = false;
 
-                    comboBoxEx9.Visible = false;
-                    txtSoluong.Visible = false;
-                    lbSoluong.Visible = false;
-                    txtDongia.Visible = false;
-                    lbDongia.Visible = false;
-                    txtTygia.Visible = false;
-                    lbTygia.Visible = false;
-                    txtTienUsd.Visible = false;
-                    lbTienUsd.Visible = false;
-                    txtPTNK.Visible = false;
-                    lbPTNK.Visible = false;
-                    txtThueNK.Visible = false;
-                    lbThueNK.Visible = false;
-                }
-                if (cboLoaiCTu.Text.ToUpper() == "XGG")
-                {
-                    cboMaTT.Visible = false;
-                    lbMaTT.Visible = false;
-                    cboSoHopDong.Visible = false;
-                    lbSoHopDong.Visible = false;
-                    cboCongtrinh.Visible = false;
-                    lbCongtrinh.Visible = false;
+                //    comboBoxEx9.Visible = false;
+                //    txtSoluong.Visible = false;
+                //    lbSoluong.Visible = false;
+                //    txtDongia.Visible = false;
+                //    lbDongia.Visible = false;
+                //    txtTygia.Visible = false;
+                //    lbTygia.Visible = false;
+                //    txtTienUsd.Visible = false;
+                //    lbTienUsd.Visible = false;
+                //    txtPTNK.Visible = false;
+                //    lbPTNK.Visible = false;
+                //    txtThueNK.Visible = false;
+                //    lbThueNK.Visible = false;
+                //}
+                //if (cboLoaiCTu.Text.ToUpper() == "XGG")
+                //{
+                //    cboMaTT.Visible = false;
+                //    lbMaTT.Visible = false;
+                //    cboSoHopDong.Visible = false;
+                //    lbSoHopDong.Visible = false;
+                //    cboCongtrinh.Visible = false;
+                //    lbCongtrinh.Visible = false;
 
-                    cboYTCPNo.Visible = false;
-                    lbYTCPNo.Visible = false;
-                    txtYTCPNo.Visible = false;
-                    txtYTCPDuNgay.Visible = false;
-                    txtYTCPDuThang.Visible = false;
-                    cboYTCPCo.Visible = false;
-                    lbYTCPCo.Visible = false;
-                    txtYTCPCo.Visible = false;
-                    txtYTCPDuNgayCo.Visible = false;
-                    txtYTCPDuThangCo.Visible = false;
-                    cboVTHHCo.Visible = false;
-                    lbVTHHCo.Visible = false;
-                    txtVTHHCo.Visible = false;
-                    txtVTHHDuNgayCo.Visible = false;
-                    txtVTHHDuThangCo.Visible = false;
+                //    cboYTCPNo.Visible = false;
+                //    lbYTCPNo.Visible = false;
+                //    txtYTCPNo.Visible = false;
+                //    txtYTCPDuNgay.Visible = false;
+                //    txtYTCPDuThang.Visible = false;
+                //    cboYTCPCo.Visible = false;
+                //    lbYTCPCo.Visible = false;
+                //    txtYTCPCo.Visible = false;
+                //    txtYTCPDuNgayCo.Visible = false;
+                //    txtYTCPDuThangCo.Visible = false;
+                //    cboVTHHCo.Visible = false;
+                //    lbVTHHCo.Visible = false;
+                //    txtVTHHCo.Visible = false;
+                //    txtVTHHDuNgayCo.Visible = false;
+                //    txtVTHHDuThangCo.Visible = false;
                                         
-                    txtTygia.Visible = false;
-                    lbTygia.Visible = false;
-                    txtTienUsd.Visible = false;
-                    lbTienUsd.Visible = false;
-                    txtPTNK.Visible = false;
-                    lbPTNK.Visible = false;
-                    txtThueNK.Visible = false;
-                    lbThueNK.Visible = false;
-                }
+                //    txtTygia.Visible = false;
+                //    lbTygia.Visible = false;
+                //    txtTienUsd.Visible = false;
+                //    lbTienUsd.Visible = false;
+                //    txtPTNK.Visible = false;
+                //    lbPTNK.Visible = false;
+                //    txtThueNK.Visible = false;
+                //    lbThueNK.Visible = false;
+                //}
+                #endregion
             }
         }
         private void LoadGrid2()
@@ -2037,22 +3049,26 @@ namespace ketoansoft.app
         #endregion        
 
         #region text changed
-        private void txtDongia_TextChanged(object sender, EventArgs e)
-        {
-            txtDongia.Text = string.Format("{0:#,#}", Utils.CDecDef(txtDongia.Text, 0));
-            txtDongia.SelectionStart = txtDongia.Text.Length;
-        }
-
         private void txtSoluong_TextChanged(object sender, EventArgs e)
         {
             txtSoluong.Text = string.Format("{0:#,#}", Utils.CDecDef(txtSoluong.Text, 0));
             txtSoluong.SelectionStart = txtSoluong.Text.Length;
         }
+        private void txtDongia_TextChanged(object sender, EventArgs e)
+        {
+            txtDongia.Text = string.Format("{0:#,#}", Utils.CDecDef(txtDongia.Text, 0));
+            txtDongia.SelectionStart = txtDongia.Text.Length;
 
+            int TienVnd = Utils.CIntDef(txtDongia.Text.Replace(",", ""), 0) * Utils.CIntDef(txtSoluong.Text.Replace(",", ""), 0);
+            txtTienVnd.Text = string.Format("{0:#,#}", TienVnd);
+        }
         private void txtTienVnd_TextChanged(object sender, EventArgs e)
         {
             txtTienVnd.Text = string.Format("{0:#,#}", Utils.CDecDef(txtTienVnd.Text, 0));
             txtTienVnd.SelectionStart = txtTienVnd.Text.Length;
+
+            int Dongia = Utils.CIntDef(txtTienVnd.Text.Replace(",", ""), 0) / Utils.CIntDef(txtSoluong.Text.Replace(",", ""), 0);
+            txtDongia.Text = string.Format("{0:#,#}", Dongia);
         }
 
         private void txtThueVND_TextChanged(object sender, EventArgs e)
@@ -2074,7 +3090,272 @@ namespace ketoansoft.app
         }
         #endregion
 
+        #region cbo textchanged
+        private void cboLoaiCTu_TextChanged(object sender, EventArgs e)
+        {
+            _KTLCTGRepo = new KTLCTGRepo();
+            var list = _KTLCTGRepo.GetAllToList();
+            AutoCompleteStringCollection auto1 = new AutoCompleteStringCollection();
+            foreach (var item in list)
+            {
+                auto1.Add(item.ID_LOAI);
+            }
+            cboLoaiCTu.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
+            cboLoaiCTu.AutoCompleteSource = AutoCompleteSource.CustomSource;
+            cboLoaiCTu.AutoCompleteCustomSource = auto1;
+        }
+        private void cboTKNo_TextChanged(object sender, EventArgs e)
+        {
+            _KTTKRepo = new KTTKRepo();
+            var list = _KTTKRepo.GetAllToList();
+            AutoCompleteStringCollection auto1 = new AutoCompleteStringCollection();
+            foreach (var item in list)
+            {
+                auto1.Add(item.MA_TK);
+            }
+            cboTKNo.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
+            cboTKNo.AutoCompleteSource = AutoCompleteSource.CustomSource;
+            cboTKNo.AutoCompleteCustomSource = auto1;
+        }
+        private void cboDTPNNo_TextChanged(object sender, EventArgs e)
+        {
+            _KTDTPNRepo = new KTDTPNRepo();
+            var list = _KTDTPNRepo.GetAllToList();
+            AutoCompleteStringCollection auto1 = new AutoCompleteStringCollection();
+            foreach (var item in list)
+            {
+                auto1.Add(item.MA_DTPN);
+            }
+            cboDTPNNo.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
+            cboDTPNNo.AutoCompleteSource = AutoCompleteSource.CustomSource;
+            cboDTPNNo.AutoCompleteCustomSource = auto1;
+        }
+        private void cboYTCPNo_TextChanged(object sender, EventArgs e)
+        {
+            _KTYTCPRepo = new KTYTCPRepo();
+            var list = _KTYTCPRepo.GetAllToList();
+            AutoCompleteStringCollection auto1 = new AutoCompleteStringCollection();
+            foreach (var item in list)
+            {
+                auto1.Add(item.MA_YTCP);
+            }
+            cboYTCPNo.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
+            cboYTCPNo.AutoCompleteSource = AutoCompleteSource.CustomSource;
+            cboYTCPNo.AutoCompleteCustomSource = auto1;
+        }
+        private void cboVTHHNo_TextChanged(object sender, EventArgs e)
+        {
+            _KTDMHHRepo = new KTDMHHRepo();
+            var list = _KTDMHHRepo.GetAllToList();
+            AutoCompleteStringCollection auto1 = new AutoCompleteStringCollection();
+            foreach (var item in list)
+            {
+                auto1.Add(item.MA_DM);
+            }
+            cboVTHHNo.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
+            cboVTHHNo.AutoCompleteSource = AutoCompleteSource.CustomSource;
+            cboVTHHNo.AutoCompleteCustomSource = auto1;
+        }
 
+        private void cboTKCo_TextChanged(object sender, EventArgs e)
+        {
+            _KTTKRepo = new KTTKRepo();
+            var list = _KTTKRepo.GetAllToList();
+            AutoCompleteStringCollection auto1 = new AutoCompleteStringCollection();
+            foreach (var item in list)
+            {
+                auto1.Add(item.MA_TK);
+            }
+            cboTKCo.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
+            cboTKCo.AutoCompleteSource = AutoCompleteSource.CustomSource;
+            cboTKCo.AutoCompleteCustomSource = auto1;
+        }
+        private void cboDTPNCo_TextChanged(object sender, EventArgs e)
+        {
+            _KTDTPNRepo = new KTDTPNRepo();
+            var list = _KTDTPNRepo.GetAllToList();
+            AutoCompleteStringCollection auto1 = new AutoCompleteStringCollection();
+            foreach (var item in list)
+            {
+                auto1.Add(item.MA_DTPN);
+            }
+            cboDTPNCo.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
+            cboDTPNCo.AutoCompleteSource = AutoCompleteSource.CustomSource;
+            cboDTPNCo.AutoCompleteCustomSource = auto1;
+        }
+        private void cboYTCPCo_TextChanged(object sender, EventArgs e)
+        {
+            _KTYTCPRepo = new KTYTCPRepo();
+            var list = _KTYTCPRepo.GetAllToList();
+            AutoCompleteStringCollection auto1 = new AutoCompleteStringCollection();
+            foreach (var item in list)
+            {
+                auto1.Add(item.MA_YTCP);
+            }
+            cboYTCPCo.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
+            cboYTCPCo.AutoCompleteSource = AutoCompleteSource.CustomSource;
+            cboYTCPCo.AutoCompleteCustomSource = auto1;
+        }
+        private void cboVTHHCo_TextChanged(object sender, EventArgs e)
+        {
+            _KTDMHHRepo = new KTDMHHRepo();
+            var list = _KTDMHHRepo.GetAllToList();
+            AutoCompleteStringCollection auto1 = new AutoCompleteStringCollection();
+            foreach (var item in list)
+            {
+                auto1.Add(item.MA_DM);
+            }
+            cboVTHHCo.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
+            cboVTHHCo.AutoCompleteSource = AutoCompleteSource.CustomSource;
+            cboVTHHCo.AutoCompleteCustomSource = auto1;
+        }
+        private void cboMaTT_TextChanged(object sender, EventArgs e)
+        {
+            _KTMaTTRepo = new KTMaTTRepo();
+            var list = _KTMaTTRepo.GetAllToList();
+            AutoCompleteStringCollection auto1 = new AutoCompleteStringCollection();
+            foreach (var item in list)
+            {
+                auto1.Add(item.KY_HIEU);
+            }
+            cboMaTT.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
+            cboMaTT.AutoCompleteSource = AutoCompleteSource.CustomSource;
+            cboMaTT.AutoCompleteCustomSource = auto1;
+        }
+        private void cboMaHD_TextChanged(object sender, EventArgs e)
+        {
+            _KTMaHDRepo = new KTMaHDRepo();
+            var list = _KTMaHDRepo.GetAllToList();
+            AutoCompleteStringCollection auto1 = new AutoCompleteStringCollection();
+            foreach (var item in list)
+            {
+                auto1.Add(item.KY_HIEU);
+            }
+            cboMaHD.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
+            cboMaHD.AutoCompleteSource = AutoCompleteSource.CustomSource;
+            cboMaHD.AutoCompleteCustomSource = auto1; 
+        }
+        private void cboSoHD_TextChanged(object sender, EventArgs e)
+        {
+            _KTDMHoaDonRepo = new KTDMHoaDonRepo();
+            var list = _KTDMHoaDonRepo.GetAllToList();
+            AutoCompleteStringCollection auto1 = new AutoCompleteStringCollection();
+            foreach (var item in list)
+            {
+                auto1.Add(item.SO_HD);
+            }
+            cboSoHD.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
+            cboSoHD.AutoCompleteSource = AutoCompleteSource.CustomSource;
+            cboSoHD.AutoCompleteCustomSource = auto1; 
+        }
+        private void cboHDVat_TextChanged(object sender, EventArgs e)
+        {
+            //_KTDMHoaDonRepo = new KTDMHoaDonRepo();
+            //var list = _KTDMHoaDonRepo.GetAllToList();
+            //AutoCompleteStringCollection auto1 = new AutoCompleteStringCollection();
+            //foreach (var item in list)
+            //{
+            //    auto1.Add(item.SO_HD);
+            //}
+            //cboHDVat.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
+            //cboHDVat.AutoCompleteSource = AutoCompleteSource.CustomSource;
+            //cboHDVat.AutoCompleteCustomSource = auto1; 
+        }
+        private void cboSoHopDong_TextChanged(object sender, EventArgs e)
+        {
+            _KTCNHopDongRepo = new KTCNHopDongRepo();
+            var list = _KTCNHopDongRepo.GetAllToList();
+            AutoCompleteStringCollection auto1 = new AutoCompleteStringCollection();
+            foreach (var item in list)
+            {
+                auto1.Add(item.SO_HD);
+            }
+            cboSoHopDong.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
+            cboSoHopDong.AutoCompleteSource = AutoCompleteSource.CustomSource;
+            cboSoHopDong.AutoCompleteCustomSource = auto1; 
+        }
+        private void cboCongtrinh_TextChanged(object sender, EventArgs e)
+        {
+            _KTDMCongTrinhRepo = new KTDMCongTrinhRepo();
+            var list = _KTDMCongTrinhRepo.GetAllToList();
+            AutoCompleteStringCollection auto1 = new AutoCompleteStringCollection();
+            foreach (var item in list)
+            {
+                auto1.Add(item.MA_CT);
+            }
+            cboCongtrinh.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
+            cboCongtrinh.AutoCompleteSource = AutoCompleteSource.CustomSource;
+            cboCongtrinh.AutoCompleteCustomSource = auto1; 
+        }
+        #endregion
 
+        #region cbo keydown
+        protected void cboLoaiCTu_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                EnableCtr(cboLoaiCTu.Text);
+                _KT_CTuGocRepo = new KT_CTuGocRepo();
+                gridControl1.DataSource = _KT_CTuGocRepo.GetByMaCT(Utils.CStrDef(cboLoaiCTu.SelectedValue, ""), Utils.CIntDef(fTerm._month, 0), Utils.CIntDef(fTerm._year, 0), "");
+            }
+        }
+        private void cboTKNo_KeyDown(object sender, KeyEventArgs e)
+        {
+            _KTTKRepo = new KTTKRepo();
+            var item = _KTTKRepo.GetById(Utils.CIntDef(cboTKNo.SelectedValue, 0));
+            if (item != null)
+                txtTKNo.Text = item.TEN_TK;
+        }
+        private void cboDTPNNo_KeyDown(object sender, KeyEventArgs e)
+        {
+            _KTDTPNRepo = new KTDTPNRepo();
+            var item = _KTDTPNRepo.GetById(Utils.CIntDef(cboDTPNNo.SelectedValue, 0));
+            if (item != null)
+                txtDTPNNo.Text = item.TEN_DTPN;
+        }
+        private void cboYTCPNo_KeyDown(object sender, KeyEventArgs e)
+        {
+            _KTYTCPRepo = new KTYTCPRepo();
+            var item = _KTYTCPRepo.GetById(Utils.CIntDef(cboYTCPNo.SelectedValue, 0));
+            if (item != null)
+                txtYTCPNo.Text = item.TEN_YTCP_V;
+        }
+        private void cboVTHHNo_KeyDown(object sender, KeyEventArgs e)
+        {
+            _KTDMHHRepo = new KTDMHHRepo();
+            var item = _KTDMHHRepo.GetById(Utils.CIntDef(cboVTHHNo.SelectedValue, 0));
+            if (item != null)
+                txtVTHHNo.Text = item.TEN_DM;
+        }
+        
+        private void cboTKCo_KeyDown(object sender, KeyEventArgs e)
+        {
+            _KTTKRepo = new KTTKRepo();
+            var item = _KTTKRepo.GetById(Utils.CIntDef(cboTKCo.SelectedValue, 0));
+            if (item != null)
+                txtTKCo.Text = item.TEN_TK;
+        }
+        private void cboDTPNCo_KeyDown(object sender, KeyEventArgs e)
+        {
+            _KTDTPNRepo = new KTDTPNRepo();
+            var item = _KTDTPNRepo.GetById(Utils.CIntDef(cboDTPNCo.SelectedValue, 0));
+            if (item != null)
+                txtDTPNCo.Text = item.TEN_DTPN;
+        }
+        private void cboYTCPCo_KeyDown(object sender, KeyEventArgs e)
+        {
+            _KTYTCPRepo = new KTYTCPRepo();
+            var item = _KTYTCPRepo.GetById(Utils.CIntDef(cboYTCPCo.SelectedValue, 0));
+            if (item != null)
+                txtYTCPCo.Text = item.TEN_YTCP_V;
+        }
+        private void cboVTHHCo_KeyDown(object sender, KeyEventArgs e)
+        {
+            _KTDMHHRepo = new KTDMHHRepo();
+            var item = _KTDMHHRepo.GetById(Utils.CIntDef(cboVTHHCo.SelectedValue, 0));
+            if (item != null)
+                txtVTHHCo.Text = item.TEN_DM;
+        }
+        #endregion
     }
 }

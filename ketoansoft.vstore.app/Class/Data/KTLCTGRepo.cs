@@ -9,6 +9,10 @@ namespace ketoansoft.app.Class.Data
     public class KTLCTGRepo
     {
         dbVstoreAppDataContext db = new dbVstoreAppDataContext(Const.builder.ConnectionString);
+        public virtual List<KT_LCTG> GetAllToList()
+        {
+            return this.db.KT_LCTGs.ToList();
+        }
         public virtual KT_LCTG GetById(int id)
         {
             try
@@ -49,8 +53,6 @@ namespace ketoansoft.app.Class.Data
                 throw new Exception(e.Message);
             }
         }
-
-
         public virtual void Remove(int id)
         {
             try
@@ -101,6 +103,5 @@ namespace ketoansoft.app.Class.Data
                 throw new Exception(e.Message);
             }
         }
-
     }
 }

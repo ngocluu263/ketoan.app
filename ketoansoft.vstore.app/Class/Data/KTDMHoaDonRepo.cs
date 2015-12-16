@@ -21,6 +21,10 @@ namespace ketoansoft.app.Class.Data
                 return null;
             }
         }
+        public virtual List<KT_DMHoaDon> GetAllToList()
+        {
+            return this.db.KT_DMHoaDons.ToList();
+        }
         public virtual IQueryable GetAll()
         {
             return this.db.KT_DMHoaDons;

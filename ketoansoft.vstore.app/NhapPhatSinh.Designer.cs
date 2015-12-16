@@ -28,38 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(NhapPhatSinh));
-            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-            this.btnSave = new System.Windows.Forms.ToolStripButton();
-            this.btnView = new System.Windows.Forms.ToolStripButton();
             this.superTabControl1 = new DevComponents.DotNetBar.SuperTabControl();
-            this.superTabControlPanel2 = new DevComponents.DotNetBar.SuperTabControlPanel();
-            this.btnQuaylai = new DevComponents.DotNetBar.ButtonX();
-            this.txtTennhanvienban = new DevComponents.DotNetBar.Controls.TextBoxX();
-            this.txtTennguoigiaodich = new DevComponents.DotNetBar.Controls.TextBoxX();
-            this.txtDiachiNGD = new DevComponents.DotNetBar.Controls.TextBoxX();
-            this.label45 = new System.Windows.Forms.Label();
-            this.txtGhichu = new DevComponents.DotNetBar.Controls.TextBoxX();
-            this.label47 = new System.Windows.Forms.Label();
-            this.txtMathang = new DevComponents.DotNetBar.Controls.TextBoxX();
-            this.label42 = new System.Windows.Forms.Label();
-            this.txtDiachi = new DevComponents.DotNetBar.Controls.TextBoxX();
-            this.label16 = new System.Windows.Forms.Label();
-            this.txtTenkhachhang = new DevComponents.DotNetBar.Controls.TextBoxX();
-            this.label14 = new System.Windows.Forms.Label();
-            this.txtMasothue = new DevComponents.DotNetBar.Controls.TextBoxX();
-            this.label15 = new System.Windows.Forms.Label();
-            this.txtXoa = new DevComponents.DotNetBar.Controls.TextBoxX();
-            this.label46 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label44 = new System.Windows.Forms.Label();
-            this.label43 = new System.Windows.Forms.Label();
-            this.cboManhanvienban = new DevComponents.DotNetBar.Controls.ComboBoxEx();
-            this.label13 = new System.Windows.Forms.Label();
-            this.cboNguoigiaodich = new DevComponents.DotNetBar.Controls.ComboBoxEx();
-            this.cboGanvaomaMADTPN = new DevComponents.DotNetBar.Controls.ComboBoxEx();
-            this.cboMakhachhang = new DevComponents.DotNetBar.Controls.ComboBoxEx();
-            this.superTabItem2 = new DevComponents.DotNetBar.SuperTabItem();
             this.superTabControlPanel1 = new DevComponents.DotNetBar.SuperTabControlPanel();
             this.gridControl2 = new DevExpress.XtraGrid.GridControl();
             this.gridView2 = new DevExpress.XtraGrid.Views.Grid.GridView();
@@ -115,7 +84,6 @@
             this.txtDTPNCo = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.txtTKCo = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.txtDTPNNo = new DevComponents.DotNetBar.Controls.TextBoxX();
-            this.txtTKNo = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.grpSoluongDongia = new System.Windows.Forms.GroupBox();
             this.comboBoxEx9 = new DevComponents.DotNetBar.Controls.ComboBoxEx();
             this.txtSoluong = new DevComponents.DotNetBar.Controls.TextBoxX();
@@ -220,10 +188,36 @@
             this.textBoxX7 = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.txtLaynamtruoc = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.superTabItem4 = new DevComponents.DotNetBar.SuperTabItem();
-            this.toolStrip1.SuspendLayout();
+            this.superTabControlPanel2 = new DevComponents.DotNetBar.SuperTabControlPanel();
+            this.btnQuaylai = new DevComponents.DotNetBar.ButtonX();
+            this.txtTennhanvienban = new DevComponents.DotNetBar.Controls.TextBoxX();
+            this.txtTennguoigiaodich = new DevComponents.DotNetBar.Controls.TextBoxX();
+            this.txtDiachiNGD = new DevComponents.DotNetBar.Controls.TextBoxX();
+            this.label45 = new System.Windows.Forms.Label();
+            this.txtGhichu = new DevComponents.DotNetBar.Controls.TextBoxX();
+            this.label47 = new System.Windows.Forms.Label();
+            this.txtMathang = new DevComponents.DotNetBar.Controls.TextBoxX();
+            this.label42 = new System.Windows.Forms.Label();
+            this.txtDiachi = new DevComponents.DotNetBar.Controls.TextBoxX();
+            this.label16 = new System.Windows.Forms.Label();
+            this.txtTenkhachhang = new DevComponents.DotNetBar.Controls.TextBoxX();
+            this.label14 = new System.Windows.Forms.Label();
+            this.txtMasothue = new DevComponents.DotNetBar.Controls.TextBoxX();
+            this.label15 = new System.Windows.Forms.Label();
+            this.txtXoa = new DevComponents.DotNetBar.Controls.TextBoxX();
+            this.label46 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label44 = new System.Windows.Forms.Label();
+            this.label43 = new System.Windows.Forms.Label();
+            this.cboManhanvienban = new DevComponents.DotNetBar.Controls.ComboBoxEx();
+            this.label13 = new System.Windows.Forms.Label();
+            this.cboNguoigiaodich = new DevComponents.DotNetBar.Controls.ComboBoxEx();
+            this.cboGanvaomaMADTPN = new DevComponents.DotNetBar.Controls.ComboBoxEx();
+            this.cboMakhachhang = new DevComponents.DotNetBar.Controls.ComboBoxEx();
+            this.superTabItem2 = new DevComponents.DotNetBar.SuperTabItem();
+            this.txtTKNo = new DevComponents.DotNetBar.Controls.TextBoxX();
             ((System.ComponentModel.ISupportInitialize)(this.superTabControl1)).BeginInit();
             this.superTabControl1.SuspendLayout();
-            this.superTabControlPanel2.SuspendLayout();
             this.superTabControlPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView2)).BeginInit();
@@ -245,38 +239,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemDateEdit2.VistaTimeProperties)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtpNgayCTuCopy)).BeginInit();
+            this.superTabControlPanel2.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // toolStrip1
-            // 
-            this.toolStrip1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.btnSave,
-            this.btnView});
-            this.toolStrip1.Location = new System.Drawing.Point(0, 577);
-            this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(1022, 25);
-            this.toolStrip1.TabIndex = 0;
-            this.toolStrip1.Text = "toolStrip1";
-            // 
-            // btnSave
-            // 
-            this.btnSave.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.btnSave.Image = ((System.Drawing.Image)(resources.GetObject("btnSave.Image")));
-            this.btnSave.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(47, 22);
-            this.btnSave.Text = "1. Save";
-            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
-            // 
-            // btnView
-            // 
-            this.btnView.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.btnView.Image = ((System.Drawing.Image)(resources.GetObject("btnView.Image")));
-            this.btnView.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnView.Name = "btnView";
-            this.btnView.Size = new System.Drawing.Size(48, 22);
-            this.btnView.Text = "2. View";
             // 
             // superTabControl1
             // 
@@ -297,8 +261,8 @@
             this.superTabControl1.ControlBox.MenuBox,
             this.superTabControl1.ControlBox.CloseBox});
             this.superTabControl1.Controls.Add(this.superTabControlPanel1);
-            this.superTabControl1.Controls.Add(this.superTabControlPanel2);
             this.superTabControl1.Controls.Add(this.superTabControlPanel4);
+            this.superTabControl1.Controls.Add(this.superTabControlPanel2);
             this.superTabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.superTabControl1.ForeColor = System.Drawing.Color.Black;
             this.superTabControl1.Location = new System.Drawing.Point(0, 0);
@@ -306,7 +270,7 @@
             this.superTabControl1.ReorderTabsEnabled = true;
             this.superTabControl1.SelectedTabFont = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
             this.superTabControl1.SelectedTabIndex = 0;
-            this.superTabControl1.Size = new System.Drawing.Size(1022, 577);
+            this.superTabControl1.Size = new System.Drawing.Size(1237, 662);
             this.superTabControl1.TabAlignment = DevComponents.DotNetBar.eTabStripAlignment.Bottom;
             this.superTabControl1.TabFont = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.superTabControl1.TabIndex = 1;
@@ -316,410 +280,6 @@
             this.superTabItem4});
             this.superTabControl1.TabStyle = DevComponents.DotNetBar.eSuperTabStyle.WinMediaPlayer12;
             this.superTabControl1.Text = "superTabControl1";
-            // 
-            // superTabControlPanel2
-            // 
-            this.superTabControlPanel2.Controls.Add(this.btnQuaylai);
-            this.superTabControlPanel2.Controls.Add(this.txtTennhanvienban);
-            this.superTabControlPanel2.Controls.Add(this.txtTennguoigiaodich);
-            this.superTabControlPanel2.Controls.Add(this.txtDiachiNGD);
-            this.superTabControlPanel2.Controls.Add(this.label45);
-            this.superTabControlPanel2.Controls.Add(this.txtGhichu);
-            this.superTabControlPanel2.Controls.Add(this.label47);
-            this.superTabControlPanel2.Controls.Add(this.txtMathang);
-            this.superTabControlPanel2.Controls.Add(this.label42);
-            this.superTabControlPanel2.Controls.Add(this.txtDiachi);
-            this.superTabControlPanel2.Controls.Add(this.label16);
-            this.superTabControlPanel2.Controls.Add(this.txtTenkhachhang);
-            this.superTabControlPanel2.Controls.Add(this.label14);
-            this.superTabControlPanel2.Controls.Add(this.txtMasothue);
-            this.superTabControlPanel2.Controls.Add(this.label15);
-            this.superTabControlPanel2.Controls.Add(this.txtXoa);
-            this.superTabControlPanel2.Controls.Add(this.label46);
-            this.superTabControlPanel2.Controls.Add(this.label12);
-            this.superTabControlPanel2.Controls.Add(this.label44);
-            this.superTabControlPanel2.Controls.Add(this.label43);
-            this.superTabControlPanel2.Controls.Add(this.cboManhanvienban);
-            this.superTabControlPanel2.Controls.Add(this.label13);
-            this.superTabControlPanel2.Controls.Add(this.cboNguoigiaodich);
-            this.superTabControlPanel2.Controls.Add(this.cboGanvaomaMADTPN);
-            this.superTabControlPanel2.Controls.Add(this.cboMakhachhang);
-            this.superTabControlPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.superTabControlPanel2.Location = new System.Drawing.Point(0, 0);
-            this.superTabControlPanel2.Name = "superTabControlPanel2";
-            this.superTabControlPanel2.Size = new System.Drawing.Size(1022, 554);
-            this.superTabControlPanel2.TabIndex = 0;
-            this.superTabControlPanel2.TabItem = this.superTabItem2;
-            // 
-            // btnQuaylai
-            // 
-            this.btnQuaylai.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.btnQuaylai.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.btnQuaylai.Location = new System.Drawing.Point(466, 418);
-            this.btnQuaylai.Name = "btnQuaylai";
-            this.btnQuaylai.Size = new System.Drawing.Size(180, 23);
-            this.btnQuaylai.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btnQuaylai.TabIndex = 11;
-            this.btnQuaylai.Text = "Quay lại";
-            this.btnQuaylai.Click += new System.EventHandler(this.btnQuaylai_Click);
-            // 
-            // txtTennhanvienban
-            // 
-            this.txtTennhanvienban.BackColor = System.Drawing.Color.White;
-            // 
-            // 
-            // 
-            this.txtTennhanvienban.Border.Class = "TextBoxBorder";
-            this.txtTennhanvienban.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.txtTennhanvienban.ButtonCustom.Tooltip = "";
-            this.txtTennhanvienban.ButtonCustom2.Tooltip = "";
-            this.txtTennhanvienban.DisabledBackColor = System.Drawing.Color.White;
-            this.txtTennhanvienban.ForeColor = System.Drawing.Color.Black;
-            this.txtTennhanvienban.Location = new System.Drawing.Point(242, 269);
-            this.txtTennhanvienban.Name = "txtTennhanvienban";
-            this.txtTennhanvienban.PreventEnterBeep = true;
-            this.txtTennhanvienban.Size = new System.Drawing.Size(404, 20);
-            this.txtTennhanvienban.TabIndex = 11;
-            // 
-            // txtTennguoigiaodich
-            // 
-            this.txtTennguoigiaodich.BackColor = System.Drawing.Color.White;
-            // 
-            // 
-            // 
-            this.txtTennguoigiaodich.Border.Class = "TextBoxBorder";
-            this.txtTennguoigiaodich.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.txtTennguoigiaodich.ButtonCustom.Tooltip = "";
-            this.txtTennguoigiaodich.ButtonCustom2.Tooltip = "";
-            this.txtTennguoigiaodich.DisabledBackColor = System.Drawing.Color.White;
-            this.txtTennguoigiaodich.ForeColor = System.Drawing.Color.Black;
-            this.txtTennguoigiaodich.Location = new System.Drawing.Point(242, 217);
-            this.txtTennguoigiaodich.Name = "txtTennguoigiaodich";
-            this.txtTennguoigiaodich.PreventEnterBeep = true;
-            this.txtTennguoigiaodich.Size = new System.Drawing.Size(404, 20);
-            this.txtTennguoigiaodich.TabIndex = 8;
-            // 
-            // txtDiachiNGD
-            // 
-            this.txtDiachiNGD.BackColor = System.Drawing.Color.White;
-            // 
-            // 
-            // 
-            this.txtDiachiNGD.Border.Class = "TextBoxBorder";
-            this.txtDiachiNGD.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.txtDiachiNGD.ButtonCustom.Tooltip = "";
-            this.txtDiachiNGD.ButtonCustom2.Tooltip = "";
-            this.txtDiachiNGD.DisabledBackColor = System.Drawing.Color.White;
-            this.txtDiachiNGD.ForeColor = System.Drawing.Color.Black;
-            this.txtDiachiNGD.Location = new System.Drawing.Point(136, 243);
-            this.txtDiachiNGD.Name = "txtDiachiNGD";
-            this.txtDiachiNGD.PreventEnterBeep = true;
-            this.txtDiachiNGD.Size = new System.Drawing.Size(510, 20);
-            this.txtDiachiNGD.TabIndex = 9;
-            // 
-            // label45
-            // 
-            this.label45.AutoSize = true;
-            this.label45.BackColor = System.Drawing.Color.Transparent;
-            this.label45.Location = new System.Drawing.Point(65, 245);
-            this.label45.Name = "label45";
-            this.label45.Size = new System.Drawing.Size(67, 13);
-            this.label45.TabIndex = 9;
-            this.label45.Text = "Địa chỉ NGD";
-            // 
-            // txtGhichu
-            // 
-            this.txtGhichu.BackColor = System.Drawing.Color.White;
-            // 
-            // 
-            // 
-            this.txtGhichu.Border.Class = "TextBoxBorder";
-            this.txtGhichu.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.txtGhichu.ButtonCustom.Tooltip = "";
-            this.txtGhichu.ButtonCustom2.Tooltip = "";
-            this.txtGhichu.DisabledBackColor = System.Drawing.Color.White;
-            this.txtGhichu.ForeColor = System.Drawing.Color.Black;
-            this.txtGhichu.Location = new System.Drawing.Point(136, 295);
-            this.txtGhichu.Name = "txtGhichu";
-            this.txtGhichu.PreventEnterBeep = true;
-            this.txtGhichu.Size = new System.Drawing.Size(510, 20);
-            this.txtGhichu.TabIndex = 12;
-            // 
-            // label47
-            // 
-            this.label47.AutoSize = true;
-            this.label47.BackColor = System.Drawing.Color.Transparent;
-            this.label47.Location = new System.Drawing.Point(88, 297);
-            this.label47.Name = "label47";
-            this.label47.Size = new System.Drawing.Size(44, 13);
-            this.label47.TabIndex = 9;
-            this.label47.Text = "Ghi chú";
-            // 
-            // txtMathang
-            // 
-            this.txtMathang.BackColor = System.Drawing.Color.White;
-            // 
-            // 
-            // 
-            this.txtMathang.Border.Class = "TextBoxBorder";
-            this.txtMathang.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.txtMathang.ButtonCustom.Tooltip = "";
-            this.txtMathang.ButtonCustom2.Tooltip = "";
-            this.txtMathang.DisabledBackColor = System.Drawing.Color.White;
-            this.txtMathang.ForeColor = System.Drawing.Color.Black;
-            this.txtMathang.Location = new System.Drawing.Point(136, 153);
-            this.txtMathang.Name = "txtMathang";
-            this.txtMathang.PreventEnterBeep = true;
-            this.txtMathang.Size = new System.Drawing.Size(510, 20);
-            this.txtMathang.TabIndex = 5;
-            // 
-            // label42
-            // 
-            this.label42.AutoSize = true;
-            this.label42.BackColor = System.Drawing.Color.Transparent;
-            this.label42.Location = new System.Drawing.Point(80, 155);
-            this.label42.Name = "label42";
-            this.label42.Size = new System.Drawing.Size(52, 13);
-            this.label42.TabIndex = 9;
-            this.label42.Text = "Mặt hàng";
-            // 
-            // txtDiachi
-            // 
-            this.txtDiachi.BackColor = System.Drawing.Color.White;
-            // 
-            // 
-            // 
-            this.txtDiachi.Border.Class = "TextBoxBorder";
-            this.txtDiachi.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.txtDiachi.ButtonCustom.Tooltip = "";
-            this.txtDiachi.ButtonCustom2.Tooltip = "";
-            this.txtDiachi.DisabledBackColor = System.Drawing.Color.White;
-            this.txtDiachi.ForeColor = System.Drawing.Color.Black;
-            this.txtDiachi.Location = new System.Drawing.Point(136, 116);
-            this.txtDiachi.Name = "txtDiachi";
-            this.txtDiachi.PreventEnterBeep = true;
-            this.txtDiachi.Size = new System.Drawing.Size(510, 20);
-            this.txtDiachi.TabIndex = 4;
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.BackColor = System.Drawing.Color.Transparent;
-            this.label16.Location = new System.Drawing.Point(93, 118);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(40, 13);
-            this.label16.TabIndex = 9;
-            this.label16.Text = "Địa chỉ";
-            // 
-            // txtTenkhachhang
-            // 
-            this.txtTenkhachhang.BackColor = System.Drawing.Color.White;
-            // 
-            // 
-            // 
-            this.txtTenkhachhang.Border.Class = "TextBoxBorder";
-            this.txtTenkhachhang.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.txtTenkhachhang.ButtonCustom.Tooltip = "";
-            this.txtTenkhachhang.ButtonCustom2.Tooltip = "";
-            this.txtTenkhachhang.DisabledBackColor = System.Drawing.Color.White;
-            this.txtTenkhachhang.ForeColor = System.Drawing.Color.Black;
-            this.txtTenkhachhang.Location = new System.Drawing.Point(136, 64);
-            this.txtTenkhachhang.Name = "txtTenkhachhang";
-            this.txtTenkhachhang.PreventEnterBeep = true;
-            this.txtTenkhachhang.Size = new System.Drawing.Size(510, 20);
-            this.txtTenkhachhang.TabIndex = 2;
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.BackColor = System.Drawing.Color.Transparent;
-            this.label14.Location = new System.Drawing.Point(43, 66);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(86, 13);
-            this.label14.TabIndex = 9;
-            this.label14.Text = "Tên khách hàng";
-            // 
-            // txtMasothue
-            // 
-            this.txtMasothue.BackColor = System.Drawing.Color.White;
-            // 
-            // 
-            // 
-            this.txtMasothue.Border.Class = "TextBoxBorder";
-            this.txtMasothue.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.txtMasothue.ButtonCustom.Tooltip = "";
-            this.txtMasothue.ButtonCustom2.Tooltip = "";
-            this.txtMasothue.DisabledBackColor = System.Drawing.Color.White;
-            this.txtMasothue.ForeColor = System.Drawing.Color.Black;
-            this.txtMasothue.Location = new System.Drawing.Point(136, 90);
-            this.txtMasothue.Name = "txtMasothue";
-            this.txtMasothue.PreventEnterBeep = true;
-            this.txtMasothue.Size = new System.Drawing.Size(184, 20);
-            this.txtMasothue.TabIndex = 3;
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.BackColor = System.Drawing.Color.Transparent;
-            this.label15.Location = new System.Drawing.Point(71, 92);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(60, 13);
-            this.label15.TabIndex = 9;
-            this.label15.Text = "Mã số thuế";
-            // 
-            // txtXoa
-            // 
-            this.txtXoa.BackColor = System.Drawing.Color.White;
-            // 
-            // 
-            // 
-            this.txtXoa.Border.Class = "TextBoxBorder";
-            this.txtXoa.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.txtXoa.ButtonCustom.Tooltip = "";
-            this.txtXoa.ButtonCustom2.Tooltip = "";
-            this.txtXoa.DisabledBackColor = System.Drawing.Color.White;
-            this.txtXoa.ForeColor = System.Drawing.Color.Black;
-            this.txtXoa.Location = new System.Drawing.Point(136, 12);
-            this.txtXoa.Name = "txtXoa";
-            this.txtXoa.PreventEnterBeep = true;
-            this.txtXoa.Size = new System.Drawing.Size(100, 20);
-            this.txtXoa.TabIndex = 0;
-            // 
-            // label46
-            // 
-            this.label46.AutoSize = true;
-            this.label46.BackColor = System.Drawing.Color.Transparent;
-            this.label46.Location = new System.Drawing.Point(42, 271);
-            this.label46.Name = "label46";
-            this.label46.Size = new System.Drawing.Size(93, 13);
-            this.label46.TabIndex = 8;
-            this.label46.Text = "Mã nhân viên bán";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.BackColor = System.Drawing.Color.Transparent;
-            this.label12.Location = new System.Drawing.Point(93, 14);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(26, 13);
-            this.label12.TabIndex = 9;
-            this.label12.Text = "Xóa";
-            // 
-            // label44
-            // 
-            this.label44.AutoSize = true;
-            this.label44.BackColor = System.Drawing.Color.Transparent;
-            this.label44.Location = new System.Drawing.Point(51, 219);
-            this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(81, 13);
-            this.label44.TabIndex = 8;
-            this.label44.Text = "Người giao dịch";
-            // 
-            // label43
-            // 
-            this.label43.AutoSize = true;
-            this.label43.BackColor = System.Drawing.Color.Transparent;
-            this.label43.Location = new System.Drawing.Point(22, 181);
-            this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(114, 13);
-            this.label43.TabIndex = 8;
-            this.label43.Text = "Gán vào mã MADTPN";
-            // 
-            // cboManhanvienban
-            // 
-            this.cboManhanvienban.DisplayMember = "Text";
-            this.cboManhanvienban.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cboManhanvienban.DropDownColumnsHeaders = "Mã nhân viên bán\r\nTên nhân viên bán";
-            this.cboManhanvienban.DropDownHeight = 200;
-            this.cboManhanvienban.DropDownWidth = 200;
-            this.cboManhanvienban.FormattingEnabled = true;
-            this.cboManhanvienban.IntegralHeight = false;
-            this.cboManhanvienban.ItemHeight = 14;
-            this.cboManhanvienban.Location = new System.Drawing.Point(136, 269);
-            this.cboManhanvienban.MaxDropDownItems = 20;
-            this.cboManhanvienban.Name = "cboManhanvienban";
-            this.cboManhanvienban.PopupCloseButtonVisible = false;
-            this.cboManhanvienban.Size = new System.Drawing.Size(100, 20);
-            this.cboManhanvienban.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.cboManhanvienban.TabIndex = 10;
-            this.cboManhanvienban.DataColumnCreated += new DevComponents.DotNetBar.Controls.DataColumnEventHandler(this.cboManhanvienban_DataColumnCreated);
-            this.cboManhanvienban.SelectedIndexChanged += new System.EventHandler(this.cboManhanvienban_SelectedIndexChanged);
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.BackColor = System.Drawing.Color.Transparent;
-            this.label13.Location = new System.Drawing.Point(50, 40);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(82, 13);
-            this.label13.TabIndex = 8;
-            this.label13.Text = "Mã khách hàng";
-            // 
-            // cboNguoigiaodich
-            // 
-            this.cboNguoigiaodich.DisplayMember = "Text";
-            this.cboNguoigiaodich.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cboNguoigiaodich.DropDownColumnsHeaders = "Mã người giao dịch\r\nTên người giao dịch";
-            this.cboNguoigiaodich.DropDownHeight = 200;
-            this.cboNguoigiaodich.DropDownWidth = 200;
-            this.cboNguoigiaodich.FormattingEnabled = true;
-            this.cboNguoigiaodich.IntegralHeight = false;
-            this.cboNguoigiaodich.ItemHeight = 14;
-            this.cboNguoigiaodich.Location = new System.Drawing.Point(136, 217);
-            this.cboNguoigiaodich.MaxDropDownItems = 20;
-            this.cboNguoigiaodich.Name = "cboNguoigiaodich";
-            this.cboNguoigiaodich.PopupCloseButtonVisible = false;
-            this.cboNguoigiaodich.Size = new System.Drawing.Size(100, 20);
-            this.cboNguoigiaodich.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.cboNguoigiaodich.TabIndex = 7;
-            this.cboNguoigiaodich.DataColumnCreated += new DevComponents.DotNetBar.Controls.DataColumnEventHandler(this.cboNguoigiaodich_DataColumnCreated);
-            this.cboNguoigiaodich.SelectedIndexChanged += new System.EventHandler(this.cboNguoigiaodich_SelectedIndexChanged);
-            // 
-            // cboGanvaomaMADTPN
-            // 
-            this.cboGanvaomaMADTPN.DisplayMember = "Text";
-            this.cboGanvaomaMADTPN.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cboGanvaomaMADTPN.DropDownColumnsHeaders = "Mã ĐTPN\r\nTên ĐTPN";
-            this.cboGanvaomaMADTPN.DropDownHeight = 200;
-            this.cboGanvaomaMADTPN.DropDownWidth = 200;
-            this.cboGanvaomaMADTPN.FormattingEnabled = true;
-            this.cboGanvaomaMADTPN.IntegralHeight = false;
-            this.cboGanvaomaMADTPN.ItemHeight = 14;
-            this.cboGanvaomaMADTPN.Location = new System.Drawing.Point(136, 179);
-            this.cboGanvaomaMADTPN.MaxDropDownItems = 20;
-            this.cboGanvaomaMADTPN.Name = "cboGanvaomaMADTPN";
-            this.cboGanvaomaMADTPN.PopupCloseButtonVisible = false;
-            this.cboGanvaomaMADTPN.Size = new System.Drawing.Size(100, 20);
-            this.cboGanvaomaMADTPN.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.cboGanvaomaMADTPN.TabIndex = 6;
-            this.cboGanvaomaMADTPN.DataColumnCreated += new DevComponents.DotNetBar.Controls.DataColumnEventHandler(this.cboGanvaomaMADTPN_DataColumnCreated);
-            // 
-            // cboMakhachhang
-            // 
-            this.cboMakhachhang.DisplayMember = "Text";
-            this.cboMakhachhang.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cboMakhachhang.DropDownColumnsHeaders = "Mã khách hàng\r\nTên khách hàng";
-            this.cboMakhachhang.DropDownHeight = 200;
-            this.cboMakhachhang.DropDownWidth = 200;
-            this.cboMakhachhang.FormattingEnabled = true;
-            this.cboMakhachhang.IntegralHeight = false;
-            this.cboMakhachhang.ItemHeight = 14;
-            this.cboMakhachhang.Location = new System.Drawing.Point(136, 38);
-            this.cboMakhachhang.MaxDropDownItems = 20;
-            this.cboMakhachhang.Name = "cboMakhachhang";
-            this.cboMakhachhang.PopupCloseButtonVisible = false;
-            this.cboMakhachhang.Size = new System.Drawing.Size(100, 20);
-            this.cboMakhachhang.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.cboMakhachhang.TabIndex = 1;
-            this.cboMakhachhang.DataColumnCreated += new DevComponents.DotNetBar.Controls.DataColumnEventHandler(this.cboMakhachhang_DataColumnCreated);
-            this.cboMakhachhang.SelectedIndexChanged += new System.EventHandler(this.cboMakhachhang_SelectedIndexChanged);
-            // 
-            // superTabItem2
-            // 
-            this.superTabItem2.AttachedControl = this.superTabControlPanel2;
-            this.superTabItem2.GlobalItem = false;
-            this.superTabItem2.Name = "superTabItem2";
-            this.superTabItem2.Text = "2. Thông tin khách hàng";
             // 
             // superTabControlPanel1
             // 
@@ -762,8 +322,8 @@
             this.superTabControlPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.superTabControlPanel1.Location = new System.Drawing.Point(0, 0);
             this.superTabControlPanel1.Name = "superTabControlPanel1";
-            this.superTabControlPanel1.Size = new System.Drawing.Size(1022, 554);
-            this.superTabControlPanel1.TabIndex = 0;
+            this.superTabControlPanel1.Size = new System.Drawing.Size(1237, 639);
+            this.superTabControlPanel1.TabIndex = 1;
             this.superTabControlPanel1.TabItem = this.superTabItem1;
             // 
             // gridControl2
@@ -1050,7 +610,7 @@
             this.dtpNgayHD.Name = "dtpNgayHD";
             this.dtpNgayHD.Size = new System.Drawing.Size(101, 20);
             this.dtpNgayHD.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.dtpNgayHD.TabIndex = 8;
+            this.dtpNgayHD.TabIndex = 9;
             this.dtpNgayHD.Visible = false;
             // 
             // dtpNgayCTu
@@ -1106,7 +666,7 @@
             this.dtpNgayCTu.Name = "dtpNgayCTu";
             this.dtpNgayCTu.Size = new System.Drawing.Size(101, 20);
             this.dtpNgayCTu.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.dtpNgayCTu.TabIndex = 11;
+            this.dtpNgayCTu.TabIndex = 8;
             this.dtpNgayCTu.Visible = false;
             // 
             // btnNext
@@ -1160,7 +720,7 @@
             this.txtSoCTu.Name = "txtSoCTu";
             this.txtSoCTu.PreventEnterBeep = true;
             this.txtSoCTu.Size = new System.Drawing.Size(100, 20);
-            this.txtSoCTu.TabIndex = 10;
+            this.txtSoCTu.TabIndex = 6;
             this.txtSoCTu.Visible = false;
             // 
             // txtKHMHD
@@ -1179,7 +739,7 @@
             this.txtKHMHD.Name = "txtKHMHD";
             this.txtKHMHD.PreventEnterBeep = true;
             this.txtKHMHD.Size = new System.Drawing.Size(64, 20);
-            this.txtKHMHD.TabIndex = 5;
+            this.txtKHMHD.TabIndex = 6;
             this.txtKHMHD.Visible = false;
             // 
             // txtSeriHD
@@ -1248,9 +808,10 @@
             this.cboVTHHCo.PopupCloseButtonVisible = false;
             this.cboVTHHCo.Size = new System.Drawing.Size(100, 20);
             this.cboVTHHCo.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.cboVTHHCo.TabIndex = 14;
+            this.cboVTHHCo.TabIndex = 0;
             this.cboVTHHCo.DataColumnCreated += new DevComponents.DotNetBar.Controls.DataColumnEventHandler(this.cboVTHHCo_DataColumnCreated);
-            this.cboVTHHCo.SelectedIndexChanged += new System.EventHandler(this.cboVTHHCo_SelectedIndexChanged);
+            this.cboVTHHCo.TextChanged += new System.EventHandler(this.cboVTHHCo_TextChanged);
+            this.cboVTHHCo.KeyDown += new System.Windows.Forms.KeyEventHandler(this.cboVTHHCo_KeyDown);
             // 
             // cboYTCPCo
             // 
@@ -1265,9 +826,10 @@
             this.cboYTCPCo.PopupCloseButtonVisible = false;
             this.cboYTCPCo.Size = new System.Drawing.Size(100, 20);
             this.cboYTCPCo.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.cboYTCPCo.TabIndex = 12;
+            this.cboYTCPCo.TabIndex = 0;
             this.cboYTCPCo.DataColumnCreated += new DevComponents.DotNetBar.Controls.DataColumnEventHandler(this.cboYTCPCo_DataColumnCreated);
-            this.cboYTCPCo.SelectedIndexChanged += new System.EventHandler(this.cboYTCPCo_SelectedIndexChanged);
+            this.cboYTCPCo.TextChanged += new System.EventHandler(this.cboYTCPCo_TextChanged);
+            this.cboYTCPCo.KeyDown += new System.Windows.Forms.KeyEventHandler(this.cboYTCPCo_KeyDown);
             // 
             // cboDTPNCo
             // 
@@ -1282,9 +844,10 @@
             this.cboDTPNCo.PopupCloseButtonVisible = false;
             this.cboDTPNCo.Size = new System.Drawing.Size(100, 20);
             this.cboDTPNCo.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.cboDTPNCo.TabIndex = 10;
+            this.cboDTPNCo.TabIndex = 0;
             this.cboDTPNCo.DataColumnCreated += new DevComponents.DotNetBar.Controls.DataColumnEventHandler(this.cboDTPNCo_DataColumnCreated);
-            this.cboDTPNCo.SelectedIndexChanged += new System.EventHandler(this.cboDTPNCo_SelectedIndexChanged);
+            this.cboDTPNCo.TextChanged += new System.EventHandler(this.cboDTPNCo_TextChanged);
+            this.cboDTPNCo.KeyDown += new System.Windows.Forms.KeyEventHandler(this.cboDTPNCo_KeyDown);
             // 
             // cboTKCo
             // 
@@ -1299,9 +862,10 @@
             this.cboTKCo.PopupCloseButtonVisible = false;
             this.cboTKCo.Size = new System.Drawing.Size(100, 20);
             this.cboTKCo.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.cboTKCo.TabIndex = 8;
+            this.cboTKCo.TabIndex = 0;
             this.cboTKCo.DataColumnCreated += new DevComponents.DotNetBar.Controls.DataColumnEventHandler(this.cboTKCo_DataColumnCreated);
-            this.cboTKCo.SelectedIndexChanged += new System.EventHandler(this.cboTKCo_SelectedIndexChanged);
+            this.cboTKCo.TextChanged += new System.EventHandler(this.cboTKCo_TextChanged);
+            this.cboTKCo.KeyDown += new System.Windows.Forms.KeyEventHandler(this.cboTKCo_KeyDown);
             // 
             // cboVTHHNo
             // 
@@ -1316,9 +880,10 @@
             this.cboVTHHNo.PopupCloseButtonVisible = false;
             this.cboVTHHNo.Size = new System.Drawing.Size(100, 20);
             this.cboVTHHNo.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.cboVTHHNo.TabIndex = 6;
+            this.cboVTHHNo.TabIndex = 0;
             this.cboVTHHNo.DataColumnCreated += new DevComponents.DotNetBar.Controls.DataColumnEventHandler(this.cboVTHHNo_DataColumnCreated);
-            this.cboVTHHNo.SelectedIndexChanged += new System.EventHandler(this.cboVTHHNo_SelectedIndexChanged);
+            this.cboVTHHNo.TextChanged += new System.EventHandler(this.cboVTHHNo_TextChanged);
+            this.cboVTHHNo.KeyDown += new System.Windows.Forms.KeyEventHandler(this.cboVTHHNo_KeyDown);
             // 
             // cboYTCPNo
             // 
@@ -1333,9 +898,10 @@
             this.cboYTCPNo.PopupCloseButtonVisible = false;
             this.cboYTCPNo.Size = new System.Drawing.Size(100, 20);
             this.cboYTCPNo.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.cboYTCPNo.TabIndex = 4;
+            this.cboYTCPNo.TabIndex = 0;
             this.cboYTCPNo.DataColumnCreated += new DevComponents.DotNetBar.Controls.DataColumnEventHandler(this.cboYTCPNo_DataColumnCreated);
-            this.cboYTCPNo.SelectedIndexChanged += new System.EventHandler(this.cboYTCPNo_SelectedIndexChanged);
+            this.cboYTCPNo.TextChanged += new System.EventHandler(this.cboYTCPNo_TextChanged);
+            this.cboYTCPNo.KeyDown += new System.Windows.Forms.KeyEventHandler(this.cboYTCPNo_KeyDown);
             // 
             // cboDTPNNo
             // 
@@ -1350,9 +916,10 @@
             this.cboDTPNNo.PopupCloseButtonVisible = false;
             this.cboDTPNNo.Size = new System.Drawing.Size(100, 20);
             this.cboDTPNNo.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.cboDTPNNo.TabIndex = 2;
+            this.cboDTPNNo.TabIndex = 0;
             this.cboDTPNNo.DataColumnCreated += new DevComponents.DotNetBar.Controls.DataColumnEventHandler(this.cboDTPNNo_DataColumnCreated);
-            this.cboDTPNNo.SelectedIndexChanged += new System.EventHandler(this.cboDTPNNo_SelectedIndexChanged);
+            this.cboDTPNNo.TextChanged += new System.EventHandler(this.cboDTPNNo_TextChanged);
+            this.cboDTPNNo.KeyDown += new System.Windows.Forms.KeyEventHandler(this.cboDTPNNo_KeyDown);
             // 
             // cboTKNo
             // 
@@ -1369,8 +936,8 @@
             this.cboTKNo.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.cboTKNo.TabIndex = 0;
             this.cboTKNo.DataColumnCreated += new DevComponents.DotNetBar.Controls.DataColumnEventHandler(this.cboTKNo_DataColumnCreated);
-            this.cboTKNo.SelectedIndexChanged += new System.EventHandler(this.cboTKNo_SelectedIndexChanged);
-            this.cboTKNo.Enter += new System.EventHandler(this.cboTKNo_Enter);
+            this.cboTKNo.TextChanged += new System.EventHandler(this.cboTKNo_TextChanged);
+            this.cboTKNo.KeyDown += new System.Windows.Forms.KeyEventHandler(this.cboTKNo_KeyDown);
             // 
             // lbVTHHCo
             // 
@@ -1449,7 +1016,7 @@
             this.lbTKNo.Location = new System.Drawing.Point(33, 29);
             this.lbTKNo.Name = "lbTKNo";
             this.lbTKNo.Size = new System.Drawing.Size(38, 13);
-            this.lbTKNo.TabIndex = 6;
+            this.lbTKNo.TabIndex = 2;
             this.lbTKNo.Text = "TK Nợ";
             // 
             // txtVTHHCo
@@ -1468,7 +1035,7 @@
             this.txtVTHHCo.Name = "txtVTHHCo";
             this.txtVTHHCo.PreventEnterBeep = true;
             this.txtVTHHCo.Size = new System.Drawing.Size(297, 20);
-            this.txtVTHHCo.TabIndex = 15;
+            this.txtVTHHCo.TabIndex = 1;
             // 
             // txtYTCPCo
             // 
@@ -1486,7 +1053,7 @@
             this.txtYTCPCo.Name = "txtYTCPCo";
             this.txtYTCPCo.PreventEnterBeep = true;
             this.txtYTCPCo.Size = new System.Drawing.Size(297, 20);
-            this.txtYTCPCo.TabIndex = 13;
+            this.txtYTCPCo.TabIndex = 1;
             // 
             // txtVTHHNo
             // 
@@ -1504,7 +1071,7 @@
             this.txtVTHHNo.Name = "txtVTHHNo";
             this.txtVTHHNo.PreventEnterBeep = true;
             this.txtVTHHNo.Size = new System.Drawing.Size(297, 20);
-            this.txtVTHHNo.TabIndex = 7;
+            this.txtVTHHNo.TabIndex = 1;
             // 
             // txtYTCPNo
             // 
@@ -1522,7 +1089,7 @@
             this.txtYTCPNo.Name = "txtYTCPNo";
             this.txtYTCPNo.PreventEnterBeep = true;
             this.txtYTCPNo.Size = new System.Drawing.Size(297, 20);
-            this.txtYTCPNo.TabIndex = 5;
+            this.txtYTCPNo.TabIndex = 1;
             // 
             // txtDTPNCo
             // 
@@ -1540,7 +1107,7 @@
             this.txtDTPNCo.Name = "txtDTPNCo";
             this.txtDTPNCo.PreventEnterBeep = true;
             this.txtDTPNCo.Size = new System.Drawing.Size(297, 20);
-            this.txtDTPNCo.TabIndex = 11;
+            this.txtDTPNCo.TabIndex = 1;
             // 
             // txtTKCo
             // 
@@ -1558,7 +1125,7 @@
             this.txtTKCo.Name = "txtTKCo";
             this.txtTKCo.PreventEnterBeep = true;
             this.txtTKCo.Size = new System.Drawing.Size(297, 20);
-            this.txtTKCo.TabIndex = 9;
+            this.txtTKCo.TabIndex = 1;
             // 
             // txtDTPNNo
             // 
@@ -1576,25 +1143,7 @@
             this.txtDTPNNo.Name = "txtDTPNNo";
             this.txtDTPNNo.PreventEnterBeep = true;
             this.txtDTPNNo.Size = new System.Drawing.Size(297, 20);
-            this.txtDTPNNo.TabIndex = 3;
-            // 
-            // txtTKNo
-            // 
-            this.txtTKNo.BackColor = System.Drawing.Color.White;
-            // 
-            // 
-            // 
-            this.txtTKNo.Border.Class = "TextBoxBorder";
-            this.txtTKNo.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.txtTKNo.ButtonCustom.Tooltip = "";
-            this.txtTKNo.ButtonCustom2.Tooltip = "";
-            this.txtTKNo.DisabledBackColor = System.Drawing.Color.White;
-            this.txtTKNo.ForeColor = System.Drawing.Color.Black;
-            this.txtTKNo.Location = new System.Drawing.Point(177, 22);
-            this.txtTKNo.Name = "txtTKNo";
-            this.txtTKNo.PreventEnterBeep = true;
-            this.txtTKNo.Size = new System.Drawing.Size(297, 20);
-            this.txtTKNo.TabIndex = 1;
+            this.txtDTPNNo.TabIndex = 1;
             // 
             // grpSoluongDongia
             // 
@@ -1680,7 +1229,7 @@
             this.txtTS.Name = "txtTS";
             this.txtTS.PreventEnterBeep = true;
             this.txtTS.Size = new System.Drawing.Size(69, 20);
-            this.txtTS.TabIndex = 4;
+            this.txtTS.TabIndex = 1;
             this.txtTS.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtTienVnd
@@ -1699,7 +1248,7 @@
             this.txtTienVnd.Name = "txtTienVnd";
             this.txtTienVnd.PreventEnterBeep = true;
             this.txtTienVnd.Size = new System.Drawing.Size(77, 20);
-            this.txtTienVnd.TabIndex = 3;
+            this.txtTienVnd.TabIndex = 1;
             this.txtTienVnd.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.txtTienVnd.TextChanged += new System.EventHandler(this.txtTienVnd_TextChanged);
             // 
@@ -1719,7 +1268,7 @@
             this.txtDongia.Name = "txtDongia";
             this.txtDongia.PreventEnterBeep = true;
             this.txtDongia.Size = new System.Drawing.Size(63, 20);
-            this.txtDongia.TabIndex = 2;
+            this.txtDongia.TabIndex = 1;
             this.txtDongia.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.txtDongia.TextChanged += new System.EventHandler(this.txtDongia_TextChanged);
             // 
@@ -1739,7 +1288,7 @@
             this.txtTygia.Name = "txtTygia";
             this.txtTygia.PreventEnterBeep = true;
             this.txtTygia.Size = new System.Drawing.Size(63, 20);
-            this.txtTygia.TabIndex = 8;
+            this.txtTygia.TabIndex = 1;
             this.txtTygia.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtTienUsd
@@ -1758,7 +1307,7 @@
             this.txtTienUsd.Name = "txtTienUsd";
             this.txtTienUsd.PreventEnterBeep = true;
             this.txtTienUsd.Size = new System.Drawing.Size(77, 20);
-            this.txtTienUsd.TabIndex = 9;
+            this.txtTienUsd.TabIndex = 1;
             this.txtTienUsd.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.txtTienUsd.TextChanged += new System.EventHandler(this.txtTienUsd_TextChanged);
             // 
@@ -1778,7 +1327,7 @@
             this.txtPTNK.Name = "txtPTNK";
             this.txtPTNK.PreventEnterBeep = true;
             this.txtPTNK.Size = new System.Drawing.Size(69, 20);
-            this.txtPTNK.TabIndex = 10;
+            this.txtPTNK.TabIndex = 1;
             this.txtPTNK.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtThueNK
@@ -1797,7 +1346,7 @@
             this.txtThueNK.Name = "txtThueNK";
             this.txtThueNK.PreventEnterBeep = true;
             this.txtThueNK.Size = new System.Drawing.Size(94, 20);
-            this.txtThueNK.TabIndex = 11;
+            this.txtThueNK.TabIndex = 1;
             this.txtThueNK.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // txtTKThue
@@ -1816,7 +1365,7 @@
             this.txtTKThue.Name = "txtTKThue";
             this.txtTKThue.PreventEnterBeep = true;
             this.txtTKThue.Size = new System.Drawing.Size(94, 20);
-            this.txtTKThue.TabIndex = 5;
+            this.txtTKThue.TabIndex = 1;
             // 
             // txtThueVND
             // 
@@ -1834,7 +1383,7 @@
             this.txtThueVND.Name = "txtThueVND";
             this.txtThueVND.PreventEnterBeep = true;
             this.txtThueVND.Size = new System.Drawing.Size(63, 20);
-            this.txtThueVND.TabIndex = 6;
+            this.txtThueVND.TabIndex = 1;
             this.txtThueVND.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.txtThueVND.TextChanged += new System.EventHandler(this.txtThueVND_TextChanged);
             // 
@@ -1864,7 +1413,7 @@
             this.txtTongtien.Name = "txtTongtien";
             this.txtTongtien.PreventEnterBeep = true;
             this.txtTongtien.Size = new System.Drawing.Size(105, 20);
-            this.txtTongtien.TabIndex = 7;
+            this.txtTongtien.TabIndex = 1;
             this.txtTongtien.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.txtTongtien.TextChanged += new System.EventHandler(this.txtTongtien_TextChanged);
             // 
@@ -2540,7 +2089,7 @@
             this.lbNgayCTu.Location = new System.Drawing.Point(180, 56);
             this.lbNgayCTu.Name = "lbNgayCTu";
             this.lbNgayCTu.Size = new System.Drawing.Size(50, 13);
-            this.lbNgayCTu.TabIndex = 31;
+            this.lbNgayCTu.TabIndex = 2;
             this.lbNgayCTu.Text = "Ngày ctừ";
             this.lbNgayCTu.Visible = false;
             // 
@@ -2610,8 +2159,9 @@
             this.cboHDVat.Name = "cboHDVat";
             this.cboHDVat.Size = new System.Drawing.Size(51, 20);
             this.cboHDVat.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.cboHDVat.TabIndex = 9;
+            this.cboHDVat.TabIndex = 0;
             this.cboHDVat.Visible = false;
+            this.cboHDVat.TextChanged += new System.EventHandler(this.cboHDVat_TextChanged);
             // 
             // V
             // 
@@ -2669,9 +2219,10 @@
             this.cboSoHD.Name = "cboSoHD";
             this.cboSoHD.Size = new System.Drawing.Size(100, 20);
             this.cboSoHD.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.cboSoHD.TabIndex = 7;
+            this.cboSoHD.TabIndex = 0;
             this.cboSoHD.Visible = false;
             this.cboSoHD.DataColumnCreated += new DevComponents.DotNetBar.Controls.DataColumnEventHandler(this.cboSoHD_DataColumnCreated);
+            this.cboSoHD.TextChanged += new System.EventHandler(this.cboSoHD_TextChanged);
             // 
             // cboMaTT
             // 
@@ -2685,9 +2236,10 @@
             this.cboMaTT.Name = "cboMaTT";
             this.cboMaTT.Size = new System.Drawing.Size(57, 20);
             this.cboMaTT.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.cboMaTT.TabIndex = 3;
+            this.cboMaTT.TabIndex = 0;
             this.cboMaTT.Visible = false;
             this.cboMaTT.DataColumnCreated += new DevComponents.DotNetBar.Controls.DataColumnEventHandler(this.cboMaTT_DataColumnCreated);
+            this.cboMaTT.TextChanged += new System.EventHandler(this.cboMaTT_TextChanged);
             // 
             // cboMaHD
             // 
@@ -2701,9 +2253,10 @@
             this.cboMaHD.Name = "cboMaHD";
             this.cboMaHD.Size = new System.Drawing.Size(101, 20);
             this.cboMaHD.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.cboMaHD.TabIndex = 4;
+            this.cboMaHD.TabIndex = 0;
             this.cboMaHD.Visible = false;
             this.cboMaHD.DataColumnCreated += new DevComponents.DotNetBar.Controls.DataColumnEventHandler(this.cboMaHD_DataColumnCreated);
+            this.cboMaHD.TextChanged += new System.EventHandler(this.cboMaHD_TextChanged);
             // 
             // cboDiengiai
             // 
@@ -2721,7 +2274,7 @@
             this.cboDiengiai.PopupCloseButtonVisible = false;
             this.cboDiengiai.Size = new System.Drawing.Size(415, 20);
             this.cboDiengiai.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.cboDiengiai.TabIndex = 12;
+            this.cboDiengiai.TabIndex = 0;
             this.cboDiengiai.Visible = false;
             this.cboDiengiai.DataColumnCreated += new DevComponents.DotNetBar.Controls.DataColumnEventHandler(this.cboDiengiai_DataColumnCreated);
             // 
@@ -2741,9 +2294,10 @@
             this.cboCongtrinh.PopupCloseButtonVisible = false;
             this.cboCongtrinh.Size = new System.Drawing.Size(134, 20);
             this.cboCongtrinh.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.cboCongtrinh.TabIndex = 12;
+            this.cboCongtrinh.TabIndex = 0;
             this.cboCongtrinh.Visible = false;
             this.cboCongtrinh.DataColumnCreated += new DevComponents.DotNetBar.Controls.DataColumnEventHandler(this.cboCongtrinh_DataColumnCreated);
+            this.cboCongtrinh.TextChanged += new System.EventHandler(this.cboCongtrinh_TextChanged);
             // 
             // cboSoHopDong
             // 
@@ -2761,9 +2315,10 @@
             this.cboSoHopDong.PopupCloseButtonVisible = false;
             this.cboSoHopDong.Size = new System.Drawing.Size(134, 20);
             this.cboSoHopDong.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.cboSoHopDong.TabIndex = 10;
+            this.cboSoHopDong.TabIndex = 0;
             this.cboSoHopDong.Visible = false;
             this.cboSoHopDong.DataColumnCreated += new DevComponents.DotNetBar.Controls.DataColumnEventHandler(this.cboSoHopDong_DataColumnCreated);
+            this.cboSoHopDong.TextChanged += new System.EventHandler(this.cboSoHopDong_TextChanged);
             // 
             // cboLoaiCTu
             // 
@@ -2771,7 +2326,6 @@
             this.cboLoaiCTu.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.cboLoaiCTu.DropDownColumnsHeaders = "ID\r\nTên chứng từ\r\nSố C.từ";
             this.cboLoaiCTu.DropDownHeight = 200;
-            this.cboLoaiCTu.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboLoaiCTu.DropDownWidth = 300;
             this.cboLoaiCTu.FormattingEnabled = true;
             this.cboLoaiCTu.IntegralHeight = false;
@@ -2782,9 +2336,10 @@
             this.cboLoaiCTu.PopupCloseButtonVisible = false;
             this.cboLoaiCTu.Size = new System.Drawing.Size(100, 20);
             this.cboLoaiCTu.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.cboLoaiCTu.TabIndex = 2;
+            this.cboLoaiCTu.TabIndex = 0;
             this.cboLoaiCTu.DataColumnCreated += new DevComponents.DotNetBar.Controls.DataColumnEventHandler(this.cboLoaiCTu_DataColumnCreated);
-            this.cboLoaiCTu.SelectedIndexChanged += new System.EventHandler(this.cboLoaiCTu_SelectedIndexChanged);
+            this.cboLoaiCTu.TextChanged += new System.EventHandler(this.cboLoaiCTu_TextChanged);
+            this.cboLoaiCTu.KeyDown += new System.Windows.Forms.KeyEventHandler(this.cboLoaiCTu_KeyDown);
             // 
             // superTabItem1
             // 
@@ -3102,24 +2657,441 @@
             this.superTabItem4.Name = "superTabItem4";
             this.superTabItem4.Text = "3. Coppy";
             // 
+            // superTabControlPanel2
+            // 
+            this.superTabControlPanel2.Controls.Add(this.btnQuaylai);
+            this.superTabControlPanel2.Controls.Add(this.txtTennhanvienban);
+            this.superTabControlPanel2.Controls.Add(this.txtTennguoigiaodich);
+            this.superTabControlPanel2.Controls.Add(this.txtDiachiNGD);
+            this.superTabControlPanel2.Controls.Add(this.label45);
+            this.superTabControlPanel2.Controls.Add(this.txtGhichu);
+            this.superTabControlPanel2.Controls.Add(this.label47);
+            this.superTabControlPanel2.Controls.Add(this.txtMathang);
+            this.superTabControlPanel2.Controls.Add(this.label42);
+            this.superTabControlPanel2.Controls.Add(this.txtDiachi);
+            this.superTabControlPanel2.Controls.Add(this.label16);
+            this.superTabControlPanel2.Controls.Add(this.txtTenkhachhang);
+            this.superTabControlPanel2.Controls.Add(this.label14);
+            this.superTabControlPanel2.Controls.Add(this.txtMasothue);
+            this.superTabControlPanel2.Controls.Add(this.label15);
+            this.superTabControlPanel2.Controls.Add(this.txtXoa);
+            this.superTabControlPanel2.Controls.Add(this.label46);
+            this.superTabControlPanel2.Controls.Add(this.label12);
+            this.superTabControlPanel2.Controls.Add(this.label44);
+            this.superTabControlPanel2.Controls.Add(this.label43);
+            this.superTabControlPanel2.Controls.Add(this.cboManhanvienban);
+            this.superTabControlPanel2.Controls.Add(this.label13);
+            this.superTabControlPanel2.Controls.Add(this.cboNguoigiaodich);
+            this.superTabControlPanel2.Controls.Add(this.cboGanvaomaMADTPN);
+            this.superTabControlPanel2.Controls.Add(this.cboMakhachhang);
+            this.superTabControlPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.superTabControlPanel2.Location = new System.Drawing.Point(0, 0);
+            this.superTabControlPanel2.Name = "superTabControlPanel2";
+            this.superTabControlPanel2.Size = new System.Drawing.Size(1237, 614);
+            this.superTabControlPanel2.TabIndex = 0;
+            this.superTabControlPanel2.TabItem = this.superTabItem2;
+            // 
+            // btnQuaylai
+            // 
+            this.btnQuaylai.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btnQuaylai.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btnQuaylai.Location = new System.Drawing.Point(466, 418);
+            this.btnQuaylai.Name = "btnQuaylai";
+            this.btnQuaylai.Size = new System.Drawing.Size(180, 23);
+            this.btnQuaylai.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btnQuaylai.TabIndex = 11;
+            this.btnQuaylai.Text = "Quay lại";
+            this.btnQuaylai.Click += new System.EventHandler(this.btnQuaylai_Click);
+            // 
+            // txtTennhanvienban
+            // 
+            this.txtTennhanvienban.BackColor = System.Drawing.Color.White;
+            // 
+            // 
+            // 
+            this.txtTennhanvienban.Border.Class = "TextBoxBorder";
+            this.txtTennhanvienban.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.txtTennhanvienban.ButtonCustom.Tooltip = "";
+            this.txtTennhanvienban.ButtonCustom2.Tooltip = "";
+            this.txtTennhanvienban.DisabledBackColor = System.Drawing.Color.White;
+            this.txtTennhanvienban.ForeColor = System.Drawing.Color.Black;
+            this.txtTennhanvienban.Location = new System.Drawing.Point(242, 269);
+            this.txtTennhanvienban.Name = "txtTennhanvienban";
+            this.txtTennhanvienban.PreventEnterBeep = true;
+            this.txtTennhanvienban.Size = new System.Drawing.Size(404, 20);
+            this.txtTennhanvienban.TabIndex = 10;
+            // 
+            // txtTennguoigiaodich
+            // 
+            this.txtTennguoigiaodich.BackColor = System.Drawing.Color.White;
+            // 
+            // 
+            // 
+            this.txtTennguoigiaodich.Border.Class = "TextBoxBorder";
+            this.txtTennguoigiaodich.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.txtTennguoigiaodich.ButtonCustom.Tooltip = "";
+            this.txtTennguoigiaodich.ButtonCustom2.Tooltip = "";
+            this.txtTennguoigiaodich.DisabledBackColor = System.Drawing.Color.White;
+            this.txtTennguoigiaodich.ForeColor = System.Drawing.Color.Black;
+            this.txtTennguoigiaodich.Location = new System.Drawing.Point(242, 217);
+            this.txtTennguoigiaodich.Name = "txtTennguoigiaodich";
+            this.txtTennguoigiaodich.PreventEnterBeep = true;
+            this.txtTennguoigiaodich.Size = new System.Drawing.Size(404, 20);
+            this.txtTennguoigiaodich.TabIndex = 10;
+            // 
+            // txtDiachiNGD
+            // 
+            this.txtDiachiNGD.BackColor = System.Drawing.Color.White;
+            // 
+            // 
+            // 
+            this.txtDiachiNGD.Border.Class = "TextBoxBorder";
+            this.txtDiachiNGD.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.txtDiachiNGD.ButtonCustom.Tooltip = "";
+            this.txtDiachiNGD.ButtonCustom2.Tooltip = "";
+            this.txtDiachiNGD.DisabledBackColor = System.Drawing.Color.White;
+            this.txtDiachiNGD.ForeColor = System.Drawing.Color.Black;
+            this.txtDiachiNGD.Location = new System.Drawing.Point(136, 243);
+            this.txtDiachiNGD.Name = "txtDiachiNGD";
+            this.txtDiachiNGD.PreventEnterBeep = true;
+            this.txtDiachiNGD.Size = new System.Drawing.Size(510, 20);
+            this.txtDiachiNGD.TabIndex = 10;
+            // 
+            // label45
+            // 
+            this.label45.AutoSize = true;
+            this.label45.BackColor = System.Drawing.Color.Transparent;
+            this.label45.Location = new System.Drawing.Point(65, 245);
+            this.label45.Name = "label45";
+            this.label45.Size = new System.Drawing.Size(67, 13);
+            this.label45.TabIndex = 9;
+            this.label45.Text = "Địa chỉ NGD";
+            // 
+            // txtGhichu
+            // 
+            this.txtGhichu.BackColor = System.Drawing.Color.White;
+            // 
+            // 
+            // 
+            this.txtGhichu.Border.Class = "TextBoxBorder";
+            this.txtGhichu.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.txtGhichu.ButtonCustom.Tooltip = "";
+            this.txtGhichu.ButtonCustom2.Tooltip = "";
+            this.txtGhichu.DisabledBackColor = System.Drawing.Color.White;
+            this.txtGhichu.ForeColor = System.Drawing.Color.Black;
+            this.txtGhichu.Location = new System.Drawing.Point(136, 295);
+            this.txtGhichu.Name = "txtGhichu";
+            this.txtGhichu.PreventEnterBeep = true;
+            this.txtGhichu.Size = new System.Drawing.Size(510, 20);
+            this.txtGhichu.TabIndex = 10;
+            // 
+            // label47
+            // 
+            this.label47.AutoSize = true;
+            this.label47.BackColor = System.Drawing.Color.Transparent;
+            this.label47.Location = new System.Drawing.Point(88, 297);
+            this.label47.Name = "label47";
+            this.label47.Size = new System.Drawing.Size(44, 13);
+            this.label47.TabIndex = 9;
+            this.label47.Text = "Ghi chú";
+            // 
+            // txtMathang
+            // 
+            this.txtMathang.BackColor = System.Drawing.Color.White;
+            // 
+            // 
+            // 
+            this.txtMathang.Border.Class = "TextBoxBorder";
+            this.txtMathang.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.txtMathang.ButtonCustom.Tooltip = "";
+            this.txtMathang.ButtonCustom2.Tooltip = "";
+            this.txtMathang.DisabledBackColor = System.Drawing.Color.White;
+            this.txtMathang.ForeColor = System.Drawing.Color.Black;
+            this.txtMathang.Location = new System.Drawing.Point(136, 153);
+            this.txtMathang.Name = "txtMathang";
+            this.txtMathang.PreventEnterBeep = true;
+            this.txtMathang.Size = new System.Drawing.Size(510, 20);
+            this.txtMathang.TabIndex = 10;
+            // 
+            // label42
+            // 
+            this.label42.AutoSize = true;
+            this.label42.BackColor = System.Drawing.Color.Transparent;
+            this.label42.Location = new System.Drawing.Point(80, 155);
+            this.label42.Name = "label42";
+            this.label42.Size = new System.Drawing.Size(52, 13);
+            this.label42.TabIndex = 9;
+            this.label42.Text = "Mặt hàng";
+            // 
+            // txtDiachi
+            // 
+            this.txtDiachi.BackColor = System.Drawing.Color.White;
+            // 
+            // 
+            // 
+            this.txtDiachi.Border.Class = "TextBoxBorder";
+            this.txtDiachi.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.txtDiachi.ButtonCustom.Tooltip = "";
+            this.txtDiachi.ButtonCustom2.Tooltip = "";
+            this.txtDiachi.DisabledBackColor = System.Drawing.Color.White;
+            this.txtDiachi.ForeColor = System.Drawing.Color.Black;
+            this.txtDiachi.Location = new System.Drawing.Point(136, 116);
+            this.txtDiachi.Name = "txtDiachi";
+            this.txtDiachi.PreventEnterBeep = true;
+            this.txtDiachi.Size = new System.Drawing.Size(510, 20);
+            this.txtDiachi.TabIndex = 10;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.BackColor = System.Drawing.Color.Transparent;
+            this.label16.Location = new System.Drawing.Point(93, 118);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(40, 13);
+            this.label16.TabIndex = 9;
+            this.label16.Text = "Địa chỉ";
+            // 
+            // txtTenkhachhang
+            // 
+            this.txtTenkhachhang.BackColor = System.Drawing.Color.White;
+            // 
+            // 
+            // 
+            this.txtTenkhachhang.Border.Class = "TextBoxBorder";
+            this.txtTenkhachhang.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.txtTenkhachhang.ButtonCustom.Tooltip = "";
+            this.txtTenkhachhang.ButtonCustom2.Tooltip = "";
+            this.txtTenkhachhang.DisabledBackColor = System.Drawing.Color.White;
+            this.txtTenkhachhang.ForeColor = System.Drawing.Color.Black;
+            this.txtTenkhachhang.Location = new System.Drawing.Point(136, 64);
+            this.txtTenkhachhang.Name = "txtTenkhachhang";
+            this.txtTenkhachhang.PreventEnterBeep = true;
+            this.txtTenkhachhang.Size = new System.Drawing.Size(510, 20);
+            this.txtTenkhachhang.TabIndex = 10;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.BackColor = System.Drawing.Color.Transparent;
+            this.label14.Location = new System.Drawing.Point(43, 66);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(86, 13);
+            this.label14.TabIndex = 9;
+            this.label14.Text = "Tên khách hàng";
+            // 
+            // txtMasothue
+            // 
+            this.txtMasothue.BackColor = System.Drawing.Color.White;
+            // 
+            // 
+            // 
+            this.txtMasothue.Border.Class = "TextBoxBorder";
+            this.txtMasothue.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.txtMasothue.ButtonCustom.Tooltip = "";
+            this.txtMasothue.ButtonCustom2.Tooltip = "";
+            this.txtMasothue.DisabledBackColor = System.Drawing.Color.White;
+            this.txtMasothue.ForeColor = System.Drawing.Color.Black;
+            this.txtMasothue.Location = new System.Drawing.Point(136, 90);
+            this.txtMasothue.Name = "txtMasothue";
+            this.txtMasothue.PreventEnterBeep = true;
+            this.txtMasothue.Size = new System.Drawing.Size(184, 20);
+            this.txtMasothue.TabIndex = 10;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.BackColor = System.Drawing.Color.Transparent;
+            this.label15.Location = new System.Drawing.Point(71, 92);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(60, 13);
+            this.label15.TabIndex = 9;
+            this.label15.Text = "Mã số thuế";
+            // 
+            // txtXoa
+            // 
+            this.txtXoa.BackColor = System.Drawing.Color.White;
+            // 
+            // 
+            // 
+            this.txtXoa.Border.Class = "TextBoxBorder";
+            this.txtXoa.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.txtXoa.ButtonCustom.Tooltip = "";
+            this.txtXoa.ButtonCustom2.Tooltip = "";
+            this.txtXoa.DisabledBackColor = System.Drawing.Color.White;
+            this.txtXoa.ForeColor = System.Drawing.Color.Black;
+            this.txtXoa.Location = new System.Drawing.Point(136, 12);
+            this.txtXoa.Name = "txtXoa";
+            this.txtXoa.PreventEnterBeep = true;
+            this.txtXoa.Size = new System.Drawing.Size(100, 20);
+            this.txtXoa.TabIndex = 10;
+            // 
+            // label46
+            // 
+            this.label46.AutoSize = true;
+            this.label46.BackColor = System.Drawing.Color.Transparent;
+            this.label46.Location = new System.Drawing.Point(42, 271);
+            this.label46.Name = "label46";
+            this.label46.Size = new System.Drawing.Size(93, 13);
+            this.label46.TabIndex = 8;
+            this.label46.Text = "Mã nhân viên bán";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.BackColor = System.Drawing.Color.Transparent;
+            this.label12.Location = new System.Drawing.Point(93, 14);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(26, 13);
+            this.label12.TabIndex = 9;
+            this.label12.Text = "Xóa";
+            // 
+            // label44
+            // 
+            this.label44.AutoSize = true;
+            this.label44.BackColor = System.Drawing.Color.Transparent;
+            this.label44.Location = new System.Drawing.Point(51, 219);
+            this.label44.Name = "label44";
+            this.label44.Size = new System.Drawing.Size(81, 13);
+            this.label44.TabIndex = 8;
+            this.label44.Text = "Người giao dịch";
+            // 
+            // label43
+            // 
+            this.label43.AutoSize = true;
+            this.label43.BackColor = System.Drawing.Color.Transparent;
+            this.label43.Location = new System.Drawing.Point(22, 181);
+            this.label43.Name = "label43";
+            this.label43.Size = new System.Drawing.Size(114, 13);
+            this.label43.TabIndex = 8;
+            this.label43.Text = "Gán vào mã MADTPN";
+            // 
+            // cboManhanvienban
+            // 
+            this.cboManhanvienban.DisplayMember = "Text";
+            this.cboManhanvienban.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cboManhanvienban.DropDownColumnsHeaders = "Mã nhân viên bán\r\nTên nhân viên bán";
+            this.cboManhanvienban.DropDownHeight = 200;
+            this.cboManhanvienban.DropDownWidth = 200;
+            this.cboManhanvienban.FormattingEnabled = true;
+            this.cboManhanvienban.IntegralHeight = false;
+            this.cboManhanvienban.ItemHeight = 14;
+            this.cboManhanvienban.Location = new System.Drawing.Point(136, 269);
+            this.cboManhanvienban.MaxDropDownItems = 20;
+            this.cboManhanvienban.Name = "cboManhanvienban";
+            this.cboManhanvienban.PopupCloseButtonVisible = false;
+            this.cboManhanvienban.Size = new System.Drawing.Size(100, 20);
+            this.cboManhanvienban.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.cboManhanvienban.TabIndex = 7;
+            this.cboManhanvienban.DataColumnCreated += new DevComponents.DotNetBar.Controls.DataColumnEventHandler(this.cboManhanvienban_DataColumnCreated);
+            this.cboManhanvienban.SelectedIndexChanged += new System.EventHandler(this.cboManhanvienban_SelectedIndexChanged);
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.BackColor = System.Drawing.Color.Transparent;
+            this.label13.Location = new System.Drawing.Point(50, 40);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(82, 13);
+            this.label13.TabIndex = 8;
+            this.label13.Text = "Mã khách hàng";
+            // 
+            // cboNguoigiaodich
+            // 
+            this.cboNguoigiaodich.DisplayMember = "Text";
+            this.cboNguoigiaodich.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cboNguoigiaodich.DropDownColumnsHeaders = "Mã người giao dịch\r\nTên người giao dịch";
+            this.cboNguoigiaodich.DropDownHeight = 200;
+            this.cboNguoigiaodich.DropDownWidth = 200;
+            this.cboNguoigiaodich.FormattingEnabled = true;
+            this.cboNguoigiaodich.IntegralHeight = false;
+            this.cboNguoigiaodich.ItemHeight = 14;
+            this.cboNguoigiaodich.Location = new System.Drawing.Point(136, 217);
+            this.cboNguoigiaodich.MaxDropDownItems = 20;
+            this.cboNguoigiaodich.Name = "cboNguoigiaodich";
+            this.cboNguoigiaodich.PopupCloseButtonVisible = false;
+            this.cboNguoigiaodich.Size = new System.Drawing.Size(100, 20);
+            this.cboNguoigiaodich.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.cboNguoigiaodich.TabIndex = 7;
+            this.cboNguoigiaodich.DataColumnCreated += new DevComponents.DotNetBar.Controls.DataColumnEventHandler(this.cboNguoigiaodich_DataColumnCreated);
+            this.cboNguoigiaodich.SelectedIndexChanged += new System.EventHandler(this.cboNguoigiaodich_SelectedIndexChanged);
+            // 
+            // cboGanvaomaMADTPN
+            // 
+            this.cboGanvaomaMADTPN.DisplayMember = "Text";
+            this.cboGanvaomaMADTPN.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cboGanvaomaMADTPN.DropDownColumnsHeaders = "Mã ĐTPN\r\nTên ĐTPN";
+            this.cboGanvaomaMADTPN.DropDownHeight = 200;
+            this.cboGanvaomaMADTPN.DropDownWidth = 200;
+            this.cboGanvaomaMADTPN.FormattingEnabled = true;
+            this.cboGanvaomaMADTPN.IntegralHeight = false;
+            this.cboGanvaomaMADTPN.ItemHeight = 14;
+            this.cboGanvaomaMADTPN.Location = new System.Drawing.Point(136, 179);
+            this.cboGanvaomaMADTPN.MaxDropDownItems = 20;
+            this.cboGanvaomaMADTPN.Name = "cboGanvaomaMADTPN";
+            this.cboGanvaomaMADTPN.PopupCloseButtonVisible = false;
+            this.cboGanvaomaMADTPN.Size = new System.Drawing.Size(100, 20);
+            this.cboGanvaomaMADTPN.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.cboGanvaomaMADTPN.TabIndex = 7;
+            this.cboGanvaomaMADTPN.DataColumnCreated += new DevComponents.DotNetBar.Controls.DataColumnEventHandler(this.cboGanvaomaMADTPN_DataColumnCreated);
+            // 
+            // cboMakhachhang
+            // 
+            this.cboMakhachhang.DisplayMember = "Text";
+            this.cboMakhachhang.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cboMakhachhang.DropDownColumnsHeaders = "Mã khách hàng\r\nTên khách hàng";
+            this.cboMakhachhang.DropDownHeight = 200;
+            this.cboMakhachhang.DropDownWidth = 200;
+            this.cboMakhachhang.FormattingEnabled = true;
+            this.cboMakhachhang.IntegralHeight = false;
+            this.cboMakhachhang.ItemHeight = 14;
+            this.cboMakhachhang.Location = new System.Drawing.Point(136, 38);
+            this.cboMakhachhang.MaxDropDownItems = 20;
+            this.cboMakhachhang.Name = "cboMakhachhang";
+            this.cboMakhachhang.PopupCloseButtonVisible = false;
+            this.cboMakhachhang.Size = new System.Drawing.Size(100, 20);
+            this.cboMakhachhang.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.cboMakhachhang.TabIndex = 7;
+            this.cboMakhachhang.DataColumnCreated += new DevComponents.DotNetBar.Controls.DataColumnEventHandler(this.cboMakhachhang_DataColumnCreated);
+            this.cboMakhachhang.SelectedIndexChanged += new System.EventHandler(this.cboMakhachhang_SelectedIndexChanged);
+            // 
+            // superTabItem2
+            // 
+            this.superTabItem2.AttachedControl = this.superTabControlPanel2;
+            this.superTabItem2.GlobalItem = false;
+            this.superTabItem2.Name = "superTabItem2";
+            this.superTabItem2.Text = "2. Thông tin khách hàng";
+            // 
+            // txtTKNo
+            // 
+            this.txtTKNo.BackColor = System.Drawing.Color.White;
+            // 
+            // 
+            // 
+            this.txtTKNo.Border.Class = "TextBoxBorder";
+            this.txtTKNo.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.txtTKNo.ButtonCustom.Tooltip = "";
+            this.txtTKNo.ButtonCustom2.Tooltip = "";
+            this.txtTKNo.DisabledBackColor = System.Drawing.Color.White;
+            this.txtTKNo.ForeColor = System.Drawing.Color.Black;
+            this.txtTKNo.Location = new System.Drawing.Point(177, 21);
+            this.txtTKNo.Name = "txtTKNo";
+            this.txtTKNo.PreventEnterBeep = true;
+            this.txtTKNo.Size = new System.Drawing.Size(297, 20);
+            this.txtTKNo.TabIndex = 1;
+            // 
             // NhapPhatSinh
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1022, 602);
+            this.ClientSize = new System.Drawing.Size(1237, 662);
             this.Controls.Add(this.superTabControl1);
-            this.Controls.Add(this.toolStrip1);
             this.Name = "NhapPhatSinh";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Nhập phát sinh";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.NhapPhatSinh_Load);
-            this.toolStrip1.ResumeLayout(false);
-            this.toolStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.superTabControl1)).EndInit();
             this.superTabControl1.ResumeLayout(false);
-            this.superTabControlPanel2.ResumeLayout(false);
-            this.superTabControlPanel2.PerformLayout();
             this.superTabControlPanel1.ResumeLayout(false);
             this.superTabControlPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl2)).EndInit();
@@ -3146,16 +3118,14 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtpNgayCTuCopy)).EndInit();
+            this.superTabControlPanel2.ResumeLayout(false);
+            this.superTabControlPanel2.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.ToolStrip toolStrip1;
-        private System.Windows.Forms.ToolStripButton btnSave;
-        private System.Windows.Forms.ToolStripButton btnView;
         private DevComponents.DotNetBar.SuperTabControl superTabControl1;
         private DevComponents.DotNetBar.SuperTabControlPanel superTabControlPanel1;
         private DevComponents.DotNetBar.SuperTabItem superTabItem1;
@@ -3211,7 +3181,6 @@
         private System.Windows.Forms.Label lbTKNo;
         private DevComponents.DotNetBar.Controls.TextBoxX txtVTHHCo;
         private DevComponents.DotNetBar.Controls.TextBoxX txtTKCo;
-        private DevComponents.DotNetBar.Controls.TextBoxX txtTKNo;
         private System.Windows.Forms.Label lbMaTT;
         private DevComponents.DotNetBar.Controls.ComboBoxEx cboMaTT;
         private System.Windows.Forms.Label lbCongtrinh;
@@ -3344,5 +3313,6 @@
         private DevExpress.XtraGrid.GridControl gridControl3;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView3;
         private DevExpress.XtraEditors.Repository.RepositoryItemDateEdit repositoryItemDateEdit2;
+        private DevComponents.DotNetBar.Controls.TextBoxX txtTKNo;
     }
 }

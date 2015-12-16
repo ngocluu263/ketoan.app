@@ -29,6 +29,10 @@ namespace ketoansoft.app.Class.Data
         {
             return this.db.KT_TKs.Where(u => u.MA_TK.Substring(0, 3) == matkSub || u.MA_TK.Substring(0, 1) == matkSub2);
         }
+        public virtual List<KT_TK> GetAllToList()
+        {
+            return this.db.KT_TKs.ToList();
+        }
         public virtual IQueryable GetAll()
         {
             return this.db.KT_TKs;
