@@ -378,6 +378,26 @@ namespace ketoansoft.app
         }
         #endregion
 
+        #region báo cáo thuế->mua vào
+        private void btnBanKeHangHoaDVMuaVao_DoubleClick(object sender, EventArgs e)
+        {
+            _IdAction = 112233;
+            INTHUEDV f = new INTHUEDV();
+            f.ShowDialog();
+            f.Dispose();
+        }
+        #endregion
+
+        #region báo cáo thuế->bán ra
+        private void btnBangKeHangHoaDVBanRa_DoubleClick(object sender, EventArgs e)
+        {
+            _IdAction = 112233;
+            INTHUEDR f = new INTHUEDR();
+            f.ShowDialog();
+            f.Dispose();
+        }
+        #endregion
+
         #region công trình->khai báo cho công trình
         private void btnXembangtylephanbo_DoubleClick(object sender, EventArgs e)
         {
@@ -808,6 +828,5 @@ namespace ketoansoft.app
         {
             Load_InfoBottom();
         }
-
     }
 }

@@ -84,6 +84,7 @@
             this.txtDTPNCo = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.txtTKCo = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.txtDTPNNo = new DevComponents.DotNetBar.Controls.TextBoxX();
+            this.txtTKNo = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.grpSoluongDongia = new System.Windows.Forms.GroupBox();
             this.comboBoxEx9 = new DevComponents.DotNetBar.Controls.ComboBoxEx();
             this.txtSoluong = new DevComponents.DotNetBar.Controls.TextBoxX();
@@ -215,7 +216,6 @@
             this.cboGanvaomaMADTPN = new DevComponents.DotNetBar.Controls.ComboBoxEx();
             this.cboMakhachhang = new DevComponents.DotNetBar.Controls.ComboBoxEx();
             this.superTabItem2 = new DevComponents.DotNetBar.SuperTabItem();
-            this.txtTKNo = new DevComponents.DotNetBar.Controls.TextBoxX();
             ((System.ComponentModel.ISupportInitialize)(this.superTabControl1)).BeginInit();
             this.superTabControl1.SuspendLayout();
             this.superTabControlPanel1.SuspendLayout();
@@ -323,7 +323,7 @@
             this.superTabControlPanel1.Location = new System.Drawing.Point(0, 0);
             this.superTabControlPanel1.Name = "superTabControlPanel1";
             this.superTabControlPanel1.Size = new System.Drawing.Size(1237, 639);
-            this.superTabControlPanel1.TabIndex = 1;
+            this.superTabControlPanel1.TabIndex = 0;
             this.superTabControlPanel1.TabItem = this.superTabItem1;
             // 
             // gridControl2
@@ -610,7 +610,7 @@
             this.dtpNgayHD.Name = "dtpNgayHD";
             this.dtpNgayHD.Size = new System.Drawing.Size(101, 20);
             this.dtpNgayHD.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.dtpNgayHD.TabIndex = 9;
+            this.dtpNgayHD.TabIndex = 6;
             this.dtpNgayHD.Visible = false;
             // 
             // dtpNgayCTu
@@ -666,7 +666,7 @@
             this.dtpNgayCTu.Name = "dtpNgayCTu";
             this.dtpNgayCTu.Size = new System.Drawing.Size(101, 20);
             this.dtpNgayCTu.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.dtpNgayCTu.TabIndex = 8;
+            this.dtpNgayCTu.TabIndex = 9;
             this.dtpNgayCTu.Visible = false;
             // 
             // btnNext
@@ -699,7 +699,7 @@
             this.txtSTT.Name = "txtSTT";
             this.txtSTT.PreventEnterBeep = true;
             this.txtSTT.Size = new System.Drawing.Size(39, 20);
-            this.txtSTT.TabIndex = 6;
+            this.txtSTT.TabIndex = 9;
             this.txtSTT.Text = "1";
             this.txtSTT.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtSTT.Visible = false;
@@ -720,7 +720,7 @@
             this.txtSoCTu.Name = "txtSoCTu";
             this.txtSoCTu.PreventEnterBeep = true;
             this.txtSoCTu.Size = new System.Drawing.Size(100, 20);
-            this.txtSoCTu.TabIndex = 6;
+            this.txtSoCTu.TabIndex = 8;
             this.txtSoCTu.Visible = false;
             // 
             // txtKHMHD
@@ -739,8 +739,9 @@
             this.txtKHMHD.Name = "txtKHMHD";
             this.txtKHMHD.PreventEnterBeep = true;
             this.txtKHMHD.Size = new System.Drawing.Size(64, 20);
-            this.txtKHMHD.TabIndex = 6;
+            this.txtKHMHD.TabIndex = 3;
             this.txtKHMHD.Visible = false;
+            this.txtKHMHD.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtKHMHD_KeyDown);
             // 
             // txtSeriHD
             // 
@@ -758,8 +759,9 @@
             this.txtSeriHD.Name = "txtSeriHD";
             this.txtSeriHD.PreventEnterBeep = true;
             this.txtSeriHD.Size = new System.Drawing.Size(64, 20);
-            this.txtSeriHD.TabIndex = 6;
+            this.txtSeriHD.TabIndex = 4;
             this.txtSeriHD.Visible = false;
+            this.txtSeriHD.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtSeriHD_KeyDown);
             // 
             // grpNoCo
             // 
@@ -1144,6 +1146,24 @@
             this.txtDTPNNo.PreventEnterBeep = true;
             this.txtDTPNNo.Size = new System.Drawing.Size(297, 20);
             this.txtDTPNNo.TabIndex = 1;
+            // 
+            // txtTKNo
+            // 
+            this.txtTKNo.BackColor = System.Drawing.Color.White;
+            // 
+            // 
+            // 
+            this.txtTKNo.Border.Class = "TextBoxBorder";
+            this.txtTKNo.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.txtTKNo.ButtonCustom.Tooltip = "";
+            this.txtTKNo.ButtonCustom2.Tooltip = "";
+            this.txtTKNo.DisabledBackColor = System.Drawing.Color.White;
+            this.txtTKNo.ForeColor = System.Drawing.Color.Black;
+            this.txtTKNo.Location = new System.Drawing.Point(177, 21);
+            this.txtTKNo.Name = "txtTKNo";
+            this.txtTKNo.PreventEnterBeep = true;
+            this.txtTKNo.Size = new System.Drawing.Size(297, 20);
+            this.txtTKNo.TabIndex = 1;
             // 
             // grpSoluongDongia
             // 
@@ -2089,7 +2109,7 @@
             this.lbNgayCTu.Location = new System.Drawing.Point(180, 56);
             this.lbNgayCTu.Name = "lbNgayCTu";
             this.lbNgayCTu.Size = new System.Drawing.Size(50, 13);
-            this.lbNgayCTu.TabIndex = 2;
+            this.lbNgayCTu.TabIndex = 17;
             this.lbNgayCTu.Text = "Ngày ctừ";
             this.lbNgayCTu.Visible = false;
             // 
@@ -2159,7 +2179,7 @@
             this.cboHDVat.Name = "cboHDVat";
             this.cboHDVat.Size = new System.Drawing.Size(51, 20);
             this.cboHDVat.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.cboHDVat.TabIndex = 0;
+            this.cboHDVat.TabIndex = 7;
             this.cboHDVat.Visible = false;
             this.cboHDVat.TextChanged += new System.EventHandler(this.cboHDVat_TextChanged);
             // 
@@ -2219,7 +2239,7 @@
             this.cboSoHD.Name = "cboSoHD";
             this.cboSoHD.Size = new System.Drawing.Size(100, 20);
             this.cboSoHD.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.cboSoHD.TabIndex = 0;
+            this.cboSoHD.TabIndex = 5;
             this.cboSoHD.Visible = false;
             this.cboSoHD.DataColumnCreated += new DevComponents.DotNetBar.Controls.DataColumnEventHandler(this.cboSoHD_DataColumnCreated);
             this.cboSoHD.TextChanged += new System.EventHandler(this.cboSoHD_TextChanged);
@@ -2236,7 +2256,7 @@
             this.cboMaTT.Name = "cboMaTT";
             this.cboMaTT.Size = new System.Drawing.Size(57, 20);
             this.cboMaTT.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.cboMaTT.TabIndex = 0;
+            this.cboMaTT.TabIndex = 1;
             this.cboMaTT.Visible = false;
             this.cboMaTT.DataColumnCreated += new DevComponents.DotNetBar.Controls.DataColumnEventHandler(this.cboMaTT_DataColumnCreated);
             this.cboMaTT.TextChanged += new System.EventHandler(this.cboMaTT_TextChanged);
@@ -2253,10 +2273,11 @@
             this.cboMaHD.Name = "cboMaHD";
             this.cboMaHD.Size = new System.Drawing.Size(101, 20);
             this.cboMaHD.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.cboMaHD.TabIndex = 0;
+            this.cboMaHD.TabIndex = 2;
             this.cboMaHD.Visible = false;
             this.cboMaHD.DataColumnCreated += new DevComponents.DotNetBar.Controls.DataColumnEventHandler(this.cboMaHD_DataColumnCreated);
             this.cboMaHD.TextChanged += new System.EventHandler(this.cboMaHD_TextChanged);
+            this.cboMaHD.KeyDown += new System.Windows.Forms.KeyEventHandler(this.cboMaHD_KeyDown);
             // 
             // cboDiengiai
             // 
@@ -3060,24 +3081,6 @@
             this.superTabItem2.GlobalItem = false;
             this.superTabItem2.Name = "superTabItem2";
             this.superTabItem2.Text = "2. Thông tin khách hàng";
-            // 
-            // txtTKNo
-            // 
-            this.txtTKNo.BackColor = System.Drawing.Color.White;
-            // 
-            // 
-            // 
-            this.txtTKNo.Border.Class = "TextBoxBorder";
-            this.txtTKNo.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.txtTKNo.ButtonCustom.Tooltip = "";
-            this.txtTKNo.ButtonCustom2.Tooltip = "";
-            this.txtTKNo.DisabledBackColor = System.Drawing.Color.White;
-            this.txtTKNo.ForeColor = System.Drawing.Color.Black;
-            this.txtTKNo.Location = new System.Drawing.Point(177, 21);
-            this.txtTKNo.Name = "txtTKNo";
-            this.txtTKNo.PreventEnterBeep = true;
-            this.txtTKNo.Size = new System.Drawing.Size(297, 20);
-            this.txtTKNo.TabIndex = 1;
             // 
             // NhapPhatSinh
             // 

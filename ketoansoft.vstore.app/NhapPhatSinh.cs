@@ -2911,16 +2911,16 @@ namespace ketoansoft.app
             }
             KT_CTuGoc CTGoc = new KT_CTuGoc();
             CTGoc.MA_CTU = Utils.CStrDef(cboLoaiCTu.SelectedValue, "");
-            //CTGoc.MA_TT = Utils.CStrDef(cboLoaiCTu.SelectedValue, "");
-            //CTGoc.MA_HD = Utils.CStrDef(cboLoaiCTu.SelectedValue, "");
-            //CTGoc.KHM_HD = Utils.CStrDef(cboLoaiCTu.SelectedValue, "");
+            CTGoc.MA_TT = Utils.CStrDef(cboMaTT.SelectedValue, "");
+            CTGoc.MA_HD = Utils.CStrDef(cboMaHD.SelectedValue, "");
+            CTGoc.KY_HIEU_MAU_HD = Utils.CStrDef(txtKHMHD.Text, "");
             CTGoc.HD_SR = Utils.CStrDef(txtSeriHD.Text, "");
             CTGoc.HD_SO = Utils.CStrDef(cboSoHD.SelectedValue, "");
             DateTime? temp = null;
             if (Utils.CDateDef(dtpNgayHD.Value, DateTime.MinValue) != DateTime.MinValue)
                 temp = Utils.CDateDef(dtpNgayHD.Value, DateTime.MinValue);
             CTGoc.HD_NGAY = temp;
-            //CTGoc.HD_VAT = Utils.CStrDef(cboHDVat.SelectedValue, "");
+            CTGoc.LOAI_THUE = Utils.CStrDef(cboHDVat.SelectedValue, "");
             CTGoc.SO_CTU = Utils.CStrDef(txtSoCTu.Text, "");
             temp = null;
             if (Utils.CDateDef(dtpNgayCTu.Value, DateTime.MinValue) != DateTime.MinValue)
@@ -3233,7 +3233,7 @@ namespace ketoansoft.app
             }
             cboMaHD.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
             cboMaHD.AutoCompleteSource = AutoCompleteSource.CustomSource;
-            cboMaHD.AutoCompleteCustomSource = auto1; 
+            cboMaHD.AutoCompleteCustomSource = auto1;
         }
         private void cboSoHD_TextChanged(object sender, EventArgs e)
         {
@@ -3297,6 +3297,12 @@ namespace ketoansoft.app
                 EnableCtr(cboLoaiCTu.Text);
                 _KT_CTuGocRepo = new KT_CTuGocRepo();
                 gridControl1.DataSource = _KT_CTuGocRepo.GetByMaCT(Utils.CStrDef(cboLoaiCTu.SelectedValue, ""), Utils.CIntDef(fTerm._month, 0), Utils.CIntDef(fTerm._year, 0), "");
+
+                #region move_focus
+                TextBox[] arrTxt = { txtSeriHD };
+                ComboBox[] arrCbo = { cboMaTT, cboMaHD };
+                next_focus(arrTxt, arrCbo, 2);
+                #endregion
             }
         }
         private void cboTKNo_KeyDown(object sender, KeyEventArgs e)
@@ -3327,7 +3333,13 @@ namespace ketoansoft.app
             if (item != null)
                 txtVTHHNo.Text = item.TEN_DM;
         }
-        
+        private void cboMaHD_KeyDown(object sender, KeyEventArgs e)
+        {
+            #region move_focus
+            TextBox[] arrTxt = { txtKHMHD, txtSeriHD };
+            next_focus(arrTxt, null, 1);
+            #endregion
+        }
         private void cboTKCo_KeyDown(object sender, KeyEventArgs e)
         {
             _KTTKRepo = new KTTKRepo();
@@ -3355,6 +3367,76 @@ namespace ketoansoft.app
             var item = _KTDMHHRepo.GetById(Utils.CIntDef(cboVTHHCo.SelectedValue, 0));
             if (item != null)
                 txtVTHHCo.Text = item.TEN_DM;
+        }
+        #endregion
+
+        #region txt keydown
+        private void txtKHMHD_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                TextBox[] arrTxt = { txtSeriHD};
+                ComboBox[] arrCbo = { cboSoHD };
+                next_focus(arrTxt, arrCbo, 1);
+            }
+        }
+        private void txtSeriHD_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                ComboBox[] arrCbo = { cboSoHD };
+                next_focus(null, arrCbo, 2);
+            }
+        }
+        #endregion
+
+        #region funtion
+        private void next_focus(TextBox[] arrTxt, ComboBox[] arrCbo, int pri)
+        {//pri-1-Textbox/pri-2-Combobox
+            if (pri == 1)
+            {
+                if (txt_focus(arrTxt) != true)
+                    cbo_focus(arrCbo);
+            }
+            else
+            {
+                if (cbo_focus(arrCbo) != true)
+                    txt_focus(arrTxt);
+            }
+        }
+        private bool txt_focus(TextBox[] arrTxt)
+        {
+            if (arrTxt != null)
+            {
+                int countTxt = arrTxt.Count();
+                for (int i = 0; i < countTxt; i++)
+                {
+                    TextBox txt = arrTxt[i];
+                    if (txt.Visible == true && txt.Enabled == true)
+                    {
+                        txt.Focus();
+                        return true;
+                    }
+                }
+            }
+            return false;
+        }
+        private bool cbo_focus(ComboBox[] arrCbo)
+        {
+            if (arrCbo != null)
+            {
+                int countCbo = arrCbo.Count();
+                for (int i = 0; i < countCbo; i++)
+                {
+                    ComboBox cbo = arrCbo[i];
+                    if (cbo.Visible == true && cbo.Enabled)
+                    {
+                        cbo.Focus();
+                        return true;
+                    }
+                }
+            }
+            return false;
         }
         #endregion
     }

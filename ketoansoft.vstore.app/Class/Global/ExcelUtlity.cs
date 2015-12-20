@@ -7,6 +7,7 @@ using System.Data;
 using System.Diagnostics;
 using ketoansoft.app.Components.clsVproUtility;
 using ketoansoft.app.Class.Data;
+using System.Reflection;
 
 namespace ketoansoft.app.Class.Global
 {
@@ -2065,6 +2066,1001 @@ namespace ketoansoft.app.Class.Global
                 excelworkBook = null;
             }
         }
-        
+        public bool WriteDataTableToExcel_DCCN_Mau1(System.Data.DataTable dataTable, string taikhoan, string madtpn, DateTime from, DateTime to, DateTime print)
+        {
+            string saveAsLocation = Application.StartupPath + @"\Excel\DCCN.xls";
+            string worksheetName = "IN";
+
+            Microsoft.Office.Interop.Excel.Application excel;
+            Microsoft.Office.Interop.Excel.Workbook excelworkBook;
+            Microsoft.Office.Interop.Excel.Worksheet excelSheet;
+            Microsoft.Office.Interop.Excel.Range excelCellrange;
+
+            try
+            {
+                // Start Excel and get Application object.
+                excel = new Microsoft.Office.Interop.Excel.Application();
+
+                // for making Excel visible
+                excel.Visible = false;
+                excel.DisplayAlerts = false;
+
+                // Creation a new Workbook
+                excelworkBook = excel.Workbooks.Add(Type.Missing);
+                // Workk sheet
+                var collection = new Microsoft.Office.Interop.Excel.Worksheet[4];
+                collection[0] = excelworkBook.Worksheets.Add();
+                collection[0].Name = "DCCN";
+                collection[0].PageSetup.Application.ActiveWindow.DisplayGridlines = false;
+                collection[1] = excelworkBook.Worksheets.Add();
+                collection[1].Name = "DCCN_TCT";
+                collection[1].PageSetup.Application.ActiveWindow.DisplayGridlines = false;
+                collection[2] = excelworkBook.Worksheets.Add();
+                collection[2].Name = "NGUON";
+                collection[3] = excelworkBook.Worksheets.Add();
+                collection[3].Name = "KTCHUKY";
+                for (var i = 0; i < 3; i++)
+                {
+                    excelworkBook.Worksheets[5].Delete();
+                }
+
+                #region General Cells
+                ////Kiểu chữ
+                //excelSheet.Range["A1", "L" + (dataTable.Rows.Count + 55)].Font.Name = "Times New Roman";
+                //excelSheet.Range["A4", "L10"].Font.Name = "Tahoma";
+                ////Font chữ
+                //excelSheet.Range["A1", "A3"].Font.Size = 10;
+                //excelSheet.Range["A4", "A7"].Font.Size = 12;
+                //excelSheet.Range["A8", "L9"].Font.Size = 10;
+                //excelSheet.Range["A10", "L" + (dataTable.Rows.Count + 9)].Font.Size = 9;
+                //excelSheet.Range["A4", "A4"].Font.FontStyle = "Bold";
+                //excelSheet.Range["A8", "L9"].Font.FontStyle = "Bold";
+                //excelSheet.Range["A" + (dataTable.Rows.Count + 30), "L" + (dataTable.Rows.Count + 30)].Font.FontStyle = "Bold";
+                //excelSheet.Range["A" + (dataTable.Rows.Count + 11), "L" + (dataTable.Rows.Count + 16)].Font.FontStyle = "Bold";
+                ////Canh giữa chữ
+                //excelSheet.Range["A4", "L9"].HorizontalAlignment = -4108;
+                //excelSheet.Range["A10", "B" + (dataTable.Rows.Count + 10)].HorizontalAlignment = -4108;
+                //excelSheet.Range["C" + (dataTable.Rows.Count + 11), "C" + (dataTable.Rows.Count + 16)].HorizontalAlignment = -4108;
+                //excelSheet.Range["A" + (dataTable.Rows.Count + 29), "L" + (dataTable.Rows.Count + 31)].HorizontalAlignment = -4108;
+                ////Merge
+                //excelSheet.Range["A4", "L4"].MergeCells = true;
+                //excelSheet.Range["A5", "L5"].MergeCells = true;
+                //excelSheet.Range["A6", "L6"].MergeCells = true;
+                //excelSheet.Range["A8", "B8"].MergeCells = true;
+                //excelSheet.Range["G8", "H8"].MergeCells = true;
+                //excelSheet.Range["D" + (dataTable.Rows.Count + 13), "F" + (dataTable.Rows.Count + 13)].MergeCells = true;
+                //excelSheet.Range["D" + (dataTable.Rows.Count + 14), "F" + (dataTable.Rows.Count + 14)].MergeCells = true;
+                //excelSheet.Range["D" + (dataTable.Rows.Count + 15), "F" + (dataTable.Rows.Count + 15)].MergeCells = true;
+                //excelSheet.Range["D" + (dataTable.Rows.Count + 16), "F" + (dataTable.Rows.Count + 16)].MergeCells = true;
+                //excelSheet.Range["D" + (dataTable.Rows.Count + 18), "F" + (dataTable.Rows.Count + 18)].MergeCells = true;
+                //excelSheet.Range["A" + (dataTable.Rows.Count + 30), "C" + (dataTable.Rows.Count + 30)].MergeCells = true;
+                //excelSheet.Range["A" + (dataTable.Rows.Count + 31), "C" + (dataTable.Rows.Count + 31)].MergeCells = true;
+                ////Kích thước Cột và Dòng
+                //excelSheet.Range["A1", "A" + (dataTable.Rows.Count + 55)].RowHeight = "16.5";
+                //excelSheet.Range["A1"].ColumnWidth = 10;
+                //excelSheet.Range["B1"].ColumnWidth = 8;
+                //excelSheet.Range["C1"].ColumnWidth = 45;
+                //excelSheet.Range["D1", "I1"].ColumnWidth = 8;
+                //excelSheet.Range["J1", "L1"].ColumnWidth = 10;
+                ////Border
+                //excelSheet.Range["A8", "L9"].Borders.LineStyle = Microsoft.Office.Interop.Excel.XlLineStyle.xlContinuous;
+                //excelSheet.Range["A8", "L9"].Borders.Weight = 2d;
+                //excelSheet.Range["A10", "L" + (dataTable.Rows.Count + 10)].Borders.LineStyle = Microsoft.Office.Interop.Excel.XlLineStyle.xlDot;
+                //excelSheet.Range["A10", "L" + (dataTable.Rows.Count + 10)].Borders.Weight = 2d;
+                //excelSheet.Range["A" + (dataTable.Rows.Count + 11), "L" + (dataTable.Rows.Count + 11)].Borders.LineStyle = Microsoft.Office.Interop.Excel.XlLineStyle.xlContinuous;
+                //excelSheet.Range["A" + (dataTable.Rows.Count + 11), "L" + (dataTable.Rows.Count + 11)].Borders.Weight = 2d;
+                //excelSheet.Range["C" + (dataTable.Rows.Count + 13), "F" + (dataTable.Rows.Count + 16)].Borders.LineStyle = Microsoft.Office.Interop.Excel.XlLineStyle.xlContinuous;
+                //excelSheet.Range["C" + (dataTable.Rows.Count + 13), "F" + (dataTable.Rows.Count + 16)].Borders.Weight = 2d;
+                ////Công thức
+                //excelSheet.Range["G" + (dataTable.Rows.Count + 11), "G" + (dataTable.Rows.Count + 11)].Formula = String.Format("=sum(G11:G{0})", dataTable.Rows.Count + 10);
+                //excelSheet.Range["H" + (dataTable.Rows.Count + 11), "H" + (dataTable.Rows.Count + 11)].Formula = String.Format("=sum(H11:H{0})", dataTable.Rows.Count + 10);
+                //excelSheet.Range["J" + (dataTable.Rows.Count + 11), "J" + (dataTable.Rows.Count + 11)].Formula = String.Format("=sum(J11:J{0})", dataTable.Rows.Count + 10);
+                //excelSheet.Range["K" + (dataTable.Rows.Count + 11), "K" + (dataTable.Rows.Count + 11)].Formula = String.Format("=sum(K11:K{0})", dataTable.Rows.Count + 10);
+                //excelSheet.Range["L" + (dataTable.Rows.Count + 11), "L" + (dataTable.Rows.Count + 11)].Formula = String.Format("=sum(L11:L{0})", dataTable.Rows.Count + 10);
+                ////format
+                //excelSheet.Range["A11", "A" + (dataTable.Rows.Count + 11)].EntireColumn.NumberFormat = "dd/MM/yyyy";
+                //excelSheet.Range["G11", "G" + (dataTable.Rows.Count + 11)].EntireColumn.NumberFormat = "#,###";
+                //excelSheet.Range["H11", "H" + (dataTable.Rows.Count + 11)].EntireColumn.NumberFormat = "#,###";
+                //excelSheet.Range["I11", "I" + (dataTable.Rows.Count + 11)].EntireColumn.NumberFormat = "#,###";
+                //excelSheet.Range["J11", "J" + (dataTable.Rows.Count + 11)].EntireColumn.NumberFormat = "#,###";
+                //excelSheet.Range["K11", "K" + (dataTable.Rows.Count + 11)].EntireColumn.NumberFormat = "#,###";
+                //excelSheet.Range["L11", "L" + (dataTable.Rows.Count + 11)].EntireColumn.NumberFormat = "#,###";
+                //excelSheet.Range["D" + (dataTable.Rows.Count + 13), "D" + (dataTable.Rows.Count + 16)].EntireColumn.NumberFormat = "#,###";
+                #endregion
+
+                //gắn header
+                collection[3].Range["B1"].Value2 = "Tên công ty"; collection[3].Range["A1"].Value2 = "Tên công ty";
+                collection[3].Range["B2"].Value2 = "Địa chỉ"; collection[3].Range["A2"].Value2 = "Địa chỉ";
+                collection[3].Range["B3"].Value2 = "Mã số thuế "; collection[3].Range["A3"].Value2 = "Mã số thuế ";
+                collection[3].Range["B4"].Value2 = "Tên người lập"; collection[3].Range["A4"].Value2 = "Tên người lập";
+                collection[3].Range["B5"].Value2 = "Tên kế toán trưởng"; collection[3].Range["A5"].Value2 = "Tên kế toán trưởng";
+                collection[3].Range["B6"].Value2 = "Dư nợ ĐK"; collection[3].Range["A6"].Value2 = "Dư nợ ĐK";
+                collection[3].Range["B7"].Value2 = "Dư có ĐK"; collection[3].Range["A7"].Value2 = "Dư có ĐK";
+                collection[3].Range["B8"].Value2 = "Phát sinh Nợ"; collection[3].Range["A8"].Value2 = "Phát sinh Nợ";
+                collection[3].Range["B9"].Value2 = "Phát sinh Có"; collection[3].Range["A9"].Value2 = "Phát sinh Có";
+                collection[3].Range["B10"].Value2 = "Đến ngày"; collection[3].Range["A10"].Value2 = "Đến ngày";
+                collection[3].Range["B11"].Value2 = "Số dư cuối kỳ"; collection[3].Range["A11"].Value2 = "Số dư cuối kỳ";
+                collection[3].Range["B12"].Value2 = "Tên KH"; collection[3].Range["A12"].Value2 = "Tên KH";
+                collection[3].Range["B13"].Value2 = "Địa chỉ khách hàng"; collection[3].Range["A13"].Value2 = "Địa chỉ khách hàng";
+                collection[3].Range["B14"].Value2 = "Mã số thuế khách hàng"; collection[3].Range["A14"].Value2 = "Mã số thuế khách hàng";
+                collection[3].Range["B15"].Value2 = "Ngày In"; collection[3].Range["A15"].Value2 = "Ngày In";
+                collection[3].Range["B16"].Value2 = "Mã tài khoản"; collection[3].Range["A16"].Value2 = "Mã tài khoản";
+                collection[3].Range["B17"].Value2 = "Số dư cuối kỳ bằng số"; collection[3].Range["A17"].Value2 = "Số dư cuối kỳ bằng số";
+
+                collection[2].Range["B1"].Value2 = "Tên công ty"; collection[2].Range["A1"].Value2 = "Tên công ty";
+                collection[2].Range["B2"].Value2 = "Địa chỉ"; collection[2].Range["A2"].Value2 = "Tên chi nhánh";
+                collection[2].Range["B3"].Value2 = "Mã số thuế "; collection[2].Range["A3"].Value2 = "Địa chỉ";
+                collection[2].Range["B4"].Value2 = "Tên người lập"; collection[2].Range["A4"].Value2 = "Mã số thuế";
+                collection[2].Range["B5"].Value2 = "Tên kế toán trưởng"; collection[2].Range["A5"].Value2 = "Điện thoại";
+                collection[2].Range["B6"].Value2 = "Dư nợ ĐK"; collection[2].Range["A6"].Value2 = "Số tài khoản ngân hàng";
+                collection[2].Range["B7"].Value2 = "Dư có ĐK"; collection[2].Range["A7"].Value2 = "Tên ngân hàng";
+                collection[2].Range["B8"].Value2 = "Phát sinh Nợ"; collection[2].Range["A8"].Value2 = "Tên giám đốc";
+                collection[2].Range["B9"].Value2 = "Phát sinh Có"; collection[2].Range["A9"].Value2 = "Tên kế toán trưởng";
+                collection[2].Range["B10"].Value2 = "Đến ngày"; collection[2].Range["A10"].Value2 = "Mã tài khoản Công nợ";
+                collection[2].Range["B11"].Value2 = "Số dư cuối kỳ"; collection[2].Range["A11"].Value2 = "Tên tài khoản công nợ";
+                collection[2].Range["B12"].Value2 = "Tên KH"; collection[2].Range["A12"].Value2 = "Mã khách hàng";
+                collection[2].Range["B13"].Value2 = "Địa chỉ khách hàng"; collection[2].Range["A13"].Value2 = "Tên khách hàng";
+                collection[2].Range["B14"].Value2 = "Mã số thuế khách hàng"; collection[2].Range["A14"].Value2 = "Từ ngày";
+                collection[2].Range["B15"].Value2 = "Ngày In"; collection[2].Range["A15"].Value2 = "Đến ngày";
+                collection[2].Range["B16"].Value2 = "Mã tài khoản"; collection[2].Range["A16"].Value2 = "Ngày In";
+                collection[2].Range["B17"].Value2 = "Số dư cuối kỳ bằng số"; collection[2].Range["A17"].Value2 = "Đại diện Bên Bán";
+                collection[2].Range["B18"].Value2 = "Số dư cuối kỳ bằng số"; collection[2].Range["A18"].Value2 = "Đại diện Bên Mua";
+                collection[2].Range["B19"].Value2 = "Số dư cuối kỳ bằng số"; collection[2].Range["A19"].Value2 = "Dư nợ đầu kỳ";
+                collection[2].Range["B20"].Value2 = "Số dư cuối kỳ bằng số"; collection[2].Range["A20"].Value2 = "Dư có đầu kỳ";
+                collection[2].Range["B21"].Value2 = "Số dư cuối kỳ bằng số"; collection[2].Range["A21"].Value2 = "Phát sinh nợ trong kỳ";
+                collection[2].Range["B22"].Value2 = "Số dư cuối kỳ bằng số"; collection[2].Range["A22"].Value2 = "- Tiền hàng ";
+                collection[2].Range["B23"].Value2 = "Số dư cuối kỳ bằng số"; collection[2].Range["A23"].Value2 = "- Tiền VAT ";
+                collection[2].Range["B24"].Value2 = "Số dư cuối kỳ bằng số"; collection[2].Range["A24"].Value2 = "- Tiền mặt ";
+                collection[2].Range["B25"].Value2 = "Số dư cuối kỳ bằng số"; collection[2].Range["A25"].Value2 = "- Chuyển khoản ";
+                collection[2].Range["B26"].Value2 = "Số dư cuối kỳ bằng số"; collection[2].Range["A26"].Value2 = "Phát sinh có trong kỳ";
+                collection[2].Range["B27"].Value2 = "Số dư cuối kỳ bằng số"; collection[2].Range["A27"].Value2 = "- Tiền hàng ";
+                collection[2].Range["B28"].Value2 = "Số dư cuối kỳ bằng số"; collection[2].Range["A28"].Value2 = "- Tiền VAT ";
+                collection[2].Range["B29"].Value2 = "Số dư cuối kỳ bằng số"; collection[2].Range["A29"].Value2 = "- Tiền mặt ";
+                collection[2].Range["B30"].Value2 = "Số dư cuối kỳ bằng số"; collection[2].Range["A30"].Value2 = "- Chuyển khoản ";
+                collection[2].Range["B31"].Value2 = "Số dư cuối kỳ bằng số"; collection[2].Range["A31"].Value2 = "Số dư NỢ cuối kỳ";
+                collection[2].Range["B32"].Value2 = "Số dư cuối kỳ bằng số"; collection[2].Range["A32"].Value2 = "Số dư CÓ cuối kỳ";
+                collection[2].Range["B33"].Value2 = "Số dư cuối kỳ bằng số"; collection[2].Range["A33"].Value2 = "Số dư cuối kỳ";
+                collection[2].Range["B34"].Value2 = "Số dư cuối kỳ bằng số"; collection[2].Range["A34"].Value2 = "Số tiền bằng chữ (CK Nợ)";
+                collection[2].Range["B35"].Value2 = "Số dư cuối kỳ bằng số"; collection[2].Range["A35"].Value2 = "Số tiền bằng chữ (CK Có)";
+                collection[2].Range["B36"].Value2 = "Số dư cuối kỳ bằng số"; collection[2].Range["A36"].Value2 = "Số tiền ký quỹ (Bằng số) - 338811";
+                collection[2].Range["B37"].Value2 = "Số dư cuối kỳ bằng số"; collection[2].Range["A37"].Value2 = "Số tiền ký quỹ (Bằng chữ) - 338811";
+                collection[2].Range["B38"].Value2 = "Số dư cuối kỳ bằng số"; collection[2].Range["A38"].Value2 = "Số tiền ký quỹ (Bằng số) - 3386";
+                collection[2].Range["B39"].Value2 = "Số dư cuối kỳ bằng số"; collection[2].Range["A39"].Value2 = "Số tiền ký quỹ (Bằng chữ) - 3386";
+                collection[2].Range["B40"].Value2 = "Số dư cuối kỳ bằng số"; collection[2].Range["A40"].Value2 = "Số tiền bằng chữ cuối kỳ";
+
+                collection[1].Range["A1"].Value2 = "=NGUON!B1";
+                collection[1].Range["U1"].Value2 = "CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM";
+                collection[1].Range["U2"].Value2 = "Độc Lập - Tư Do - Hạnh Phúc";
+                collection[1].Range["S3"].Value2 = "'----------oOo----------";
+
+                //now save the workbook and exit Excel
+                excelworkBook.SaveAs(saveAsLocation);
+                excelworkBook.Close();
+                excel.Quit();
+                Process.Start(saveAsLocation);
+                return true;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                return false;
+            }
+            finally
+            {
+                excelSheet = null;
+                excelCellrange = null;
+                excelworkBook = null;
+            }
+        }
+        //INTHUEDV
+        public bool WriteDataTableToExcel_THUEDV_Mau1(System.Data.DataTable dataTable, DateTime from, DateTime to, DateTime print)
+        {
+            string saveAsLocation = Application.StartupPath + @"\Excel\THUEDV_" + DateTime.Now.ToString("HH_mm_ss") + ".xls";
+            string worksheetName = "INTHUEDV";
+
+            Microsoft.Office.Interop.Excel.Application excel;
+            Microsoft.Office.Interop.Excel.Workbook excelworkBook;
+            Microsoft.Office.Interop.Excel.Worksheet excelSheet;
+            Microsoft.Office.Interop.Excel.Range excelCellrange;
+
+            try
+            {
+                // Start Excel and get Application object.
+                excel = new Microsoft.Office.Interop.Excel.Application();
+
+                // for making Excel visible
+                excel.Visible = false;
+                excel.DisplayAlerts = false;
+
+                // Creation a new Workbook
+                excelworkBook = excel.Workbooks.Add(Type.Missing);
+
+                // Workk sheet
+                excelSheet = (Microsoft.Office.Interop.Excel.Worksheet)excelworkBook.ActiveSheet;
+                excelSheet.Name = worksheetName;
+                excelSheet.PageSetup.Application.ActiveWindow.DisplayGridlines = false;
+
+                #region General Cells
+                excelSheet.get_Range("B:B", Missing.Value).EntireColumn.Hidden = true;
+                excelSheet.get_Range("C:C", Missing.Value).EntireColumn.Hidden = true;
+                excelSheet.get_Range("D:D", Missing.Value).EntireColumn.Hidden = true;
+
+                //Kiểu chữ
+                excelSheet.Range["A1", "P" + (dataTable.Rows.Count + 15)].Font.Name = "Times New Roman";
+                //Font chữ
+                excelSheet.Range["A1", "P1"].Font.Size = 14;
+                excelSheet.Range["A2", "P3"].Font.Size = 12;
+                excelSheet.Range["A4", "P4"].Font.Size = 14;
+                excelSheet.Range["A5", "P6"].Font.Size = 12;
+                excelSheet.Range["A7", "P8"].Font.Size = 10;
+                excelSheet.Range["A9", "P" + (dataTable.Rows.Count + 8)].Font.Size = 9;
+                //In đậm
+                excelSheet.Range["A1", "P1"].Font.FontStyle = "Bold";
+                excelSheet.Range["A5", "P5"].Font.FontStyle = "Bold";
+                excelSheet.Range["A7", "P8"].Font.FontStyle = "Bold";
+                excelSheet.Range["A" + (dataTable.Rows.Count + 9), "p" + (dataTable.Rows.Count + 9)].Font.FontStyle = "Bold";
+                //Canh giữa chữ
+                excelSheet.Range["A1", "P4"].HorizontalAlignment = -4108;
+                excelSheet.Range["A7", "P8"].HorizontalAlignment = -4108;
+                excelSheet.Range["A7", "P8"].VerticalAlignment = -4108;
+                excelSheet.Range["A9", "A" + (dataTable.Rows.Count + 8)].HorizontalAlignment = -4108;
+                excelSheet.Range["E9", "E" + (dataTable.Rows.Count + 8)].HorizontalAlignment = -4108;
+                excelSheet.Range["H9", "H" + (dataTable.Rows.Count + 8)].HorizontalAlignment = -4108;
+                excelSheet.Range["N9", "N" + (dataTable.Rows.Count + 8)].HorizontalAlignment = -4108;
+                excelSheet.Range["A" + (dataTable.Rows.Count + 10), "P" + (dataTable.Rows.Count + 15)].HorizontalAlignment = -4108;
+                //Wrap Text
+                excelSheet.Range["M7"].WrapText = true;
+                //Merge
+                excelSheet.Range["A1", "P1"].MergeCells = true;
+                excelSheet.Range["A2", "P2"].MergeCells = true;
+                excelSheet.Range["A3", "P3"].MergeCells = true;
+                excelSheet.Range["A4", "P4"].MergeCells = true;
+                excelSheet.Range["A7", "A8"].MergeCells = true;
+                excelSheet.Range["E7", "I7"].MergeCells = true;
+                excelSheet.Range["J7", "J8"].MergeCells = true;
+                excelSheet.Range["K7", "K8"].MergeCells = true;
+                excelSheet.Range["L7", "L8"].MergeCells = true;
+                excelSheet.Range["M7", "M8"].MergeCells = true;
+                excelSheet.Range["N7", "N8"].MergeCells = true;
+                excelSheet.Range["O7", "O8"].MergeCells = true;
+                excelSheet.Range["P7", "P8"].MergeCells = true;
+                excelSheet.Range["A" + (dataTable.Rows.Count + 11), "F" + (dataTable.Rows.Count + 11)].MergeCells = true;
+                //Kích thước Cột và Dòng
+                excelSheet.Range["A1", "A" + (dataTable.Rows.Count + 17)].RowHeight = "16.5";
+                excelSheet.Range["A1"].ColumnWidth = 6;
+                excelSheet.Range["E1"].ColumnWidth = 8;
+                excelSheet.Range["F1"].ColumnWidth = 15;
+                excelSheet.Range["G1"].ColumnWidth = 10;
+                excelSheet.Range["H1"].ColumnWidth = 8;
+                excelSheet.Range["I1"].ColumnWidth = 10;
+                excelSheet.Range["J1"].ColumnWidth = 35;
+                excelSheet.Range["K1"].ColumnWidth = 18;
+                excelSheet.Range["L1"].ColumnWidth = 25;
+                excelSheet.Range["M1"].ColumnWidth = 15;
+                excelSheet.Range["N1"].ColumnWidth = 8;
+                excelSheet.Range["O1"].ColumnWidth = 12;
+                excelSheet.Range["P1"].ColumnWidth = 12;
+                //Border
+                excelSheet.Range["A7", "P8"].Borders.LineStyle = Microsoft.Office.Interop.Excel.XlLineStyle.xlContinuous;
+                excelSheet.Range["A7", "P8"].Borders.Weight = 2d;
+                for (int i = 9; i <= dataTable.Rows.Count + 8; i++)
+                {
+                    BorderAround(excelSheet.Range["A" + i], System.Drawing.ColorTranslator.ToOle(System.Drawing.Color.FromArgb(79, 129, 189)));
+                    BorderAround(excelSheet.Range["B" + i], System.Drawing.ColorTranslator.ToOle(System.Drawing.Color.FromArgb(79, 129, 189)));
+                    BorderAround(excelSheet.Range["C" + i], System.Drawing.ColorTranslator.ToOle(System.Drawing.Color.FromArgb(79, 129, 189)));
+                    BorderAround(excelSheet.Range["D" + i], System.Drawing.ColorTranslator.ToOle(System.Drawing.Color.FromArgb(79, 129, 189)));
+                    BorderAround(excelSheet.Range["E" + i], System.Drawing.ColorTranslator.ToOle(System.Drawing.Color.FromArgb(79, 129, 189)));
+                    BorderAround(excelSheet.Range["F" + i], System.Drawing.ColorTranslator.ToOle(System.Drawing.Color.FromArgb(79, 129, 189)));
+                    BorderAround(excelSheet.Range["G" + i], System.Drawing.ColorTranslator.ToOle(System.Drawing.Color.FromArgb(79, 129, 189)));
+                    BorderAround(excelSheet.Range["H" + i], System.Drawing.ColorTranslator.ToOle(System.Drawing.Color.FromArgb(79, 129, 189)));
+                    BorderAround(excelSheet.Range["I" + i], System.Drawing.ColorTranslator.ToOle(System.Drawing.Color.FromArgb(79, 129, 189)));
+                    BorderAround(excelSheet.Range["J" + i], System.Drawing.ColorTranslator.ToOle(System.Drawing.Color.FromArgb(79, 129, 189)));
+                    BorderAround(excelSheet.Range["K" + i], System.Drawing.ColorTranslator.ToOle(System.Drawing.Color.FromArgb(79, 129, 189)));
+                    BorderAround(excelSheet.Range["L" + i], System.Drawing.ColorTranslator.ToOle(System.Drawing.Color.FromArgb(79, 129, 189)));
+                    BorderAround(excelSheet.Range["M" + i], System.Drawing.ColorTranslator.ToOle(System.Drawing.Color.FromArgb(79, 129, 189)));
+                    BorderAround(excelSheet.Range["N" + i], System.Drawing.ColorTranslator.ToOle(System.Drawing.Color.FromArgb(79, 129, 189)));
+                    BorderAround(excelSheet.Range["O" + i], System.Drawing.ColorTranslator.ToOle(System.Drawing.Color.FromArgb(79, 129, 189)));
+                    BorderAround(excelSheet.Range["P" + i], System.Drawing.ColorTranslator.ToOle(System.Drawing.Color.FromArgb(79, 129, 189)));
+                }
+                excelSheet.Range["A" + (dataTable.Rows.Count + 9), "P" + (dataTable.Rows.Count + 9)].Borders.LineStyle = Microsoft.Office.Interop.Excel.XlLineStyle.xlContinuous;
+                excelSheet.Range["A" + (dataTable.Rows.Count + 9), "P" + (dataTable.Rows.Count + 9)].Borders.Weight = 2d;
+                //Công thức
+                excelSheet.Range["M" + (dataTable.Rows.Count + 9), "M" + (dataTable.Rows.Count + 9)].Formula = String.Format("=sum(M9:M{0})", dataTable.Rows.Count + 8);
+                excelSheet.Range["O" + (dataTable.Rows.Count + 9), "O" + (dataTable.Rows.Count + 9)].Formula = String.Format("=sum(O9:O{0})", dataTable.Rows.Count + 8);
+                //format
+                excelSheet.Range["M9", "M" + (dataTable.Rows.Count + 9)].EntireColumn.NumberFormat = "#,###";
+                excelSheet.Range["O9", "O" + (dataTable.Rows.Count + 9)].EntireColumn.NumberFormat = "#,###";
+                #endregion
+
+                //gắn header
+                excelSheet.Range["A1"].Value2 = "BẢNG KÊ HÓA ĐƠN CHỨNG TỪ HÀNG HÓA, DỊCH VỤ MUA VÀO";
+                excelSheet.Range["A2"].Value2 = "Kèm theo tờ khai thuế GTGT";
+                excelSheet.Range["A3"].Value2 = "(Dùng cho cơ sở kê khai khấu trừ thuế hàng tháng)";
+                excelSheet.Range["A4"].Value2 = "Tháng " + from.Month + " năm " + from.Year;
+                excelSheet.Range["A5"].Value2 = "Tên cơ sở kinh doanh : CÔNG TY TNHH THẾ GIỚI THỜI TRANG GIẢI TRÍ BIGBANG";
+                excelSheet.Range["L5"].Value2 = "Mã số thuế  : 0312865471";
+                excelSheet.Range["A6"].Value2 = "Địa chỉ  : 14-16 Bình Gỉa, P.13, Quận Tân Bình, TP.HCM";
+
+                excelSheet.Range["A7"].Value2 = "STT";
+                excelSheet.Range["E7"].Value2 = "Hóa đơn chứng từ mua";
+                excelSheet.Range["J7"].Value2 = "Tên người bán";
+                excelSheet.Range["K7"].Value2 = "Mã số thuế";
+                excelSheet.Range["L7"].Value2 = "Mặt hàng";
+                excelSheet.Range["M7"].Value2 = "Doanh số mua chưa thuế";
+                excelSheet.Range["N7"].Value2 = "Thuế suất";
+                excelSheet.Range["O7"].Value2 = "Thuế GTGT";
+                excelSheet.Range["P7"].Value2 = "Ghi chú";
+                excelSheet.Range["E8"].Value2 = "Mã";
+                excelSheet.Range["F8"].Value2 = "KH Mẫu";
+                excelSheet.Range["G8"].Value2 = "Seri";
+                excelSheet.Range["H8"].Value2 = "Số HĐ";
+                excelSheet.Range["I8"].Value2 = "Ngày HĐ";
+
+                excelSheet.Range["A" + (dataTable.Rows.Count + 9)].Value2 = "TỔNG CỘNG";
+                excelSheet.Range["J" + (dataTable.Rows.Count + 11)].Value2 = "Kế toán trưởng";
+                excelSheet.Range["N" + (dataTable.Rows.Count + 11)].Value2 = "Giám đốc";
+                excelSheet.Range["N" + (dataTable.Rows.Count + 15)].Value2 = "Dương Minh Thống";
+                excelSheet.Range["N" + (dataTable.Rows.Count + 10)].Value2 = "Ngày " + print.Day + " tháng " + print.Month + " năm " + print.Year;
+                // loop through each row and add values to our sheet
+                int rowcount = 8;
+                foreach (DataRow datarow in dataTable.Rows)
+                {
+                    rowcount += 1;
+                    excelSheet.Range["A" + rowcount].Value2 = rowcount - 8;
+                    excelSheet.Range["E" + rowcount].Value2 = Utils.CStrDef(datarow["MA_HD"], "");
+                    excelSheet.Range["F" + rowcount].Value2 = Utils.CStrDef(datarow["TEN_KH"], "");
+                    excelSheet.Range["G" + rowcount].Value2 = Utils.CStrDef(datarow["HD_SR"], "");
+                    excelSheet.Range["H" + rowcount].Value2 = Utils.CStrDef(datarow["SO_HOADON"], "");
+                    excelSheet.Range["I" + rowcount].Value2 = Utils.CDateDef(datarow["NGAY_HOADON"], DateTime.MinValue).ToString("dd/MM/yy");
+                    excelSheet.Range["J" + rowcount].Value2 = Utils.CStrDef(datarow["TEN_NV_BAN"], "");
+                    excelSheet.Range["K" + rowcount].Value2 = Utils.CStrDef(datarow["MASO_THUE"], "");
+                    excelSheet.Range["L" + rowcount].Value2 = Utils.CStrDef(datarow["MAT_HANG"], "");
+                    excelSheet.Range["M" + rowcount].Value2 = Utils.CStrDef(datarow["THANH_TIEN_VND"], "");
+                    excelSheet.Range["N" + rowcount].Value2 = Utils.CStrDef(datarow["TS_GTGT"], "");
+                    excelSheet.Range["O" + rowcount].Value2 = Utils.CStrDef(datarow["TIEN_THUE_VND"], "");
+                    excelSheet.Range["P" + rowcount].Value2 = Utils.CStrDef(datarow["GHI_CHU"], "");
+                }
+                //FreezePanes
+                //excelSheet.Range["D10"].Select();
+                //excel.ActiveWindow.FreezePanes = true;
+
+                //now save the workbook and exit Excel
+                excelworkBook.SaveAs(saveAsLocation);
+                excelworkBook.Close();
+                excel.Quit();
+                Process.Start(saveAsLocation);
+                return true;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                return false;
+            }
+            finally
+            {
+                excelSheet = null;
+                excelCellrange = null;
+                excelworkBook = null;
+            }
+        }
+        public bool WriteDataTableToExcel_THUEDV_Mau2(System.Data.DataTable dataTable, DateTime from, DateTime to, DateTime print)
+        {
+            string saveAsLocation = Application.StartupPath + @"\Excel\THUEDV_" + DateTime.Now.ToString("HH_mm_ss") + ".xls";
+            string worksheetName = "INTHUEDV";
+
+            Microsoft.Office.Interop.Excel.Application excel;
+            Microsoft.Office.Interop.Excel.Workbook excelworkBook;
+            Microsoft.Office.Interop.Excel.Worksheet excelSheet;
+            Microsoft.Office.Interop.Excel.Range excelCellrange;
+
+            try
+            {
+                // Start Excel and get Application object.
+                excel = new Microsoft.Office.Interop.Excel.Application();
+
+                // for making Excel visible
+                excel.Visible = false;
+                excel.DisplayAlerts = false;
+
+                // Creation a new Workbook
+                excelworkBook = excel.Workbooks.Add(Type.Missing);
+
+                // Workk sheet
+                excelSheet = (Microsoft.Office.Interop.Excel.Worksheet)excelworkBook.ActiveSheet;
+                excelSheet.Name = worksheetName;
+                excelSheet.PageSetup.Application.ActiveWindow.DisplayGridlines = false;
+
+                #region General Cells
+                excelSheet.get_Range("B:B", Missing.Value).EntireColumn.Hidden = true;
+                excelSheet.get_Range("C:C", Missing.Value).EntireColumn.Hidden = true;
+                excelSheet.get_Range("D:D", Missing.Value).EntireColumn.Hidden = true;
+
+                //Kiểu chữ
+                excelSheet.Range["A1", "Q" + (dataTable.Rows.Count + 15)].Font.Name = "Times New Roman";
+                //Font chữ
+                excelSheet.Range["A1", "Q1"].Font.Size = 14;
+                excelSheet.Range["A2", "Q3"].Font.Size = 12;
+                excelSheet.Range["A4", "Q4"].Font.Size = 14;
+                excelSheet.Range["A5", "Q6"].Font.Size = 12;
+                excelSheet.Range["A7", "Q8"].Font.Size = 10;
+                excelSheet.Range["A9", "Q" + (dataTable.Rows.Count + 8)].Font.Size = 9;
+                //In đậm
+                excelSheet.Range["A1", "Q1"].Font.FontStyle = "Bold";
+                excelSheet.Range["A5", "Q5"].Font.FontStyle = "Bold";
+                excelSheet.Range["A7", "Q8"].Font.FontStyle = "Bold";
+                excelSheet.Range["A" + (dataTable.Rows.Count + 9), "Q" + (dataTable.Rows.Count + 9)].Font.FontStyle = "Bold";
+                //Canh giữa chữ
+                excelSheet.Range["A1", "Q4"].HorizontalAlignment = -4108;
+                excelSheet.Range["A7", "Q8"].HorizontalAlignment = -4108;
+                excelSheet.Range["A7", "Q8"].VerticalAlignment = -4108;
+                excelSheet.Range["A9", "A" + (dataTable.Rows.Count + 8)].HorizontalAlignment = -4108;
+                excelSheet.Range["E9", "E" + (dataTable.Rows.Count + 8)].HorizontalAlignment = -4108;
+                excelSheet.Range["H9", "H" + (dataTable.Rows.Count + 8)].HorizontalAlignment = -4108;
+                excelSheet.Range["O9", "O" + (dataTable.Rows.Count + 8)].HorizontalAlignment = -4108;
+                excelSheet.Range["A" + (dataTable.Rows.Count + 10), "Q" + (dataTable.Rows.Count + 15)].HorizontalAlignment = -4108;
+                //Wrap Text
+                excelSheet.Range["N7"].WrapText = true;
+                //Merge
+                excelSheet.Range["A1", "Q1"].MergeCells = true;
+                excelSheet.Range["A2", "Q2"].MergeCells = true;
+                excelSheet.Range["A3", "Q3"].MergeCells = true;
+                excelSheet.Range["A4", "Q4"].MergeCells = true;
+                excelSheet.Range["A7", "A8"].MergeCells = true;
+                excelSheet.Range["E7", "I7"].MergeCells = true;
+                excelSheet.Range["J7", "J8"].MergeCells = true;
+                excelSheet.Range["K7", "K8"].MergeCells = true;
+                excelSheet.Range["L7", "L8"].MergeCells = true;
+                excelSheet.Range["M7", "M8"].MergeCells = true;
+                excelSheet.Range["N7", "N8"].MergeCells = true;
+                excelSheet.Range["O7", "O8"].MergeCells = true;
+                excelSheet.Range["P7", "P8"].MergeCells = true;
+                excelSheet.Range["Q7", "Q8"].MergeCells = true;
+                excelSheet.Range["A" + (dataTable.Rows.Count + 11), "F" + (dataTable.Rows.Count + 11)].MergeCells = true;
+                //Kích thước Cột và Dòng
+                excelSheet.Range["A1", "A" + (dataTable.Rows.Count + 17)].RowHeight = "16.5";
+                excelSheet.Range["A1"].ColumnWidth = 6;
+                excelSheet.Range["E1"].ColumnWidth = 8;
+                excelSheet.Range["F1"].ColumnWidth = 15;
+                excelSheet.Range["G1"].ColumnWidth = 10;
+                excelSheet.Range["H1"].ColumnWidth = 8;
+                excelSheet.Range["I1"].ColumnWidth = 10;
+                excelSheet.Range["J1"].ColumnWidth = 35;
+                excelSheet.Range["K1"].ColumnWidth = 18;
+                excelSheet.Range["L1"].ColumnWidth = 25;
+                excelSheet.Range["M1"].ColumnWidth = 25;
+                excelSheet.Range["N1"].ColumnWidth = 15;
+                excelSheet.Range["O1"].ColumnWidth = 8;
+                excelSheet.Range["P1"].ColumnWidth = 12;
+                excelSheet.Range["Q1"].ColumnWidth = 12;
+                //Border
+                excelSheet.Range["A7", "Q8"].Borders.LineStyle = Microsoft.Office.Interop.Excel.XlLineStyle.xlContinuous;
+                excelSheet.Range["A7", "Q8"].Borders.Weight = 2d;
+                for (int i = 9; i <= dataTable.Rows.Count + 8; i++)
+                {
+                    BorderAround(excelSheet.Range["A" + i], System.Drawing.ColorTranslator.ToOle(System.Drawing.Color.FromArgb(79, 129, 189)));
+                    BorderAround(excelSheet.Range["B" + i], System.Drawing.ColorTranslator.ToOle(System.Drawing.Color.FromArgb(79, 129, 189)));
+                    BorderAround(excelSheet.Range["C" + i], System.Drawing.ColorTranslator.ToOle(System.Drawing.Color.FromArgb(79, 129, 189)));
+                    BorderAround(excelSheet.Range["D" + i], System.Drawing.ColorTranslator.ToOle(System.Drawing.Color.FromArgb(79, 129, 189)));
+                    BorderAround(excelSheet.Range["E" + i], System.Drawing.ColorTranslator.ToOle(System.Drawing.Color.FromArgb(79, 129, 189)));
+                    BorderAround(excelSheet.Range["F" + i], System.Drawing.ColorTranslator.ToOle(System.Drawing.Color.FromArgb(79, 129, 189)));
+                    BorderAround(excelSheet.Range["G" + i], System.Drawing.ColorTranslator.ToOle(System.Drawing.Color.FromArgb(79, 129, 189)));
+                    BorderAround(excelSheet.Range["H" + i], System.Drawing.ColorTranslator.ToOle(System.Drawing.Color.FromArgb(79, 129, 189)));
+                    BorderAround(excelSheet.Range["I" + i], System.Drawing.ColorTranslator.ToOle(System.Drawing.Color.FromArgb(79, 129, 189)));
+                    BorderAround(excelSheet.Range["J" + i], System.Drawing.ColorTranslator.ToOle(System.Drawing.Color.FromArgb(79, 129, 189)));
+                    BorderAround(excelSheet.Range["K" + i], System.Drawing.ColorTranslator.ToOle(System.Drawing.Color.FromArgb(79, 129, 189)));
+                    BorderAround(excelSheet.Range["L" + i], System.Drawing.ColorTranslator.ToOle(System.Drawing.Color.FromArgb(79, 129, 189)));
+                    BorderAround(excelSheet.Range["M" + i], System.Drawing.ColorTranslator.ToOle(System.Drawing.Color.FromArgb(79, 129, 189)));
+                    BorderAround(excelSheet.Range["N" + i], System.Drawing.ColorTranslator.ToOle(System.Drawing.Color.FromArgb(79, 129, 189)));
+                    BorderAround(excelSheet.Range["O" + i], System.Drawing.ColorTranslator.ToOle(System.Drawing.Color.FromArgb(79, 129, 189)));
+                    BorderAround(excelSheet.Range["P" + i], System.Drawing.ColorTranslator.ToOle(System.Drawing.Color.FromArgb(79, 129, 189)));
+                    BorderAround(excelSheet.Range["Q" + i], System.Drawing.ColorTranslator.ToOle(System.Drawing.Color.FromArgb(79, 129, 189)));
+                }
+                excelSheet.Range["A" + (dataTable.Rows.Count + 9), "Q" + (dataTable.Rows.Count + 9)].Borders.LineStyle = Microsoft.Office.Interop.Excel.XlLineStyle.xlContinuous;
+                excelSheet.Range["A" + (dataTable.Rows.Count + 9), "Q" + (dataTable.Rows.Count + 9)].Borders.Weight = 2d;
+                //Công thức
+                excelSheet.Range["N" + (dataTable.Rows.Count + 9), "N" + (dataTable.Rows.Count + 9)].Formula = String.Format("=sum(N9:N{0})", dataTable.Rows.Count + 8);
+                excelSheet.Range["P" + (dataTable.Rows.Count + 9), "P" + (dataTable.Rows.Count + 9)].Formula = String.Format("=sum(P9:P{0})", dataTable.Rows.Count + 8);
+                //format
+                excelSheet.Range["N9", "N" + (dataTable.Rows.Count + 9)].EntireColumn.NumberFormat = "#,###";
+                excelSheet.Range["P9", "P" + (dataTable.Rows.Count + 9)].EntireColumn.NumberFormat = "#,###";
+                #endregion
+
+                //gắn header
+                excelSheet.Range["A1"].Value2 = "BẢNG KÊ HÓA ĐƠN CHỨNG TỪ HÀNG HÓA, DỊCH VỤ MUA VÀO";
+                excelSheet.Range["A2"].Value2 = "Kèm theo tờ khai thuế GTGT";
+                excelSheet.Range["A3"].Value2 = "(Dùng cho cơ sở kê khai khấu trừ thuế hàng tháng)";
+                excelSheet.Range["A4"].Value2 = "Tháng " + from.Month + " năm " + from.Year;
+                excelSheet.Range["A5"].Value2 = "Tên cơ sở kinh doanh : CÔNG TY TNHH THẾ GIỚI THỜI TRANG GIẢI TRÍ BIGBANG";
+                excelSheet.Range["L5"].Value2 = "Mã số thuế  : 0312865471";
+                excelSheet.Range["A6"].Value2 = "Địa chỉ  : 14-16 Bình Gỉa, P.13, Quận Tân Bình, TP.HCM";
+
+                excelSheet.Range["A7"].Value2 = "STT";
+                excelSheet.Range["E7"].Value2 = "Hóa đơn chứng từ mua";
+                excelSheet.Range["J7"].Value2 = "Tên người bán";
+                excelSheet.Range["K7"].Value2 = "Mã số thuế";
+                excelSheet.Range["L7"].Value2 = "Địa chỉ";
+                excelSheet.Range["M7"].Value2 = "Mặt hàng";
+                excelSheet.Range["N7"].Value2 = "Doanh số mua chưa thuế";
+                excelSheet.Range["O7"].Value2 = "Thuế suất";
+                excelSheet.Range["P7"].Value2 = "Thuế GTGT";
+                excelSheet.Range["Q7"].Value2 = "Ghi chú";
+                excelSheet.Range["E8"].Value2 = "Mã";
+                excelSheet.Range["F8"].Value2 = "KH Mẫu";
+                excelSheet.Range["G8"].Value2 = "Seri";
+                excelSheet.Range["H8"].Value2 = "Số HĐ";
+                excelSheet.Range["I8"].Value2 = "Ngày HĐ";
+
+                excelSheet.Range["A" + (dataTable.Rows.Count + 9)].Value2 = "TỔNG CỘNG";
+                excelSheet.Range["J" + (dataTable.Rows.Count + 11)].Value2 = "Kế toán trưởng";
+                excelSheet.Range["N" + (dataTable.Rows.Count + 11)].Value2 = "Giám đốc";
+                excelSheet.Range["N" + (dataTable.Rows.Count + 15)].Value2 = "Dương Minh Thống";
+                excelSheet.Range["N" + (dataTable.Rows.Count + 10)].Value2 = "Ngày " + print.Day + " tháng " + print.Month + " năm " + print.Year;
+                // loop through each row and add values to our sheet
+                int rowcount = 8;
+                foreach (DataRow datarow in dataTable.Rows)
+                {
+                    rowcount += 1;
+                    excelSheet.Range["A" + rowcount].Value2 = rowcount - 8;
+                    excelSheet.Range["E" + rowcount].Value2 = Utils.CStrDef(datarow["MA_HD"], "");
+                    excelSheet.Range["F" + rowcount].Value2 = Utils.CStrDef(datarow["TEN_KH"], "");
+                    excelSheet.Range["G" + rowcount].Value2 = Utils.CStrDef(datarow["HD_SR"], "");
+                    excelSheet.Range["H" + rowcount].Value2 = Utils.CStrDef(datarow["SO_HOADON"], "");
+                    excelSheet.Range["I" + rowcount].Value2 = Utils.CDateDef(datarow["NGAY_HOADON"], DateTime.MinValue).ToString("dd/MM/yy");
+                    excelSheet.Range["J" + rowcount].Value2 = Utils.CStrDef(datarow["TEN_NV_BAN"], "");
+                    excelSheet.Range["K" + rowcount].Value2 = Utils.CStrDef(datarow["MASO_THUE"], "");
+                    excelSheet.Range["L" + rowcount].Value2 = Utils.CStrDef(datarow["DIA_CHI"], "");
+                    excelSheet.Range["M" + rowcount].Value2 = Utils.CStrDef(datarow["MAT_HANG"], "");
+                    excelSheet.Range["N" + rowcount].Value2 = Utils.CStrDef(datarow["THANH_TIEN_VND"], "");
+                    excelSheet.Range["O" + rowcount].Value2 = Utils.CStrDef(datarow["TS_GTGT"], "");
+                    excelSheet.Range["P" + rowcount].Value2 = Utils.CStrDef(datarow["TIEN_THUE_VND"], "");
+                    excelSheet.Range["Q" + rowcount].Value2 = Utils.CStrDef(datarow["GHI_CHU"], "");
+                }
+                //FreezePanes
+                //excelSheet.Range["D10"].Select();
+                //excel.ActiveWindow.FreezePanes = true;
+
+                //now save the workbook and exit Excel
+                excelworkBook.SaveAs(saveAsLocation);
+                excelworkBook.Close();
+                excel.Quit();
+                Process.Start(saveAsLocation);
+                return true;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                return false;
+            }
+            finally
+            {
+                excelSheet = null;
+                excelCellrange = null;
+                excelworkBook = null;
+            }
+        }
+        //INTHUEDR
+        public bool WriteDataTableToExcel_THUEDR_Mau1(System.Data.DataTable dataTable, DateTime from, DateTime to, DateTime print)
+        {
+            string saveAsLocation = Application.StartupPath + @"\Excel\THUEDR_" + DateTime.Now.ToString("HH_mm_ss") + ".xls";
+            string worksheetName = "INTHUEDR";
+
+            Microsoft.Office.Interop.Excel.Application excel;
+            Microsoft.Office.Interop.Excel.Workbook excelworkBook;
+            Microsoft.Office.Interop.Excel.Worksheet excelSheet;
+            Microsoft.Office.Interop.Excel.Range excelCellrange;
+
+            try
+            {
+                // Start Excel and get Application object.
+                excel = new Microsoft.Office.Interop.Excel.Application();
+
+                // for making Excel visible
+                excel.Visible = false;
+                excel.DisplayAlerts = false;
+
+                // Creation a new Workbook
+                excelworkBook = excel.Workbooks.Add(Type.Missing);
+
+                // Workk sheet
+                excelSheet = (Microsoft.Office.Interop.Excel.Worksheet)excelworkBook.ActiveSheet;
+                excelSheet.Name = worksheetName;
+                excelSheet.PageSetup.Application.ActiveWindow.DisplayGridlines = false;
+
+                #region General Cells
+                excelSheet.get_Range("B:B", Missing.Value).EntireColumn.Hidden = true;
+                excelSheet.get_Range("C:C", Missing.Value).EntireColumn.Hidden = true;
+                excelSheet.get_Range("D:D", Missing.Value).EntireColumn.Hidden = true;
+                excelSheet.get_Range("F:F", Missing.Value).EntireColumn.Hidden = true;
+
+                //Kiểu chữ
+                excelSheet.Range["A1", "P" + (dataTable.Rows.Count + 15)].Font.Name = "Times New Roman";
+                //Font chữ
+                excelSheet.Range["A1", "P1"].Font.Size = 14;
+                excelSheet.Range["A2", "P3"].Font.Size = 12;
+                excelSheet.Range["A4", "P4"].Font.Size = 14;
+                excelSheet.Range["A5", "P6"].Font.Size = 12;
+                excelSheet.Range["A7", "P8"].Font.Size = 10;
+                excelSheet.Range["A9", "P" + (dataTable.Rows.Count + 8)].Font.Size = 9;
+                //In đậm
+                excelSheet.Range["A1", "P1"].Font.FontStyle = "Bold";
+                excelSheet.Range["A5", "P5"].Font.FontStyle = "Bold";
+                excelSheet.Range["A7", "P8"].Font.FontStyle = "Bold";
+                excelSheet.Range["A" + (dataTable.Rows.Count + 9), "P" + (dataTable.Rows.Count + 12)].Font.FontStyle = "Bold";
+                excelSheet.Range["A" + (dataTable.Rows.Count + 14), "P" + (dataTable.Rows.Count + 16)].Font.FontStyle = "Bold";
+                //Canh giữa chữ
+                excelSheet.Range["A1", "P4"].HorizontalAlignment = -4108;
+                excelSheet.Range["A7", "P8"].HorizontalAlignment = -4108;
+                excelSheet.Range["A7", "P8"].VerticalAlignment = -4108;
+                excelSheet.Range["A9", "A" + (dataTable.Rows.Count + 8)].HorizontalAlignment = -4108;
+                excelSheet.Range["E9", "E" + (dataTable.Rows.Count + 8)].HorizontalAlignment = -4108;
+                excelSheet.Range["H9", "H" + (dataTable.Rows.Count + 8)].HorizontalAlignment = -4108;
+                excelSheet.Range["N9", "N" + (dataTable.Rows.Count + 8)].HorizontalAlignment = -4108;
+                excelSheet.Range["A" + (dataTable.Rows.Count + 13), "P" + (dataTable.Rows.Count + 15)].HorizontalAlignment = -4108;
+                excelSheet.Range["A" + (dataTable.Rows.Count + 11), "L" + (dataTable.Rows.Count + 12)].Style.HorizontalAlignment = Microsoft.Office.Interop.Excel.XlHAlign.xlHAlignRight;
+                excelSheet.Range["A5", "A6"].Cells.HorizontalAlignment = Microsoft.Office.Interop.Excel.XlHAlign.xlHAlignLeft;
+                //Wrap Text
+                excelSheet.Range["M7"].WrapText = true;
+                //Merge
+                excelSheet.Range["A1", "P1"].MergeCells = true;
+                excelSheet.Range["A2", "P2"].MergeCells = true;
+                excelSheet.Range["A3", "P3"].MergeCells = true;
+                excelSheet.Range["A4", "P4"].MergeCells = true;
+                excelSheet.Range["A5", "K5"].MergeCells = true;
+                excelSheet.Range["A6", "K6"].MergeCells = true;
+                excelSheet.Range["A7", "A8"].MergeCells = true;
+                excelSheet.Range["E7", "I7"].MergeCells = true;
+                excelSheet.Range["J7", "J8"].MergeCells = true;
+                excelSheet.Range["K7", "K8"].MergeCells = true;
+                excelSheet.Range["L7", "L8"].MergeCells = true;
+                excelSheet.Range["M7", "M8"].MergeCells = true;
+                excelSheet.Range["N7", "N8"].MergeCells = true;
+                excelSheet.Range["O7", "O8"].MergeCells = true;
+                excelSheet.Range["P7", "P8"].MergeCells = true;
+                excelSheet.Range["A" + (dataTable.Rows.Count + 9), "E" + (dataTable.Rows.Count + 9)].MergeCells = true;
+                excelSheet.Range["A" + (dataTable.Rows.Count + 11), "J" + (dataTable.Rows.Count + 11)].MergeCells = true;
+                excelSheet.Range["A" + (dataTable.Rows.Count + 12), "J" + (dataTable.Rows.Count + 12)].MergeCells = true;
+                excelSheet.Range["K" + (dataTable.Rows.Count + 11), "L" + (dataTable.Rows.Count + 11)].MergeCells = true;
+                excelSheet.Range["K" + (dataTable.Rows.Count + 12), "L" + (dataTable.Rows.Count + 12)].MergeCells = true;
+                //Kích thước Cột và Dòng
+                excelSheet.Range["A1", "A" + (dataTable.Rows.Count + 17)].RowHeight = "16.5";
+                excelSheet.Range["A1"].ColumnWidth = 6;
+                excelSheet.Range["E1"].ColumnWidth = 8;
+                excelSheet.Range["G1"].ColumnWidth = 10;
+                excelSheet.Range["H1"].ColumnWidth = 8;
+                excelSheet.Range["I1"].ColumnWidth = 10;
+                excelSheet.Range["J1"].ColumnWidth = 35;
+                excelSheet.Range["K1"].ColumnWidth = 18;
+                excelSheet.Range["L1"].ColumnWidth = 25;
+                excelSheet.Range["M1"].ColumnWidth = 15;
+                excelSheet.Range["N1"].ColumnWidth = 8;
+                excelSheet.Range["O1"].ColumnWidth = 12;
+                excelSheet.Range["P1"].ColumnWidth = 12;
+                //Border
+                excelSheet.Range["A7", "P8"].Borders.LineStyle = Microsoft.Office.Interop.Excel.XlLineStyle.xlContinuous;
+                excelSheet.Range["A7", "P8"].Borders.Weight = 2d;
+                for (int i = 9; i <= dataTable.Rows.Count + 8; i++)
+                {
+                    BorderAround(excelSheet.Range["A" + i], System.Drawing.ColorTranslator.ToOle(System.Drawing.Color.FromArgb(79, 129, 189)));
+                    BorderAround(excelSheet.Range["B" + i], System.Drawing.ColorTranslator.ToOle(System.Drawing.Color.FromArgb(79, 129, 189)));
+                    BorderAround(excelSheet.Range["C" + i], System.Drawing.ColorTranslator.ToOle(System.Drawing.Color.FromArgb(79, 129, 189)));
+                    BorderAround(excelSheet.Range["D" + i], System.Drawing.ColorTranslator.ToOle(System.Drawing.Color.FromArgb(79, 129, 189)));
+                    BorderAround(excelSheet.Range["E" + i], System.Drawing.ColorTranslator.ToOle(System.Drawing.Color.FromArgb(79, 129, 189)));
+                    BorderAround(excelSheet.Range["F" + i], System.Drawing.ColorTranslator.ToOle(System.Drawing.Color.FromArgb(79, 129, 189)));
+                    BorderAround(excelSheet.Range["G" + i], System.Drawing.ColorTranslator.ToOle(System.Drawing.Color.FromArgb(79, 129, 189)));
+                    BorderAround(excelSheet.Range["H" + i], System.Drawing.ColorTranslator.ToOle(System.Drawing.Color.FromArgb(79, 129, 189)));
+                    BorderAround(excelSheet.Range["I" + i], System.Drawing.ColorTranslator.ToOle(System.Drawing.Color.FromArgb(79, 129, 189)));
+                    BorderAround(excelSheet.Range["J" + i], System.Drawing.ColorTranslator.ToOle(System.Drawing.Color.FromArgb(79, 129, 189)));
+                    BorderAround(excelSheet.Range["K" + i], System.Drawing.ColorTranslator.ToOle(System.Drawing.Color.FromArgb(79, 129, 189)));
+                    BorderAround(excelSheet.Range["L" + i], System.Drawing.ColorTranslator.ToOle(System.Drawing.Color.FromArgb(79, 129, 189)));
+                    BorderAround(excelSheet.Range["M" + i], System.Drawing.ColorTranslator.ToOle(System.Drawing.Color.FromArgb(79, 129, 189)));
+                    BorderAround(excelSheet.Range["N" + i], System.Drawing.ColorTranslator.ToOle(System.Drawing.Color.FromArgb(79, 129, 189)));
+                    BorderAround(excelSheet.Range["O" + i], System.Drawing.ColorTranslator.ToOle(System.Drawing.Color.FromArgb(79, 129, 189)));
+                    BorderAround(excelSheet.Range["P" + i], System.Drawing.ColorTranslator.ToOle(System.Drawing.Color.FromArgb(79, 129, 189)));
+                }
+                excelSheet.Range["A" + (dataTable.Rows.Count + 9), "P" + (dataTable.Rows.Count + 9)].Borders.LineStyle = Microsoft.Office.Interop.Excel.XlLineStyle.xlContinuous;
+                excelSheet.Range["A" + (dataTable.Rows.Count + 9), "P" + (dataTable.Rows.Count + 9)].Borders.Weight = 2d;
+                //Công thức
+                excelSheet.Range["N" + (dataTable.Rows.Count + 9), "N" + (dataTable.Rows.Count + 9)].Formula = String.Format("=sum(N9:N{0})", dataTable.Rows.Count + 8);
+                excelSheet.Range["P" + (dataTable.Rows.Count + 9), "P" + (dataTable.Rows.Count + 9)].Formula = String.Format("=sum(P9:P{0})", dataTable.Rows.Count + 8);
+                //format
+                excelSheet.Range["N9", "N" + (dataTable.Rows.Count + 9)].EntireColumn.NumberFormat = "#,###";
+                excelSheet.Range["P9", "P" + (dataTable.Rows.Count + 9)].EntireColumn.NumberFormat = "#,###";
+                #endregion
+
+                //gắn header
+                excelSheet.Range["A1"].Value2 = "BẢNG KÊ HÓA ĐƠN CHỨNG TỪ HÀNG HÓA, DỊCH VỤ BÁN RA";
+                excelSheet.Range["A2"].Value2 = "Kèm theo tờ khai thuế GTGT";
+                excelSheet.Range["A3"].Value2 = "(Dùng cho cơ sở kê khai khấu trừ thuế hàng tháng)";
+                excelSheet.Range["A4"].Value2 = "Tháng " + from.Month + " năm " + from.Year;
+                excelSheet.Range["A5"].Value2 = "Tên cơ sở kinh doanh : CÔNG TY TNHH THẾ GIỚI THỜI TRANG GIẢI TRÍ BIGBANG";
+                excelSheet.Range["L5"].Value2 = "Mã số thuế  : 0312865471";
+                excelSheet.Range["A6"].Value2 = "Địa chỉ  : 14-16 Bình Gỉa, P.13, Quận Tân Bình, TP.HCM";
+
+                excelSheet.Range["A7"].Value2 = "STT";
+                excelSheet.Range["E7"].Value2 = "Hóa đơn chứng từ bán";
+                excelSheet.Range["J7"].Value2 = "Tên người mua";
+                excelSheet.Range["K7"].Value2 = "Mã số thuế";
+                excelSheet.Range["L7"].Value2 = "Mặt hàng";
+                excelSheet.Range["M7"].Value2 = "Doanh số mua chưa thuế";
+                excelSheet.Range["N7"].Value2 = "Thuế suất";
+                excelSheet.Range["O7"].Value2 = "Thuế GTGT";
+                excelSheet.Range["P7"].Value2 = "Ghi chú";
+                excelSheet.Range["E8"].Value2 = "Mã HĐ";
+                excelSheet.Range["F8"].Value2 = "KH Mẫu";
+                excelSheet.Range["G8"].Value2 = "Seri HĐ";
+                excelSheet.Range["H8"].Value2 = "Số HĐ";
+                excelSheet.Range["I8"].Value2 = "Ngày HĐ";
+
+                excelSheet.Range["A" + (dataTable.Rows.Count + 9)].Value2 = "TỔNG CỘNG";
+                excelSheet.Range["A" + (dataTable.Rows.Count + 11)].Value2 = "Tổng doanh thu hàng hóa dịch vụ bán ra:";
+                excelSheet.Range["M" + (dataTable.Rows.Count + 11)].Formula = String.Format("=N{0}", dataTable.Rows.Count + 9);
+                excelSheet.Range["A" + (dataTable.Rows.Count + 12)].Value2 = "Tổng thuế GTGT của hàng hóa dịch vụ bán ra:";
+                excelSheet.Range["M" + (dataTable.Rows.Count + 12)].Value2 = String.Format("=P{0}", dataTable.Rows.Count + 9);
+                excelSheet.Range["O" + (dataTable.Rows.Count + 13)].Value2 = "Ngày " + print.Day + " tháng " + print.Month + " năm " + print.Year;
+                excelSheet.Range["O" + (dataTable.Rows.Count + 14)].Value2 = "NGƯỜI NỘP THUẾ hoặc";
+                excelSheet.Range["O" + (dataTable.Rows.Count + 15)].Value2 = "ĐẠI DIỆN HỢP PHÁP CỦA NGƯỜI NỘP THUẾ";
+                // loop through each row and add values to our sheet
+                int rowcount = 8;
+                foreach (DataRow datarow in dataTable.Rows)
+                {
+                    rowcount += 1;
+                    excelSheet.Range["A" + rowcount].Value2 = rowcount - 8;
+                    excelSheet.Range["E" + rowcount].Value2 = Utils.CStrDef(datarow["MA_HD"], "");
+                    excelSheet.Range["F" + rowcount].Value2 = Utils.CStrDef(datarow["TEN_KH"], "");
+                    excelSheet.Range["G" + rowcount].Value2 = Utils.CStrDef(datarow["HD_SR"], "");
+                    excelSheet.Range["H" + rowcount].Value2 = Utils.CStrDef(datarow["SO_HOADON"], "");
+                    excelSheet.Range["I" + rowcount].Value2 = Utils.CDateDef(datarow["NGAY_HOADON"], DateTime.MinValue).ToString("dd/MM/yy");
+                    excelSheet.Range["J" + rowcount].Value2 = Utils.CStrDef(datarow["TEN_NV_BAN"], "");
+                    excelSheet.Range["K" + rowcount].Value2 = Utils.CStrDef(datarow["MASO_THUE"], "");
+                    excelSheet.Range["L" + rowcount].Value2 = Utils.CStrDef(datarow["MAT_HANG"], "");
+                    excelSheet.Range["M" + rowcount].Value2 = Utils.CStrDef(datarow["THANH_TIEN_VND"], "");
+                    excelSheet.Range["N" + rowcount].Value2 = Utils.CStrDef(datarow["TS_GTGT"], "");
+                    excelSheet.Range["O" + rowcount].Value2 = Utils.CStrDef(datarow["TIEN_THUE_VND"], "");
+                    excelSheet.Range["P" + rowcount].Value2 = Utils.CStrDef(datarow["GHI_CHU"], "");
+                }
+                //FreezePanes
+                excelSheet.Range["J9"].Select();
+                excel.ActiveWindow.FreezePanes = true;
+
+                //now save the workbook and exit Excel
+                excelworkBook.SaveAs(saveAsLocation);
+                excelworkBook.Close();
+                excel.Quit();
+                Process.Start(saveAsLocation);
+                return true;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                return false;
+            }
+            finally
+            {
+                excelSheet = null;
+                excelCellrange = null;
+                excelworkBook = null;
+            }
+        }
+        public bool WriteDataTableToExcel_THUEDR_Mau2(System.Data.DataTable dataTable, DateTime from, DateTime to, DateTime print)
+        {
+            string saveAsLocation = Application.StartupPath + @"\Excel\THUEDR_" + DateTime.Now.ToString("HH_mm_ss") + ".xls";
+            string worksheetName = "INTHUEDR";
+
+            Microsoft.Office.Interop.Excel.Application excel;
+            Microsoft.Office.Interop.Excel.Workbook excelworkBook;
+            Microsoft.Office.Interop.Excel.Worksheet excelSheet;
+            Microsoft.Office.Interop.Excel.Range excelCellrange;
+
+            try
+            {
+                // Start Excel and get Application object.
+                excel = new Microsoft.Office.Interop.Excel.Application();
+
+                // for making Excel visible
+                excel.Visible = false;
+                excel.DisplayAlerts = false;
+
+                // Creation a new Workbook
+                excelworkBook = excel.Workbooks.Add(Type.Missing);
+
+                // Workk sheet
+                excelSheet = (Microsoft.Office.Interop.Excel.Worksheet)excelworkBook.ActiveSheet;
+                excelSheet.Name = worksheetName;
+                excelSheet.PageSetup.Application.ActiveWindow.DisplayGridlines = false;
+
+                #region General Cells
+                excelSheet.get_Range("B:B", Missing.Value).EntireColumn.Hidden = true;
+                excelSheet.get_Range("C:C", Missing.Value).EntireColumn.Hidden = true;
+                excelSheet.get_Range("D:D", Missing.Value).EntireColumn.Hidden = true;
+                excelSheet.get_Range("F:F", Missing.Value).EntireColumn.Hidden = true;
+
+                //Kiểu chữ
+                excelSheet.Range["A1", "Q" + (dataTable.Rows.Count + 15)].Font.Name = "Times New Roman";
+                //Font chữ
+                excelSheet.Range["A1", "Q1"].Font.Size = 14;
+                excelSheet.Range["A2", "Q3"].Font.Size = 12;
+                excelSheet.Range["A4", "Q4"].Font.Size = 14;
+                excelSheet.Range["A5", "Q6"].Font.Size = 12;
+                excelSheet.Range["A7", "Q8"].Font.Size = 10;
+                excelSheet.Range["A9", "Q" + (dataTable.Rows.Count + 8)].Font.Size = 9;
+                //In đậm
+                excelSheet.Range["A1", "Q1"].Font.FontStyle = "Bold";
+                excelSheet.Range["A5", "Q5"].Font.FontStyle = "Bold";
+                excelSheet.Range["A7", "Q8"].Font.FontStyle = "Bold";
+                excelSheet.Range["A" + (dataTable.Rows.Count + 9), "P" + (dataTable.Rows.Count + 12)].Font.FontStyle = "Bold";
+                excelSheet.Range["A" + (dataTable.Rows.Count + 14), "P" + (dataTable.Rows.Count + 16)].Font.FontStyle = "Bold";
+                //Canh giữa chữ
+                excelSheet.Range["A1", "Q4"].HorizontalAlignment = -4108;
+                excelSheet.Range["A7", "Q8"].HorizontalAlignment = -4108;
+                excelSheet.Range["A7", "Q8"].VerticalAlignment = -4108;
+                excelSheet.Range["A9", "A" + (dataTable.Rows.Count + 8)].HorizontalAlignment = -4108;
+                excelSheet.Range["E9", "E" + (dataTable.Rows.Count + 8)].HorizontalAlignment = -4108;
+                excelSheet.Range["H9", "H" + (dataTable.Rows.Count + 8)].HorizontalAlignment = -4108;
+                excelSheet.Range["O9", "O" + (dataTable.Rows.Count + 8)].HorizontalAlignment = -4108;
+                excelSheet.Range["A" + (dataTable.Rows.Count + 13), "P" + (dataTable.Rows.Count + 15)].HorizontalAlignment = -4108;
+                excelSheet.Range["A" + (dataTable.Rows.Count + 11), "L" + (dataTable.Rows.Count + 12)].Style.HorizontalAlignment = Microsoft.Office.Interop.Excel.XlHAlign.xlHAlignRight;
+                excelSheet.Range["A5", "A6"].Cells.HorizontalAlignment = Microsoft.Office.Interop.Excel.XlHAlign.xlHAlignLeft;
+                //Wrap Text
+                excelSheet.Range["N7"].WrapText = true;
+                //Merge
+                excelSheet.Range["A1", "Q1"].MergeCells = true;
+                excelSheet.Range["A2", "Q2"].MergeCells = true;
+                excelSheet.Range["A3", "Q3"].MergeCells = true;
+                excelSheet.Range["A4", "Q4"].MergeCells = true;
+                excelSheet.Range["A5", "K5"].MergeCells = true;
+                excelSheet.Range["A6", "K6"].MergeCells = true;
+                excelSheet.Range["A7", "A8"].MergeCells = true;
+                excelSheet.Range["E7", "I7"].MergeCells = true;
+                excelSheet.Range["J7", "J8"].MergeCells = true;
+                excelSheet.Range["K7", "K8"].MergeCells = true;
+                excelSheet.Range["L7", "L8"].MergeCells = true;
+                excelSheet.Range["M7", "M8"].MergeCells = true;
+                excelSheet.Range["N7", "N8"].MergeCells = true;
+                excelSheet.Range["O7", "O8"].MergeCells = true;
+                excelSheet.Range["P7", "P8"].MergeCells = true;
+                excelSheet.Range["Q7", "Q8"].MergeCells = true;
+                excelSheet.Range["A" + (dataTable.Rows.Count + 9), "E" + (dataTable.Rows.Count + 9)].MergeCells = true;
+                excelSheet.Range["A" + (dataTable.Rows.Count + 11), "J" + (dataTable.Rows.Count + 11)].MergeCells = true;
+                excelSheet.Range["A" + (dataTable.Rows.Count + 12), "J" + (dataTable.Rows.Count + 12)].MergeCells = true;
+                excelSheet.Range["K" + (dataTable.Rows.Count + 11), "L" + (dataTable.Rows.Count + 11)].MergeCells = true;
+                excelSheet.Range["K" + (dataTable.Rows.Count + 12), "L" + (dataTable.Rows.Count + 12)].MergeCells = true;
+                //Kích thước Cột và Dòng
+                excelSheet.Range["A1", "A" + (dataTable.Rows.Count + 17)].RowHeight = "16.5";
+                excelSheet.Range["A1"].ColumnWidth = 6;
+                excelSheet.Range["E1"].ColumnWidth = 8;
+                excelSheet.Range["G1"].ColumnWidth = 10;
+                excelSheet.Range["H1"].ColumnWidth = 8;
+                excelSheet.Range["I1"].ColumnWidth = 10;
+                excelSheet.Range["J1"].ColumnWidth = 35;
+                excelSheet.Range["K1"].ColumnWidth = 18;
+                excelSheet.Range["L1"].ColumnWidth = 25;
+                excelSheet.Range["M1"].ColumnWidth = 25;
+                excelSheet.Range["N1"].ColumnWidth = 15;
+                excelSheet.Range["O1"].ColumnWidth = 8;
+                excelSheet.Range["P1"].ColumnWidth = 12;
+                excelSheet.Range["Q1"].ColumnWidth = 12;
+                //Border
+                excelSheet.Range["A7", "Q8"].Borders.LineStyle = Microsoft.Office.Interop.Excel.XlLineStyle.xlContinuous;
+                excelSheet.Range["A7", "Q8"].Borders.Weight = 2d;
+                for (int i = 9; i <= dataTable.Rows.Count + 8; i++)
+                {
+                    BorderAround(excelSheet.Range["A" + i], System.Drawing.ColorTranslator.ToOle(System.Drawing.Color.FromArgb(79, 129, 189)));
+                    BorderAround(excelSheet.Range["B" + i], System.Drawing.ColorTranslator.ToOle(System.Drawing.Color.FromArgb(79, 129, 189)));
+                    BorderAround(excelSheet.Range["C" + i], System.Drawing.ColorTranslator.ToOle(System.Drawing.Color.FromArgb(79, 129, 189)));
+                    BorderAround(excelSheet.Range["D" + i], System.Drawing.ColorTranslator.ToOle(System.Drawing.Color.FromArgb(79, 129, 189)));
+                    BorderAround(excelSheet.Range["E" + i], System.Drawing.ColorTranslator.ToOle(System.Drawing.Color.FromArgb(79, 129, 189)));
+                    BorderAround(excelSheet.Range["F" + i], System.Drawing.ColorTranslator.ToOle(System.Drawing.Color.FromArgb(79, 129, 189)));
+                    BorderAround(excelSheet.Range["G" + i], System.Drawing.ColorTranslator.ToOle(System.Drawing.Color.FromArgb(79, 129, 189)));
+                    BorderAround(excelSheet.Range["H" + i], System.Drawing.ColorTranslator.ToOle(System.Drawing.Color.FromArgb(79, 129, 189)));
+                    BorderAround(excelSheet.Range["I" + i], System.Drawing.ColorTranslator.ToOle(System.Drawing.Color.FromArgb(79, 129, 189)));
+                    BorderAround(excelSheet.Range["J" + i], System.Drawing.ColorTranslator.ToOle(System.Drawing.Color.FromArgb(79, 129, 189)));
+                    BorderAround(excelSheet.Range["K" + i], System.Drawing.ColorTranslator.ToOle(System.Drawing.Color.FromArgb(79, 129, 189)));
+                    BorderAround(excelSheet.Range["L" + i], System.Drawing.ColorTranslator.ToOle(System.Drawing.Color.FromArgb(79, 129, 189)));
+                    BorderAround(excelSheet.Range["M" + i], System.Drawing.ColorTranslator.ToOle(System.Drawing.Color.FromArgb(79, 129, 189)));
+                    BorderAround(excelSheet.Range["N" + i], System.Drawing.ColorTranslator.ToOle(System.Drawing.Color.FromArgb(79, 129, 189)));
+                    BorderAround(excelSheet.Range["O" + i], System.Drawing.ColorTranslator.ToOle(System.Drawing.Color.FromArgb(79, 129, 189)));
+                    BorderAround(excelSheet.Range["P" + i], System.Drawing.ColorTranslator.ToOle(System.Drawing.Color.FromArgb(79, 129, 189)));
+                    BorderAround(excelSheet.Range["Q" + i], System.Drawing.ColorTranslator.ToOle(System.Drawing.Color.FromArgb(79, 129, 189)));
+                }
+                excelSheet.Range["A" + (dataTable.Rows.Count + 9), "Q" + (dataTable.Rows.Count + 9)].Borders.LineStyle = Microsoft.Office.Interop.Excel.XlLineStyle.xlContinuous;
+                excelSheet.Range["A" + (dataTable.Rows.Count + 9), "Q" + (dataTable.Rows.Count + 9)].Borders.Weight = 2d;
+                //Công thức
+                excelSheet.Range["N" + (dataTable.Rows.Count + 9), "N" + (dataTable.Rows.Count + 9)].Formula = String.Format("=sum(N9:N{0})", dataTable.Rows.Count + 8);
+                excelSheet.Range["P" + (dataTable.Rows.Count + 9), "P" + (dataTable.Rows.Count + 9)].Formula = String.Format("=sum(P9:P{0})", dataTable.Rows.Count + 8);
+                //format
+                excelSheet.Range["N9", "N" + (dataTable.Rows.Count + 9)].EntireColumn.NumberFormat = "#,###";
+                excelSheet.Range["P9", "P" + (dataTable.Rows.Count + 9)].EntireColumn.NumberFormat = "#,###";
+                #endregion
+
+                //gắn header
+                excelSheet.Range["A1"].Value2 = "BẢNG KÊ HÓA ĐƠN CHỨNG TỪ HÀNG HÓA, DỊCH VỤ BÁN RA";
+                excelSheet.Range["A2"].Value2 = "Kèm theo tờ khai thuế GTGT";
+                excelSheet.Range["A3"].Value2 = "(Dùng cho cơ sở kê khai khấu trừ thuế hàng tháng)";
+                excelSheet.Range["A4"].Value2 = "Tháng " + from.Month + " năm " + from.Year;
+                excelSheet.Range["A5"].Value2 = "Tên cơ sở kinh doanh : CÔNG TY TNHH THẾ GIỚI THỜI TRANG GIẢI TRÍ BIGBANG";
+                excelSheet.Range["L5"].Value2 = "Mã số thuế  : 0312865471";
+                excelSheet.Range["A6"].Value2 = "Địa chỉ  : 14-16 Bình Gỉa, P.13, Quận Tân Bình, TP.HCM";
+
+                excelSheet.Range["A7"].Value2 = "STT";
+                excelSheet.Range["E7"].Value2 = "Hóa đơn chứng từ bán";
+                excelSheet.Range["J7"].Value2 = "Tên người mua";
+                excelSheet.Range["K7"].Value2 = "Mã số thuế";
+                excelSheet.Range["L7"].Value2 = "Địa chỉ";
+                excelSheet.Range["M7"].Value2 = "Mặt hàng";
+                excelSheet.Range["N7"].Value2 = "Doanh số mua chưa thuế";
+                excelSheet.Range["O7"].Value2 = "Thuế suất";
+                excelSheet.Range["P7"].Value2 = "Thuế GTGT";
+                excelSheet.Range["Q7"].Value2 = "Ghi chú";
+                excelSheet.Range["E8"].Value2 = "Mã HĐ";
+                excelSheet.Range["F8"].Value2 = "KH Mẫu";
+                excelSheet.Range["G8"].Value2 = "Seri HĐ";
+                excelSheet.Range["H8"].Value2 = "Số HĐ";
+                excelSheet.Range["I8"].Value2 = "Ngày HĐ";
+
+                excelSheet.Range["A" + (dataTable.Rows.Count + 9)].Value2 = "TỔNG CỘNG";
+                excelSheet.Range["A" + (dataTable.Rows.Count + 11)].Value2 = "Tổng doanh thu hàng hóa dịch vụ bán ra:";
+                excelSheet.Range["M" + (dataTable.Rows.Count + 11)].Formula = String.Format("=N{0}", dataTable.Rows.Count + 9);
+                excelSheet.Range["A" + (dataTable.Rows.Count + 12)].Value2 = "Tổng thuế GTGT của hàng hóa dịch vụ bán ra:";
+                excelSheet.Range["M" + (dataTable.Rows.Count + 12)].Value2 = String.Format("=P{0}", dataTable.Rows.Count + 9);
+                excelSheet.Range["O" + (dataTable.Rows.Count + 13)].Value2 = "Ngày " + print.Day + " tháng " + print.Month + " năm " + print.Year;
+                excelSheet.Range["O" + (dataTable.Rows.Count + 14)].Value2 = "NGƯỜI NỘP THUẾ hoặc";
+                excelSheet.Range["O" + (dataTable.Rows.Count + 15)].Value2 = "ĐẠI DIỆN HỢP PHÁP CỦA NGƯỜI NỘP THUẾ";
+                // loop through each row and add values to our sheet
+                int rowcount = 8;
+                foreach (DataRow datarow in dataTable.Rows)
+                {
+                    rowcount += 1;
+                    excelSheet.Range["A" + rowcount].Value2 = rowcount - 8;
+                    excelSheet.Range["E" + rowcount].Value2 = Utils.CStrDef(datarow["MA_HD"], "");
+                    excelSheet.Range["F" + rowcount].Value2 = Utils.CStrDef(datarow["TEN_KH"], "");
+                    excelSheet.Range["G" + rowcount].Value2 = Utils.CStrDef(datarow["HD_SR"], "");
+                    excelSheet.Range["H" + rowcount].Value2 = Utils.CStrDef(datarow["SO_HOADON"], "");
+                    excelSheet.Range["I" + rowcount].Value2 = Utils.CDateDef(datarow["NGAY_HOADON"], DateTime.MinValue).ToString("dd/MM/yy");
+                    excelSheet.Range["J" + rowcount].Value2 = Utils.CStrDef(datarow["TEN_NV_BAN"], "");
+                    excelSheet.Range["K" + rowcount].Value2 = Utils.CStrDef(datarow["MASO_THUE"], "");
+                    excelSheet.Range["L" + rowcount].Value2 = Utils.CStrDef(datarow["DIA_CHI"], "");
+                    excelSheet.Range["M" + rowcount].Value2 = Utils.CStrDef(datarow["MAT_HANG"], "");
+                    excelSheet.Range["N" + rowcount].Value2 = Utils.CStrDef(datarow["THANH_TIEN_VND"], "");
+                    excelSheet.Range["O" + rowcount].Value2 = Utils.CStrDef(datarow["TS_GTGT"], "");
+                    excelSheet.Range["P" + rowcount].Value2 = Utils.CStrDef(datarow["TIEN_THUE_VND"], "");
+                    excelSheet.Range["Q" + rowcount].Value2 = Utils.CStrDef(datarow["GHI_CHU"], "");
+                }
+                //FreezePanes
+                excelSheet.Range["J9"].Select();
+                excel.ActiveWindow.FreezePanes = true;
+
+                //now save the workbook and exit Excel
+                excelworkBook.SaveAs(saveAsLocation);
+                excelworkBook.Close();
+                excel.Quit();
+                Process.Start(saveAsLocation);
+                return true;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                return false;
+            }
+            finally
+            {
+                excelSheet = null;
+                excelCellrange = null;
+                excelworkBook = null;
+            }
+        }
+        private void BorderAround(Microsoft.Office.Interop.Excel.Range range, int colour)
+        {
+            Microsoft.Office.Interop.Excel.Borders borders = range.Borders;
+            //borders[Microsoft.Office.Interop.Excel.XlBordersIndex.xlEdgeLeft].LineStyle = Microsoft.Office.Interop.Excel.XlLineStyle.xlContinuous;
+            //borders[Microsoft.Office.Interop.Excel.XlBordersIndex.xlEdgeTop].LineStyle = Microsoft.Office.Interop.Excel.XlLineStyle.xlContinuous;
+            borders[Microsoft.Office.Interop.Excel.XlBordersIndex.xlEdgeBottom].LineStyle = Microsoft.Office.Interop.Excel.XlLineStyle.xlDot;
+            borders[Microsoft.Office.Interop.Excel.XlBordersIndex.xlEdgeRight].LineStyle = Microsoft.Office.Interop.Excel.XlLineStyle.xlContinuous;
+            //borders.Color = colour;
+            borders[Microsoft.Office.Interop.Excel.XlBordersIndex.xlInsideVertical].LineStyle = Microsoft.Office.Interop.Excel.XlLineStyle.xlLineStyleNone;
+            borders[Microsoft.Office.Interop.Excel.XlBordersIndex.xlInsideHorizontal].LineStyle = Microsoft.Office.Interop.Excel.XlLineStyle.xlLineStyleNone;
+            borders[Microsoft.Office.Interop.Excel.XlBordersIndex.xlDiagonalUp].LineStyle = Microsoft.Office.Interop.Excel.XlLineStyle.xlLineStyleNone;
+            borders[Microsoft.Office.Interop.Excel.XlBordersIndex.xlDiagonalDown].LineStyle = Microsoft.Office.Interop.Excel.XlLineStyle.xlLineStyleNone;
+            borders = null;
+        }
     }
 }
